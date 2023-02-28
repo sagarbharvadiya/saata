@@ -19,7 +19,7 @@ const InfoSection = () => {
   const getInfo = useCallback(async () => {
     try {
       const response = await client.getEntries({ content_type: "infoSection" });
-      const responseData = response.items.reverse();
+      const responseData = response.items;
       // console.log(response)
       if (responseData) {
         cleanUpInfo(responseData);
@@ -44,9 +44,9 @@ const InfoSection = () => {
         return (
           <div className="info-container" key={index}>
             <div className="info-body">
-              <h2>{item.infoTitle}</h2>
-              <p>{item.infoDesc}</p>
-              <button>Read More</button>
+              <h2 className="info-title">{item.infoTitle}</h2>
+              <p className="info-desc">{item.infoDesc}</p>
+              <button className="read-more">Read More</button>
             </div>
           </div>
         );

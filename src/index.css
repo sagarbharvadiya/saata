@@ -51,6 +51,38 @@ code {
   opacity: 0.75;
   color: #fffdfd;
 }
+
+.info-container {
+  text-align: center;
+  padding: 50px 0px;
+}
+.info-title {
+  font-size: 39px;
+}
+.info-desc {
+  font-size: 18px;
+  line-height: 31px;
+  max-width: 1170px;
+  margin: 0px auto 30px auto;
+}
+.read-more {
+  padding: 13px 25px;
+  font-size: 17px;
+  border-radius: 8px;
+  border: none;
+  background: #a37bb6;
+  color: white;
+}
+.info-container:nth-child(2){
+  background-color: #a37bb6;
+  color: white;
+  padding: 50px 0px;
+}
+.info-container .read-more:nth-child(2){
+  background-color: white!important;
+  color: #a37bb6!important;
+}
+
 .board-of-members-blog-box-section {
   width: 300px;
   text-align: center;
