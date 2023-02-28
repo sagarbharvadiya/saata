@@ -18,32 +18,40 @@ code {
   align-items: center;
   padding: 30px 40px;
 }
+
 .logo img {
   max-width: 339px;
 }
+
 .menu {
   display: flex;
   align-items: center;
 }
+
 .menu li {
   list-style: none;
 }
+
 .menu li a {
   text-decoration: none;
   margin: 0px 10px;
   font-size: 16px;
   color: #757575;
 }
+
 .banner-slider-image img {
   width: 100%;
 }
+
 .banner-slider-folder .slick-prev {
   left: 11px;
   z-index: 2;
 }
+
 .banner-slider-folder .slick-next {
   right: 15px;
 }
+
 .banner-slider-folder .slick-prev:before,
 .banner-slider-folder .slick-next:before {
   font-size: 32px;
@@ -56,15 +64,18 @@ code {
   text-align: center;
   padding: 50px 0px;
 }
+
 .info-title {
   font-size: 39px;
 }
+
 .info-desc {
   font-size: 18px;
   line-height: 31px;
   max-width: 1170px;
   margin: 0px auto 30px auto;
 }
+
 .read-more {
   padding: 13px 25px;
   font-size: 17px;
@@ -73,43 +84,161 @@ code {
   background: #a37bb6;
   color: white;
 }
-.info-container:nth-child(2){
+
+.info-container:nth-child(2) {
   background-color: #a37bb6;
   color: white;
   padding: 50px 0px;
 }
-.info-container .read-more:nth-child(2){
-  background-color: white!important;
-  color: #a37bb6!important;
+
+.info-container .read-more:nth-child(2) {
+  background-color: white !important;
+  color: #a37bb6 !important;
 }
 
-.board-of-members-blog-box-section {
+.board-of-members-blog-box-section{
   width: 300px;
   text-align: center;
 }
-.board-of-members-image {
+.board-of-members-image{
   max-width: 240px;
   margin: 0px auto;
 }
-.board-of-members-image img {
+.board-of-members-image img{
   width: 100%;
 }
-.board-of-members-blog-box-section h2 {
+.board-of-members-blog-box-section h2{
   font-size: 27px;
   margin: 33px 0px -11px 0px;
 }
-.board-of-members-blog-box-section p {
+.board-of-members-blog-box-section p{
   font-size: 17px;
 }
-.board-of-members-folder {
+.board-of-members-folder{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 70px;
 }
-.Board-of-Members-title {
+.Board-of-Members-title{
   text-align: center;
   font-size: 39px;
   margin: 60px 0px 90px 0px;
+  color: #A37BB6;
+}
+
+.contact {
+  background: url('./Images/loction.png')no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 670px;
+  position: relative;
+}
+
+.input_wrapper {
+  display: flex;
+  gap: 12px;
+}
+
+.contact_form {
+  position: absolute;
+  top: 9%;
+  left: 10%;
+  background: #fffdfd;
+  width: 400px;
+  height: auto;
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+
+.contact_form h2 {
+  font-size: 40px;
   color: #a37bb6;
+}
+
+.contact_form p {
+  font-size: 16px;
+  color: #757575;
+}
+
+.contact_form .input_field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  position: relative;
+}
+
+.contact_form input {
+  padding: 15px 0px 15px 20px;
+  font-size: 18px;
+  width: 100%;
+  border-radius: 15px;
+  border: 1px solid #757575;
+  color: #757575;
+}
+
+.contact_form .input_field i.input-icons {
+  position: absolute;
+  right: 10px;
+  font-size: 18px;
+  color: #A37BB6;
+}
+
+.contact_form textarea {
+  margin: 10px 0px;
+  font-size: 18px;
+  width: 100%;
+  border-radius: 15px;
+  border: 1px solid #757575;
+  color: #757575;
+}
+
+.submit_btn button {
+  padding: 10px 40px;
+  text-align: center;
+  background: #A37BB6;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 19px;
+  color: #fffdfd;
+  border-radius: 15px;
+}
+
+.footer {
+  margin: 10px 30px;
+}
+
+
+.get_d_fex {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  gap: 20%;
+}
+
+.footer_logo img {
+  width: 200px;
+}
+
+.social_icon a {
+  text-decoration: none;
+  font-size: 19px;
+}
+
+.social_icon a>.fa-facebook {
+  color: #1D41FF;
+}
+.social_icon a>.fa-twitter{
+  color: #0085FF;
+}
+.social_icon a>.fa-youtube{
+  color: #FF0000;
+}
+.footer_menu{
+  display: flex;
+  justify-content: center;
+  margin: auto;
 }

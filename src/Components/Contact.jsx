@@ -11,11 +11,17 @@ const Contact = () => {
                         <div className='input_wrapper'>
                             <div className='input_field'>
                                 <input type="text" class="inner-input" placeholder="Your Name" name="user_name" required="" value="" />
-                                <a href="/"><i className='fa-solid fa-user'></i></a>
+                               <i className='fa-solid fa-user input-icons'></i>
                             </div>
                             <div className='input_field'>
                                 <input type="email" class="inner-input" placeholder="Email Address" name="user_email" required="" value="" />
-                                <a href="/"><i className='fa-solid fa-envelope'></i></a>
+                               <i className='fa-solid fa-envelope input-icons'></i>
+                            </div>
+                        </div>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                        <div className='submit_btn'>
+                            <div className='btn'>
+                                <button>Send</button>
                             </div>
                         </div>
                     </form>
