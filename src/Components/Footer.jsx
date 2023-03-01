@@ -8,7 +8,7 @@ const Footer = () => {
                     <div className='get_d_fex'>
                         <div className='right'>
                             <div className='footer_logo'>
-                                <img src="../Images/itaa.png" alt="logo" />
+                                <img src="../images/itta-image1.png" alt="logo" />
                             </div>
                         </div>
 
