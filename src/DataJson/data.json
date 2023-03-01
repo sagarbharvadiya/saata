@@ -1,0 +1,19 @@
+{
+    "Board_of_members_data": [
+        {
+            "image": "../Images/board-of-members-image1.png",
+            "title": "Ms Anisha",
+            "des": "CEO & Founder"
+        },
+        {
+            "image": "../Images/board-of-members-image2.png",
+            "title": "Ms Anisha",
+            "des": "CEO & Founder"
+        },
+        {
+            "image": "../Images/board-of-members-image3.png",
+            "title": "Ms Anisha",
+            "des": "CEO & Founder"
+        }
+    ]
+}
