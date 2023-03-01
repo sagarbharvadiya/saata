@@ -8,7 +8,7 @@ const Footer = () => {
                     <div className='get_d_fex'>
                         <div className='right'>
                             <div className='footer_logo'>
-                                <img src="../Images/itaa.png" alt="logo" />
+                                <img src="../Images/Partner_Organisation-removebg-preview.png" alt="logo" />
                             </div>
                         </div>
 
@@ -32,10 +32,13 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className='social_icon'>
-                                <a href="/"> <i class="fa-brands fa-facebook"></i></a>
-                                <a href="/"> <i class="fa-brands fa-twitter"></i></a>
-                                <a href="/">  <i class="fa-brands fa-youtube"></i></a>
-                            </div>
+                        <a href="https://www.facebook.com/saataworld" target='_blank' rel='noreferrer'> <i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/saataorg" target='_blank' rel='noreferrer'> <i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.youtube.com/channel/UCGTMW3BmOElfJNNoUH2x9JA/videos" target='_blank' rel='noreferrer'>  <i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                    <div className='copy_right'>
+                        <p>@2023 SAATA </p>
+                    </div>
                 </div>
             </section>
         </>
