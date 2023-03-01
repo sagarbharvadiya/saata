@@ -76,8 +76,11 @@ code {
 
 .info-title {
   font-size: 39px;
+  color: #A37BB6;
 }
-
+.info-container:nth-child(2) .info-title{
+  color: #fff;
+}
 .info-desc {
   font-size: 18px;
   line-height: 31px;
@@ -259,6 +262,7 @@ code {
   padding: 10px 40px;
   text-align: center;
   background: #A37BB6;
+  cursor: pointer;
   width: 100%;
   border: none;
   outline: none;
@@ -289,8 +293,8 @@ code {
 }
 
 .footer_logo img {
-  width: 124px;
-  background: white;
+  width: 200px;
+  /* background: white; */
   margin-top: 32px;
   margin-bottom: 12px;
 }
@@ -301,7 +305,7 @@ code {
 
 .footer_menu li {
   margin: 10px;
-  border-bottom: 1px solid #fffdfd;
+  /* border-bottom: 1px solid #fffdfd; */
 }
 
 .footer_menu ul a {

@@ -6,7 +6,7 @@ const Contact = () => {
             <section className='contact'>
                 <div className='contact_wrapper'>
                     <form className='contact_form'>
-                        <h2>Contact Form</h2>
+                        <h2>Contact Us</h2>
                         <p>Rationally encounter consequences that are extremely painful or again is there anyone.</p>
                         <div className='input_wrapper'>
                             <div className='input_field'>
