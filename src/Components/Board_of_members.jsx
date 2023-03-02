@@ -7,8 +7,8 @@ function BoardOfMembers() {
         dots: false,
         arrows: true,
         infinite: true,
-        speed: 3000,
-        autoplay: false,
+        speed: 2000,
+        autoplay: true,
         slidesToShow: 3,
         slidesToScroll: 1,
         responsive: [

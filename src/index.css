@@ -353,9 +353,9 @@ code {
   align-items: center;
   justify-content: center;
   gap: 30%;
+  min-height: 300px;
   border-bottom: 1px solid #fffdfd;
-  margin-top: 55px;
-  margin-bottom: 40px;
+  margin: 3px auto 16px;
 }
 
 .footer_logo img {
@@ -422,7 +422,7 @@ code {
 }
 
 .copy_right {
-  padding: 15px 0px;
+  padding: 8px 0px;
 }
 
 .copy_right p {
