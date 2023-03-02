@@ -8,7 +8,8 @@ const Footer = () => {
                     <div className='get_d_fex'>
                         <div className='right'>
                             <div className='footer_logo'>
-                                <img src="../images/Partner_Organisation-removebg-preview.png" alt="logo" />
+                                {/* <p>Partner Organisation</p> */}
+                                <img src="../images/Partner Organisation.png" alt="logo" />
                             </div>
                         </div>
 
