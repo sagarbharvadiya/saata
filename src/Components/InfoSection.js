@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useCallback } from "react";
+import { Link } from "react-router-dom";
 import { client } from "../client";
+import AboutUs from "./AboutUs";
 
 const InfoSection = () => {
   const [info, setInfo] = useState([]);
@@ -46,7 +48,7 @@ const InfoSection = () => {
             <div className="info-body">
               <h2 className="info-title">{item.infoTitle}</h2>
               <p className="info-desc">{item.infoDesc}</p>
-              <button className="read-more">Read More</button>
+             <Link to='/About'> <button className="read-more">Read More</button></Link>
             </div>
           </div>
         );
