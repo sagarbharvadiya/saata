@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
     return (
@@ -8,7 +9,6 @@ const Footer = () => {
                     <div className='get_d_fex'>
                         <div className='right'>
                             <div className='footer_logo'>
-                                {/* <p>Partner Organisation</p> */}
                                 <img src="../images/Partner Organisation.png" alt="logo" />
                             </div>
                         </div>
@@ -16,18 +16,24 @@ const Footer = () => {
                         <div className='left'>
                             <div className='footer_menu'>
                                 <ul>
-                                    <li><a href="/">About SAATA</a></li>
-                                    <li><a href="/">President’s Note</a></li>
-                                    <li><a href="/">Saata Bot</a></li>
+                                    <li><Link to="/AboutUs">About SAATA</Link></li>
+                                    <li><Link to="/President’s-note">
+                                        President’s Note
+                                    </Link>
+                                    </li>
+                                    <li><Link to="/Saata-bot">
+                                    Saata Bot
+                                    </Link>
+                                    </li>
                                 </ul>
                                 <ul>
-                                    <li><a href="/">About TA</a></li>
-                                    <li><a href="/">Contact Us</a></li>
-                                    <li><a href="/">Eric Berne</a></li>
+                                    <li><Link to="/AboutTA">About TA</Link></li>
+                                    <li><Link to="/Contact">Contact Us</Link></li>
+                                    <li><Link to="/">Eric Berne</Link></li>
                                 </ul>
                                 <ul>
-                                    <li><a href="/">History and Origin of SAATA</a></li>
-                                    <li><a href="/">Mission and Vision</a></li>
+                                    <li><Link to="/HistoryOrigin">History and Origin of SAATA</Link></li>
+                                    <li><Link to="/Mission">Mission and Vision</Link></li>
                                 </ul>
                             </div>
                         </div>

@@ -46,10 +46,6 @@ function BoardOfMembers() {
             },
         ],
     };
-
-
-
-
     return (
         <>
             <div className="board-of-members-section info-container">

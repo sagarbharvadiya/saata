@@ -353,13 +353,13 @@ code {
   align-items: center;
   justify-content: center;
   gap: 30%;
-  min-height: 300px;
+  /* min-height: 300px; */
   border-bottom: 1px solid #fffdfd;
   margin: 3px auto 16px;
 }
 
 .footer_logo img {
-  width: 200px;
+  width: 108px;
   /* background: white; */
   margin-top: 32px;
   margin-bottom: 12px;
@@ -494,6 +494,114 @@ code {
   margin: 81px auto 50px auto;
 }
 
+.about_us {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  /* flex-direction: column; */
+  position: relative;
+  min-height: 700px;
+
+}
+
+.history_origin .about_us_wrapper {
+  background: #e96828;
+}
+
+.about_us_wrapper {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  background: #3871b5;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 250px;
+  text-align: center;
+  z-index: -1;
+}
+
+.about_us.about_ta {
+  min-height: 500px;
+}
+
+.about_us_wrapper {
+  background: #91c73e;
+}
+
+.about_ta h3 {
+  text-align: center;
+}
+
+.about_ta .aboutus_parent {
+  transform: translateY(33%);
+  -webkit-transform: translateY(33%);
+  -moz-transform: translateY(33%);
+  -ms-transform: translateY(33%);
+  -o-transform: translateY(33%);
+}
+
+.about_us_wrapper h2 {
+  width: 150px;
+  position: relative;
+  margin: auto;
+  color: #fff;
+  margin-top: 50px;
+  font-weight: 800;
+}
+
+.history_origin h2 {
+  width: 400px;
+}
+
+.history_origin .about_us_content {
+  min-height: 1100px;
+}
+
+.history_origin .aboutus_parent {
+  transform: translateY(22%);
+}
+
+.about_us_wrapper h2::before {
+  position: absolute;
+  content: '';
+  bottom: -4px;
+  left: 0%;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+}
+
+.aboutus_parent {
+  transform: translateY(12%);
+  margin: 0 20px;
+  -webkit-transform: translateY(12%);
+  -moz-transform: translateY(12%);
+  -ms-transform: translateY(12%);
+  -o-transform: translateY(12%);
+}
+
+.about_us_img,
+.about_us_img img {
+  max-width: 500px;
+  width: 500px;
+  margin: auto;
+}
+
+.about_us_content p {
+  text-align: justify;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 10px;
+}
+
+/* .about_us_content {
+  max-width: 500px;
+  margin: auto;
+} */
+
 @media only screen and (max-width: 1024px) {
   .banner-slider-image img {
     width: 100%;
@@ -587,9 +695,23 @@ code {
   .board-of-members-folder .slick-prev {
     left: 5px;
   }
-  .ITAA-The-Dance-of-Culture-image, .gallery-South-Asian-Association-image {
+
+  .ITAA-The-Dance-of-Culture-image,
+  .gallery-South-Asian-Association-image {
     max-width: 299px;
     margin: 0px auto;
+  }
+
+  .aboutus_parent {
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+    transform: translateY(24%);
+  }
+
+  .about_ta .aboutus_parent {
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+    transform: translateY(48%);
   }
 }
 
@@ -609,7 +731,7 @@ code {
     bottom: 0%;
     width: 100%;
     height: 100%;
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
     background-color: white;
@@ -617,7 +739,7 @@ code {
   }
 
   .Top-Header-wrapper {
-    display: flex;
+    display: block;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -635,7 +757,10 @@ code {
   }
 
   .menu li {
-    margin: 4px 0px;
+    margin: 8px 0px;
+    border-bottom: 1px solid;
+    width: 100%;
+    text-align: center;
   }
 
   .menu li a {
@@ -745,13 +870,42 @@ code {
     height: 433px;
 
   }
+
   .gallery-slider-image iframe {
     width: 768px !important;
     height: 100%;
   }
+
   .gallery-slider-image {
     width: 100%;
     height: 433px;
+  }
+
+  .about_us {
+    height: 100%;
+  }
+
+  .aboutus_parent {
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+    transform: translateY(17%);
+  }
+
+  .history_origin .about_us_content {
+    min-height: max-content;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+  }
+
+  .history_origin .aboutus_parent {
+    transform: translateY(20%);
+
+  }
+
+  .about_ta .aboutus_parent {
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+    transform: translateY(43%);
   }
 }
 
@@ -859,7 +1013,10 @@ code {
   }
 
   .menu li {
-    margin: 2px 0px;
+    margin: 8px 0px;
+    border-bottom: 1px solid;
+    width: 100%;
+    text-align: center;
   }
 
   .show-btn {
@@ -870,38 +1027,81 @@ code {
   .banner-slider-folder .slick-next:before {
     font-size: 24px;
   }
-  .banner-slider-folder .slick-prev:before, 
+
+  .banner-slider-folder .slick-prev:before,
   .banner-slider-folder .slick-next:before {
     font-size: 24px;
   }
+
   .gallery-slider-image {
     width: 100%;
     height: 310px;
   }
+
   .gallery-slider-image iframe {
     width: 100% !important;
     height: 100%;
   }
-  .ITAA-The-Dance-of-Culture-container h2, 
+
+  .ITAA-The-Dance-of-Culture-container h2,
   .gallery-South-Asian-Association-container h2 {
     font-size: 16px;
     max-width: 320px;
     margin: 49px auto 43px auto;
   }
-  .ITAA-The-Dance-of-Culture-folder, .gallery-South-Asian-Association-folder {
+
+  .ITAA-The-Dance-of-Culture-folder,
+  .gallery-South-Asian-Association-folder {
     max-width: 347PX;
     margin: 0px auto;
   }
-  .ITAA-The-Dance-of-Culture-folder .slick-slide.slick-active.slick-center.slick-current .ITAA-The-Dance-of-Culture-image, .gallery-South-Asian-Association-folder .slick-slide.slick-active.slick-center.slick-current .gallery-South-Asian-Association-image {
+
+  .ITAA-The-Dance-of-Culture-folder .slick-slide.slick-active.slick-center.slick-current .ITAA-The-Dance-of-Culture-image,
+  .gallery-South-Asian-Association-folder .slick-slide.slick-active.slick-center.slick-current .gallery-South-Asian-Association-image {
     max-width: 305px;
   }
-  .ITAA-The-Dance-of-Culture-image, .gallery-South-Asian-Association-image {
+
+  .ITAA-The-Dance-of-Culture-image,
+  .gallery-South-Asian-Association-image {
     max-width: 289px;
     margin: 0px auto;
   }
-  .banner-slider-folder .slick-prev, .gallery-slider-folder .slick-prev {
+
+  .banner-slider-folder .slick-prev,
+  .gallery-slider-folder .slick-prev {
     left: 11px;
     z-index: 6;
   }
 
+  .about_us_img,
+  .about_us_img img {
+    width: 100%;
+  }
+
+  .aboutus_parent {
+    transform: translateY(12%);
+    margin: 0 20px;
+    margin-bottom: 100px;
+    padding-bottom: 100px;
+  }
+
+  .about_us {
+    height: 100%;
+  }
+
+  .history_origin .about_us_content {
+    min-height: max-content;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+  }
+
+  .history_origin .aboutus_parent {
+    transform: translateY(12%);
+  }
+
+  .about_ta .aboutus_parent {
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+    transform: translateY(25%);
+  }
 }
