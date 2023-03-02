@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import logo from '../Images/logo.png';
-import { NavLink } from "react-router-dom";
+import logo from '../Images/logo.png'
 
 const TopHeader = () => {
   const [modal, sertModal] = useState(false);
@@ -17,7 +16,7 @@ const TopHeader = () => {
           </div>
           <ul onClick={toggleModal} className="menu">
             <li>
-              <NavLink to="/">Certifications</NavLink>
+              <a href="#certify">Certifications</a>
             </li>
             <li>
               <a href="#member">Membership</a>
@@ -54,7 +53,7 @@ const TopHeader = () => {
           </div>
           <ul className="menu-folder">
             <li>
-              <NavLink to="/">Certifications</NavLink>
+              <a href="#certify">Certifications</a>
             </li>
             <li>
               <a href="#member">Membership</a>
@@ -69,7 +68,7 @@ const TopHeader = () => {
               <a href="#aw">Awards</a>
             </li>
             <li>
-              <NavLink to="/Gallery">Gallery</NavLink>
+              <a href="#gr">Gallery</a>
             </li>
             <li>
               <a href="#news">Newsletter</a>

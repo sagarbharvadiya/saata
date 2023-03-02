@@ -20,7 +20,6 @@ const Banner = () => {
     try {
       const response = await client.getEntries({ content_type: "banner" });
       const responseData = response.items.reverse();
-      console.log(responseData);
       if (responseData) {
         cleanUpBannerApi(responseData);
       } else {
