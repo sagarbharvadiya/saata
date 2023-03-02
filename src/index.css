@@ -72,17 +72,21 @@ code {
   width: 100%;
 }
 
-.banner-slider-folder .slick-prev {
+.banner-slider-folder .slick-prev, 
+.gallery-slider-folder .slick-prev{
   left: 11px;
   z-index: 2;
 }
 
-.banner-slider-folder .slick-next {
-  right: 15px;
+.banner-slider-folder .slick-next, 
+.gallery-slider-folder .slick-next {
+  right: 22px;
 }
 
 .banner-slider-folder .slick-prev:before,
-.banner-slider-folder .slick-next:before {
+.banner-slider-folder .slick-next:before, 
+.gallery-slider-folder .slick-prev:before , 
+.gallery-slider-folder .slick-next:before{
   font-size: 32px;
   line-height: 1;
   opacity: 0.75;
@@ -210,16 +214,6 @@ code {
   color: #ffff;
 
 }
-
-/* .contact {
-  background: url('./Images/loction.png')no-repeat;
-  min-height: 600px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-} */
 .contact {
   align-items: center;
   justify-content: center;
@@ -243,14 +237,6 @@ code {
   height: 300px;
 
 }
-/* .contact_wrapper{
-  display: flex;
-  justify-content: center;
-  gap: 18px;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-} */
 .contact_wrapper {
   display: flex;
   gap: 18px;
@@ -416,6 +402,49 @@ code {
   z-index: 3;
   display: none;
 }
+.gallery-slider-image{
+  width: 100%;
+  height: 709px;
+}
+.gallery-slider-image iframe{
+  width: 100%;
+  height: 100%;
+}
+.ITAA-The-Dance-of-Culture-image, 
+.gallery-South-Asian-Association-image{
+  max-width: 366px;
+  margin: 0px auto;
+}
+.ITAA-The-Dance-of-Culture-image img, 
+.gallery-South-Asian-Association-image img{
+  width: 100%;
+}
+.ITAA-The-Dance-of-Culture-folder, 
+.gallery-South-Asian-Association-folder{
+  max-width: 1254px;
+  margin: 0px auto;
+}
+.ITAA-The-Dance-of-Culture-folder .slick-slide, 
+.gallery-South-Asian-Association-folder .slick-slide{
+  opacity: .5;
+}
+.ITAA-The-Dance-of-Culture-folder .slick-current.slick-active, 
+.gallery-South-Asian-Association-folder .slick-current.slick-active{
+  opacity: 1;
+  width: 300px;
+}
+.ITAA-The-Dance-of-Culture-folder .slick-slide.slick-active.slick-center.slick-current .ITAA-The-Dance-of-Culture-image, 
+.gallery-South-Asian-Association-folder .slick-slide.slick-active.slick-center.slick-current .gallery-South-Asian-Association-image{
+  max-width: 391px;
+}
+.ITAA-The-Dance-of-Culture-container h2, 
+.gallery-South-Asian-Association-container h2 {
+  text-align: center;
+  font-size: 27px;
+  color: #6F6F6F;
+  max-width: 861px;
+  margin: 81px auto 50px auto;
+}
 
 @media only screen and (max-width: 1024px){
   .banner-slider-image img {
@@ -439,7 +468,7 @@ code {
     font-size: 19px;
   }
   iframe{
-    max-width: 704px;
+    width: 704px;
   }
   .contact_form {
     width: 514px;
@@ -472,6 +501,10 @@ code {
   .get_d_fex {
     display: flex;
     gap: 23%;
+  }
+  .ITAA-The-Dance-of-Culture-image, .gallery-South-Asian-Association-image {
+    max-width: 299px;
+    margin: 0px auto;
   }
 }
 @media only screen and (max-width: 820px){
@@ -538,7 +571,7 @@ code {
     max-width: 711px;
   }
   iframe {
-    max-width: 703px;
+    width: 703px;
   }
   .contact_form {
     width: 482px;
@@ -582,6 +615,14 @@ code {
   }
   .Top-header-section-folder{
     display: none;
+  }
+  .gallery-slider-image iframe {
+    width: 768px !important;
+    height: 100%;
+  }
+  .gallery-slider-image {
+    width: 100%;
+    height: 433px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -636,7 +677,7 @@ code {
     font-size: 18px;
   }
   iframe {
-    max-width: 331px;
+    width: 331px;
   }
   .footer_wrapper {
     margin: 0px 15px;
@@ -667,5 +708,34 @@ code {
   .banner-slider-folder .slick-prev:before, 
   .banner-slider-folder .slick-next:before {
     font-size: 24px;
+  }
+  .gallery-slider-image {
+    width: 100%;
+    height: 310px;
+  }
+  .gallery-slider-image iframe {
+    width: 100% !important;
+    height: 100%;
+  }
+  .ITAA-The-Dance-of-Culture-container h2, 
+  .gallery-South-Asian-Association-container h2 {
+    font-size: 16px;
+    max-width: 320px;
+    margin: 49px auto 43px auto;
+  }
+  .ITAA-The-Dance-of-Culture-folder, .gallery-South-Asian-Association-folder {
+    max-width: 347PX;
+    margin: 0px auto;
+  }
+  .ITAA-The-Dance-of-Culture-folder .slick-slide.slick-active.slick-center.slick-current .ITAA-The-Dance-of-Culture-image, .gallery-South-Asian-Association-folder .slick-slide.slick-active.slick-center.slick-current .gallery-South-Asian-Association-image {
+    max-width: 305px;
+  }
+  .ITAA-The-Dance-of-Culture-image, .gallery-South-Asian-Association-image {
+    max-width: 289px;
+    margin: 0px auto;
+  }
+  .banner-slider-folder .slick-prev, .gallery-slider-folder .slick-prev {
+    left: 11px;
+    z-index: 6;
   }
 }

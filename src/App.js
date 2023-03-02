@@ -1,20 +1,18 @@
 import React from "react";
-import Banner from "./Components/Banner";
-import BoardOfMembers from "./Components/Board_of_members";
-import Contact from "./Components/Contact";
+import { Route, Routes } from 'react-router-dom';
 import Footer from "./Components/Footer";
-import InfoSection from "./Components/InfoSection";
 import TopHeader from "./Components/TopHeader";
-
+import Gallery from "./Pages/Gallery";
+import Home from "./Pages/Home";
 
 function App() {
   return (
     <div className="App">
       <TopHeader />
-      <Banner />
-      <InfoSection />
-      <BoardOfMembers/>
-      <Contact/>
+        <Routes>
+          <Route exact path='/' element={<Home/>}></Route>
+          <Route exact path='/Gallery' element={<Gallery/>}></Route>
+        </Routes>
       <Footer/>
     </div>
   );
