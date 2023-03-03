@@ -11,8 +11,9 @@ const InfoSection = () => {
       const { sys, fields } = item;
       const { id } = sys;
       const infoTitle = fields.title;
+      const link = fields.link;
       const infoDesc = fields.description;
-      const updatedInfo = { id, infoTitle, infoDesc };
+      const updatedInfo = { id, infoTitle, infoDesc, link };
       return updatedInfo;
     });
     setInfo(cleaninfo);
@@ -48,7 +49,7 @@ const InfoSection = () => {
             <div className="info-body">
               <h2 className="info-title">{item.infoTitle}</h2>
               <p className="info-desc">{item.infoDesc}</p>
-             <Link to='/About'> <button className="read-more">Read More</button></Link>
+             <Link to={item.link}> <button className="read-more">Read More</button></Link>
             </div>
           </div>
         );
