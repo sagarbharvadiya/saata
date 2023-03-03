@@ -139,11 +139,11 @@ code {
 .info-container:nth-child(2) {
   background-color: #a37bb6;
   color: white;
-  /* padding: 50px 0px; */
 }
 
 .info-title {
   position: relative;
+  margin: 0px 0px 0px 0px;
 }
 
 .info-title::before {
@@ -224,16 +224,6 @@ code {
   color: #ffff;
 
 }
-
-/* .contact {
-  background: url('./Images/loction.png')no-repeat;
-  min-height: 600px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-} */
 .contact {
   align-items: center;
   justify-content: center;
@@ -265,18 +255,8 @@ code {
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
 }
-
-/* .contact_wrapper{
-  display: flex;
-  justify-content: center;
-  gap: 18px;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-} */
 .contact_wrapper {
   display: flex;
-  /* gap: 18px; */
   max-width: 1262px;
   margin: 0px auto;
 }
@@ -700,6 +680,72 @@ code {
   padding: 0px;
   margin: 0px;
   margin-top: 10px;
+}
+.Certified-Members-card{
+  border: 1px solid;
+  max-width: 300px;
+  padding-bottom: 20px;
+  border-radius: 20px;
+  position: relative;
+}
+.Certified-Members-image img{
+  width: 100%;
+  border-radius: 10px;
+}
+.Certified-Members-card {
+  border: 1px solid #d7d7d7;
+  max-width: 260px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+.Certified-Members-folder{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+.Certified-Members-card h2 {
+  font-size: 17px;
+  margin: 12px 0px 5px 0px;
+}
+.Certified-Members-details-folder {
+  text-align: left;
+  border: 1px solid;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+  background-color: #a37bb6;
+  color: white;
+  padding: 16px 21px;
+  border-radius: 10px;
+  opacity: 0;
+  transition: all 0.2s ease-in;
+}
+.Certified-Members-card:hover .Certified-Members-details-folder{
+  opacity: 1;
+}
+.Certified-Members-details {
+  display: flex;
+  gap: 6px;
+  align-items: baseline;
+  margin-bottom: -9px;
+}
+.Certified-Members-details h2 {
+  font-size: 13px !important;
+}
+.Certified-Members-details p {
+  font-size: 13px !important;
+  line-height: 19px;
+}
+.Certified-Members-text {
+  font-size: 46px;
+  max-width: 517px;
+  text-align: end;
+  margin: 23px 0px 27px 0px;
+  color: #A37BB6;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -1237,5 +1283,4 @@ code {
     margin-bottom: 100px;
     transform: translateY(25%);
   }
-
 }
