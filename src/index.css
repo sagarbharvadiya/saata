@@ -139,11 +139,11 @@ code {
 .info-container:nth-child(2) {
   background-color: #a37bb6;
   color: white;
+  /* padding: 50px 0px; */
 }
 
 .info-title {
   position: relative;
-  margin: 0px 0px 0px 0px;
 }
 
 .info-title::before {
@@ -224,6 +224,16 @@ code {
   color: #ffff;
 
 }
+
+/* .contact {
+  background: url('./Images/loction.png')no-repeat;
+  min-height: 600px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+} */
 .contact {
   align-items: center;
   justify-content: center;
@@ -255,8 +265,18 @@ code {
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
 }
+
+/* .contact_wrapper{
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+} */
 .contact_wrapper {
   display: flex;
+  /* gap: 18px; */
   max-width: 1262px;
   margin: 0px auto;
 }
@@ -580,26 +600,14 @@ code {
 
 
 .about_us {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-  /* flex-direction: column; */
   position: relative;
-  min-height: 700px;
-
 }
-
-.history_origin .about_us_wrapper {
-  background: #e96828;
-}
-
-.about_us_wrapper {
+.about_us::before{
   position: absolute;
+  background: #3870b5;
   content: '';
-  top: 0;
+  top: -70px;
   left: 0;
-  background: #3871b5;
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -607,26 +615,42 @@ code {
   text-align: center;
   z-index: -1;
 }
-
-.about_us.about_ta {
-  min-height: 500px;
-}
-
-.about_ta .about_us_wrapper {
+.about_us.about_ta::before{
   background: #91c73e;
+  position: absolute;
+  content: '';
+  top: -70px;
+  left: 0;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 250px;
+  text-align: center;
+  z-index: -1;
 }
-
+.about_us.history_origin::before {
+  position: absolute;
+  content: '';
+  top: -40px;
+  left: 0;
+  background: #e96828;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 250px;
+  text-align: center;
+  z-index: -1;
+}
+.aboutus_parent {
+  margin: 0px 20px;
+}
+.about_us_wrapper{
+  z-index: 1;
+}
 .about_ta h3 {
   text-align: center;
 }
 
-.about_ta .aboutus_parent {
-  transform: translateY(33%);
-  -webkit-transform: translateY(33%);
-  -moz-transform: translateY(33%);
-  -ms-transform: translateY(33%);
-  -o-transform: translateY(33%);
-}
 
 .about_us_wrapper h2 {
   width: 150px;
@@ -635,19 +659,14 @@ code {
   color: #fff;
   margin-top: 50px;
   font-weight: 800;
+  text-align: center;
 }
 
 .history_origin h2 {
   width: 400px;
 }
 
-.history_origin .about_us_content {
-  min-height: 1100px;
-}
 
-.history_origin .aboutus_parent {
-  transform: translateY(22%);
-}
 
 .about_us_wrapper h2::before {
   position: absolute;
@@ -659,20 +678,14 @@ code {
   background: #fff;
 }
 
-.aboutus_parent {
-  transform: translateY(12%);
-  margin: 0 20px;
-  -webkit-transform: translateY(12%);
-  -moz-transform: translateY(12%);
-  -ms-transform: translateY(12%);
-  -o-transform: translateY(12%);
-}
+
 
 .about_us_img,
-.about_us_img img {
-  max-width: 500px;
-  width: 500px;
+.about_us_img img { 
+  max-width: 800px;
+  width: 800px;
   margin: auto;
+  margin-top: 10px;
 }
 
 .about_us_content p {
@@ -680,72 +693,6 @@ code {
   padding: 0px;
   margin: 0px;
   margin-top: 10px;
-}
-.Certified-Members-card{
-  border: 1px solid;
-  max-width: 300px;
-  padding-bottom: 20px;
-  border-radius: 20px;
-  position: relative;
-}
-.Certified-Members-image img{
-  width: 100%;
-  border-radius: 10px;
-}
-.Certified-Members-card {
-  border: 1px solid #d7d7d7;
-  max-width: 260px;
-  padding-bottom: 20px;
-  border-radius: 10px;
-  text-align: center;
-}
-.Certified-Members-folder{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 25px;
-}
-.Certified-Members-card h2 {
-  font-size: 17px;
-  margin: 12px 0px 5px 0px;
-}
-.Certified-Members-details-folder {
-  text-align: left;
-  border: 1px solid;
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  right: 0%;
-  bottom: 0%;
-  background-color: #a37bb6;
-  color: white;
-  padding: 16px 21px;
-  border-radius: 10px;
-  opacity: 0;
-  transition: all 0.2s ease-in;
-}
-.Certified-Members-card:hover .Certified-Members-details-folder{
-  opacity: 1;
-}
-.Certified-Members-details {
-  display: flex;
-  gap: 6px;
-  align-items: baseline;
-  margin-bottom: -9px;
-}
-.Certified-Members-details h2 {
-  font-size: 13px !important;
-}
-.Certified-Members-details p {
-  font-size: 13px !important;
-  line-height: 19px;
-}
-.Certified-Members-text {
-  font-size: 46px;
-  max-width: 517px;
-  text-align: end;
-  margin: 23px 0px 27px 0px;
-  color: #A37BB6;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -866,18 +813,6 @@ code {
   .gallery-South-Asian-Association-image {
     max-width: 299px;
     margin: 0px auto;
-  }
-
-  .aboutus_parent {
-    padding-bottom: 100px;
-    margin-bottom: 100px;
-    transform: translateY(24%);
-  }
-
-  .about_ta .aboutus_parent {
-    padding-bottom: 100px;
-    margin-bottom: 100px;
-    transform: translateY(48%);
   }
 }
 
@@ -1057,32 +992,9 @@ code {
     width: 100%;
     height: 433px;
   }
-
-  .about_us {
-    height: 100%;
-  }
-
-  .aboutus_parent {
-    padding-bottom: 100px;
-    margin-bottom: 100px;
-    transform: translateY(17%);
-  }
-
-  .history_origin .about_us_content {
-    min-height: max-content;
-    padding-bottom: 100px;
-    margin-bottom: 100px;
-  }
-
-  .history_origin .aboutus_parent {
-    transform: translateY(20%);
-
-  }
-
-  .about_ta .aboutus_parent {
-    padding-bottom: 100px;
-    margin-bottom: 100px;
-    transform: translateY(43%);
+  .about_us_img, .about_us_img img{
+    max-width: 100%;
+    width: 100%;
   }
 }
 
@@ -1250,37 +1162,19 @@ code {
     left: 11px;
     z-index: 6;
   }
-
-
   .about_us_img,
   .about_us_img img {
     width: 100%;
   }
-
-  .aboutus_parent {
-    transform: translateY(12%);
-    margin: 0 20px;
-    margin-bottom: 100px;
-    padding-bottom: 100px;
+  .about_us::before{
+    height:150px;
   }
+  .about_us.about_ta::before{
+    height: 150px;
 
-  .about_us {
-    height: 100%;
   }
-
-  .history_origin .about_us_content {
-    min-height: max-content;
-    padding-bottom: 100px;
-    margin-bottom: 100px;
-  }
-
-  .history_origin .aboutus_parent {
-    transform: translateY(12%);
-  }
-
-  .about_ta .aboutus_parent {
-    padding-bottom: 100px;
-    margin-bottom: 100px;
-    transform: translateY(25%);
+  .about_us.history_origin::before{
+    height: 150px;
+  
   }
 }
