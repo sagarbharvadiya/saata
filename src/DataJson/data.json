@@ -1,31 +1,37 @@
 {
     "Board_of_members_data": [
         {
+            "id":"1",
             "image": "../Images/board-of-members-image1.png",
             "title": "Ms Anisha",
             "des": "CEO & Founder"
         },
         {
+            "id":"2",
             "image": "../Images/board-of-members-image2.png",
             "title": "Ms Anisha",
             "des": "CEO & Founder"
         },
         {
+            "id":"3",
             "image": "../Images/board-of-members-image3.png",
             "title": "Ms Anisha",
             "des": "CEO & Founder"
         },
         {
+            "id":"4",
             "image": "../Images/board-of-members-image1.png",
             "title": "Ms Anisha",
             "des": "CEO & Founder"
         },
         {
+            "id":"5",
             "image": "../Images/board-of-members-image2.png",
             "title": "Ms Anisha",
             "des": "CEO & Founder"
         },
         {
+            "id":"6",
             "image": "../Images/board-of-members-image3.png",
             "title": "Ms Anisha",
             "des": "CEO & Founder"

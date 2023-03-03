@@ -493,7 +493,12 @@ code {
   max-width: 861px;
   margin: 81px auto 50px auto;
 }
-
+.gallery-section .slick-next {
+  right: 10px;
+}.gallery-section .slick-prev {
+  left: 10px;
+  z-index: 1;
+}
 .about_us {
   display: flex;
   align-items: center;
@@ -597,11 +602,6 @@ code {
   margin-top: 10px;
 }
 
-/* .about_us_content {
-  max-width: 500px;
-  margin: auto;
-} */
-
 @media only screen and (max-width: 1024px) {
   .banner-slider-image img {
     width: 100%;
@@ -628,10 +628,10 @@ code {
     font-size: 19px;
   }
 
-  iframe {
+  /* iframe {
     max-width:
       704px;
-  }
+  } */
 
 
 
@@ -868,12 +868,13 @@ code {
   .gallery-slider-image {
     width: 100%;
     height: 433px;
-
+    max-width: 100%;
   }
 
   .gallery-slider-image iframe {
     width: 768px !important;
     height: 100%;
+    max-width: 100%;
   }
 
   .gallery-slider-image {
@@ -1041,6 +1042,7 @@ code {
   .gallery-slider-image iframe {
     width: 100% !important;
     height: 100%;
+    max-width: 100%;
   }
 
   .ITAA-The-Dance-of-Culture-container h2,

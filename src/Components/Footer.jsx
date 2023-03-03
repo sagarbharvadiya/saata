@@ -39,9 +39,9 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className='social_icon'>
-                        <a href="https://www.facebook.com/saataworld" target='_blank' rel='noreferrer'> <i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://twitter.com/saataorg" target='_blank' rel='noreferrer'> <i class="fa-brands fa-twitter"></i></a>
-                        <a href="https://www.youtube.com/channel/UCGTMW3BmOElfJNNoUH2x9JA/videos" target='_blank' rel='noreferrer'>  <i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.facebook.com/saataworld" target='_blank' rel='noreferrer'> <i className="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/saataorg" target='_blank' rel='noreferrer'> <i className="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.youtube.com/channel/UCGTMW3BmOElfJNNoUH2x9JA/videos" target='_blank' rel='noreferrer'>  <i className="fa-brands fa-youtube"></i></a>
                     </div>
                     <div className='copy_right'>
                         <p>@2023 SAATA </p>
