@@ -37,8 +37,31 @@ const AboutTA = () => {
   }, [getInfo]);
   return (
     <div>
-      
     </div>
+    <>
+      {info.map((item, index) => {
+        return (
+          <>
+            <div className="about_us about_ta">
+              <div className="about_us_wrapper">
+              <h2>{item.Title}</h2>
+              </div>
+              <div className="aboutus_parent">
+              <div className="about_us_img">
+                <h3>{item.subTitle}</h3>
+              </div>
+              <div className="about_us_content">
+               
+                <p>{item.description}</p>
+              </div>
+              </div>
+             
+            </div>
+          </>
+        );
+      })}
+    </>
+
   )
 }
 
