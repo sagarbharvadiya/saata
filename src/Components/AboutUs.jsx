@@ -10,9 +10,11 @@ const AboutUs = () => {
       const { id } = sys;
       const aboutusTitle = fields.title;
       const aboutusDesc = fields.description;
-   
       const aboutusImage = fields.aboutUsImg.fields.file.url;
       const updatedInfo = { id, aboutusTitle, aboutusImage, aboutusDesc};
+      const updatedInfo ={id, aboutusTitle, aboutusImage, aboutusDesc};
+
+      const updatedInfo = { id, aboutusTitle, aboutusImage, aboutusDesc };
       return updatedInfo;
     });
     setAboutus(cleaninfo);
@@ -41,6 +43,7 @@ const AboutUs = () => {
     <>
       {aboutus.map((item, index) => {
         return (
+          <></>
           <>
             <div className="about_us">
               <div className="about_us_wrapper">
