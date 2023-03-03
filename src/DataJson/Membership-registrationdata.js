@@ -1,7 +1,7 @@
 const Membership_Registration_data = [
     {
         title:"ASSOCIATE MEMBER",
-        image:"images/plan.png",
+        image:"/images/plan.png",
         price:"600",
         Billed_Yearly:"Billed Yearly",
         subscribe:"SUBSCRIBE",
@@ -10,7 +10,7 @@ const Membership_Registration_data = [
     },
     {
         title:"ASSOCIATE MEMBER",
-        image:"images/plan.png",
+        image:"/images/plan.png",
         price:"800",
         Billed_Yearly:"Billed Yearly",
         subscribe:"SUBSCRIBE",
@@ -19,7 +19,7 @@ const Membership_Registration_data = [
     },
     {
         title:"ASSOCIATE MEMBER",
-        image:"images/plan.png",
+        image:"/images/plan.png",
         price:"1500",
         Billed_Yearly:"Billed Yearly",
         subscribe:"SUBSCRIBE",
@@ -28,7 +28,7 @@ const Membership_Registration_data = [
     },
     {
         title:"ASSOCIATE MEMBER",
-        image:"images/plan.png",
+        image:"/images/plan.png",
         price:"15000",
         Billed_Yearly:"Billed Yearly",
         subscribe:"SUBSCRIBE",
