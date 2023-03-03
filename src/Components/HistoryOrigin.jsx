@@ -35,6 +35,11 @@ const HistoryOrigin = () => {
     getInfo();
   }, [getInfo]);
   return (
+
+    <div>
+      
+    </div>
+
     <>
      {info.map((item, index) => {
         return (
