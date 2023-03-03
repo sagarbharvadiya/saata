@@ -353,11 +353,8 @@ code {
   align-items: center;
   justify-content: center;
   gap: 30%;
-
-  min-height: 300px;
-
+  min-height: 210px;
   /* min-height: 300px; */
-
   border-bottom: 1px solid #fffdfd;
   margin: 3px auto 16px;
 }

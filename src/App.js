@@ -8,13 +8,11 @@ import Gallery from "./Pages/Gallery";
 import Home from "./Pages/Home";
 import Membership_Registration from "./Pages/Membreship-registration";
 import About from "./Pages/About";
-import AboutUs from "./Components/AboutUs";
-import AboutTA from "./Components/AboutTA";
 import HistoryOrigin from "./Components/HistoryOrigin";
 
 function App() {
   return (
-    <div className="App">
+    <>
       <TopHeader />
         <Routes>
           <Route exact path='/' element={<Home/>}></Route>
@@ -25,10 +23,8 @@ function App() {
           <Route exact path='/AboutTA' element={<AboutTA/>}></Route>
           <Route exact path='/HistoryOrigin' element={<HistoryOrigin/>}></Route>
         </Routes>
-        <AboutTA/>
-        <AboutUs/>
       <Footer/>
-    </div>
+    </>
   );
 }
 
