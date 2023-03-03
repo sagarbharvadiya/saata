@@ -57,7 +57,7 @@ const TopHeader = () => {
               <NavLink to="/">Certifications</NavLink>
             </li>
             <li>
-              <a href="#member">Membership</a>
+              <NavLink to="/Membership_Registration" href="#member">Membership</NavLink>
             </li>
             <li>
               <a href="#directory">Directory</a>

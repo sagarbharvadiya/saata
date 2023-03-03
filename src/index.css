@@ -493,14 +493,101 @@ code {
   max-width: 861px;
   margin: 81px auto 50px auto;
 }
-.gallery-slider-folder .slick-prev {
-  left: 18px;
-  z-index: 3;
+.membership-registration-card {
+  width: 310px;
+  text-align: center;
+  padding-bottom: 52px;
+  position: relative;
+  box-shadow: 0px 4px 8px #e9e9e9;
 }
-.gallery-slider-folder .slick-next {
-  right: 18px;
-  z-index: 3;
+.membership-registration-card::after {
+  content: "";
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  width: 100%;
+  height: 7px;
+  background-color: #A37BB6;
 }
+.membership-registration-text h2{
+  margin: 0px;
+  padding: 20px 0px;
+  background-color: #A37BB6;
+  color: white;
+  font-size: 17px;
+}
+.membership-registration-image {
+  max-width: 249px;
+  margin: 39px auto 25px auto;
+}
+.membership-registration-image img{
+  width: 100%;
+}
+.plan-price {
+  font-size: 60px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin: 10px 0px 0px 0px;
+  color: #6f6f6f;
+}
+.plan-price a {
+  font-size: 23px !important;
+  color: #6f6f6f;
+}
+.Billed-Yearly {
+  font-size: 15px !important;
+  margin: 0px;
+  color: #6f6f6f;
+}
+.membership-subscribe-btn{
+  margin: 39px 0px 0px 0px;
+}
+.membership-subscribe-btn a{
+  border: 1px solid;
+  padding: 16px 55px;
+  text-decoration: none;
+  border-radius: 61px;
+  margin: 10px;
+  background-color: #a37bb6;
+  color: white;
+  font-size: 17px;
+}
+.membership-registration-card-des {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 11px;
+  margin: 0px 15px -17px 15px;
+}
+.membership-registration-card-des a{
+  font-size: 19px;
+  color: #A37BB6;
+}
+.membership-registration-card-des p{
+  font-size: 16px;
+  color: #6f6f6f;
+}
+.membership-registration-card-folder {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 65px 0px 50px 0px;
+}
+.Membership-Registration-title, 
+.Membership-Registration-text {
+  font-size: 25px;
+  margin-left: 31px;
+  color: #6f6f6f;
+}
+.Membership-Registration-text a{
+  font-size: 25px;
+  color: #7070ff;
+}
+.membership-registration-card-des-folder{
+  height: 95px;
+} 
 
 @media only screen and (max-width: 1024px) {
   .banner-slider-image img {
@@ -529,8 +616,12 @@ code {
   }
 
   iframe {
-    width: 704px;
+    max-width:
+      704px;
   }
+
+
+
   .contact_form {
     width: 514px;
     padding: 30px 25px 42px 25px;
@@ -672,7 +763,7 @@ code {
   }
 
   iframe {
-    width: 703px;
+    max-width: 703px;
   }
 
   .contact_form {
@@ -833,7 +924,7 @@ code {
   }
 
   iframe {
-    width: 331px;
+    max-width: 331px;
   }
 
   .footer_wrapper {
@@ -907,7 +998,5 @@ code {
     left: 11px;
     z-index: 6;
   }
-  .gallery-slider-folder .slick-next {
-    right: 9px;
-  }
+
 }
