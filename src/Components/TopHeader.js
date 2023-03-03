@@ -8,7 +8,7 @@ const TopHeader = () => {
     const toggleModal = () => { sertModal(!modal) }
   return (
     <>
-    <a href="#" onClick={toggleModal} className="show-btn"><i class="fa-solid fa-bars"></i></a>
+    <a href="#" onClick={toggleModal} className="show-btn"><i className="fa-solid fa-bars"></i></a>
     {modal &&(
       <div className="Top-header-section">
         <div className="Top-Header-wrapper">
@@ -16,7 +16,7 @@ const TopHeader = () => {
             <Link to='/'><img src={logo} alt="Logo"/></Link>
           </div>
           <ul onClick={toggleModal} className="menu">
-            <li>
+          <li>
               <NavLink to="/">Certifications</NavLink>
             </li>
             <li>
@@ -32,7 +32,7 @@ const TopHeader = () => {
               <a href="#aw">Awards</a>
             </li>
             <li>
-              <a href="#gr">Gallery</a>
+              <NavLink to="/Gallery">Gallery</NavLink>
             </li>
             <li>
               <a href="#news">Newsletter</a>

@@ -56,13 +56,15 @@ function BoardOfMembers() {
                             {
                                 datajson.Board_of_members_data.map((val) => {
                                     return (
-                                        <div className="board-of-members-blog-box-section">
+                                        
+                                        <div className="board-of-members-blog-box-section" key={val.id}>
                                             <div className="board-of-members-image">
                                                 <img src={val.image} alt={val.image} />
                                             </div>
                                             <h2>{val.title}</h2>
                                             <p>{val.des}</p>
                                         </div>
+                                       
                                     )
                                 })
                             }

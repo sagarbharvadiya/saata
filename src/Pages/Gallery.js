@@ -154,12 +154,12 @@ function Gallery(){
                     <Slider {...settings}>
                         <div>
                             <div className="gallery-slider-image">
-                                <iframe src="https://www.youtube.com/embed/UfDkwAJ6rrU" title="SAATA  - MLL 2023  -  Panel Discussion -  Professional Identity" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" id="fitvid997884"></iframe>
+                                <iframe src="https://www.youtube.com/embed/UfDkwAJ6rrU" title="SAATA  - MLL 2023  -  Panel Discussion -  Professional Identity"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen={true} id="fitvid997884"></iframe>
                             </div>
                         </div>
                         <div>
                             <div className="gallery-slider-image">
-                                <iframe src="https://www.youtube.com/embed/UfDkwAJ6rrU" title="SAATA  - MLL 2023  -  Panel Discussion -  Professional Identity" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" id="fitvid997884"></iframe>
+                                <iframe src="https://www.youtube.com/embed/UfDkwAJ6rrU" title="SAATA  - MLL 2023  -  Panel Discussion -  Professional Identity" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen={true} id="fitvid997884"></iframe>
                             </div>
                         </div>
                     </Slider>
