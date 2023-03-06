@@ -483,7 +483,7 @@ code {
 }
 
 .membership-registration-card {
-  width: 310px;
+  width: 280px;
   text-align: center;
   padding-bottom: 52px;
   position: relative;
@@ -498,22 +498,22 @@ code {
   height: 7px;
   background-color: #A37BB6;
 }
-.membership-registration-text h2{
+.membership-registration-text h2 {
   margin: 0px;
   padding: 20px 0px;
   background-color: #A37BB6;
   color: white;
-  font-size: 17px;
+  font-size: 14px;
 }
 .membership-registration-image {
-  max-width: 249px;
+  max-width: 220px;
   margin: 39px auto 25px auto;
 }
 .membership-registration-image img{
   width: 100%;
 }
 .plan-price {
-  font-size: 60px !important;
+  font-size: 52px !important;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -522,26 +522,26 @@ code {
   color: #6f6f6f;
 }
 .plan-price a {
-  font-size: 23px !important;
+  font-size: 19px !important;
   color: #6f6f6f;
 }
 .Billed-Yearly {
-  font-size: 15px !important;
+  font-size: 12px !important;
   margin: 0px;
   color: #6f6f6f;
 }
 .membership-subscribe-btn{
   margin: 39px 0px 0px 0px;
 }
-.membership-subscribe-btn a{
+.membership-subscribe-btn a {
   border: 1px solid;
-  padding: 16px 55px;
+  padding: 16px 49px;
   text-decoration: none;
   border-radius: 61px;
   margin: 10px;
   background-color: #a37bb6;
   color: white;
-  font-size: 17px;
+  font-size: 14px;
 }
 .membership-registration-card-des {
   display: flex;
@@ -550,12 +550,12 @@ code {
   gap: 11px;
   margin: 0px 15px -17px 15px;
 }
-.membership-registration-card-des a{
-  font-size: 19px;
+.membership-registration-card-des a {
+  font-size: 17px;
   color: #A37BB6;
 }
-.membership-registration-card-des p{
-  font-size: 16px;
+.membership-registration-card-des p {
+  font-size: 14px;
   color: #6f6f6f;
 }
 .membership-registration-card-folder {
@@ -567,7 +567,7 @@ code {
 .Membership-Registration-title, 
 .Membership-Registration-text {
   font-size: 25px;
-  margin-left: 31px;
+  margin-left: 90px;
   color: #6f6f6f;
 }
 .Membership-Registration-text a{
@@ -578,16 +578,13 @@ code {
   height: 95px;
 } 
 
-
 .about_us {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: auto;
-  /* flex-direction: column; */
   position: relative;
   min-height: 700px;
-
 }
 
 .history_origin .about_us_wrapper {
