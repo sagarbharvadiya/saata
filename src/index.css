@@ -93,7 +93,7 @@ code {
 
 .info-container {
   text-align: center;
-  padding: 90px 0px !important;
+  padding: 55px 0px !important;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -740,12 +740,97 @@ code {
   font-size: 13px !important;
   line-height: 19px;
 }
-.Certified-Members-text {
+.Certified-Members-text{
   font-size: 46px;
   max-width: 517px;
   text-align: end;
   margin: 23px 0px 27px 0px;
   color: #A37BB6;
+}
+.Certifications, 
+.Membership, 
+.directory, 
+.Programs, 
+.Awards, 
+.Newsletter{
+  position: relative;
+}
+.Certifications:hover .Certifications-folder, 
+.Membership:hover .Membership-folder, 
+.directory:hover .directory-folder, 
+.Programs:hover .Programs-folder, 
+.Awards:hover .Awards-folder, 
+.Newsletter:hover .Newsletter-folder{
+  display: block;
+}
+.Certifications-folder, 
+.Membership-folder, 
+.directory-folder, 
+.Programs-folder{
+  padding-left: 0px;
+  position: absolute;
+  top: 23px;
+  width: 189px;
+  z-index: 2;
+  background-color: white;
+  display: none;
+  transition: all 0.3s ease-in;
+}
+.Programs-folder{
+  padding-left: 0px;
+  position: absolute;
+  top: 23px;
+  width: 237px;
+  z-index: 2;
+  background-color: white;
+  display: none;
+  transition: all 0.3s ease-in;
+}
+.Awards-folder{
+  padding-left: 0px;
+  position: absolute;
+  top: 23px;
+  width: 243px;
+  z-index: 2;
+  background-color: white;
+  display: none;
+  transition: all 0.3s ease-in;
+}
+.Newsletter-folder{
+  padding-left: 0px;
+  position: absolute;
+  top: 23px;
+  width: 228px;
+  z-index: 2;
+  background-color: white;
+  display: none;
+  transition: all 0.3s ease-in;
+}
+.Certifications-folder li, 
+.Membership-folder li, 
+.directory-folder li, 
+.Programs-folder li, 
+.Awards-folder li, 
+.Newsletter-folder li{
+  border-bottom: 1px solid #7575754a;
+  padding: 10px 6px;
+}
+.Certifications-folder li:hover,
+.Membership-folder li:hover, 
+.directory-folder li:hover, 
+.Programs-folder li:hover, 
+.Awards-folder li:hover, 
+.Newsletter-folder li:hover{
+  background-color: #A37BB6;
+  color: white;
+}
+.Certifications-folder li a:hover, 
+.Membership-folder li a:hover, 
+.directory-folder li a:hover, 
+.Programs-folder li a:hover, 
+.Awards-folder li a:hover, 
+.Newsletter-folder li a:hover{
+  color: white;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -1115,169 +1200,134 @@ code {
     display: block;
     /* gap: 40px; */
   }
-
   .board-of-members-folder .slick-prev {
     left: 5px;
   }
-
   .board-of-members-folder .slick-next {
     right: 4px;
   }
-
   .board-of-members-section {
     padding: 57px 0px !important;
   }
-
   .board-of-members-blog-box-section h2 {
     margin: 25px 0px -11px 0px;
   }
-
   .contact_form {
     width: 296px;
     padding: 31px 20px 37px 20px;
   }
-
   .contact_form h2 {
     font-size: 37px;
   }
-
   .contact_form p {
     font-size: 15px;
   }
-
   .contact_form input {
     padding: 15px 0px 15px 13px;
     font-size: 12px;
   }
-
   .contact_form .input_field i.input-icons {
     font-size: 17px;
   }
-
   .submit_btn button {
     padding: 13px 40px;
     font-size: 18px;
   }
-
   iframe {
     max-width: 331px;
   }
-
   .footer_wrapper {
     margin: 0px 15px;
   }
-
   .get_d_fex {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
-
   .footer_menu ul a {
     font-size: 11px;
   }
-
   .logo img {
     max-width: 273px;
   }
-
   .menu {
     padding-left: 0px !important;
   }
-
   .menu li a {
     font-size: 19px;
   }
-
   .menu li {
     margin: 8px 0px;
     border-bottom: 1px solid;
     width: 100%;
     text-align: center;
   }
-
   .show-btn {
     font-size: 23px;
   }
-
   .banner-slider-folder .slick-prev:before,
   .banner-slider-folder .slick-next:before {
     font-size: 24px;
   }
-
   .banner-slider-folder .slick-prev:before,
   .banner-slider-folder .slick-next:before {
     font-size: 24px;
   }
-
   .gallery-slider-image {
     width: 100%;
     height: 310px;
   }
-
   .gallery-slider-image iframe {
     width: 100% !important;
     height: 100%;
     max-width: 100%;
   }
-
   .ITAA-The-Dance-of-Culture-container h2,
   .gallery-South-Asian-Association-container h2 {
     font-size: 16px;
     max-width: 320px;
     margin: 49px auto 43px auto;
   }
-
   .ITAA-The-Dance-of-Culture-folder,
   .gallery-South-Asian-Association-folder {
     max-width: 347PX;
     margin: 0px auto;
   }
-
   .ITAA-The-Dance-of-Culture-folder .slick-slide.slick-active.slick-center.slick-current .ITAA-The-Dance-of-Culture-image,
   .gallery-South-Asian-Association-folder .slick-slide.slick-active.slick-center.slick-current .gallery-South-Asian-Association-image {
     max-width: 305px;
   }
-
   .ITAA-The-Dance-of-Culture-image,
   .gallery-South-Asian-Association-image {
     max-width: 289px;
     margin: 0px auto;
   }
-
   .banner-slider-folder .slick-prev,
   .gallery-slider-folder .slick-prev {
     left: 11px;
     z-index: 6;
   }
-
-
   .about_us_img,
   .about_us_img img {
     width: 100%;
   }
-
   .aboutus_parent {
     transform: translateY(12%);
     margin: 0 20px;
     margin-bottom: 100px;
     padding-bottom: 100px;
   }
-
   .about_us {
     height: 100%;
   }
-
   .history_origin .about_us_content {
     min-height: max-content;
     padding-bottom: 100px;
     margin-bottom: 100px;
   }
-
   .history_origin .aboutus_parent {
     transform: translateY(12%);
   }
-
   .about_ta .aboutus_parent {
     padding-bottom: 100px;
     margin-bottom: 100px;

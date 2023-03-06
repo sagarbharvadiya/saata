@@ -53,26 +53,56 @@ const TopHeader = () => {
           <Link to='/'><img src={logo} alt="Logo"/></Link>
           </div>
           <ul className="menu-folder">
-            <li>
+            <li className="Certifications">
               <NavLink to="/">Certifications</NavLink>
+              <ul className="Certifications-folder">
+                <li><a>Exam Dates</a></li>
+                <li><a>Download Documents</a></li>
+                <li><a>Download Forms</a></li>
+              </ul>
             </li>
-            <li>
+            <li className="Membership">
               <NavLink to="/Membership_Registration" href="#member">Membership</NavLink>
+              <ul className="Membership-folder">
+                <li><a>Membership Details</a></li>
+                <li><a>Registration</a></li>
+                <li><a>Renewal / Login</a></li>
+              </ul>
             </li>
-            <li>
+            <li className="directory">
               <NavLink to="/Certified_Members" href="#directory">Directory</NavLink>
+              <ul className="directory-folder">
+                <li><a>Certified Members</a></li>
+                <li><a>Members</a></li>
+              </ul>
             </li>
-            <li>
+            <li className="Programs">
               <a href="#prg">Programs</a>
+              <ul className="Programs-folder">
+                <li><a>TA 101 – Program Details</a></li>
+                <li><a>SAATA Calendar 2021 – 2022</a></li>
+              </ul>
             </li>
-            <li>
+            <li className="Awards">
               <a href="#aw">Awards</a>
+              <ul className="Awards-folder">
+                <li><a>Professional Excellence Award</a></li>
+                <li><a>Service Awards</a></li>
+                <li><a>Call for Nominations</a></li>
+              </ul>
             </li>
             <li>
               <NavLink to="/Gallery">Gallery</NavLink>
             </li>
-            <li>
+            <li className="Newsletter">
               <a href="#news">Newsletter</a>
+              <ul className="Newsletter-folder">
+                <li><a>Current and Previous Issues</a></li>
+                <li><a>Newsletter Team</a></li>
+                <li><a>Guidelines</a></li>
+                <li><a>Advertisement Policy</a></li>
+                <li><a>Team that Was</a></li>
+              </ul>
             </li>
             <li>
               <a href="#art">Articles</a>
