@@ -777,9 +777,6 @@ code {
 .Articles-Author span{
   font-weight: 700;
 }
-.gallery-wrapper{
-  margin-bottom: 50px;
-}
 .artical-blog-box-section {
   width: 363px;
   border-radius: 15px;
@@ -826,7 +823,9 @@ code {
   font-size: 48px;
   margin: 30px 0px 50px 0px;
 }
-.Artical-wrapper{
+.Artical-wrapper, 
+.Certified-Members-wrapper, 
+.gallery-wrapper{
   margin-bottom: 50px;
 }
 
