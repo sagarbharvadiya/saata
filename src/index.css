@@ -11,86 +11,72 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
 .Top-Header-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 30px 40px;
 }
-
 .logo img {
   max-width: 339px;
 }
-
 .menu {
   display: flex;
   align-items: center;
 }
-
 .menu li {
   list-style: none;
 }
-
 .menu li a {
   text-decoration: none;
   margin: 0px 10px;
   font-size: 16px;
   color: #757575;
 }
-
 .Top-Header-wrapper-folder {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 30px 40px;
 }
-
 .logo-folder img {
   max-width: 339px;
 }
-
 .menu-folder {
   display: flex;
   align-items: center;
 }
-
 .menu-folder li {
   list-style: none;
 }
-
 .menu-folder li a {
   text-decoration: none;
   margin: 0px 10px;
   font-size: 16px;
   color: #757575;
 }
-
 .Top-header-section {
   display: none;
 }
-
 .banner-slider-image img {
   width: 100%;
 }
-
 .banner-slider-folder .slick-prev {
   left: 11px;
   z-index: 2;
 }
-
 .banner-slider-folder .slick-next {
-  right: 15px;
+  right: 30px;
 }
-
 .banner-slider-folder .slick-prev:before,
-.banner-slider-folder .slick-next:before {
-  font-size: 32px;
+.banner-slider-folder .slick-next:before, 
+.gallery-slider-folder .slick-prev:before, 
+.gallery-slider-folder .slick-next:before{
+  font-size: 40px !important;
   line-height: 1;
-  opacity: 0.75;
-  color: #fffdfd;
+  opacity: .75;
+  color: #262626 !important;
 }
-
 .info-container {
   text-align: center;
   padding: 55px 0px !important;
@@ -99,21 +85,17 @@ code {
   align-items: center;
   justify-content: center;
 }
-
 .info-container:nth-child(2) .read-more {
   background: #fffdfd;
   color: #A37BB6;
 }
-
 .info-title {
   font-size: 39px;
   color: #A37BB6;
 }
-
 .info-container:nth-child(2) .info-title {
   color: #fff;
 }
-
 .info-desc {
   font-size: 18px;
   line-height: 31px;
@@ -121,11 +103,9 @@ code {
   margin: 40px auto 40px auto;
   color: #6F6F6F;
 }
-
 .info-container:nth-child(2) .info-desc {
   color: white;
 }
-
 .read-more {
   padding: 13px 25px;
   font-size: 17px;
@@ -135,17 +115,14 @@ code {
   color: white;
   cursor: pointer;
 }
-
 .info-container:nth-child(2) {
   background-color: #a37bb6;
   color: white;
 }
-
 .info-title {
   position: relative;
   margin: 0px 0px 0px 0px;
 }
-
 .info-title::before {
   background: #A37BB6;
   bottom: -15px;
@@ -157,49 +134,40 @@ code {
   position: absolute;
   width: 80px;
 }
-
 .info-container:nth-child(2) .info-title::before {
   background: #fffdfd;
 }
-
 .info-container .read-more:nth-child(2) {
   background-color: white !important;
   color: #a37bb6 !important;
 }
-
 .board-of-members-blog-box-section {
   width: 300px;
   text-align: center;
 }
-
 .board-of-members-image {
   max-width: 240px;
   margin: 0px auto;
 }
-
 .board-of-members-image img {
   width: 100%;
 }
-
 .board-of-members-blog-box-section h2 {
   font-size: 27px;
   margin: 33px 0px -11px 0px;
   color: #fffdfd;
 }
-
 .board-of-members-blog-box-section p {
   font-size: 17px;
   color: #fffdfd;
   font-style: italic;
 }
-
 .board-of-members-section {
   background: url('./Images/12232.jpg')no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
-
 .board-of-members-folder {
   /* display: flex; */
   justify-content: center;
@@ -207,47 +175,39 @@ code {
   gap: 70px;
 
 }
-
 .board-of-members-section.info-container {
   display: block;
 }
-
 .board-of-members-wrapper {
   max-width: 1270px;
   margin: auto;
 }
-
 .Board-of-Members-title {
   text-align: center;
   font-size: 35px;
   margin: 0px 0px 41px 0px;
   color: #ffff;
-
 }
 .contact {
   align-items: center;
   justify-content: center;
   margin: 56px 0px;
 }
-
 .input_wrapper {
   display: flex;
   gap: 12px;
 }
-
 .contact_form {
   background: #a37bb6;
   width: 400px;
   height: auto;
-  padding: 0px 20px 25px 20px;
+  padding: 19px 20px 39px 20px;
   border-radius: 15px;
 }
-
 .map {
   margin-top: 3px;
   height: 300px;
 }
-
 .map iframe {
   border-radius: 15px;
   -webkit-border-radius: 15px;
@@ -259,19 +219,17 @@ code {
   display: flex;
   max-width: 1262px;
   margin: 0px auto;
+  gap: 20px;
 }
-
 .contact_form h2 {
   font-size: 40px;
   color: #fff;
   margin: 6px 0px;
 }
-
 .contact_form p {
   font-size: 16px;
   color: #fff;
 }
-
 .contact_form .input_field {
   display: flex;
   align-items: center;
@@ -279,8 +237,7 @@ code {
   margin: auto;
   position: relative;
 }
-
-.contact_form input {
+.contact_form input{
   padding: 13px 0px 13px 20px;
   font-size: 17px;
   width: 100%;
@@ -288,23 +245,21 @@ code {
   border: 1px solid #757575;
   color: #757575;
 }
-
 .contact_form .input_field i.input-icons {
   position: absolute;
   right: 10px;
   font-size: 18px;
   color: #A37BB6;
 }
-
 .contact_form textarea {
   margin: 10px 0px;
   font-size: 18px;
-  width: 100%;
+  width: 379px;
   border-radius: 15px;
   border: 1px solid #757575;
   color: #757575;
+  padding: 13px 0px 0px 20px;
 }
-
 .submit_btn button {
   padding: 14px 40px;
   text-align: center;
@@ -317,50 +272,40 @@ code {
   color: #a37bb6;
   border-radius: 15px;
 }
-
 .footer {
   background-color: #a37bb6;
 }
-
 .footer_wrapper {
   margin: 10px 30px;
   margin-bottom: 0px;
 }
-
 .get_d_fex {
   display: flex;
   margin: auto;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   gap: 30%;
   min-height: 210px;
-  /* min-height: 300px; */
   border-bottom: 1px solid #fffdfd;
-  margin: 3px auto 16px;
+  padding-bottom: 43px;
+  margin-bottom: 27px;
 }
-
 .footer_logo img {
-  width: 108px;
-  /* background: white; */
+  width: 198px;
   margin-top: 32px;
   margin-bottom: 12px;
 }
-
 .footer_menu ul {
   list-style: none;
 }
-
 .footer_menu li {
   margin: 10px;
-  /* border-bottom: 1px solid #fffdfd; */
 }
-
 .footer_menu ul a {
   text-decoration: none;
   color: #fffdfd;
   font-size: 16px;
 }
-
 .social_icon {
   display: flex;
   align-items: center;
@@ -368,12 +313,10 @@ code {
   margin: auto;
   text-align: center;
 }
-
 .social_icon a {
-
   text-decoration: none;
-  font-size: 25px;
-  margin: 0 10px;
+  font-size: 21px;
+  margin: 0 6px;
   border-radius: 50px;
   border: 1px solid #fff;
   display: flex;
@@ -383,36 +326,29 @@ code {
   background: #fff;
   margin-bottom: 10px;
 }
-
 .social_icon a>.fa-facebook {
   color: #1D41FF;
 }
-
 .social_icon a>.fa-twitter {
   color: #0085FF;
 }
-
 .social_icon a>.fa-youtube {
   color: #FF0000;
 }
-
 .footer_menu {
   display: flex;
   justify-content: center;
   margin: auto;
 }
-
 .copy_right {
   padding: 8px 0px;
 }
-
 .copy_right p {
   text-align: center;
   color: #fffdfd;
   margin: 0;
   padding: 0;
 }
-
 .show-btn {
   position: absolute;
   top: 10%;
@@ -422,50 +358,41 @@ code {
   z-index: 3;
   display: none;
 }
-
 .gallery-slider-image {
   width: 100%;
   height: 709px;
 }
-
 .gallery-slider-image iframe {
   width: 100%;
   height: 100%;
 }
-
 .ITAA-The-Dance-of-Culture-image,
 .gallery-South-Asian-Association-image {
   max-width: 366px;
   margin: 0px auto;
 }
-
 .ITAA-The-Dance-of-Culture-image img,
 .gallery-South-Asian-Association-image img {
   width: 100%;
 }
-
 .ITAA-The-Dance-of-Culture-folder,
 .gallery-South-Asian-Association-folder {
   max-width: 1254px;
   margin: 0px auto;
 }
-
 .ITAA-The-Dance-of-Culture-folder .slick-slide,
 .gallery-South-Asian-Association-folder .slick-slide {
   opacity: .5;
 }
-
 .ITAA-The-Dance-of-Culture-folder .slick-current.slick-active,
 .gallery-South-Asian-Association-folder .slick-current.slick-active {
   opacity: 1;
   width: 300px;
 }
-
 .ITAA-The-Dance-of-Culture-folder .slick-slide.slick-active.slick-center.slick-current .ITAA-The-Dance-of-Culture-image,
 .gallery-South-Asian-Association-folder .slick-slide.slick-active.slick-center.slick-current .gallery-South-Asian-Association-image {
   max-width: 391px;
 }
-
 .ITAA-The-Dance-of-Culture-container h2,
 .gallery-South-Asian-Association-container h2 {
   text-align: center;
@@ -474,14 +401,13 @@ code {
   max-width: 861px;
   margin: 81px auto 50px auto;
 }
-
 .gallery-section .slick-next {
-  right: 10px;
-}.gallery-section .slick-prev {
-  left: 10px;
+  right: 38px;
+}
+.gallery-section .slick-prev {
+  left: 21px;
   z-index: 1;
 }
-
 .membership-registration-card {
   width: 280px;
   text-align: center;
@@ -612,11 +538,9 @@ code {
 .about_ta .about_us_wrapper {
   background: #91c73e;
 }
-
 .about_ta h3 {
   text-align: center;
 }
-
 .about_ta .aboutus_parent {
   transform: translateY(33%);
   -webkit-transform: translateY(33%);
@@ -624,7 +548,6 @@ code {
   -ms-transform: translateY(33%);
   -o-transform: translateY(33%);
 }
-
 .about_us_wrapper h2 {
   width: 150px;
   position: relative;
@@ -633,19 +556,15 @@ code {
   margin-top: 50px;
   font-weight: 800;
 }
-
 .history_origin h2 {
   width: 400px;
 }
-
 .history_origin .about_us_content {
   min-height: 1100px;
 }
-
 .history_origin .aboutus_parent {
   transform: translateY(22%);
 }
-
 .about_us_wrapper h2::before {
   position: absolute;
   content: '';
@@ -655,7 +574,6 @@ code {
   height: 2px;
   background: #fff;
 }
-
 .aboutus_parent {
   transform: translateY(12%);
   margin: 0 20px;
@@ -664,14 +582,12 @@ code {
   -ms-transform: translateY(12%);
   -o-transform: translateY(12%);
 }
-
 .about_us_img,
 .about_us_img img {
   max-width: 500px;
   width: 500px;
   margin: auto;
 }
-
 .about_us_content p {
   text-align: justify;
   padding: 0px;
@@ -743,6 +659,9 @@ code {
   text-align: end;
   margin: 23px 0px 27px 0px;
   color: #A37BB6;
+}
+.Membership-folder:hover .Membership-folder li{
+  color: white;
 }
 .Certifications, 
 .Membership, 
@@ -829,33 +748,109 @@ code {
 .Newsletter-folder li a:hover{
   color: white;
 }
+.Articles-blog-section {
+  max-width: 1152px;
+  margin: 0px auto;
+  padding-bottom: 30px;
+}
+.Articles-blog-section h2{
+  font-size: 43px;
+  margin: 25px 0px 17px 0px;
+}
+.Articles-date{
+  font-size: 15px;
+  margin: 0px 0px 0px 0px;
+}
+.Articles-image{
+  margin: 52px 0px 35px 0px;
+  max-width: 1152px;
+}
+.Articles-image img{
+  width: 100%;
+  height: 600px;
+}
+.Articles-Author, 
+.Articles-des{
+  font-size: 16px;
+  line-height: 30px;
+}
+.Articles-Author span{
+  font-weight: 700;
+}
+.gallery-wrapper{
+  margin-bottom: 50px;
+}
+.artical-blog-box-section {
+  width: 363px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 6px #e5e5e5;
+}
+.artical-image img {
+  width: 100%;
+  height: 283px;
+  border-radius: 15px;
+}
+.artical-blog-box-section h2{
+  font-size: 22px;
+  margin: 14px 20px 14px 20px;
+}
+.artical-des{
+  font-size: 15px;
+  margin: 0px 20px 0px 20px;
+  color: #757575;
+}
+.artical-date-folder{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid;
+  margin: 18px 20px 0px 20px;
+}
+.artical-date{
+  font-size: 16px;
+  color: #757575;
+}
+.artical-date-folder a {
+  font-size: 16px;
+  color: #9818d5;
+  text-decoration: none;
+}
+.artical-blog-folder{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 31px;
+}
+.artical-text{
+  text-align: center;
+  font-size: 48px;
+  margin: 30px 0px 50px 0px;
+}
+.Artical-wrapper{
+  margin-bottom: 50px;
+}
 
 @media only screen and (max-width: 1024px) {
   .banner-slider-image img {
     width: 100%;
     height: 354px;
   }
-
   .info-desc {
     font-size: 18px;
     max-width: 769px;
     margin: 40px auto 40px auto;
   }
-
   .board-of-members-image {
     max-width: 281px;
     margin: 0px auto;
   }
-
   .board-of-members-blog-box-section h2 {
     font-size: 29px;
     margin: 33px 0px -11px 0px;
   }
-
   .board-of-members-blog-box-section p {
     font-size: 19px;
   }
-
   iframe{
     width: 704px;
   }
@@ -863,15 +858,12 @@ code {
     width: 514px;
     padding: 30px 25px 42px 25px;
   }
-
   .contact_form h2 {
     font-size: 49px;
   }
-
   .contact_form p {
     font-size: 21px;
   }
-
   .contact_wrapper {
     display: flex;
     gap: 18px;
@@ -879,21 +871,17 @@ code {
     align-items: center;
     max-width: 1262px;
   }
-
   .map {
     height: auto;
   }
-
   .submit_btn button {
     padding: 15px 40px;
     font-size: 22px;
   }
-
   .footer_menu ul {
     list-style: none;
     padding-left: 0px;
   }
-
   .get_d_fex {
     display: flex;
     gap: 23%;
@@ -901,20 +889,16 @@ code {
   .logo img {
     max-width: 305px;
   }
-
   .menu-folder {
     margin: 0px !important;
     padding: 0px !important;
   }
-
   .menu-folder li a {
     margin: 0px 4px;
   }
-
   .board-of-members-folder .slick-next {
     right: 1px;
   }
-
   .board-of-members-folder .slick-prev {
     left: 5px;
   }
@@ -922,40 +906,32 @@ code {
     max-width: 299px;
     margin: 0px auto;
   }
-
   .logo img {
     max-width: 305px;
   }
-
   .menu-folder {
     margin: 0px !important;
     padding: 0px !important;
   }
-
   .menu-folder li a {
     margin: 0px 4px;
   }
-
   .board-of-members-folder .slick-next {
     right: 1px;
   }
-
   .board-of-members-folder .slick-prev {
     left: 5px;
   }
-
   .ITAA-The-Dance-of-Culture-image,
   .gallery-South-Asian-Association-image {
     max-width: 299px;
     margin: 0px auto;
   }
-
   .aboutus_parent {
     padding-bottom: 100px;
     margin-bottom: 100px;
     transform: translateY(24%);
   }
-
   .about_ta .aboutus_parent {
     padding-bottom: 100px;
     margin-bottom: 100px;
@@ -985,36 +961,30 @@ code {
     background-color: white;
     z-index: 5;
   }
-
   .Top-Header-wrapper {
     display: block;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-
   .menu {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-left: 0px;
   }
-
   .logo img {
     max-width: 453px;
   }
-
   .menu li {
     margin: 8px 0px;
     border-bottom: 1px solid;
     width: 100%;
     text-align: center;
   }
-
   .menu li a {
     font-size: 25px;
   }
-
   .show-btn {
     position: fixed;
     top: 0.5%;
@@ -1024,101 +994,79 @@ code {
     z-index: 6;
     display: block;
   }
-
   .info-container {
     padding: 71px 0px !important;
   }
-
   .info-desc {
     max-width: 746px;
   }
-
   .contact_wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 711px;
   }
-
   iframe {
     max-width: 703px;
   }
-
   .contact_form {
     width: 482px;
     padding: 31px 31px 37px 31px;
   }
-
   .contact_form h2 {
     font-size: 48px;
   }
-
   .contact_form p {
     font-size: 19px;
   }
-
   .contact_form input {
     padding: 18px 0px 18px 20px;
     font-size: 20px;
   }
-
   .contact_form .input_field i.input-icons {
     font-size: 22px;
   }
-
   .contact_form textarea {
     margin: 21px 0px;
   }
-
   .submit_btn button {
     padding: 21px 40px;
     font-size: 24px;
   }
-
   .map {
     height: auto;
   }
-
   .footer_menu ul {
     padding-left: 0px;
   }
-
   .get_d_fex {
     gap: 14%;
   }
-
   .footer_menu ul a {
     font-size: 14px;
   }
-
   .banner-slider-image img {
     width: 100%;
     height: 324px;
   }
-
   .Top-header-section-folder {
     display: none;
   }
-
   .board-of-members-folder .slick-prev {
     left: 5px;
   }
-
   .board-of-members-folder .slick-next {
     right: 4px;
   }
-
   .gallery-slider-image iframe {
     width: 768px !important;
     height: 100%;
   }
-
   .gallery-slider-image {
     width: 100%;
     height: 433px;
     max-width: 100%;
   }
-
   .gallery-slider-image iframe {
     width: 768px !important;
     height: 100%;
@@ -1128,39 +1076,30 @@ code {
     width: 100%;
     height: 433px;
   }
-
-
   .gallery-slider-image iframe {
     width: 768px !important;
     height: 100%;
   }
-
   .gallery-slider-image {
     width: 100%;
     height: 433px;
   }
-
   .about_us {
     height: 100%;
   }
-
   .aboutus_parent {
     padding-bottom: 100px;
     margin-bottom: 100px;
     transform: translateY(17%);
   }
-
   .history_origin .about_us_content {
     min-height: max-content;
     padding-bottom: 100px;
     margin-bottom: 100px;
   }
-
   .history_origin .aboutus_parent {
     transform: translateY(20%);
-
   }
-
   .about_ta .aboutus_parent {
     padding-bottom: 100px;
     margin-bottom: 100px;
@@ -1173,29 +1112,23 @@ code {
     width: 100%;
     height: 200px;
   }
-
   .info-container {
     padding: 30px 0px !important;
   }
-
   .info-title {
     font-size: 27px;
   }
-
   .info-desc {
     font-size: 14px;
     max-width: 327px;
     margin: 34px auto 20px auto;
   }
-
   .read-more {
     padding: 11px 24px;
     font-size: 12px;
   }
-
   .board-of-members-folder {
     display: block;
-    /* gap: 40px; */
   }
   .board-of-members-folder .slick-prev {
     left: 5px;

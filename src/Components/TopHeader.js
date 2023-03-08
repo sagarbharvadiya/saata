@@ -38,7 +38,7 @@ const TopHeader = () => {
               <a href="#news">Newsletter</a>
             </li>
             <li>
-              <a href="#art">Articles</a>
+              <NavLink to="/Articles_section" href="#art">Articles</NavLink>
             </li>
             <li>
               <a href="#jour">Journals</a>
@@ -54,41 +54,41 @@ const TopHeader = () => {
           </div>
           <ul className="menu-folder">
             <li className="Certifications">
-              <NavLink to="/">Certifications</NavLink>
+              <a href="#">Certifications</a>
               <ul className="Certifications-folder">
-                <li><a>Exam Dates</a></li>
-                <li><a>Download Documents</a></li>
-                <li><a>Download Forms</a></li>
+                <li><a href="#">Exam Dates</a></li>
+                <li><a href="#">Download Documents</a></li>
+                <li><a href="#">Download Forms</a></li>
               </ul>
             </li>
             <li className="Membership">
-              <NavLink to="/Membership_Registration" href="#member">Membership</NavLink>
+              <a href="#member">Membership</a>
               <ul className="Membership-folder">
-                <li><a>Membership Details</a></li>
-                <li><a>Registration</a></li>
-                <li><a>Renewal / Login</a></li>
+                <li><a href="#">Membership Details</a></li>
+                <li><NavLink to="/Membership_Registration" href="#">Registration</NavLink></li>
+                <li><a href="#">Renewal / Login</a></li>
               </ul>
             </li>
             <li className="directory">
-              <NavLink to="/Certified_Members" href="#directory">Directory</NavLink>
+              <a href="#directory">Directory</a>
               <ul className="directory-folder">
-                <li><a>Certified Members</a></li>
-                <li><a>Members</a></li>
+                <li><NavLink to="/Certified_Members">Certified Members</NavLink></li>
+                <li><a href="#">Members</a></li>
               </ul>
             </li>
             <li className="Programs">
               <a href="#prg">Programs</a>
               <ul className="Programs-folder">
-                <li><a>TA 101 – Program Details</a></li>
-                <li><a>SAATA Calendar 2021 – 2022</a></li>
+                <li><a href="#">TA 101 - Program Details</a></li>
+                <li><a href="#">SAATA Calendar 2021 - 2022</a></li>
               </ul>
             </li>
             <li className="Awards">
               <a href="#aw">Awards</a>
               <ul className="Awards-folder">
-                <li><a>Professional Excellence Award</a></li>
-                <li><a>Service Awards</a></li>
-                <li><a>Call for Nominations</a></li>
+                <li><a href="#">Professional Excellence Award</a></li>
+                <li><a href="#">Service Awards</a></li>
+                <li><a href="#">Call for Nominations</a></li>
               </ul>
             </li>
             <li>
@@ -97,15 +97,15 @@ const TopHeader = () => {
             <li className="Newsletter">
               <a href="#news">Newsletter</a>
               <ul className="Newsletter-folder">
-                <li><a>Current and Previous Issues</a></li>
-                <li><a>Newsletter Team</a></li>
-                <li><a>Guidelines</a></li>
-                <li><a>Advertisement Policy</a></li>
-                <li><a>Team that Was</a></li>
+                <li><a href="#">Current and Previous Issues</a></li>
+                <li><a href="#">Newsletter Team</a></li>
+                <li><a href="#">Guidelines</a></li>
+                <li><a href="#">Advertisement Policy</a></li>
+                <li><a href="#">Team that Was</a></li>
               </ul>
             </li>
             <li>
-              <a href="#art">Articles</a>
+              <NavLink to="/Articles_section" href="#art">Articles</NavLink>
             </li>
             <li>
               <a href="#jour">Journals</a>

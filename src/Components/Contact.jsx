@@ -18,7 +18,7 @@ const Contact = () => {
                                <i className='fa-solid fa-envelope input-icons'></i>
                             </div>
                         </div>
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                        <textarea name="" id="" cols="30" rows="10" placeholder='Massege'></textarea>
                         <div className='submit_btn'>
                             <div className='btn'>
                                 <button>Send</button>
@@ -26,7 +26,7 @@ const Contact = () => {
                         </div>
                     </form>
                     <div className='map'>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.5183433954835!2d77.0082269142886!3d10.99968215804207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8576277c3f175%3A0x149ab1a4e986e87b!2sKrishna%20Colony%20Main%20Rd%2C%20Krishna%20Colony%2C%20Coimbatore%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1677652885046!5m2!1sen!2sin" width="800" height="500" allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade" title='map'></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.5183433954835!2d77.0082269142886!3d10.99968215804207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8576277c3f175%3A0x149ab1a4e986e87b!2sKrishna%20Colony%20Main%20Rd%2C%20Krishna%20Colony%2C%20Coimbatore%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1677652885046!5m2!1sen!2sin" width="800" height="535" allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade" title='map'></iframe>
                     
                     </div>
                 </div>
