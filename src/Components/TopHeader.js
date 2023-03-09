@@ -8,7 +8,7 @@ const TopHeader = () => {
     const toggleModal = () => { sertModal(!modal) }
   return (
     <>
-    <a href="#" onClick={toggleModal} className="show-btn"><i className="fa-solid fa-bars"></i></a>
+    <a href="#/" onClick={toggleModal} className="show-btn"><i className="fa-solid fa-bars"></i></a>
     {modal &&(
       <div className="Top-header-section">
         <div className="Top-Header-wrapper">
@@ -54,41 +54,41 @@ const TopHeader = () => {
           </div>
           <ul className="menu-folder">
             <li className="Certifications">
-              <a href="#">Certifications</a>
+              <a href="/">Certifications</a>
               <ul className="Certifications-folder">
-                <li><a href="#">Exam Dates</a></li>
-                <li><a href="#">Download Documents</a></li>
-                <li><a href="#">Download Forms</a></li>
+                <li><a href="/">Exam Dates</a></li>
+                <li><a href="/">Download Documents</a></li>
+                <li><a href="/">Download Forms</a></li>
               </ul>
             </li>
             <li className="Membership">
               <a href="#member">Membership</a>
               <ul className="Membership-folder">
-                <li><a href="#">Membership Details</a></li>
+                <li><a href="/">Membership Details</a></li>
                 <li><NavLink to="/Membership_Registration" href="#">Registration</NavLink></li>
-                <li><a href="#">Renewal / Login</a></li>
+                <li><a href="/">Renewal / Login</a></li>
               </ul>
             </li>
             <li className="directory">
               <a href="#directory">Directory</a>
               <ul className="directory-folder">
                 <li><NavLink to="/Certified_Members">Certified Members</NavLink></li>
-                <li><a href="#">Members</a></li>
+                <li><a href="/">Members</a></li>
               </ul>
             </li>
             <li className="Programs">
               <a href="#prg">Programs</a>
               <ul className="Programs-folder">
-                <li><a href="#">TA 101 - Program Details</a></li>
-                <li><a href="#">SAATA Calendar 2021 - 2022</a></li>
+                <li><a href="/">TA 101 - Program Details</a></li>
+                <li><a href="/">SAATA Calendar 2021 - 2022</a></li>
               </ul>
             </li>
             <li className="Awards">
               <a href="#aw">Awards</a>
               <ul className="Awards-folder">
-                <li><a href="#">Professional Excellence Award</a></li>
-                <li><a href="#">Service Awards</a></li>
-                <li><a href="#">Call for Nominations</a></li>
+                <li><a href="/">Professional Excellence Award</a></li>
+                <li><a href="/">Service Awards</a></li>
+                <li><a href="/">Call for Nominations</a></li>
               </ul>
             </li>
             <li>
@@ -97,11 +97,11 @@ const TopHeader = () => {
             <li className="Newsletter">
               <a href="#news">Newsletter</a>
               <ul className="Newsletter-folder">
-                <li><a href="#">Current and Previous Issues</a></li>
-                <li><a href="#">Newsletter Team</a></li>
-                <li><a href="#">Guidelines</a></li>
-                <li><a href="#">Advertisement Policy</a></li>
-                <li><a href="#">Team that Was</a></li>
+                <li><a href="/">Current and Previous Issues</a></li>
+                <li><a href="/">Newsletter Team</a></li>
+                <li><a href="/">Guidelines</a></li>
+                <li><a href="/">Advertisement Policy</a></li>
+                <li><a href="/">Team that Was</a></li>
               </ul>
             </li>
             <li>

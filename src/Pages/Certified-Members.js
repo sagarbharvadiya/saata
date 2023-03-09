@@ -12,7 +12,7 @@ function Certified_Members(){
                             Certified_Members_data.map((val) => {
                                 return <div className="Certified-Members-card">
                                             <div className="Certified-Members-image">
-                                                <img src={val.image}/>
+                                                <img src={val.image} alt={val.image}/>
                                             </div>
                                             <h2>{val.title}</h2>
                                             <div className="Certified-Members-details-folder">
