@@ -170,22 +170,22 @@ function Gallery(){
                         <Slider {...itaasettings}>
                             <div>
                                 <div className="ITAA-The-Dance-of-Culture-image">
-                                    <img src={itta_image1}/>
+                                    <img src={itta_image1} alt={itta_image1}/>
                                 </div>
                             </div>
                             <div>
                                 <div className="ITAA-The-Dance-of-Culture-image">
-                                    <img src={itta_image2}/>
+                                    <img src={itta_image2} alt={itta_image2}/>
                                 </div>
                             </div>
                             <div>
                                 <div className="ITAA-The-Dance-of-Culture-image">
-                                    <img src={itta_image3}/>
+                                    <img src={itta_image3} alt={itta_image3}/>
                                 </div>
                             </div>
                             <div>
                                 <div className="ITAA-The-Dance-of-Culture-image">
-                                    <img src={itta_image4}/>
+                                    <img src={itta_image4} alt={itta_image4}/>
                                 </div>
                             </div>
                         </Slider>
@@ -197,22 +197,22 @@ function Gallery(){
                         <Slider {...southsettings}>
                             <div>
                                 <div className="gallery-South-Asian-Association-image">
-                                    <img src={south_asian_image1}/>
+                                    <img src={south_asian_image1} alt={south_asian_image1}/>
                                 </div>
                             </div>
                             <div>
                                 <div className="gallery-South-Asian-Association-image">
-                                    <img src={south_asian_image2}/>
+                                    <img src={south_asian_image2} alt={south_asian_image2}/>
                                 </div>
                             </div>
                             <div>
                                 <div className="gallery-South-Asian-Association-image">
-                                    <img src={south_asian_image3}/>
+                                    <img src={south_asian_image3} alt={south_asian_image3}/>
                                 </div>
                             </div>
                             <div>
                                 <div className="gallery-South-Asian-Association-image">
-                                    <img src={south_asian_image4}/>
+                                    <img src={south_asian_image4} alt={south_asian_image4}/>
                                 </div>
                             </div>
                         </Slider>

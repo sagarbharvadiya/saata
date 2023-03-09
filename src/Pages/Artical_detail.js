@@ -11,7 +11,7 @@ function Articles(){
                             <h2>TA: An Elegant Theory</h2>
                             <p className="Articles-date">Posted on December 28, 2013 by Saata Editorial</p>
                             <div className="Articles-image">
-                                <img src={Articles_image}/>
+                                <img src={Articles_image} alt={Articles_image}/>
                             </div>
                             <p className="Articles-Author"><span>Author : Claude Steiner</span> is a psychotherapist who has written extensively about transactional analysis. His writings have focused especially on life scripts, alcoholism, emotional literacy, and Interpersonal power plays. (Source: www.itaaworld.org)
                                 Transactional analysis can serve as a sophisticated, elegant, and effective system on which to base the practical activities of professionals in psychotherapy, counseling, education, and organizational consultation. It was founded in the 1950s by San Francisco psychiatrist Eric Berne, MD. Transactional analysis has become a worldwide movement with upwards of 10,000 adherents. It is a sophisticated theory of personality, motivation, and problem solving that can be of great use to psychotherapists, counselors, educators, and business consultants.
