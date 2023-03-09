@@ -10,6 +10,8 @@ import Membership_Registration from "./Pages/Membreship-registration";
 import About from "./Pages/About";
 import HistoryOrigin from "./Components/HistoryOrigin";
 import Certified_Members from "./Pages/Certified-Members";
+import Articles_section from "./Pages/Articles";
+import Articles from "./Pages/Artical_detail";
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
           <Route exact path='/AboutUS' element={<AboutUs/>}></Route>
           <Route exact path='/AboutTA' element={<AboutTA/>}></Route>
           <Route exact path='/HistoryOrigin' element={<HistoryOrigin/>}></Route>
+          <Route exact path='/Articles_section' element={<Articles_section/>}></Route>
+          <Route exact path='/Articles_section/Articles' element={<Articles/>}></Route>
         </Routes>
       <Footer/>
     </>

@@ -38,7 +38,7 @@ const TopHeader = () => {
               <a href="#news">Newsletter</a>
             </li>
             <li>
-              <a href="#art">Articles</a>
+              <NavLink to="/Articles_section" href="#art">Articles</NavLink>
             </li>
             <li>
               <a href="#jour">Journals</a>
@@ -53,29 +53,59 @@ const TopHeader = () => {
           <Link to='/'><img src={logo} alt="Logo"/></Link>
           </div>
           <ul className="menu-folder">
-            <li>
-              <NavLink to="/">Certifications</NavLink>
+            <li className="Certifications">
+              <a href="#">Certifications</a>
+              <ul className="Certifications-folder">
+                <li><a href="#">Exam Dates</a></li>
+                <li><a href="#">Download Documents</a></li>
+                <li><a href="#">Download Forms</a></li>
+              </ul>
             </li>
-            <li>
-              <NavLink to="/Membership_Registration" href="#member">Membership</NavLink>
+            <li className="Membership">
+              <a href="#member">Membership</a>
+              <ul className="Membership-folder">
+                <li><a href="#">Membership Details</a></li>
+                <li><NavLink to="/Membership_Registration" href="#">Registration</NavLink></li>
+                <li><a href="#">Renewal / Login</a></li>
+              </ul>
             </li>
-            <li>
-              <NavLink to="/Certified_Members" href="#directory">Directory</NavLink>
+            <li className="directory">
+              <a href="#directory">Directory</a>
+              <ul className="directory-folder">
+                <li><NavLink to="/Certified_Members">Certified Members</NavLink></li>
+                <li><a href="#">Members</a></li>
+              </ul>
             </li>
-            <li>
+            <li className="Programs">
               <a href="#prg">Programs</a>
+              <ul className="Programs-folder">
+                <li><a href="#">TA 101 - Program Details</a></li>
+                <li><a href="#">SAATA Calendar 2021 - 2022</a></li>
+              </ul>
             </li>
-            <li>
+            <li className="Awards">
               <a href="#aw">Awards</a>
+              <ul className="Awards-folder">
+                <li><a href="#">Professional Excellence Award</a></li>
+                <li><a href="#">Service Awards</a></li>
+                <li><a href="#">Call for Nominations</a></li>
+              </ul>
             </li>
             <li>
               <NavLink to="/Gallery">Gallery</NavLink>
             </li>
-            <li>
+            <li className="Newsletter">
               <a href="#news">Newsletter</a>
+              <ul className="Newsletter-folder">
+                <li><a href="#">Current and Previous Issues</a></li>
+                <li><a href="#">Newsletter Team</a></li>
+                <li><a href="#">Guidelines</a></li>
+                <li><a href="#">Advertisement Policy</a></li>
+                <li><a href="#">Team that Was</a></li>
+              </ul>
             </li>
             <li>
-              <a href="#art">Articles</a>
+              <NavLink to="/Articles_section" href="#art">Articles</NavLink>
             </li>
             <li>
               <a href="#jour">Journals</a>

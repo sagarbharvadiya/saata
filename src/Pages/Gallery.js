@@ -159,7 +159,7 @@ function Gallery(){
                         </div>
                         <div>
                             <div className="gallery-slider-image">
-                                <iframe src="https://www.youtube.com/embed/UfDkwAJ6rrU" title="SAATA  - MLL 2023  -  Panel Discussion -  Professional Identity" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen={true} id="fitvid997884"></iframe>
+                              <iframe src="https://www.youtube.com/embed/YFqCDHXOMsY" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen={true} id="fitvid997884"></iframe>
                             </div>
                         </div>
                     </Slider>
@@ -192,7 +192,7 @@ function Gallery(){
                     </div>
                 </div>
                 <div className="gallery-South-Asian-Association-container">
-                        <h2>South Asian Association of Transactional Analysts Conference 2016 September 2016</h2>
+                        <h2>South Asian Association of Transactional Analysts Conference September 2016</h2>
                     <div className="gallery-South-Asian-Association-folder">
                         <Slider {...southsettings}>
                             <div>
