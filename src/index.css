@@ -188,16 +188,6 @@ code {
   margin: 0px 0px 41px 0px;
   color: #ffff;
 }
-
-/* .contact {
-  background: url('./Images/loction.png')no-repeat;
-  min-height: 600px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-} */
 .contact {
   align-items: center;
   justify-content: center;
@@ -224,22 +214,12 @@ code {
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
+  border: none;
 }
-
-/* .contact_wrapper{
-  display: flex;
-  justify-content: center;
-  gap: 18px;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-} */
 .contact_wrapper {
   display: flex;
-  /* gap: 18px; */
   max-width: 1262px;
   margin: 0px auto;
-  gap: 20px;
 }
 .contact_form h2 {
   font-size: 40px;
@@ -771,12 +751,23 @@ code {
   margin: 0px auto;
   padding-bottom: 30px;
 }
-.Articles-blog-section h2{
-  font-size: 43px;
-  margin: 25px 0px 17px 0px;
+.Articles-blog-section h2 {
+  font-size: 40px;
+  margin: 0px 0px 7px 0px;
 }
-.Articles-date{
-  font-size: 15px;
+.artical-author-folder{
+  display: flex;
+  gap: 12px;
+  align-items: flex-end;
+  margin-top: 40px;
+}
+.artical-author-image img{
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+}
+.Articles-date {
+  font-size: 14px;
   margin: 0px 0px 0px 0px;
 }
 .Articles-image{
@@ -966,11 +957,14 @@ code {
     justify-content: center;
     align-items: center;
     background-color: white;
-    z-index: 7;
+    z-index: 5;
   }
   .Top-Header-wrapper {
     display: block;
-    padding: 30px 2px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
   }
   .menu {
     display: flex;
@@ -980,23 +974,25 @@ code {
   }
   .logo img {
     max-width: 453px;
+    padding: 12px 0px 15px 30px;
   }
   .menu li {
     margin: 8px 0px;
     border-bottom: 1px solid;
     width: 100%;
     text-align: center;
+    padding-bottom: 14px;
   }
   .menu li a {
     font-size: 25px;
   }
   .show-btn {
     position: fixed;
-    top:1.2%;
+    top: 0.5%;
     right: 2.5%;
     font-size: 30px;
     color: black;
-    z-index: 9;
+    z-index: 6;
     display: block;
   }
   .info-container {
@@ -1033,8 +1029,7 @@ code {
   }
   .contact_form textarea {
     margin: 21px 0px;
-    width: 100%;
-    padding: 4px 3px;
+    width: 458px;
   }
   .submit_btn button {
     padding: 21px 40px;
@@ -1094,6 +1089,22 @@ code {
   .about_us_img, .about_us_img img{
     max-width: 100%;
     width: 100%;
+  }
+  .artical-blog-folder {
+    gap: 15px;
+  }
+  .Articles-image img {
+    width: 100%;
+    height: auto;
+  }
+  .Articles-blog-section {
+    max-width: 723px;
+  }
+  .Articles-blog-section h2 {
+    font-size: 37px;
+  }
+  .Articles-date {
+    font-size: 13px;
   }
 }
 
@@ -1169,7 +1180,6 @@ code {
   }
   .logo img {
     max-width: 273px;
-    margin-left: 10px;
   }
   .menu {
     padding-left: 0px !important;
@@ -1178,13 +1188,14 @@ code {
     font-size: 19px;
   }
   .menu li {
-    margin: 8px 0px;
+    margin: 4px 0px;
     border-bottom: 1px solid;
     width: 100%;
     text-align: center;
   }
   .show-btn {
     font-size: 23px;
+    z-index: 8;
   }
   .banner-slider-folder .slick-prev:before,
   .banner-slider-folder .slick-next:before {
@@ -1237,10 +1248,55 @@ code {
   }
   .about_us.about_ta::before{
     height: 150px;
-
   }
   .about_us.history_origin::before{
     height: 150px;
-  
   }
+  .contact_form textarea {
+    width: 272px;
+    font-size: 12px;
+  }
+  .menu li{
+    padding-bottom: 15px;
+  }
+  .Top-Header-wrapper{
+    padding: 10px 0px 0px 0px ;
+  }
+  .Top-header-section {
+    z-index: 7;
+  }
+  .logo{
+    padding-left: 10px;
+  }
+  .artical-blog-box-section {
+    width: 336px;
+  }
+  .artical-text {
+    font-size: 31px;
+  }
+  .artical-author-image img {
+    width: 55px;
+    height: 55px;
+  }
+  .Articles-blog-section h2 {
+    font-size: 22px;
+  }
+  .Articles-date {
+    font-size: 8px;
+  }
+  .Articles-image img {
+    width: 100%;
+    height: auto;
+  }
+  .Articles-image {
+    margin: 33px 0px 23px 0px;
+  }
+  .Articles-Author, 
+  .Articles-des {
+    font-size: 13px;
+    line-height: 25px;
+  }
+  .Articles-blog-section {
+    max-width: 342px;
+  } 
 }

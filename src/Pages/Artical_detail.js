@@ -1,5 +1,6 @@
 import React from "react";
-import Articles_image from '../Images/artical-image1.jpg';
+import Articles_image from '../Images/artical-image3.jpg';
+import autor_image from '../Images/artical-image1.jpg';
 
 function Articles(){
     return(
@@ -8,8 +9,15 @@ function Articles(){
                 <div className="Articles-wrapper">
                     <div className="Articles-folder">
                         <div className="Articles-blog-section">
-                            <h2>TA: An Elegant Theory</h2>
-                            <p className="Articles-date">Posted on December 28, 2013 by Saata Editorial</p>
+                            <div className="artical-author-folder">
+                                <div className="artical-author-image">
+                                    <img src={autor_image}/>
+                                </div>
+                                <div className="artical-author-text-folder">
+                                    <h2>TA: An Elegant Theory</h2>
+                                    <p className="Articles-date">Posted on December 28, 2013 by Saata Editorial</p>
+                                </div>
+                            </div>
                             <div className="Articles-image">
                                 <img src={Articles_image} alt={Articles_image}/>
                             </div>
