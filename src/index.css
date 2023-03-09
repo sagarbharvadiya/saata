@@ -525,12 +525,7 @@ code {
 } 
 
 .about_us {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
   position: relative;
-  min-height: 700px;
 }
 .about_us::before{
   position: absolute;
