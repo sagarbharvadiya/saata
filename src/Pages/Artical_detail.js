@@ -15,7 +15,7 @@ function Articles() {
             const description = fields.description;
             const Time = fields.time;
             const subTitle = fields.subTitle;
-            const updateInfo = { id, Title, image, description, Time, subTitle, icon,author };
+            const updateInfo = { id, Title, image, description, Time, subTitle, icon, author };
             return updateInfo;
         });
         setInfo(cleaninfo);
@@ -63,8 +63,8 @@ function Articles() {
                                             <div className="Articles-image">
                                                 <img src={item.image} alt={item.image} />
                                             </div>
-                                            <p className="Articles-Author"><span>{item.author}</span> 
-                                            {item.description}
+                                            <p className="Articles-Author"><span>{item.author}</span>
+                                                {item.description}
                                             </p>
                                             {/* <div className="Articles-des-folder">
                                                 <p className="Articles-des">
@@ -90,15 +90,12 @@ function Articles() {
 
                                     )
                                 })}
-
-
-
                         </div>
                     </div>
                 </div>
             </div>
         </>
-    )
+    );
 }
 
 export default Articles;
