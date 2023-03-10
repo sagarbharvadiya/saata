@@ -38,7 +38,7 @@ const TopHeader = () => {
               <a href="#news">Newsletter</a>
             </li>
             <li>
-              <NavLink to="/Articles_section" href="#art">Articles</NavLink>
+              <NavLink to="/Articles">Articles</NavLink>
             </li>
             <li>
               <a href="#jour">Journals</a>
@@ -105,7 +105,7 @@ const TopHeader = () => {
               </ul>
             </li>
             <li>
-              <NavLink to="/Articles_section" href="#art">Articles</NavLink>
+              <NavLink to="/Articles">Articles</NavLink>
             </li>
             <li>
               <a href="#jour">Journals</a>

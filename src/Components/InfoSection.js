@@ -22,7 +22,7 @@ const InfoSection = () => {
   const getInfo = useCallback(async () => {
     try {
       const response = await client.getEntries({ content_type: "infoSection" });
-      const responseData = response.items;
+      const responseData = response.items.reverse();
       // console.log(response)
       if (responseData) {
         cleanUpInfo(responseData);
