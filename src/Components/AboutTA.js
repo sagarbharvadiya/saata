@@ -11,7 +11,7 @@ const AboutTA = () => {
       const Title = fields.title;
       const subTitle = fields.subTitle;
       const description = fields.description;
-      const updateInfo = {id, Title, subTitle, description};
+      const updateInfo = { id, Title, subTitle, description };
       return updateInfo;
     });
     setInfo(cleaninfo);
@@ -21,7 +21,7 @@ const AboutTA = () => {
     try {
       const response = await client.getEntries({ content_type: "aboutTa" });
       const responseData = response.items;
-      console.log(responseData)
+      console.log(responseData);
       if (responseData) {
         cleanUpInfo(responseData);
       } else {
@@ -30,38 +30,34 @@ const AboutTA = () => {
     } catch (error) {
       console.log(error);
     }
-  },[cleanUpInfo]);
+  }, [cleanUpInfo]);
 
   useEffect(() => {
     getInfo();
   }, [getInfo]);
   return (
-
     <>
       {info.map((item, index) => {
         return (
           <>
             <div className="about_us about_ta">
               <div className="about_us_wrapper">
-              <h2>{item.Title}</h2>
+                <h2>{item.Title}</h2>
               </div>
               <div className="aboutus_parent">
-              <div className="about_us_img">
-                <h3>{item.subTitle}</h3>
+                <div className="about_us_img">
+                  <h3>{item.subTitle}</h3>
+                </div>
+                <div className="about_us_content">
+                  <p>{item.description}</p>
+                </div>
               </div>
-              <div className="about_us_content">
-               
-                <p>{item.description}</p>
-              </div>
-              </div>
-             
             </div>
           </>
         );
       })}
     </>
+  );
+};
 
-  )
-}
-
-export default AboutTA
+export default AboutTA;
