@@ -23,7 +23,7 @@ const Article = () => {
     const getInfo = useCallback(async () => {
       try {
         const response = await client.getEntries({ content_type: "article" });
-        const responseData = response.items.reverse();
+        const responseData = response.items
         console.log(responseData)
         if (responseData) {
           cleanUpInfo(responseData);
