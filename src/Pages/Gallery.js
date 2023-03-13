@@ -153,7 +153,12 @@ function Gallery() {
     const cleanfields = rawdata.map((item, index) => {
       const { sys, fields } = item;
       const { id } = sys;
-      
+      const galleryImages = fields.galleryImages;
+      const images = galleryImages.map((image, index) => {
+        const imageurl = image.fields.file.url;
+        return imageurl;
+      });
+      return images;
     });
     setSlides(cleanfields);
   }, []);
@@ -161,13 +166,13 @@ function Gallery() {
   const getBanners = useCallback(async () => {
     try {
       const response = await client.getEntries({ content_type: "gallery" });
-      const responseData = response.items.reverse();
+      const responseData = response.items;
       console.log(responseData);
-      // if (responseData) {
-      //   cleanUpBannerApi(responseData);
-      // } else {
-      //   setSlides([]);
-      // }
+      if (responseData) {
+        cleanUpBannerApi(responseData);
+      } else {
+        setSlides([]);
+      }
     } catch (error) {
       console.log(error);
     }
@@ -212,11 +217,13 @@ function Gallery() {
             <div className="ITAA-The-Dance-of-Culture-folder">
               <Slider {...itaasettings}>
                 <div>
-                  <div className="ITAA-The-Dance-of-Culture-image">
-                    <img src={itta_image1} alt={itta_image1} />
-                  </div>
+                  {slides.map((url, i) => {
+                    console.log(url);
+                    console.log(i);
+                    return <></>;
+                  })}
                 </div>
-                <div>
+                {/* <div>
                   <div className="ITAA-The-Dance-of-Culture-image">
                     <img src={itta_image2} alt={itta_image2} />
                   </div>
@@ -230,7 +237,7 @@ function Gallery() {
                   <div className="ITAA-The-Dance-of-Culture-image">
                     <img src={itta_image4} alt={itta_image4} />
                   </div>
-                </div>
+                </div> */}
               </Slider>
             </div>
           </div>
