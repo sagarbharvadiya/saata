@@ -27,7 +27,7 @@ function App() {
           <Route exact path='/AboutTA' element={<AboutTA/>}></Route>
           <Route exact path='/HistoryOrigin' element={<HistoryOrigin/>}></Route>
           <Route exact path='/Articles' element={<Article/>}></Route>
-          <Route exact path='/Articles_section/Articles' element={<Articles/>}></Route>
+          <Route exact path='/Article' element={<Articles/>}></Route>
         </Routes>
       <Footer/>
     </>
