@@ -1,10 +1,10 @@
 import React, { useCallback, useEffect, useState } from "react";
 import Slider from "react-slick";
 import client  from "../client";
-import itta_image1 from "../Images/itta-image1.png";
-import itta_image2 from "../Images/itta-image1.png";
-import itta_image3 from "../Images/itta-image1.png";
-import itta_image4 from "../Images/itta-image1.png";
+// import itta_image1 from "../Images/itta-image1.png";
+// import itta_image2 from "../Images/itta-image1.png";
+// import itta_image3 from "../Images/itta-image1.png";
+// import itta_image4 from "../Images/itta-image1.png";
 import south_asian_image1 from "../Images/itta-image1.png";
 import south_asian_image2 from "../Images/itta-image1.png";
 import south_asian_image3 from "../Images/itta-image1.png";
@@ -149,33 +149,37 @@ function Gallery() {
 
   const [slides, setSlides] = useState([]);
 
-  const cleanUpBannerApi = useCallback((rawdata) => {
-    const cleanfields = rawdata.map((item, index) => {
+  const cleanUpGalleryApi = useCallback((rawdata) => {
+    const cleanfields = rawdata.map((item) => {
       const { sys, fields } = item;
       const { id } = sys;
-      
+      const galleryImages = fields.galleryImages;
+      const images = galleryImages.map((image) => {
+        const imageurl = image.fields.file.url;
+        return imageurl;
+      });
+      return images;
     });
-    setSlides(cleanfields);
+    setSlides(cleanfields.flat());
   }, []);
 
-  const getBanners = useCallback(async () => {
+  const getGallery = useCallback(async () => {
     try {
       const response = await client.getEntries({ content_type: "gallery" });
-      const responseData = response.items.reverse();
-      console.log(responseData);
-      // if (responseData) {
-      //   cleanUpBannerApi(responseData);
-      // } else {
-      //   setSlides([]);
-      // }
+      const responseData = response.items;
+      if (responseData) {
+        cleanUpGalleryApi(responseData);
+      } else {
+        setSlides([]);
+      }
     } catch (error) {
       console.log(error);
     }
-  }, [cleanUpBannerApi]);
+  }, [cleanUpGalleryApi]);
 
   useEffect(() => {
-    getBanners();
-  }, [getBanners]);
+    getGallery();
+  }, [getGallery]);
 
   return (
     <>
@@ -211,26 +215,11 @@ function Gallery() {
             <h2>ITAA - SAATA Conference 2018 - The Dance of Culture</h2>
             <div className="ITAA-The-Dance-of-Culture-folder">
               <Slider {...itaasettings}>
-                <div>
-                  <div className="ITAA-The-Dance-of-Culture-image">
-                    <img src={itta_image1} alt={itta_image1} />
-                  </div>
-                </div>
-                <div>
-                  <div className="ITAA-The-Dance-of-Culture-image">
-                    <img src={itta_image2} alt={itta_image2} />
-                  </div>
-                </div>
-                <div>
-                  <div className="ITAA-The-Dance-of-Culture-image">
-                    <img src={itta_image3} alt={itta_image3} />
-                  </div>
-                </div>
-                <div>
-                  <div className="ITAA-The-Dance-of-Culture-image">
-                    <img src={itta_image4} alt={itta_image4} />
-                  </div>
-                </div>
+                  {slides.map((url, index) => (
+                      <div className="ITAA-The-Dance-of-Culture-image" key={index}>
+                        <img src={url} alt={`Slide ${index}`} />
+                      </div>
+                  ))}
               </Slider>
             </div>
           </div>
