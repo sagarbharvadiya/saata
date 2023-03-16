@@ -1,10 +1,10 @@
 import React, { useCallback, useEffect, useState } from "react";
 import Slider from "react-slick";
 import client  from "../client";
-import itta_image1 from "../Images/itta-image1.png";
-import itta_image2 from "../Images/itta-image1.png";
-import itta_image3 from "../Images/itta-image1.png";
-import itta_image4 from "../Images/itta-image1.png";
+// import itta_image1 from "../Images/itta-image1.png";
+// import itta_image2 from "../Images/itta-image1.png";
+// import itta_image3 from "../Images/itta-image1.png";
+// import itta_image4 from "../Images/itta-image1.png";
 import south_asian_image1 from "../Images/itta-image1.png";
 import south_asian_image2 from "../Images/itta-image1.png";
 import south_asian_image3 from "../Images/itta-image1.png";
@@ -220,13 +220,6 @@ function Gallery() {
                         <img src={url} alt={`Slide ${index}`} />
                       </div>
                   ))}
-                {/* <div>
-                  <div className="ITAA-The-Dance-of-Culture-image">
-                    <img src={itta_image2} alt={itta_image2} />
-                  </div>
-                </div>
-                <div>
-                </div> */}
               </Slider>
             </div>
           </div>

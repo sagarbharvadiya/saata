@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect } from "react";
 import client from "../client";
 import { useParams } from "react-router-dom";
 // import { documentToHtmlString } from "@contentful/rich-text-html-renderer";
