@@ -1,7 +1,7 @@
 import React from "react";
+import { Route, Routes } from 'react-router-dom';
 import AboutTA from "./Components/AboutTA";
 import AboutUs from "./Components/AboutUs";
-import { Route, Routes } from 'react-router-dom';
 import Footer from "./Components/Footer";
 import TopHeader from "./Components/TopHeader";
 import Gallery from "./Pages/Gallery";
@@ -12,6 +12,8 @@ import HistoryOrigin from "./Components/HistoryOrigin";
 import Certified_Members from "./Pages/Certified-Members";
 import Article from "./Pages/Article";
 import Articles from "./Pages/Artical_detail";
+import MembershipDetails from "./Components/MembershipDetails";
+import TA101ProgramDetails from "./Components/TA101ProgramDetails";
 
 function App() {
   return (
@@ -23,12 +25,15 @@ function App() {
           <Route exact path='/Gallery' element={<Gallery/>}></Route>
           <Route exact path='/Membership_Registration' element={<Membership_Registration/>}></Route>
           <Route exact path='/Certified_Members' element={<Certified_Members/>}></Route>
+          <Route exact path='/MembershipDetails' element={<MembershipDetails/>}></Route>
+          <Route exact path='/TA101ProgramDetails' element={<TA101ProgramDetails/>}></Route>
           <Route exact path='/AboutUS' element={<AboutUs/>}></Route>
           <Route exact path='/AboutTA' element={<AboutTA/>}></Route>
           <Route exact path='/HistoryOrigin' element={<HistoryOrigin/>}></Route>
           <Route exact path='/Articles' element={<Article/>}></Route>
           <Route exact path='/Article' element={<Articles/>}></Route>
         </Routes>
+        
       <Footer/>
     </>
   );

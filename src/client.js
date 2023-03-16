@@ -1,6 +1,7 @@
-const contentful = require("contentful");
+import { createClient } from 'contentful';
 
-export const client = contentful.createClient({
+const client = createClient({
   space: process.env.REACT_APP_SPACE_ID,
   accessToken: process.env.REACT_APP_ACCESS_TOKEN,
 });
+export default client;

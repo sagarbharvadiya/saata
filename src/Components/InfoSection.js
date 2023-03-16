@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
-import { client } from "../client";
-import AboutUs from "./AboutUs";
+import  client  from "../client";
+// import AboutUs from "./AboutUs";
 
 const InfoSection = () => {
   const [info, setInfo] = useState([]);
