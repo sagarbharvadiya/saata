@@ -1,13 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { documentToHtmlString } from "@contentful/rich-text-html-renderer";
-// import { createClient } from "contentful";
 import client from "../client";
-
-// const client = createClient({
-//   space: "your_space_id",
-//   accessToken: "your_access_token",
-// });
 
 const MembershipDetails = () => {
   const { slug } = useParams();
@@ -18,11 +12,11 @@ const MembershipDetails = () => {
       try {
         const response = await client.getEntries({
           content_type: "basicPage",
-          "fields.your_slug_field_name": slug,
+          "fields.slug": slug,
         });
+        console.log(response);
         if (response.items.length) {
-          const entry = response.items[1];
-          setEntry(entry);
+          setEntry(response.items[1]);
         }
       } catch (error) {
         console.error(error);

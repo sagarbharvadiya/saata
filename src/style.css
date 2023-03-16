@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.TaProgram_details{
+    max-width: 1180px;
+    margin: 0px auto;
+}
+ .title {
+    font-size: 30px;
+    margin-bottom: 33px;
+    color: #3b3b3b;
+}
+ .description p {
+    font-size: 15px !important;
+    margin-bottom: 13px !important;
+    color: #666666;
+}
+ .description ul {
+    margin: 27px 0px 31px 20px;
+}
+ .description ul li{
+    display: flex;
+}
+ p:nth-child(4){
+    margin-bottom: 18px;
+}
+ p:nth-child(5){
+    margin-bottom: 18px;
+}
+ .description table{
+    margin: 40px 0px 30px 0px;
+    width: 1168px;
+    text-align: center;
+    border: 1px solid #666666;
+    border-collapse: collapse;
+}
+.description  th {
+    padding: 25px 13px;
+}
+th {
+    background-color: #a37bb6;
+    border-collapse: collapse;
+    color: white;
+}
+tr:nth-child(3), 
+tr:nth-child(5) {
+    background-color: #ce66ff4f;
+}
+.description td p{
+    margin-left: 5px;
+}
+.description  td {
+    color: #666666 !important;
+    border-bottom: 1px solid;
+    padding: 25px 0px;
+}
+.description th p{
+    margin-bottom: 0px !important;
+}
+.description th p {
+    color: #fff;
+}

@@ -17,9 +17,10 @@ const TA101ProgramDetails = () => {
           "fields.slug": slug,
         });
         if (response.items.length) {
-          const entry = response.items[0];
-          setEntry(entry);
+          // const [entry] = response.items.reverse();
+          setEntry (response.items[0]);
         }
+
       } catch (error) {
         console.error(error);
       }
@@ -38,7 +39,7 @@ const TA101ProgramDetails = () => {
     <>
       <div className="TaProgram_details">
         <h1 className="title">{title}</h1>
-        <div className="description">
+        <div className="description TaProgram_details_description">
           {richTextContent}
 
         </div>
