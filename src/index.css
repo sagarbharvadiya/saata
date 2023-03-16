@@ -837,6 +837,9 @@ code {
 .gallery-wrapper{
   margin-bottom: 50px;
 }
+.product-image img{
+  width: 200px;
+}
 
 @media only screen and (max-width: 1024px) {
   .banner-slider-image img {
