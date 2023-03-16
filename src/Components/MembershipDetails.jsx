@@ -1,14 +1,14 @@
 import React, { useState, useEffect, useCallback } from "react";
-import { client } from "../client";
+import  client  from "../client";
 import MyComponent from "./computer";
-// import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+import { documentToHtmlString } from "@contentful/rich-text-html-renderer";
 // import { BLOCKS, MARKS } from '@contentful/rich-text-types';
 
 
 const MembershipDetails = () => {
     const [info, setInfo] = useState([]);
-
-    const cleanUpInfo = useCallback((rawdata) => {
+/**    const cleanUpInfo = useCallback((rawdata) => {
         const cleaninfo = rawdata.map((item) => {
             const { sys, fields } = item;
             const { id } = sys;
@@ -19,46 +19,33 @@ const MembershipDetails = () => {
         });
         setInfo(cleaninfo);
     }, []);
-
+**/
     const getInfo = useCallback(async () => {
         try {
-            const response = await client.getEntries({ content_type: "basicPage" });
-            const responseData = response.items
+            const response = await client.getEntry('5OwsNAw0EAg1EOgGW1UT4J');
+            console.log(response);
+            const responseData = response.fields.description
+            setInfo(responseData);
             console.log(responseData)
             if (responseData) {
-                cleanUpInfo(responseData);
+            //    cleanUpInfo(responseData);
             } else {
-                setInfo([]);
+              //  setInfo([]);
             }
         } catch (error) {
             console.log(error);
         }
-    }, [cleanUpInfo]);
+        
+    }, []);
 
     useEffect(() => {
         getInfo();
     }, [getInfo]);
+    const htmlObj = documentToHtmlString(info);
     return (
+        <div dangerouslySetInnerHTML={{ __html: htmlObj }} />
+      );
 
-        <>
-            <div className="membership_details">
-                {
-                    info.map((item, index) => {
-                        return (
-                            <>
-                                <div key={item.id}>
-                                    <div className="title">
-                                        <h2>{item.Title}</h2>
-                                    </div>
-                                    <MyComponent />
-                                </div>
-                            </>
-                        )
-                    })
-                }
-            </div>
-        </>
-    )
 }
 
 export default MembershipDetails

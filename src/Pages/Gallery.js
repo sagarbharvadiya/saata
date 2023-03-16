@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useState } from "react";
 import Slider from "react-slick";
-import { client } from "../client";
+import client  from "../client";
 import itta_image1 from "../Images/itta-image1.png";
 import itta_image2 from "../Images/itta-image1.png";
 import itta_image3 from "../Images/itta-image1.png";

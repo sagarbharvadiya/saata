@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
 import Slider from "react-slick";
-import { client } from "../client";
+import  client from "../client";
 
 const Banner = () => {
   const [slides, setSlides] = useState([]);

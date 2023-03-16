@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from "react";
-import { client } from "../client";
+import  client from "../client";
 import { NavLink } from "react-router-dom";
 
 const Article = () => {

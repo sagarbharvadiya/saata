@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from "react";
-import { client } from "../client";
+import client from "../client";
 
 const AboutUs = () => {
   const [aboutus, setAboutus] = useState([]);
