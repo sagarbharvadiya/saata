@@ -850,13 +850,13 @@ code {
 }
 .membership_details table{
   margin: auto;
-  max-width: 100%;
-  width: 100%;
+  /* max-width: 100%;
+  width: 100%; */
   text-align: justify;
   border: 1px solid;
 }
 .membership_details table th{
-background: #0085FF;
+/* background: #0085FF; */
 text-align: center;
 }
 .membership_details table td{

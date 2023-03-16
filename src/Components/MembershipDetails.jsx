@@ -14,9 +14,8 @@ const MembershipDetails = () => {
           content_type: "basicPage",
           "fields.slug": slug,
         });
-        console.log(response)
+        console.log(response);
         if (response.items.length) {
-          // const [entry] = response.items.reverse();
           setEntry(response.items[1]);
         }
       } catch (error) {
