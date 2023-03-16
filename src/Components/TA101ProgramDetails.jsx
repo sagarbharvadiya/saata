@@ -39,7 +39,7 @@ const TA101ProgramDetails = () => {
     <>
       <div className="TaProgram_details">
         <h1 className="title">{title}</h1>
-        <div className="description">
+        <div className="description TaProgram_details_description">
           {richTextContent}
 
         </div>
