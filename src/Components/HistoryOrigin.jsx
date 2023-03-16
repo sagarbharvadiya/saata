@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from "react";
-import { client } from "../client";
+import  client  from "../client";
 
 const HistoryOrigin = () => {
   const [info, setInfo] = useState([]);
