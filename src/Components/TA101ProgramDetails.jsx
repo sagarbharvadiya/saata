@@ -17,9 +17,10 @@ const TA101ProgramDetails = () => {
           "fields.slug": slug,
         });
         if (response.items.length) {
-          const entry = response.items[0];
-          setEntry(entry);
+          // const [entry] = response.items.reverse();
+          setEntry (response.items[0]);
         }
+
       } catch (error) {
         console.error(error);
       }
