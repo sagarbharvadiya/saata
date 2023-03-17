@@ -35,12 +35,12 @@ const TA101ProgramDetails = () => {
           const { description } = item.fields;
           const richTextContent = documentToReactComponents(description);
           return (
-            <div key={item.sys.id} className="TaProgram_details">
-              <h1 className="title">{title}</h1>
-              <div className="description TaProgram_details_description">
-                {richTextContent}
+              <div className="TaProgram_details">
+                <h1 className="title">{title}</h1>
+                <div className="description TaProgram_details_description">
+                  {richTextContent}
+                </div>
               </div>
-            </div>
           );
         })}
     </>

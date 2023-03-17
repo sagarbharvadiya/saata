@@ -1,14 +1,11 @@
 import React from 'react'
-// import AboutUs from '../Components/AboutUs'
-// import AboutTA from '../Components/AboutTA'
-import HistoryOrigin from '../Components/HistoryOrigin'
+import AboutUs from '../Components/AboutUs'
+
 
 const About = () => {
     return (
         <>
-            {/* <AboutUs /> */}
-            {/* <AboutTA/> */}
-            <HistoryOrigin/>
+            <AboutUs />
         </>
     )
 }

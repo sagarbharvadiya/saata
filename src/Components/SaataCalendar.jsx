@@ -30,9 +30,9 @@ const SaataCalendar = () => {
     <>
       {entry &&
         entry.map((item) => {
-          const { title } = item.fields;
+          const { title} = item.fields;
           return (
-            <div key={item.sys.id}>
+            <div key={item.fields.slug}>
               <h1>{title}</h1>
             </div>
           );

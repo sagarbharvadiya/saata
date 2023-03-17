@@ -33,11 +33,12 @@ const MembershipDetails = () => {
           const { title, description } = item.fields;
           const richTextContent = documentToReactComponents(description);
           return (
-            <div key={item.sys.id} className="membership_details">
-              <h1 className="title">{title}</h1>
-              <div className="description">
-                {richTextContent}
-              </div>
+           
+              <div className="membership_details">
+                <h1 className="title">{title}</h1>
+                <div className="description">
+                  {richTextContent}
+                </div>
             </div>
           );
         })}
