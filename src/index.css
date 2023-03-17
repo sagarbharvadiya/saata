@@ -56,6 +56,7 @@ code {
   margin: 0px 10px;
   font-size: 16px;
   color: #757575;
+  padding: 10px 0px;
 }
 .Top-header-section {
   display: none;
@@ -861,6 +862,15 @@ text-align: center;
 }
 .membership_details table td{
   border: 1px solid;
+}
+.Certifications li:hover a, 
+.Membership li:hover a, 
+.directory li:hover a, 
+.Programs li:hover a, 
+.Awards li:hover a, 
+.Newsletter li:hover a{
+  color: white;
+  background-color: #a37bb6;
 }
 @media only screen and (max-width: 1024px) {
   .banner-slider-image img {

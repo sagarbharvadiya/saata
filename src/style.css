@@ -54,7 +54,7 @@ tr:nth-child(5) {
 .description  td {
     color: #666666 !important;
     border-bottom: 1px solid;
-    padding: 25px 0px;
+    padding: 25px 9px;
 }
 .description th p{
     margin-bottom: 0px !important;
