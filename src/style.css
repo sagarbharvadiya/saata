@@ -1,61 +1,64 @@
 *{
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 .TaProgram_details{
-    max-width: 1169px;
+    max-width: 1180px;
     margin: 0px auto;
 }
-.TaProgram_details .title {
+ .title {
     font-size: 30px;
     margin-bottom: 33px;
     color: #3b3b3b;
 }
-.TaProgram_details .description p {
+ .description p {
     font-size: 15px !important;
     margin-bottom: 13px !important;
     color: #666666;
 }
-.TaProgram_details .description ul {
+ .description ul {
     margin: 27px 0px 31px 20px;
 }
-.TaProgram_details .description ul li{
+ .description ul li{
     display: flex;
 }
-.TaProgram_details p:nth-child(4){
+ p:nth-child(4){
     margin-bottom: 18px;
 }
-.TaProgram_details p:nth-child(5){
+ p:nth-child(5){
     margin-bottom: 18px;
 }
-.TaProgram_details_description table{
+ .description table{
     margin: 40px 0px 30px 0px;
     width: 1168px;
     text-align: center;
     border: 1px solid #666666;
     border-collapse: collapse;
 }
-.TaProgram_details_description .tbody, tr, th {
+.description  th {
     padding: 25px 13px;
 }
-.TaProgram_details tr:nth-child(1) {
+th {
     background-color: #a37bb6;
     border-collapse: collapse;
     color: white;
 }
-.TaProgram_details tr:nth-child(3), 
-.TaProgram_details tr:nth-child(5) {
+tr:nth-child(3), 
+tr:nth-child(5) {
     background-color: #ce66ff4f;
 }
-.TaProgram_details_description .tbody, tr, td {
+.description td p{
+    margin-left: 5px;
+}
+.description  td {
     color: #666666 !important;
     border-bottom: 1px solid;
     padding: 25px 0px;
 }
-.TaProgram_details_description tbody, tr, th, p{
+.description th p{
     margin-bottom: 0px !important;
 }
-/* .TaProgram_details_description tbody, tr,th,p b {
+.description th p {
     color: #fff;
-} */
+}

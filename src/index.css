@@ -843,6 +843,25 @@ code {
   width: 200px;
 }
 
+.membership_details {
+  max-width: 1280px;
+  margin: auto;
+  color: #666666;
+}
+.membership_details table{
+  margin: auto;
+  /* max-width: 100%;
+  width: 100%; */
+  text-align: justify;
+  border: 1px solid;
+}
+.membership_details table th{
+/* background: #0085FF; */
+text-align: center;
+}
+.membership_details table td{
+  border: 1px solid;
+}
 @media only screen and (max-width: 1024px) {
   .banner-slider-image img {
     width: 100%;
