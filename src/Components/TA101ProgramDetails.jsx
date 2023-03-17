@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
 import client from "../client";
 import { useParams } from "react-router-dom";
-// import { documentToHtmlString } from "@contentful/rich-text-html-renderer";
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
-
 
 const TA101ProgramDetails = () => {
   const { slug } = useParams();
@@ -16,11 +14,11 @@ const TA101ProgramDetails = () => {
           content_type: "basicPage",
           "fields.slug": slug,
         });
+        console.log(slug)
+        console.log(response)
         if (response.items.length) {
-          // const [entry] = response.items.reverse();
-          setEntry (response.items[0]);
+          setEntry(response.items);
         }
-
       } catch (error) {
         console.error(error);
       }
@@ -29,24 +27,22 @@ const TA101ProgramDetails = () => {
     fetchPage();
   }, [slug]);
 
-  const title = entry?.fields?.title;
-  const description = entry?.fields?.description;
-  const richTextContent = documentToReactComponents(description);
-
-  // const htmlObj = documentToHtmlString(description);
-
   return (
     <>
-      <div className="TaProgram_details">
-        <h1 className="title">{title}</h1>
-        <div className="description TaProgram_details_description">
-          {richTextContent}
-
-        </div>
-        {/* <div dangerouslySetInnerHTML={{ __html: htmlObj }} /> */}
-
-      </div>
-
+      {entry &&
+        entry.map((item) => {
+          const { title } = item.fields;
+          const { description } = item.fields;
+          const richTextContent = documentToReactComponents(description);
+          return (
+            <div key={item.sys.id} className="TaProgram_details">
+              <h1 className="title">{title}</h1>
+              <div className="description TaProgram_details_description">
+                {richTextContent}
+              </div>
+            </div>
+          );
+        })}
     </>
   );
 };

@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
 import client from "../client";
-import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+import { useParams } from "react-router-dom";
 
-const MembershipDetails = () => {
-  const { slug } = useParams();
+const SaataCalendar = () => {
   const [entry, setEntry] = useState(null);
+  const { slug } = useParams();
 
   useEffect(() => {
     const fetchPage = async () => {
@@ -14,8 +13,8 @@ const MembershipDetails = () => {
           content_type: "basicPage",
           "fields.slug": slug,
         });
-        console.log(slug)
-        console.log(response)
+        console.log(slug);
+        console.log(response);
         if (response.items.length) {
           setEntry(response.items);
         }
@@ -23,6 +22,7 @@ const MembershipDetails = () => {
         console.error(error);
       }
     };
+
     fetchPage();
   }, [slug]);
 
@@ -30,14 +30,10 @@ const MembershipDetails = () => {
     <>
       {entry &&
         entry.map((item) => {
-          const { title, description } = item.fields;
-          const richTextContent = documentToReactComponents(description);
+          const { title } = item.fields;
           return (
-            <div key={item.sys.id} className="membership_details">
-              <h1 className="title">{title}</h1>
-              <div className="description">
-                {richTextContent}
-              </div>
+            <div key={item.sys.id}>
+              <h1>{title}</h1>
             </div>
           );
         })}
@@ -45,4 +41,4 @@ const MembershipDetails = () => {
   );
 };
 
-export default MembershipDetails;
+export default SaataCalendar;

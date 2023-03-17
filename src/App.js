@@ -14,6 +14,7 @@ import Article from "./Pages/Article";
 import Articles from "./Pages/Artical_detail";
 import MembershipDetails from "./Components/MembershipDetails";
 import TA101ProgramDetails from "./Components/TA101ProgramDetails";
+import SaataCalendar from "./Components/SaataCalendar";
 
 function App() {
   return (
@@ -25,13 +26,14 @@ function App() {
           <Route exact path='/Gallery' element={<Gallery/>}></Route>
           <Route exact path='/Membership_Registration' element={<Membership_Registration/>}></Route>
           <Route exact path='/Certified_Members' element={<Certified_Members/>}></Route>
-          <Route exact path='/MembershipDetails' element={<MembershipDetails/>}></Route>
-          <Route exact path='/TA101ProgramDetails' element={<TA101ProgramDetails/>}></Route>
+          <Route exact path='/:slug' element={<MembershipDetails/>}></Route>
+          <Route exact path='/:slug' element={<TA101ProgramDetails/>}></Route>
           <Route exact path='/AboutUS' element={<AboutUs/>}></Route>
           <Route exact path='/AboutTA' element={<AboutTA/>}></Route>
           <Route exact path='/HistoryOrigin' element={<HistoryOrigin/>}></Route>
           <Route exact path='/Articles' element={<Article/>}></Route>
           <Route exact path='/Article' element={<Articles/>}></Route>
+          <Route exact path='/:slug' element={<SaataCalendar/>}></Route>
         </Routes>
         
       <Footer/>

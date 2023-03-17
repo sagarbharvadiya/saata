@@ -64,7 +64,7 @@ const TopHeader = () => {
             <li className="Membership">
               <a href="#member">Membership</a>
               <ul className="Membership-folder">
-                <li><NavLink to='MembershipDetails'>Membership Details</NavLink></li>
+                <li><NavLink to='/membership-details'>Membership Details</NavLink></li>
                 <li><NavLink to="/Membership_Registration" href="#">Registration</NavLink></li>
                 <li><a href="/">Renewal / Login</a></li>
               </ul>
@@ -79,8 +79,8 @@ const TopHeader = () => {
             <li className="Programs">
               <a href="#prg">Programs</a>
               <ul className="Programs-folder">
-                <li><NavLink to='/TA101ProgramDetails'>TA 101 - Program Details</NavLink></li>
-                <li><a href="/">SAATA Calendar 2021 - 2022</a></li>
+                <li><NavLink to='/ta-101-program-details'>TA 101 - Program Details</NavLink></li>
+                <li><NavLink to="/saata-calendar-2021-2022">SAATA Calendar 2021 - 2022</NavLink></li>
               </ul>
             </li>
             <li className="Awards">
