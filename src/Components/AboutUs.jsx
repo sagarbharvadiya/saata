@@ -1,64 +1,57 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 import client from "../client";
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 
 const AboutUs = () => {
-  const [aboutus, setAboutus] = useState([]);
-
-  const cleanUpInfo = useCallback((rawdata) => {
-    const cleaninfo = rawdata.map((item) => {
-      const { sys, fields } = item;
-      const { id } = sys;
-      const aboutusTitle = fields.title;
-      const aboutusDesc = fields.description;
-      const aboutusImage = fields.aboutUsImg.fields.file.url;
-      const updatedInfo = { id, aboutusTitle, aboutusImage, aboutusDesc};
-      return updatedInfo;
-    });
-    setAboutus(cleaninfo);
-  }, []);
-
-  const getInfo = useCallback(async () => {
-    try {
-      const response = await client.getEntries({ content_type: "aboutUs" });
-      const responseData = response.items;
-      console.log(responseData);
-      if (responseData) {
-        cleanUpInfo(responseData);
-      } else {
-        setAboutus([]);
-      }
-    } catch (error) {
-      console.log(error);
-    }
-  }, [cleanUpInfo]);
+  const { slug } = useParams();
+  const [entry, setEntry] = useState([]);
 
   useEffect(() => {
-    getInfo();
-  }, [getInfo]);
+    const fetchPage = async () => {
+      try {
+        const response = await client.getEntries({
+          content_type: "basicPage",
+          "fields.slug": slug,
+        });
+        console.log(slug)
+        console.log(response)
+        if (response.items.length) {
+          setEntry(response.items);
+        }
+      } catch (error) {
+        console.error(error);
+      }
+    };
+    fetchPage();
+  }, [slug]);
 
   return (
     <>
-      {aboutus.map((item, index) => {
-        return (
-         
-          <>
-            <div className="about_us">
-              <div className="about_us_wrapper">
-              <h2>{item.aboutusTitle}</h2>
+      {
+        entry.map((item) => {
+          const { title, description } = item.fields;
+          // const imageUrl =item.fields.image.fields.file.url;
+          const richTextContent = documentToReactComponents(description);
+          return (
+            <>
+              <div className="about_us">
+                <div className="about_us_wrapper">
+                  <h2>{title}</h2>
+                </div>
+                <div className="aboutus_parent">
+                  <div className="about_us_img">
+                    {/* <img src={imageUrl} alt={imageUrl.title} /> */}
+                  </div>
+                  <div className="about_us_content">
+                    <p>{richTextContent}</p>
+                  </div>
+                </div>
               </div>
-              <div className="aboutus_parent">
-              <div className="about_us_img">
-                <img src={item.aboutusImage} alt={item.aboutusImage} />
-              </div>
-              <div className="about_us_content">
-                <p>{item.aboutusDesc}</p>
-              </div>
-              </div>
-             
-            </div>
-          </>
-        );
-      })}
+            </>
+          )
+        })
+      }
     </>
   );
 };

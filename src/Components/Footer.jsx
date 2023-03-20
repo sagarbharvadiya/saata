@@ -16,7 +16,7 @@ const Footer = () => {
                         <div className='left'>
                             <div className='footer_menu'>
                                 <ul>
-                                    <li><Link to="/AboutUs">About SAATA</Link></li>
+                                    <li><Link to='about-us'>About SAATA</Link></li>
                                     <li><Link to="/President’s-note">
                                         President’s Note
                                     </Link>
@@ -27,12 +27,12 @@ const Footer = () => {
                                     </li>
                                 </ul>
                                 <ul>
-                                    <li><Link to="/AboutTA">About TA</Link></li>
+                                    <li><Link to="/about-ta">About TA</Link></li>
                                     <li><Link to="/Contact">Contact Us</Link></li>
                                     <li><Link to="/">Eric Berne</Link></li>
                                 </ul>
                                 <ul>
-                                    <li><Link to="/HistoryOrigin">History and Origin of SAATA</Link></li>
+                                    <li><Link to="/history-and-origin-of-saata">History and Origin of SAATA</Link></li>
                                     <li><Link to="/Mission">Mission and Vision</Link></li>
                                 </ul>
                             </div>

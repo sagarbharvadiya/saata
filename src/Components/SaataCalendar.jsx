@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
 import client from "../client";
 import { useParams } from "react-router-dom";
-import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 
-const TA101ProgramDetails = () => {
-  const { slug } = useParams();
+const SaataCalendar = () => {
   const [entry, setEntry] = useState(null);
+  const { slug } = useParams();
 
   useEffect(() => {
     const fetchPage = async () => {
@@ -14,8 +13,8 @@ const TA101ProgramDetails = () => {
           content_type: "basicPage",
           "fields.slug": slug,
         });
-        console.log(slug)
-        console.log(response)
+        console.log(slug);
+        console.log(response);
         if (response.items.length) {
           setEntry(response.items);
         }
@@ -31,20 +30,15 @@ const TA101ProgramDetails = () => {
     <>
       {entry &&
         entry.map((item) => {
-          const { title } = item.fields;
-          const { description } = item.fields;
-          const richTextContent = documentToReactComponents(description);
+          const { title} = item.fields;
           return (
-              <div className="TaProgram_details">
-                <h1 className="title">{title}</h1>
-                <div className="description TaProgram_details_description">
-                  {richTextContent}
-                </div>
-              </div>
+            <div key={item.fields.slug}>
+              <h1>{title}</h1>
+            </div>
           );
         })}
     </>
   );
 };
 
-export default TA101ProgramDetails;
+export default SaataCalendar;
