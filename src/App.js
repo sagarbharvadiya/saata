@@ -1,20 +1,7 @@
 import React from "react";
 import { Route, Routes } from 'react-router-dom';
-import AboutTA from "./Components/AboutTA";
-// import AboutUs from "./Components/AboutUs";
-import Footer from "./Components/Footer";
-import TopHeader from "./Components/TopHeader";
-import Gallery from "./Pages/Gallery";
-import Home from "./Pages/Home";
-import Membership_Registration from "./Pages/Membreship-registration";
-import About from "./Pages/About";
-import HistoryOrigin from "./Components/HistoryOrigin";
-import Certified_Members from "./Pages/Certified-Members";
-import Article from "./Pages/Article";
-import Articles from "./Pages/Artical_detail";
-import MembershipDetails from "./Components/MembershipDetails";
-import TA101ProgramDetails from "./Components/TA101ProgramDetails";
-import SaataCalendar from "./Components/SaataCalendar";
+import { AboutTA,Footer,TopHeader,TA101ProgramDetails,HistoryOrigin,MembershipDetails,SaataCalendar  } from "./Components";
+import { About,Home,Article,Articles,Gallery, CertifiedMembers, MembershipRegistration } from "./Pages";
 
 
 function App() {
@@ -27,8 +14,8 @@ function App() {
         <Route exact path='/:slug' element={<MembershipDetails />} />
         <Route exact path='/:slug' element={<About />} />
         <Route exact path='/gallery' element={<Gallery />} />
-        <Route exact path='/membership_registration' element={<Membership_Registration />} />
-        <Route exact path='/certified_members' element={<Certified_Members />} />
+        <Route exact path='/membership_registration' element={<MembershipRegistration />} />
+        <Route exact path='/certified_members' element={<CertifiedMembers />} />
         <Route exact path='/ta-101-program-details:slug' element={<TA101ProgramDetails />} />
         
         <Route exact path='/about-ta:slug' element={<AboutTA />} />

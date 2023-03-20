@@ -1,7 +1,7 @@
 import React from "react";
 import Membership_Registration_data from "../DataJson/Membership-registrationdata";
 
-function Membership_Registration(){
+function MembershipRegistration(){
     return(
         <>
             <div className="membreship-registration-section">
@@ -45,4 +45,4 @@ function Membership_Registration(){
     )
 }
 
-export default Membership_Registration;
+export default MembershipRegistration;

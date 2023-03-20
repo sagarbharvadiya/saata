@@ -1,7 +1,7 @@
 import React from "react";
 import Certified_Members_data from "../DataJson/Certified_Members_data";
 
-function Certified_Members() {
+function CertifiedMembers() {
   return (
     <>
       <div className="Certified-Members-section">
@@ -51,4 +51,4 @@ function Certified_Members() {
   );
 }
 
-export default Certified_Members;
+export default CertifiedMembers;
