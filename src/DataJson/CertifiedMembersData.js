@@ -1,4 +1,4 @@
-const Certified_Members_data =[
+const CertifiedMembersData =[
     {
         image:"images/certified-members-image1.jpg",
         title:"Ms Anisha",
@@ -385,4 +385,4 @@ const Certified_Members_data =[
     },
 ]
 
-export default Certified_Members_data;
+export default CertifiedMembersData;

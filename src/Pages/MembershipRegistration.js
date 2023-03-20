@@ -1,7 +1,7 @@
 import React from "react";
-import Membership_Registration_data from "../DataJson/Membership-registrationdata";
+import membershipRegistration_data from "../DataJson/Membership-registrationdata";
 
-function Membership_Registration(){
+function membershipRegistration(){
     return(
         <>
             <div className="membreship-registration-section">
@@ -11,7 +11,7 @@ function Membership_Registration(){
                 </div>
                 <div className="membership-registration-card-folder">
                     {
-                        Membership_Registration_data.map((val) => {
+                        membershipRegistration_data.map((val) => {
                             return <>
                                         <div className="membership-registration-card">
                                             <div className="membership-registration-text">
@@ -45,4 +45,4 @@ function Membership_Registration(){
     )
 }
 
-export default Membership_Registration;
+export default membershipRegistration;
