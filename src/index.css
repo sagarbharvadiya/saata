@@ -202,7 +202,7 @@ code {
 }
 .contact_form {
   background: #a37bb6;
-  width: 400px;
+  width: 421px;
   height: auto;
   padding: 19px 20px 39px 20px;
   border-radius: 15px;
@@ -232,6 +232,7 @@ code {
 .contact_form p {
   font-size: 16px;
   color: #fff;
+  margin-bottom: 22px;
 }
 .contact_form .input_field {
   display: flex;
@@ -255,7 +256,7 @@ code {
   color: #A37BB6;
 }
 .contact_form textarea {
-  margin: 10px 0px;
+  margin: 13px 0px;
   font-size: 18px;
   width: 379px;
   border-radius: 15px;
@@ -505,6 +506,9 @@ code {
 }
 .membership-registration-card-des-folder{
   height: 95px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
 } 
 
 .about_us {
