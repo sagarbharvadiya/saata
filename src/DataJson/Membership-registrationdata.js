@@ -1,4 +1,4 @@
-const Membership_Registration_data = [
+const membershipRegistration_data = [
     {
         title:"ASSOCIATE MEMBER",
         image:"/images/plan.png",
@@ -37,4 +37,4 @@ const Membership_Registration_data = [
     },
 ]
 
-export default Membership_Registration_data;
+export default membershipRegistration_data;

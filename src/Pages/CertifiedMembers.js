@@ -1,14 +1,14 @@
 import React from "react";
-import Certified_Members_data from "../DataJson/Certified_Members_data";
+import CertifiedMembersData from "../DataJson/CertifiedMembersData";
 
-function Certified_Members() {
+function CertifiedMembers() {
   return (
     <>
       <div className="Certified-Members-section">
         <div className="Certified-Members-wrapper">
           <h2 className="Certified-Members-text">Certified Members</h2>
           <div className="Certified-Members-folder">
-            {Certified_Members_data.map((val) => {
+            {CertifiedMembersData.map((val) => {
               return (
                 <div className="Certified-Members-card">
                   <div className="Certified-Members-image">
@@ -51,4 +51,4 @@ function Certified_Members() {
   );
 }
 
-export default Certified_Members;
+export default CertifiedMembers;
