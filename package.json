@@ -9,12 +9,16 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "@umijs/use-params": "^1.0.9",
+    "buffer": "^6.0.3",
     "contentful": "^9.3.3",
+    "htmlparser2": "^8.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-html-parser": "^2.0.2",
     "react-router-dom": "^6.8.2",
     "react-scripts": "5.0.1",
     "react-slick": "^0.29.0",
+    "safe-buffer": "^5.2.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
