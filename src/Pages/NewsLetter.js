@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 import client from "../client";
 // import ReactHtmlParser from 'react-html-parser';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
@@ -71,13 +71,13 @@ const NewsLetter = () => {
               <div className="news-main">
                   <h1>{title}</h1>
                 <div className="news-letter-subtitle">
-
                   {richTextContents}
                 </div>
                 <div className="newsletter-description">
                   {richTextContent}
                 </div>
               </div>
+              <NavLink to='basicpage/ta-news'>ta news</NavLink>
             </React.Fragment>
           );
         })
