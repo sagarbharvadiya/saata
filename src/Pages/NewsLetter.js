@@ -77,7 +77,7 @@ const NewsLetter = () => {
                   {richTextContent}
                 </div>
               </div>
-              <NavLink to='/ta-news'>ta news</NavLink>
+              <NavLink to='basicpage/ta-news'>ta news</NavLink>
             </React.Fragment>
           );
         })

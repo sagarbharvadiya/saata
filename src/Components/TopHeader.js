@@ -8,10 +8,7 @@ const TopHeader = () => {
   const toggleModal = () => { sertModal(!modal) }
 
 
-
-
   return (
-
     <>
       <a href="#/" onClick={toggleModal} className="show-btn"><i className="fa-solid fa-bars"></i></a>
       {modal && (
