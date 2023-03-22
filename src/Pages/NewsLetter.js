@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import client from "../client";
-import ReactHtmlParser from 'react-html-parser';
+// import ReactHtmlParser from 'react-html-parser';
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+import { BLOCKS, MARKS } from '@contentful/rich-text-types';
+
+
 
 const NewsLetter = () => {
   const { slug } = useParams();
@@ -25,10 +29,10 @@ const NewsLetter = () => {
     };
     fetchPage();
   }, [slug]);
-  
+
   return (
     <div>
-        <div className="newsletter">
+      <div className="newsletter">
         <div className="newsletter_top">
           <img className="saata-logo" src="/Images/saata-logo.png" alt="logo"></img>
         </div>
@@ -37,23 +41,46 @@ const NewsLetter = () => {
         </div>
         <a href="https://www.facebook.com/saataworld" target='_blank' rel='noreferrer'> <i className="fa-brands fa-facebook"></i></a>
       </div>
-      {entry.map((item) => {
-        const id = item.sys.id;
-        const newTitle = item.fields.subTitle;
+      {
 
-        return (
-          <div key={id}>
-            {ReactHtmlParser(newTitle)}
-            {item.fields.image && (
-              <img src={item.fields.image.fields.file.url} alt={item.fields.image.fields.title} />
-            )}
-            {item.fields.description && (
-              // console.log(item.fields.description)
-              <div>{ReactHtmlParser(item.fields.description)}</div>
-            )}
-          </div>
-        );
-      })}
+        entry.map((item) => {
+          const { description, subTitle } = item.fields;
+          const id = item.sys.id;
+          const richTextContent = documentToReactComponents(description, {
+            renderNode: {
+              [BLOCKS.EMBEDDED_ASSET]: (node) => (
+                <img
+                  src={`https:${node.data.target.fields.file.url}`}
+                  alt={node.data.target.fields.description}
+                />
+              ),
+            },
+          });
+          const richTextContents = documentToReactComponents(subTitle, {
+            renderNode: {
+              [BLOCKS.EMBEDDED_ASSET]: (node) => (
+                <img
+                  src={`https:${node.data.target.fields.file.url}`}
+                  alt={node.data.target.fields.description}
+                />
+              ),
+            },
+          });
+          return (
+            <React.Fragment key={id}>
+              <div className="news-main">
+                <div className="news-letter-subtitle">
+
+                  {richTextContents}
+                </div>
+                <div className="newsletter-description">
+                  {richTextContent}
+                </div>
+              </div>
+            </React.Fragment>
+          );
+        })
+      }
     </div>
   )
 }
