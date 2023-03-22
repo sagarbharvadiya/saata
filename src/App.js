@@ -18,7 +18,7 @@ function App() {
       <TopHeader />
       <Routes>
         <Route exact path='/' element={<Home />} />
-        <Route exact path='/:slug' element={<BasicPage/>}></Route>
+        <Route exact path='basicpage/:slug' element={<BasicPage/>}></Route>
         <Route exact path='/newsletter/:slug' element={<NewsLetter/>}></Route>
         <Route exact path='/gallery' element={<Gallery />} />
         <Route exact path='/membershipregistration' element={<MembershipRegistration />} />

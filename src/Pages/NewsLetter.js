@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 import client from "../client";
 // import ReactHtmlParser from 'react-html-parser';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
@@ -44,7 +44,7 @@ const NewsLetter = () => {
       {
 
         entry.map((item) => {
-          const { description, subTitle } = item.fields;
+          const { title, description, subTitle } = item.fields;
           const id = item.sys.id;
           const richTextContent = documentToReactComponents(description, {
             renderNode: {
@@ -69,14 +69,15 @@ const NewsLetter = () => {
           return (
             <React.Fragment key={id}>
               <div className="news-main">
+                <h1>{title}</h1>
                 <div className="news-letter-subtitle">
-
                   {richTextContents}
                 </div>
                 <div className="newsletter-description">
                   {richTextContent}
                 </div>
               </div>
+              <NavLink to='/ta-news'>ta news</NavLink>
             </React.Fragment>
           );
         })
