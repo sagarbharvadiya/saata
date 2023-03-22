@@ -33,18 +33,18 @@ const NewsLetter = () => {
   return (
     <div>
       <div className="newsletter">
-        <div className="newsletter_top">
+        <a href="https://www.facebook.com/saataworld" target='_blank' rel='noreferrer'> <i className="fa-brands fa-facebook"></i></a>
+        {/* <div className="newsletter_top">
           <img className="saata-logo" src="/Images/saata-logo.png" alt="logo"></img>
-        </div>
+        </div> */}
         <div className="newsletter_banner_img">
           <img src="/Images/banner.png" alt="banner"></img>
         </div>
-        <a href="https://www.facebook.com/saataworld" target='_blank' rel='noreferrer'> <i className="fa-brands fa-facebook"></i></a>
       </div>
       {
 
         entry.map((item) => {
-          const { title, description, subTitle } = item.fields;
+          const { title ,description, subTitle } = item.fields;
           const id = item.sys.id;
           const richTextContent = documentToReactComponents(description, {
             renderNode: {
@@ -69,7 +69,7 @@ const NewsLetter = () => {
           return (
             <React.Fragment key={id}>
               <div className="news-main">
-                <h1>{title}</h1>
+                  <h1>{title}</h1>
                 <div className="news-letter-subtitle">
                   {richTextContents}
                 </div>
