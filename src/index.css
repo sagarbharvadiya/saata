@@ -518,41 +518,14 @@ code {
   text-align: center;
   z-index: -1;
 }
-.about_us.about_ta::before{
-  background: #91c73e;
-  position: absolute;
-  content: '';
-  top: -70px;
-  left: 0;
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-  height: 250px;
-  text-align: center;
-  z-index: -1;
-}
-.about_us.history_origin::before {
-  position: absolute;
-  content: '';
-  top: -40px;
-  left: 0;
-  background: #e96828;
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-  height: 250px;
-  text-align: center;
-  z-index: -1;
-}
+
 .aboutus_parent {
   margin: 0px 20px;
 }
 .about_us_wrapper{
   z-index: 1;
 }
-.about_ta h3 {
-  text-align: center;
-}
+
 .about_us_wrapper h2 {
   width: 150px;
   position: relative;
@@ -562,12 +535,7 @@ code {
   font-weight: 800;
   text-align: center;
 }
-.history_origin h2 {
-  width: 400px;
-}
-/* .history_origin .about_us_content {
-  min-height: 1100px;
-} */
+
 .about_us_wrapper h2::before {
   position: absolute;
   content: '';
@@ -839,25 +807,6 @@ code {
   width: 200px;
 }
 
-.membership_details {
-  max-width: 1280px;
-  margin: auto;
-  color: #666666;
-}
-.membership_details table{
-  margin: auto;
-  /* max-width: 100%;
-  width: 100%; */
-  text-align: justify;
-  border: 1px solid;
-}
-.membership_details table th{
-/* background: #0085FF; */
-text-align: center;
-}
-.membership_details table td{
-  border: 1px solid;
-}
 @media only screen and (max-width: 1024px) {
   .banner-slider-image img {
     width: 100%;
@@ -1266,12 +1215,7 @@ text-align: center;
   .about_us::before{
     height:150px;
   }
-  .about_us.about_ta::before{
-    height: 150px;
-  }
-  .about_us.history_origin::before{
-    height: 150px;
-  }
+
   .contact_form textarea {
     width: 272px;
     font-size: 12px;
