@@ -54,14 +54,6 @@ const NewsLetter = () => {
         entry.map((item) => {
           const { title, description, subTitle } = item.fields;
           const id = item.sys.id;
-          // const entryRenderer = (node) => {
-          //   if (node.data.target && node.data.target.sys.type === 'Entry') {
-          //     return <News entry_id={node.data.target.sys.id} />;
-
-          //   }
-          // console.log('outside')
-          //   return null;
-          // };
           const descriptionContent = documentToReactComponents(description, {
             renderNode: {
               [BLOCKS.EMBEDDED_ASSET]: (node) => (
