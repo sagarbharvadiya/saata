@@ -6,6 +6,8 @@ import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import { BLOCKS } from '@contentful/rich-text-types';
 // import news_letter_right_image from '../Images/think_tank.png'; 
 import SideBar from '../Components/SideBar.jsx'
+import News from "../Components/News.jsx";
+// import { outside } from "semver";
 
 
 const NewsLetter = () => {
@@ -52,7 +54,15 @@ const NewsLetter = () => {
         entry.map((item) => {
           const { title, description, subTitle } = item.fields;
           const id = item.sys.id;
-          const richTextContent = documentToReactComponents(description, {
+          // const entryRenderer = (node) => {
+          //   if (node.data.target && node.data.target.sys.type === 'Entry') {
+          //     return <News entry_id={node.data.target.sys.id} />;
+
+          //   }
+          // console.log('outside')
+          //   return null;
+          // };
+          const descriptionContent = documentToReactComponents(description, {
             renderNode: {
               [BLOCKS.EMBEDDED_ASSET]: (node) => (
                 <img
@@ -60,9 +70,12 @@ const NewsLetter = () => {
                   alt={node.data.target.fields.description}
                 />
               ),
+              [BLOCKS.EMBEDDED_ENTRY]: (node) => (
+                <News entry_id={node.data.target.sys.id} />
+              ),
             },
           });
-          const richTextContents = documentToReactComponents(subTitle, {
+          const subTitleContents = documentToReactComponents(subTitle, {
             renderNode: {
               [BLOCKS.EMBEDDED_ASSET]: (node) => (
                 <img
@@ -70,8 +83,12 @@ const NewsLetter = () => {
                   alt={node.data.target.fields.description}
                 />
               ),
+              [BLOCKS.EMBEDDED_ENTRY]: (node) => (
+                <News entry_id={node.data.target.sys.id} />
+              ),
             },
           });
+
           return (
             <React.Fragment key={id}>
               <div className="news-main">
@@ -79,10 +96,10 @@ const NewsLetter = () => {
                 <div className="news-letter-container">
                   <div className="news-letter-folder1">
                     <div className="news-letter-subtitle">
-                      {richTextContents}
+                      {subTitleContents}
                     </div>
                     <div className="newsletter-description">
-                      {richTextContent}
+                      {descriptionContent}
                     </div>
                   </div>
                   <SideBar />
