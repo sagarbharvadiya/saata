@@ -1,5 +1,3 @@
-@import url(/src/style.css);
-
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -166,7 +164,7 @@ code {
   font-style: italic;
 }
 .board-of-members-section {
-  background: url('./Images/12232.jpg')no-repeat;
+  background: url('../Images/12232.jpg')no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -212,7 +210,7 @@ code {
   /* height: 300px; */
 }
 .map iframe {
-  border-radius: 15px;    height: 518px;
+  border-radius: 15px;    height: 550px;
   border: none;
 }
 .contact_wrapper {
@@ -510,6 +508,7 @@ code {
 .about_us {
   position: relative;
 }
+
 .about_us::before{
   position: absolute;
   background: #3870b5;

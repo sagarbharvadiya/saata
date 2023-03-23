@@ -4,6 +4,7 @@ import client from "../client";
 // import ReactHtmlParser from 'react-html-parser';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import { BLOCKS, MARKS } from '@contentful/rich-text-types';
+import SideBar from "../Components/SideBar";
 
 
 
@@ -44,7 +45,7 @@ const NewsLetter = () => {
       {
 
         entry.map((item) => {
-          const { title ,description, subTitle } = item.fields;
+          const { title, description, subTitle } = item.fields;
           const id = item.sys.id;
           const richTextContent = documentToReactComponents(description, {
             renderNode: {
@@ -69,7 +70,7 @@ const NewsLetter = () => {
           return (
             <React.Fragment key={id}>
               <div className="news-main">
-                  <h1>{title}</h1>
+                <h1>{title}</h1>
                 <div className="news-letter-subtitle">
                   {richTextContents}
                 </div>
@@ -77,11 +78,12 @@ const NewsLetter = () => {
                   {richTextContent}
                 </div>
               </div>
-              <NavLink to='basicpage/ta-news'>ta news</NavLink>
+              <NavLink to='/newsletter/ta-news'>ta news</NavLink>
             </React.Fragment>
           );
         })
       }
+    <SideBar/>
     </div>
   )
 }
