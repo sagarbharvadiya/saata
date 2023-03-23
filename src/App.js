@@ -11,6 +11,7 @@ import Article from "./Pages/Article";
 import Articles from "./Pages/ArticleDetail";
 import BasicPage from './Pages/BasicPage'
 import NewsLetter from "./Pages/NewsLetter";
+import News from './Pages/News';
 
 function App() {
   const location = useLocation();
@@ -29,6 +30,7 @@ function App() {
       <Routes>
         <Route exact path='/' element={<Home />} />
         <Route exact path='basicpage/:slug' element={<BasicPage />}></Route>
+        <Route exact path='news/:slug' element={<News />}></Route>
         <Route exact path='/newsletter/:slug' element={<NewsLetter />}></Route>
         <Route exact path='/gallery' element={<Gallery />} />
         <Route exact path='/membershipregistration' element={<MembershipRegistration />} />
