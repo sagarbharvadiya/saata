@@ -28,7 +28,6 @@ const NewsLetter = () => {
           content_type: "newslettter",
           "fields.slug": slug,
         });
-        console.log("Slug:", slug);
         console.log("Response:", response);
         if (response.items.length) {
           setEntry(response.items);
@@ -52,8 +51,9 @@ const NewsLetter = () => {
       {
 
         entry.map((item) => {
-          const { title, description, subTitle } = item.fields;
+          const { title, description, subTitle, monthAndYear} = item.fields;
           const id = item.sys.id;
+
           const descriptionContent = documentToReactComponents(description, {
             renderNode: {
               [BLOCKS.EMBEDDED_ASSET]: (node) => (
@@ -81,6 +81,7 @@ const NewsLetter = () => {
             },
           });
 
+
           return (
             <React.Fragment key={id}>
               <div className="news-main">
@@ -94,7 +95,7 @@ const NewsLetter = () => {
                       {descriptionContent}
                     </div>
                   </div>
-                  <SideBar />
+                  <SideBar monthAndYear={monthAndYear}/>
                 </div>
               </div>
             </React.Fragment>
