@@ -3,7 +3,6 @@ import client from "../client";
 
 const News = ({entry_id }) => {
   const [entry, setEntry] = useState(null);
-
   useEffect(() => {
     const fetchEntry = async () => {
       try {

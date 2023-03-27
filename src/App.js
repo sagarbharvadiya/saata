@@ -17,6 +17,8 @@ function App() {
   const location = useLocation();
   const activeSlug = location.pathname.split('/').pop(); // Get the last part of the URL path
 
+  
+
   useEffect(() => {
     document.body.classList.add(`page-${activeSlug}`); // Add the class to the body tag
     return () => {
