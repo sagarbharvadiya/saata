@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import client from "../client";
 
 const ContentList = (prop) => {
@@ -6,14 +6,15 @@ const ContentList = (prop) => {
   const newsdropdown = () => {
     sertModal(!modal);
   };
-  const {monthAndYear, type} = prop
+  const { monthAndYear, type, title } = prop
   const [entry, setEntry] = useState([]);
   useEffect(() => {
     const fetchPage = async () => {
       try {
         const response = await client.getEntries({
-          content_type: type,
+          content_type: 'news',
           "fields.monthAndYear": monthAndYear,
+          "fields.type":type,
         });
         console.log(response.items);
         console.log(prop.monthAndYear);
@@ -29,18 +30,19 @@ const ContentList = (prop) => {
 
   return (
     <div>
-      <ul>
-        <li>
-          {entry.map((item) => {
-            const { title } = item.fields;
-            return (
-              <ul>
-                <li>{title}</li>
-              </ul>
-            );
-          })}
-        </li>
-      </ul>
+      <div>
+        {title}
+      </div>
+      {entry.map((item) => {
+        const { title } = item.fields;
+        return (
+          <ul>
+            <React.Fragment key={item.id}>
+              <li>{title}</li>
+            </React.Fragment>
+          </ul>
+        );
+      })}
     </div>
   );
 };

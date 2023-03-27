@@ -49,8 +49,7 @@ const BasicPage = () => {
                                             {richTextContent}
                                         </div>
                                     </div>
-                                </div>
-                           
+                                </div>       
                         </React.Fragment>
                     )
                 })
