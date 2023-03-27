@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import client from "../client";
 
 const ContentList = (prop) => {
@@ -6,7 +6,7 @@ const ContentList = (prop) => {
   const newsdropdown = () => {
     sertModal(!modal);
   };
-  const {monthAndYear, type} = prop
+  const {monthAndYear, type, title} = prop
   const [entry, setEntry] = useState([]);
   useEffect(() => {
     const fetchPage = async () => {
@@ -29,18 +29,19 @@ const ContentList = (prop) => {
 
   return (
     <div>
-      <ul>
-        <li>
+      <div>
+          {title}
+      </div>
           {entry.map((item) => {
             const { title } = item.fields;
             return (
               <ul>
+              <React.Fragment key={item.id}>
                 <li>{title}</li>
-              </ul>
+              </React.Fragment>
+          </ul>
             );
           })}
-        </li>
-      </ul>
     </div>
   );
 };

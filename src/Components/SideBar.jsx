@@ -48,10 +48,10 @@ const SideBar = ({monthAndYear}) => {
                 </React.Fragment>
               );
             })}
-            <ContentList monthAndYear={monthAndYear} type={"news"}/>
-            <ContentList monthAndYear={monthAndYear} type={"article"}/>
-            <ContentList monthAndYear={monthAndYear} type={"basicPage"}/>
-            <ContentList monthAndYear={monthAndYear} type={"creativeCorner"}/>
+            <ContentList monthAndYear={monthAndYear} type={"news"} title={'Ta News'}/>
+            <ContentList monthAndYear={monthAndYear} type={"article"} title={'ARTICLES'} />
+            <ContentList monthAndYear={monthAndYear} type={"basicPage"} title={'Experiences'}/>
+            <ContentList monthAndYear={monthAndYear} type={"creativeCorner"} title={'Creative Corner'}/>
           </ul>
         </div>
       </div>
