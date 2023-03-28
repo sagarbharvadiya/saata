@@ -12,6 +12,7 @@ import Articles from "./Pages/ArticleDetail";
 import BasicPage from './Pages/BasicPage'
 import NewsLetter from "./Pages/NewsLetter";
 import News from './Pages/News';
+import ContentList from './Components/ContentList';
 
 function App() {
   const location = useLocation();
@@ -34,6 +35,7 @@ function App() {
         <Route exact path='basicpage/:slug' element={<BasicPage />}></Route>
         <Route exact path='news/:slug' element={<News />}></Route>
         <Route exact path='/newsletter/:slug' element={<NewsLetter />}></Route>
+        {/* <Route exact path={`:slug`} element={<ContentList />}></Route> */}
         <Route exact path='/gallery' element={<Gallery />} />
         <Route exact path='/membershipregistration' element={<MembershipRegistration />} />
         <Route exact path='/Certifiedmembers' element={<CertifiedMembers />} />
