@@ -1,7 +1,12 @@
 import React, { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 import client from "../client";
 
 const ContentList = (prop) => {
+
+  const [tonews, sertnews] = useState(false);
+  const togglenews = () => { sertnews(!tonews) }
+
   const [modal, sertModal] = useState(false);
   const newsdropdown = () => {
     sertModal(!modal);
@@ -12,7 +17,7 @@ const ContentList = (prop) => {
     const fetchPage = async () => {
       try {
         const response = await client.getEntries({
-          content_type: 'news',
+          content_type: "news",
           "fields.monthAndYear": monthAndYear,
           "fields.type":type,
         });
@@ -30,19 +35,23 @@ const ContentList = (prop) => {
 
   return (
     <div>
-      <div>
+      <div onClick={togglenews} className="news-feild">
         {title}
       </div>
-      {entry.map((item) => {
-        const { title } = item.fields;
-        return (
-          <ul>
-            <React.Fragment key={item.id}>
-              <li>{title}</li>
-            </React.Fragment>
-          </ul>
-        );
-      })}
+      {tonews &&(
+        <ul className="news-dropdrown-menu">
+          <li>
+            {entry.map((item) => {
+              const { title } = item.fields;
+              return (
+                <React.Fragment key={item.id}>
+                    <li><NavLink to={`${title}`}>{title}</NavLink></li>
+                  </React.Fragment>
+              );
+            })}
+          </li> 
+      </ul>
+      )}
     </div>
   );
 };

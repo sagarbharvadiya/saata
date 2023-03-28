@@ -8,6 +8,7 @@ const SideBar = ({ monthAndYear }) => {
       <div className="news-letter-folder2">
         <div className="news-latter-right-field-folder">
           <ul>
+            <ContentList monthAndYear={monthAndYear} type={"newslettter"} title={'From the Editorial Desk'} />
             <ContentList monthAndYear={monthAndYear} type={"News"} title={'Ta News'} />
             <ContentList monthAndYear={monthAndYear} type={"article"} title={'ARTICLES'} />
             <ContentList monthAndYear={monthAndYear} type={"Experiences"} title={'Experiences'} />
