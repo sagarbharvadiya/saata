@@ -3,14 +3,8 @@ import { NavLink } from "react-router-dom";
 import client from "../client";
 
 const ContentList = (prop) => {
-
-  const [tonews, sertnews] = useState(false);
-  const togglenews = () => { sertnews(!tonews) }
-
-  const [modal, sertModal] = useState(false);
-  const newsdropdown = () => {
-    sertModal(!modal);
-  };
+  const [toggleNews, SetToggleNews] = useState(false);
+  const ToggleNews = () => { SetToggleNews(!toggleNews) }
   const { monthAndYear, type, title } = prop
   const [entry, setEntry] = useState([]);
   useEffect(() => {
@@ -19,7 +13,7 @@ const ContentList = (prop) => {
         const response = await client.getEntries({
           content_type: "news",
           "fields.monthAndYear": monthAndYear,
-          "fields.type":type,
+          "fields.type": type,
         });
         console.log(response.items);
         console.log(prop.monthAndYear);
@@ -35,23 +29,22 @@ const ContentList = (prop) => {
 
   return (
     <div>
-      <div onClick={togglenews} className="news-feild">
+      <div onClick={ToggleNews} className="news-feild">
         {title}
       </div>
-      {tonews &&(
-        <ul className="news-dropdrown-menu">
-          <li>
-            {entry.map((item) => {
-              const { title } = item.fields;
-              return (
-                <React.Fragment key={item.id}>
-                    <li><NavLink to={`${title}`}>{title}</NavLink></li>
-                  </React.Fragment>
-              );
-            })}
-          </li> 
+      <ul className="news-dropdrown-menu">
+        {entry.map((item) => {
+          const { title, slug } = item.fields;
+          return (
+            <React.Fragment key={item.id}>
+              {toggleNews && (
+                <li><NavLink to={`${slug}`}>{title}</NavLink></li>
+              )}
+            </React.Fragment>
+          );
+        })}
       </ul>
-      )}
+
     </div>
   );
 };
