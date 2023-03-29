@@ -102,7 +102,7 @@ const TopHeader = () => {
             <li className="Newsletter">
               <NavLink to='/newsletter/from-the-editorial-desk'>Newsletter</NavLink>
               <ul className="Newsletter-folder">
-                <li><NavLink to='/newsletter/ta-news'>Current and Previous Issues</NavLink></li>
+                <li><NavLink to='/newsletterlist/cpnews'>Current and Previous Issues</NavLink></li>
                 <li><a href="/">Newsletter Team</a></li>
                 <li><a href="/">Guidelines</a></li>
                 <li><a href="/">Advertisement Policy</a></li>
