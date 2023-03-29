@@ -13,6 +13,7 @@ import BasicPage from './Pages/BasicPage'
 import NewsLetter from "./Pages/NewsLetter";
 import ContentReference from './Pages/ContentReference';
 import ContentList from './Components/ContentList';
+import NewsLetterList from './Pages/NewsLetterList';
 
 function App() {
   const location = useLocation();
@@ -35,6 +36,7 @@ function App() {
         <Route exact path='basicpage/:slug' element={<BasicPage />}></Route>
         <Route exact path='/newsletter/:slug' element={<NewsLetter />}></Route>
         <Route exact path='/content/:slug' element={<ContentReference />}></Route>
+        <Route exact path='/newsletterlist/:slug' element={<NewsLetterList />}></Route>
         {/* <Route exact path={`:slug`} element={<ContentList />}></Route> */}
         <Route exact path='/gallery' element={<Gallery />} />
         <Route exact path='/membershipregistration' element={<MembershipRegistration />} />
