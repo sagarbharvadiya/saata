@@ -15,8 +15,8 @@ const ContentList = (prop) => {
           "fields.monthAndYear": monthAndYear,
           "fields.type": type,
         });
-        console.log(response.items);
-        console.log(prop.monthAndYear);
+        // console.log(response.items);
+        // console.log(prop.monthAndYear);
         if (response.items.length) {
           setEntry(response.items.reverse());
         }
@@ -29,20 +29,21 @@ const ContentList = (prop) => {
 
   return (
     <div>
-      <div onClick={ToggleNews} className="news-feild">
+      <div onClick={ToggleNews} className="news-field">
         {title}
       </div>
-      <ul className="news-dropdrown-menu">
+      <ul className="news-drop_drown-menu">
         {entry.map((item) => {
           const { title, slug } = item.fields;
           return (
-            <React.Fragment key={item.id}>
+            <React.Fragment key={item.sys.id}>
               {toggleNews && (
                 <li><NavLink to={`/content/${slug}`}>{title}</NavLink></li>
               )}
             </React.Fragment>
           );
         })}
+       
       </ul>
 
     </div>

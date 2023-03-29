@@ -13,6 +13,8 @@ const SideBar = ({ monthAndYear }) => {
             <ContentList monthAndYear={monthAndYear} type={"article"} title={'ARTICLES'} />
             <ContentList monthAndYear={monthAndYear} type={"Experiences"} title={'Experiences'} />
             <ContentList monthAndYear={monthAndYear} type={"creativeCorner"} title={'Creative Corner'} />
+            <img src="../Images/think_tank.png" alt="think"></img>
+            <ContentList monthAndYear={monthAndYear} type={"CopyrightPolicy"} title={'Copyright policy'} />
           </ul>
         </div>
       </div>

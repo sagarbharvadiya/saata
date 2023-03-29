@@ -1,23 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import client from "../client";
-// import ReactHtmlParser from 'react-html-parser';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import { BLOCKS } from '@contentful/rich-text-types';
-// import news_letter_right_image from '../Images/think_tank.png'; 
 import SideBar from '../Components/SideBar.jsx'
 import News from "../Components/News.jsx";
-// import { outside } from "semver";
-
 
 const NewsLetter = () => {
-
-  // const [modal, sertModal] = useState(false);
-  // const newsdropdown = () => { sertModal(!modal) }
-
-  // const [articlemodal, sertModalarticl] = useState(false);
-  // const articlesdropdown = () => { sertModalarticl(!articlemodal) }
-
   const { slug } = useParams();
   const [entry, setEntry] = useState([]);
 
@@ -51,9 +40,8 @@ const NewsLetter = () => {
       {
 
         entry.map((item) => {
-          const { title, description, subTitle, monthAndYear} = item.fields;
+          const { title, description, subTitle, monthAndYear } = item.fields;
           const id = item.sys.id;
-
           const descriptionContent = documentToReactComponents(description, {
             renderNode: {
               [BLOCKS.EMBEDDED_ASSET]: (node) => (
@@ -61,6 +49,7 @@ const NewsLetter = () => {
                   src={`https:${node.data.target.fields.file.url}`}
                   alt={node.data.target.fields.description}
                 />
+
               ),
               [BLOCKS.EMBEDDED_ENTRY]: (node) => (
                 <News entry_id={node.data.target.sys.id} />
@@ -95,7 +84,7 @@ const NewsLetter = () => {
                       {descriptionContent}
                     </div>
                   </div>
-                  <SideBar monthAndYear={monthAndYear}/>
+                  <SideBar monthAndYear={monthAndYear} />
                 </div>
               </div>
             </React.Fragment>
