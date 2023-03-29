@@ -11,7 +11,7 @@ import Article from "./Pages/Article";
 import Articles from "./Pages/ArticleDetail";
 import BasicPage from './Pages/BasicPage'
 import NewsLetter from "./Pages/NewsLetter";
-import News from './Pages/News';
+import ContentReference from './Pages/ContentReference';
 import ContentList from './Components/ContentList';
 
 function App() {
@@ -29,12 +29,12 @@ function App() {
 
   return (
     <>
-      <TopHeader />
+      <TopHeader activeSlug={activeSlug}/>
       <Routes>
         <Route exact path='/' element={<Home />} />
         <Route exact path='basicpage/:slug' element={<BasicPage />}></Route>
-        <Route exact path='news/:slug' element={<News />}></Route>
         <Route exact path='/newsletter/:slug' element={<NewsLetter />}></Route>
+        <Route exact path='/content/:slug' element={<ContentReference />}></Route>
         {/* <Route exact path={`:slug`} element={<ContentList />}></Route> */}
         <Route exact path='/gallery' element={<Gallery />} />
         <Route exact path='/membershipregistration' element={<MembershipRegistration />} />

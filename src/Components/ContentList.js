@@ -38,7 +38,7 @@ const ContentList = (prop) => {
           return (
             <React.Fragment key={item.id}>
               {toggleNews && (
-                <li><NavLink to={`${slug}`}>{title}</NavLink></li>
+                <li><NavLink to={`/content/${slug}`}>{title}</NavLink></li>
               )}
             </React.Fragment>
           );
