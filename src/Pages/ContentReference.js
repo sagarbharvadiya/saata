@@ -38,7 +38,7 @@ const ContentReference = () => {
         <span>VOL: 1, ISSUE: 1 - Dec 2021</span>
         <a href="https://www.facebook.com/saataworld" target='_blank' rel='noreferrer'> <i className="fa-brands fa-facebook"></i></a>
         <div className="newsletter_banner_img">
-          <img src="/Images/banner.png" alt="banner"></img>
+          <img src="/Images/banner-logo.jpg" alt="banner"></img>
         </div>
       </div>
       {
