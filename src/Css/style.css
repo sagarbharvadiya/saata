@@ -47,7 +47,7 @@
 .newsletter a {
     display: flex;
     justify-content: flex-end;
-    padding-top: 30px;
+    padding: 30px 0px;
     font-size: 20px;
     color: black;
     text-decoration: none;
@@ -90,19 +90,43 @@
     margin-bottom: 10px;
 }
 .news-feild{
-    /* background-color: rgb(232, 76, 61); */
-    background: #438b8b;
+    background-color: rgb(232, 76, 61);
     color: white;
 }
 .news-latter-right-field-folder ul div:nth-child(2) .news-feild {
-    background: #996ada;
+    background: #438b8b;
 }
 .news-latter-right-field-folder ul div:nth-child(3) .news-feild {
     background: #da9a31;
 }
 .news-latter-right-field-folder ul div:nth-child(4) .news-feild {
-    background: #da9a31;
+    background: #996ada;
 }
+.news-latter-right-field-folder ul div:nth-child(5) .news-feild {
+    background: #9cc255;
+}
+
+
+
+
+/* page-saata-conference-updates start */
+.page-saata-conference-updates .newsletter-description ul{
+    padding-left: 59px;
+}
+/* page-saata-conference-updates end */
+
+/* page-news-from-the-research-and-publications-team start */
+.page-news-from-the-research-and-publications-team .newsletter-description ul{
+    padding-left: 65px;
+}
+/* page-news-from-the-research-and-publications-team end */
+
+/* page-unmute-please start */
+.page-unmute-please .newsletter-description ul{
+    padding-left: 65px;
+}
+/* page-unmute-please end */
+
 /* .news-letter-folder2 a {
     text-decoration: none;
     color: #fff;
