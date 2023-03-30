@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import client from "../client";
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+import { BLOCKS, INLINES } from '@contentful/rich-text-types';
 
 const BasicPage = () => {
     const { slug } = useParams();
@@ -33,7 +34,14 @@ const BasicPage = () => {
                     const id = item.sys.id
                     console.log(id)
                     const imageUrl = (item?.fields?.image?.fields?.file?.url) ? item?.fields?.image?.fields?.file?.url : '';
-                    const richTextContent = documentToReactComponents(description)
+                    const richTextContent = documentToReactComponents(description, {
+                        renderNode: {
+                          [INLINES.ASSET_HYPERLINK]: (node) => (
+                            <a href={`https://`+ node.data.target.fields.file.url} target="_blank" rel="noopener noreferrer">{node.data.target.fields.title}</a>
+                          
+                            ),
+                        },
+                    });
                     return (
                         <React.Fragment key={id}>
                                 <div className="about_us about_ta">
