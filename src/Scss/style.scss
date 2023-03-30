@@ -2,10 +2,11 @@
 .main-container {
   // background-color: $primary-color;
   color: #fff;
-  padding: 1rem;
 }
 .page-membership-details, 
-.page-ta-101-program-details{
+.page-ta-101-program-details, 
+.page-exam-dates, 
+.page-saata-calendar-2021-2022{
   .about_us{
     max-width: 1258px;
     margin: 0px auto;
@@ -215,4 +216,39 @@ $background-color_1: rgb(232, 76, 61);
 			}
 		}
 	}
+}
+.page-exam-dates{
+  .about_us.about_ta {
+    padding: 18px 20px;
+    background-color: #f9f9f93d;
+    box-shadow: 0px 4px 17px #e5e5e5;
+    margin-bottom: 37px;
+  }
+}
+.page-from-the-editorial-desk, 
+.page-news-from-the-research-and-publications-team, 
+.page-operations-team, 
+.page-dev-team-updates, 
+.page-miscellaneous-news, 
+.page-saata-conference-updates, 
+.page-professional-standards-division-psd, 
+.page-where-theres-a-will-theres-a-way, 
+.page-unmute-please, 
+.page-cartoon-quip, 
+.page-from-the-presidents-desk, 
+.page-poem-the-collector-of-stamps, 
+.page-book-review, 
+.page-crossword{
+  .news-latter-right-field-folder{
+    .news-drop_drown-menu{
+      li{
+        a{
+          color: #a37bb6;
+        }
+      }
+    }
+    img{
+      width: 100%;
+    }
+  }
 }
