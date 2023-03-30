@@ -20,7 +20,7 @@ const TopHeader = () => {
             <li className="Certifications">
               <NavLink to="">Certifications</NavLink>
               <ul className="Certifications-folder">
-                <li><NavLink to="">Exam Dates</NavLink></li>
+                <li><NavLink to="/basicpage/exam-dates">Exam Dates</NavLink></li>
                 <li><NavLink to="">Download Documents</NavLink></li>
                 <li><NavLink to="">Download Forms</NavLink></li>
               </ul>
@@ -88,7 +88,7 @@ const TopHeader = () => {
             <li className="Certifications">
               <NavLink to="">Certifications</NavLink>
               <ul className="Certifications-folder">
-                <li><NavLink to="">Exam Dates</NavLink></li>
+                <li><NavLink to="/basicpage/exam-dates">Exam Dates</NavLink></li>
                 <li><NavLink to="">Download Documents</NavLink></li>
                 <li><NavLink to="">Download Forms</NavLink></li>
               </ul>

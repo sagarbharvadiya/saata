@@ -1,6 +1,5 @@
 .main-container {
   color: #fff;
-  padding: 1rem;
 }
 
 .page-membership-details .about_us,
@@ -836,6 +835,7 @@ code {
 .membership-registration-card-folder {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 15px;
   margin: 65px 0px 50px 0px;
 }
@@ -1296,7 +1296,8 @@ code {
   align-items: center;
   justify-content: space-between;
   border-top: 1px solid;
-  margin: 18px 20px 0px 20px;
+  margin: 18px 20px 24px 20px;
+  padding-top: 14px;
 }
 
 .artical-date-folder a {
@@ -1698,7 +1699,7 @@ code {
   }
 
   .contact_form {
-    width: 296px;
+    width: 329px;
     padding: 31px 20px 37px 20px;
   }
 
@@ -1720,7 +1721,7 @@ code {
   }
 
   .contact_form textarea {
-    width: 272px;
+    width: 290px;
     font-size: 12px;
   }
 
@@ -1909,5 +1910,62 @@ code {
   .Articles-des {
     font-size: 13px;
     line-height: 25px;
+  }
+  .page-exam-dates .about_us.about_ta {
+    padding: 18px 0px;
+    max-width: 318px;
+  }
+  .page-exam-dates .about_us.about_ta {
+    padding: 18px 0px;
+  }
+  .membreship-registration-wrapper{
+    max-width: 288px;
+    margin: 32px auto 0px auto;
+  }
+  .Membership-Registration-title, 
+  .Membership-Registration-text, 
+  .Membership-Registration-text a{
+    font-size: 19px;
+    margin-left: 0px;
+  }
+  .membership-registration-card-folder{
+    margin: 34px 0px 50px 0px;
+  }
+  .Certified-Members-text {
+    font-size: 42px;
+    max-width: 280px;
+    text-align: center;
+    margin: 23px auto 27px auto;
+  }
+  .news-main h1 {
+    padding: 10px 0px !important;
+    font-size: 16px !important;
+    margin-bottom: 20px !important;
+  }
+  .news-letter-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .news-letter-folder1{
+    width: 100%;
+  }
+  .news-letter-subtitle p, 
+  .newsletter-description p{
+    line-height: 31px !important;
+    font-size: 13px !important;
+  }
+  .news-letter-subtitle {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .news-letter-folder1 {
+    width: 100% !important;
+  }
+  .newsletter-description {
+    margin-left: 0px !important;
+  }
+  .news-letter-folder2{
+    width: 100% !important;
   }
 }
