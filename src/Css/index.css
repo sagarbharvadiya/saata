@@ -976,7 +976,7 @@ code {
   bottom: 0%;
   background-color: #a37bb6;
   color: white;
-  padding: 16px 21px;
+  padding: 24px 21px;
   border-radius: 10px;
   opacity: 0;
   transition: all 0.2s ease-in;
@@ -999,8 +999,8 @@ code {
 }
 
 .Certified-Members-text {
-  font-size: 46px;
-  max-width: 517px;
+  font-size: 30px;
+  max-width: 336px;
   text-align: end;
   margin: 23px 0px 27px 0px;
   color: #a37bb6;
@@ -1321,8 +1321,12 @@ code {
 
 .artical-text {
   text-align: center;
-  font-size: 48px;
+  font-size: 30px;
   margin: 30px 0px 50px 0px;
+  max-width: 481px;
+  display: flex;
+  justify-content: flex-end;
+  color: #a37bb6;
 }
 
 .Artical-wrapper {
@@ -1339,6 +1343,20 @@ code {
 
 .product-image img {
   width: 200px;
+}
+.Certified-Members-wrapper, 
+.Artical-wrapper{
+  max-width: 1258px;
+  margin: 0px auto;
+}
+.Certified-Members-details li {
+  font-size: 14px;
+  list-style: none;
+  margin-bottom: 16px;
+}
+.Certified-Members-details span {
+  font-weight: 700;
+  font-size: 15px;
 }
 
 .activeLink {
@@ -1973,5 +1991,35 @@ code {
   }
   .news-letter-folder2{
     width: 100% !important;
+  }
+  .page-membership-details .about_us, 
+  .page-ta-101-program-details .about_us, 
+  .page-exam-dates .about_us, 
+  .page-saata-calendar-2021-2022 .about_us, 
+  .page-download-forms .about_us, 
+  .page-download-documents .about_us, 
+  .page-directory .about_us, 
+  .page-membership-renewal .about_us, 
+  .page-call-for-nominations .about_us, 
+  .page-guidelines-for-content-contributors .about_us, 
+  .page-newsletter-advertisement-policy .about_us, 
+  .page-journals .about_us, 
+  .page-awards .about_us, 
+  .page-service-award .about_us {
+    max-width: 342px;
+    margin: 0px auto;
+  }
+  .page-exam-dates .about_us.about_ta, 
+  .page-download-documents .about_us.about_ta, 
+  .page-directory .about_us.about_ta, 
+  .page-membership-renewal .about_us.about_ta, 
+  .page-call-for-nominations .about_us.about_ta, 
+  .page-guidelines-for-content-contributors .about_us.about_ta, 
+  .page-newsletter-advertisement-policy .about_us.about_ta, 
+  .page-journals .about_us.about_ta, 
+  .page-awards .about_us.about_ta, 
+  .page-service-award .about_us.about_ta {
+    padding: 18px 0px;
+    font-size: 25px !important;
   }
 }

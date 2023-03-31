@@ -6,7 +6,17 @@
 .page-membership-details, 
 .page-ta-101-program-details, 
 .page-exam-dates, 
-.page-saata-calendar-2021-2022{
+.page-saata-calendar-2021-2022, 
+.page-download-forms, 
+.page-download-documents, 
+.page-directory, 
+.page-membership-renewal, 
+.page-call-for-nominations, 
+.page-guidelines-for-content-contributors, 
+.page-newsletter-advertisement-policy, 
+.page-journals, 
+.page-awards, 
+.page-service-award{
   .about_us{
     max-width: 1258px;
     margin: 0px auto;
@@ -217,7 +227,16 @@ $background-color_1: rgb(232, 76, 61);
 		}
 	}
 }
-.page-exam-dates{
+.page-exam-dates, 
+.page-download-documents, 
+.page-directory, 
+.page-membership-renewal, 
+.page-call-for-nominations, 
+.page-guidelines-for-content-contributors, 
+.page-newsletter-advertisement-policy, 
+.page-journals, 
+.page-awards, 
+.page-service-award{
   .about_us.about_ta {
     padding: 18px 20px;
     background-color: #f9f9f93d;
@@ -249,6 +268,126 @@ $background-color_1: rgb(232, 76, 61);
     }
     img{
       width: 100%;
+    }
+  }
+}
+.page-download-forms{
+  .about_us.about_ta{
+    .about_us_content{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+        h3{
+          width: 289px;
+          padding: 88px 26px;
+          line-height: 30px;
+          color: #757575;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          font-size: 15px;
+          box-shadow: 0px 4px 13px #e5e5e5;
+          transition: 0.1s ease-in;
+          background-color: #f9f9f921;
+            a{
+              color: #a37bb6;
+              text-decoration: none;
+            }
+          &:hover{
+            background-color: #a37bb6;
+            color: white;
+            a{
+              color: white;
+              text-decoration: revert;
+            }
+          }
+        }
+    }
+  }
+}
+.page-download-documents{
+  .about_us.about_ta {
+    .about_us_content{
+      h3{
+        font-size: 17px;
+        font-weight: 600;
+        a{
+          color: #a37bb6;
+          font-weight: 400;
+        }
+      }
+      p{
+        a{
+          color: #a37bb6;
+        }
+      }
+    }
+  }
+}
+.page-directory, 
+.page-call-for-nominations{
+  .aboutus_parent{
+    .about_us_img {
+      max-width: 100%;
+      width: 100%;
+      margin: auto;
+      margin-bottom: 16px;
+    }
+  }
+}
+.page-membership-renewal{
+  .about_us_content{
+    h2{
+      font-size: 22px;
+      margin-bottom: 7px;
+    }
+    p{
+      a{
+        color: #a37bb6;
+      }
+    }
+  }
+}
+.page-call-for-nominations{
+  .about_us.about_ta{
+    .about_us_content{
+      p:nth-child(16) a{
+        color: #a37bb6;
+      }
+    }
+  }
+}
+.page-journals{
+  .about_us.about_ta{
+    .about_us_content{
+      p{
+        line-height: 24px;
+        a{
+          color: #a37bb6;
+        }
+      }
+      h3{
+        margin-bottom: 17px;
+      }
+    }
+  }
+}
+.page-awards, 
+.page-service-award{
+  .about_us.about_ta{
+    .about_us_content{
+      h3{
+        margin-bottom: 14px;
+      }
+      p{
+        line-height: 23px;
+      }
+      img{
+        width: 428px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+      }
     }
   }
 }
