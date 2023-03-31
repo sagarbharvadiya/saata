@@ -998,8 +998,8 @@ code {
 }
 
 .Certified-Members-text {
-  font-size: 46px;
-  max-width: 517px;
+  font-size: 30px;
+  max-width: 336px;
   text-align: end;
   margin: 23px 0px 27px 0px;
   color: #a37bb6;
@@ -1320,8 +1320,12 @@ code {
 
 .artical-text {
   text-align: center;
-  font-size: 48px;
+  font-size: 30px;
   margin: 30px 0px 50px 0px;
+  max-width: 481px;
+  display: flex;
+  justify-content: flex-end;
+  color: #a37bb6;
 }
 
 .Artical-wrapper {
@@ -1338,6 +1342,11 @@ code {
 
 .product-image img {
   width: 200px;
+}
+.Certified-Members-wrapper, 
+.Artical-wrapper{
+  max-width: 1258px;
+  margin: 0px auto;
 }
 
 @media only screen and (max-width: 1024px) {
