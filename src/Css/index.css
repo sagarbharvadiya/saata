@@ -975,7 +975,7 @@ code {
   bottom: 0%;
   background-color: #a37bb6;
   color: white;
-  padding: 16px 21px;
+  padding: 24px 21px;
   border-radius: 10px;
   opacity: 0;
   transition: all 0.2s ease-in;
@@ -1347,6 +1347,15 @@ code {
 .Artical-wrapper{
   max-width: 1258px;
   margin: 0px auto;
+}
+.Certified-Members-details li {
+  font-size: 14px;
+  list-style: none;
+  margin-bottom: 16px;
+}
+.Certified-Members-details span {
+  font-weight: 700;
+  font-size: 15px;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -1976,5 +1985,23 @@ code {
   }
   .news-letter-folder2{
     width: 100% !important;
+  }
+  .page-membership-details .about_us, 
+  .page-ta-101-program-details .about_us, 
+  .page-exam-dates .about_us, 
+  .page-saata-calendar-2021-2022 .about_us, 
+  .page-download-forms .about_us, 
+  .page-download-documents .about_us, 
+  .page-directory .about_us {
+    max-width: 327px;
+  }
+  .page-membership-details .about_us .about_us_wrapper h2, 
+  .page-ta-101-program-details .about_us .about_us_wrapper h2, 
+  .page-exam-dates .about_us .about_us_wrapper h2, 
+  .page-saata-calendar-2021-2022 .about_us .about_us_wrapper h2, 
+  .page-download-forms .about_us .about_us_wrapper h2, 
+  .page-download-documents .about_us .about_us_wrapper h2, 
+  .page-directory .about_us .about_us_wrapper h2 {
+    font-size: 25px !important;
   }
 }
