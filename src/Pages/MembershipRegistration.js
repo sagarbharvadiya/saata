@@ -1,48 +1,16 @@
 import React from "react";
-import membershipRegistration_data from "../DataJson/Membership-registrationdata";
 
-function membershipRegistration(){
-    return(
-        <>
-            <div className="membreship-registration-section">
-                <div className="membreship-registration-wrapper">
-                    <h2 className="Membership-Registration-title">Membership Registration</h2>
-                    <h2 className="Membership-Registration-text">If you are already an existing SAATA Member, <a href="https://subscriptions.zoho.in/portal/saata1/login">Click here to login</a></h2>
-                </div>
-                <div className="membership-registration-card-folder">
-                    {
-                        membershipRegistration_data.map((val) => {
-                            return <>
-                                        <div className="membership-registration-card">
-                                            <div className="membership-registration-text">
-                                                <h2>{val.title}</h2>
-                                            </div>
-                                            <div className="membership-registration-image">
-                                                <img src={val.image}/>
-                                            </div>
-                                            <div className="membership-registration-card-des-folder">
-                                                <div className="membership-registration-card-des">
-                                                    <a href="#"><i class="fa-solid fa-check"></i></a>
-                                                    <p>{val.des1}</p>
-                                                </div>
-                                                <div className="membership-registration-card-des">
-                                                    <a href="#"><i class="fa-solid fa-check"></i></a>
-                                                    <p>{val.des2}</p>
-                                                </div>
-                                            </div>
-                                            <p className="plan-price"><a href="#"><i class="fa-solid fa-indian-rupee-sign"></i></a>{val.price}</p>
-                                            <p className="Billed-Yearly">{val.Billed_Yearly}</p>
-                                            <div className="membership-subscribe-btn">
-                                                <a href="#">{val.subscribe}</a>
-                                            </div>
-                                        </div>
-                                    </>
-                        })
-                    }
-                </div>
-            </div>
-        </>
-    )
-}
+const MembershipRegistration = () => {
+  return (
+    <>
+      <h4 className="text-align-center" data-placeholder="Translation" dir="ltr" id="tw-target-text">
+        If you are already an existing SAATA Member, <a href="https://subscriptions.zoho.in/portal/saata1/login">Click here to login</a>
+      </h4>
+      <div id="zf-widget-root-id"></div>
+      <script type="text/javascript" src='https://js.zohostatic.com/books/zfwidgets/assets/js/zf-widget.js'></script>
+      <script src="path/to/pricing-table.js"></script>
+    </>
+  );
+};
 
-export default membershipRegistration;
+export default MembershipRegistration;

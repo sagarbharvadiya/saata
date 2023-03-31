@@ -21,7 +21,7 @@ const TopHeader = () => {
               <NavLink to="">Certifications</NavLink>
               <ul className="Certifications-folder">
                 <li><NavLink to="/basicpage/exam-dates">Exam Dates</NavLink></li>
-                <li><NavLink to="">Download Documents</NavLink></li>
+                <li><NavLink to="/basicpage/download-documents">Download Documents</NavLink></li>
                 <li><NavLink to="/basicpage/download-forms">Download Forms</NavLink></li>
               </ul>
             </li>
@@ -34,7 +34,7 @@ const TopHeader = () => {
               </ul>
             </li>
             <li className="directory">
-              <NavLink to="directory">Directory</NavLink>
+              <NavLink to="/basicpage/directory">Directory</NavLink>
               <ul className="directory-folder">
                 <li><NavLink to="/CertifiedMembers">Certified Members</NavLink></li>
                 <li><NavLink to="">Members</NavLink></li>
@@ -89,20 +89,20 @@ const TopHeader = () => {
               <NavLink to="">Certifications</NavLink>
               <ul className="Certifications-folder">
                 <li><NavLink to="/basicpage/exam-dates">Exam Dates</NavLink></li>
-                <li><NavLink to="">Download Documents</NavLink></li>
+                <li><NavLink to="/basicpage/download-documents">Download Documents</NavLink></li>
                 <li><NavLink to="/basicpage/download-forms">Download Forms</NavLink></li>
               </ul>
             </li>
             <li className="Membership">
-              <NavLink to="member">Membership</NavLink>
+              <NavLink to="/basicpage/membership-details">Membership</NavLink>
               <ul className="Membership-folder">
                 <li><NavLink to='/basicpage/membership-details'>Membership Details</NavLink></li>
-                <li><NavLink to="/membershipRegistration">Registration</NavLink></li>
-                <li><NavLink to="">Renewal / Login</NavLink></li>
+                <li><NavLink to="/MembershipRegistration">Registration</NavLink></li>
+                <li><NavLink to="/basicpage/membership-renewal">Renewal / Login</NavLink></li>
               </ul>
             </li>
             <li className="directory">
-              <NavLink to="directory">Directory</NavLink>
+              <NavLink to="/basicpage/directory">Directory</NavLink>
               <ul className="directory-folder">
                 <li><NavLink to="/CertifiedMembers">Certified Members</NavLink></li>
                 <li><NavLink to="">Members</NavLink></li>
@@ -116,11 +116,11 @@ const TopHeader = () => {
               </ul>
             </li>
             <li className="Awards">
-              <NavLink to="">Awards</NavLink>
+              <NavLink to="/basicpage/awards">Awards</NavLink>
               <ul className="Awards-folder">
-                <li><NavLink to="">Professional Excellence Award</NavLink></li>
-                <li><NavLink to="">Service Awards</NavLink></li>
-                <li><NavLink to="">Call for Nominations</NavLink></li>
+                <li><NavLink to="/basicpage/awards">Professional Excellence Award</NavLink></li>
+                <li><NavLink to="/basicpage/service-award">Service Awards</NavLink></li>
+                <li><NavLink to="/basicpage/call-for-nominations">Call for Nominations</NavLink></li>
               </ul>
             </li>
             <li>
@@ -131,8 +131,8 @@ const TopHeader = () => {
               <ul className="Newsletter-folder">
                 <li><NavLink to='/newsletterlist/cpnews'>Current and Previous Issues</NavLink></li>
                 <li><NavLink to="">Newsletter Team</NavLink></li>
-                <li><NavLink to="">Guidelines</NavLink></li>
-                <li><NavLink to="">Advertisement Policy</NavLink></li>
+                <li><NavLink to="/basicpage/guidelines-for-content-contributors">Guidelines</NavLink></li>
+                <li><NavLink to="/basicpage/newsletter-advertisement-policy">Advertisement Policy</NavLink></li>
                 <li><NavLink to="">Team that Was</NavLink></li>
               </ul>
             </li>
@@ -140,7 +140,7 @@ const TopHeader = () => {
               <NavLink to="/Articles">Articles</NavLink>
             </li>
             <li>
-              <NavLink to="jour">Journals</NavLink>
+              <NavLink to="/basicpage/journals">Journals</NavLink>
             </li>
           </ul>
         </div>

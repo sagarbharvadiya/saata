@@ -9,7 +9,7 @@ const NewsLetterList = () => {
     const fetchEntries = async () => {
       try {
         const response = await client.getEntries({
-          content_type: "newslettter", // specify the content type you want to fetch
+          content_type: "news", // specify the content type you want to fetch
         });
         // console.log(response);
         if (response.items.length) {
