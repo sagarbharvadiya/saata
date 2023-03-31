@@ -194,6 +194,7 @@
   margin: 25px 0px;
   background-color: #e84c3d;
   color: white;
+  cursor: pointer;
 }
 
 .news-drop_drown-menu {
@@ -1338,6 +1339,11 @@ code {
 
 .product-image img {
   width: 200px;
+}
+
+.active {
+  background-color: #c2c2c2;
+  font-weight: bold;
 }
 
 @media only screen and (max-width: 1024px) {

@@ -3,10 +3,16 @@ import { NavLink } from "react-router-dom";
 import client from "../client";
 
 const ContentList = (prop) => {
-  const [toggleNews, SetToggleNews] = useState(false);
-  const ToggleNews = () => { SetToggleNews(!toggleNews) }
-  const { monthAndYear, type, title } = prop
   const [entry, setEntry] = useState([]);
+  // const [toggleNews, setToggleNews] = useState(false);
+  // const ToggleNews = () => {
+  //   setToggleNews(!toggleNews);
+  // };
+  // const [activeIndex, setActiveIndex] = useState(null);
+  const [toggleNews, setToggleNews] = useState(false);
+  const toggleNewsHandler = () => setToggleNews(prevState => !prevState);
+  const { monthAndYear, type, title, activeLink, onLinkClick } = prop;
+
   useEffect(() => {
     const fetchPage = async () => {
       try {
@@ -27,25 +33,39 @@ const ContentList = (prop) => {
     fetchPage();
   }, []);
 
+  // const toggleActive = (index) => {
+  //   setActiveIndex(index === activeIndex ? null : index);
+  // };
+
   return (
     <div>
-      <div onClick={ToggleNews} className="news-field">
+      <div onClick={toggleNewsHandler} className="news-field">
         {title}
       </div>
       <ul className="news-drop_drown-menu">
-        {entry.map((item) => {
+        {entry.map((item, index) => {
           const { title, slug } = item.fields;
+          const isActive = activeLink === slug;
           return (
             <React.Fragment key={item.sys.id}>
               {toggleNews && (
-                <li><NavLink to={`/content/${slug}`}>{title}</NavLink></li>
+                <li>
+                <NavLink
+                  to={`/content/${slug}`}
+                  className={isActive ? "active" : ""}
+                  onClick={() => {
+                    onLinkClick(slug);
+                    toggleNewsHandler();
+                  }}
+                >
+                  {title}
+                </NavLink>
+              </li>
               )}
             </React.Fragment>
           );
         })}
-       
       </ul>
-
     </div>
   );
 };
