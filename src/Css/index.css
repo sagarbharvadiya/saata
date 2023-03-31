@@ -1992,16 +1992,28 @@ code {
   .page-saata-calendar-2021-2022 .about_us, 
   .page-download-forms .about_us, 
   .page-download-documents .about_us, 
-  .page-directory .about_us {
-    max-width: 327px;
+  .page-directory .about_us, 
+  .page-membership-renewal .about_us, 
+  .page-call-for-nominations .about_us, 
+  .page-guidelines-for-content-contributors .about_us, 
+  .page-newsletter-advertisement-policy .about_us, 
+  .page-journals .about_us, 
+  .page-awards .about_us, 
+  .page-service-award .about_us {
+    max-width: 342px;
+    margin: 0px auto;
   }
-  .page-membership-details .about_us .about_us_wrapper h2, 
-  .page-ta-101-program-details .about_us .about_us_wrapper h2, 
-  .page-exam-dates .about_us .about_us_wrapper h2, 
-  .page-saata-calendar-2021-2022 .about_us .about_us_wrapper h2, 
-  .page-download-forms .about_us .about_us_wrapper h2, 
-  .page-download-documents .about_us .about_us_wrapper h2, 
-  .page-directory .about_us .about_us_wrapper h2 {
+  .page-exam-dates .about_us.about_ta, 
+  .page-download-documents .about_us.about_ta, 
+  .page-directory .about_us.about_ta, 
+  .page-membership-renewal .about_us.about_ta, 
+  .page-call-for-nominations .about_us.about_ta, 
+  .page-guidelines-for-content-contributors .about_us.about_ta, 
+  .page-newsletter-advertisement-policy .about_us.about_ta, 
+  .page-journals .about_us.about_ta, 
+  .page-awards .about_us.about_ta, 
+  .page-service-award .about_us.about_ta {
+    padding: 18px 0px;
     font-size: 25px !important;
   }
 }
