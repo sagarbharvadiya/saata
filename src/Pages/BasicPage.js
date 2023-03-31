@@ -40,6 +40,13 @@ const BasicPage = () => {
                             <a href={`https://`+ node.data.target.fields.file.url} target="_blank" rel="noopener noreferrer">{node.data.target.fields.title}</a>
                           
                             ),
+                            [BLOCKS.EMBEDDED_ASSET]: (node) => (
+                              <img
+                                src={`https:${node.data.target.fields.file.url}`}
+                                alt={node.data.target.fields.description}
+                              />
+              
+                            ),
                         },
                     });
                     return (
