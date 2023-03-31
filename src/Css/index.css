@@ -1341,7 +1341,7 @@ code {
   width: 200px;
 }
 
-.active {
+.activeLink {
   background-color: #c2c2c2;
   font-weight: bold;
 }

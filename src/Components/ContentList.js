@@ -52,7 +52,7 @@ const ContentList = (prop) => {
                 <li>
                 <NavLink
                   to={`/content/${slug}`}
-                  className={isActive ? "active" : ""}
+                  className={isActive ? "activeLink" : ""}
                   onClick={() => {
                     onLinkClick(slug);
                     toggleNewsHandler();
