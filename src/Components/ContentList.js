@@ -39,9 +39,8 @@ const ContentList = (prop) => {
 
   return (
     <div>
-
-      <div onClick={ToggleNews} className="news-field">
-        {title}   
+      <div onClick={toggleNewsHandler} className="news-field">
+        {title}
       </div>
       <ul className="news-drop_drown-menu">
         {entry.map((item, index) => {
