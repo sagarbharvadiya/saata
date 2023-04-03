@@ -19,7 +19,10 @@
 .page-service-award, 
 .page-about-us, 
 .page-about-ta, 
-.page-history-and-origin-of-saata{
+.page-history-and-origin-of-saata, 
+.page-presidents-note, 
+.page-mission-and-vision, 
+.page-eric-berne{
   .about_us{
     max-width: 1258px;
     margin: 0px auto;
@@ -242,7 +245,10 @@ $background-color_1: rgb(232, 76, 61);
 .page-service-award, 
 .page-about-us, 
 .page-about-ta, 
-.page-history-and-origin-of-saata{
+.page-history-and-origin-of-saata, 
+.page-presidents-note, 
+.page-mission-and-vision, 
+.page-eric-berne{
   .about_us.about_ta {
     padding: 18px 20px;
     background-color: #f9f9f93d;
@@ -454,7 +460,10 @@ $background-color_1: rgb(232, 76, 61);
 }
 .page-about-us, 
 .page-about-ta, 
-.page-history-and-origin-of-saata{
+.page-history-and-origin-of-saata, 
+.page-presidents-note, 
+.page-mission-and-vision, 
+.page-eric-berne{
   .aboutus_parent{
     .about_us_content{
       margin: 0px auto 50px auto;
@@ -462,35 +471,91 @@ $background-color_1: rgb(232, 76, 61);
     }
   }
 }
-.page-gregarious-hugger{
-  .news-letter-team{
-    max-width: 1258px;
-    margin: 0px auto 0px auto;
-    padding: 18px 37px;
-    background-color: #f9f9f93d;
-    box-shadow: 0px 4px 17px #e5e5e5;
-    margin-bottom: 37px;
-    .new-letter-team-d-flex{
-      margin-top: 29px;
-      img{
-        width: 150px;
-      }
-      .nes-letter-team-wrapper h6{
-        font-size: 16px;
-        font-weight: 400;
-      }
-    }
-    .description{
-      line-height: 26px;
-      margin: 20px 0px 31px 0px;
-    }
-  }
-}
+// .page-gregarious-hugger{
+//   .news-letter-team{
+//     // max-width: 1258px;
+//     margin: 0px auto 0px auto;
+//     padding: 18px 37px;
+//     background-color: #f9f9f93d;
+//     box-shadow: 0px 4px 17px #e5e5e5;
+//     margin-bottom: 37px;
+//     .new-letter-team-d-flex{
+//       margin-top: 29px;
+//       img{
+//         width: 150px;
+//       }
+//       .nes-letter-team-wrapper h6{
+//         font-size: 16px;
+//         font-weight: 400;
+//       }
+//     }
+//     .description{
+//       line-height: 26px;
+//       margin: 20px 0px 31px 0px;
+//     }
+//   }
+// }
 .page-about-ta, 
 .page-history-and-origin-of-saata{
   .about_us_img {
     max-width: 100%;
     width: 100%;
     margin-bottom: 15px;
+  }
+}
+.page-gregarious-hugger{
+  .news-letter-team-wrapper{
+    display: flex;
+    max-width: 1258px;
+    margin: 0px auto;
+    padding: 18px 20px;
+    background-color: #f9f9f93d;
+    box-shadow: 0px 4px 17px #e5e5e5;
+    margin-bottom: 37px;
+    gap: 25px;
+    padding-top: 40px;
+    .newsletterTeam-folder{
+      width: 20%;
+      ul{
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px 4px 8px #e1e1e1;
+        li{
+          list-style: none;
+          padding: 39px 18px;
+          border-bottom: 1px solid #dfdfdf;
+          a{
+            text-decoration: none;
+            color: #a37bb6;
+          }
+          &:hover{
+            border-left: 6px solid #a37bb6;
+            transition: all 0.1s ease-in;
+              a{
+                margin-left: 20px;
+                transition: all 0.1s ease-in;
+              }
+          }
+        }
+      }
+    }
+    .news-letter-team{
+      width: 80%;
+      .new-letter-team-d-flex{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 30px;
+        .nes-letter-team-wrapper{
+          h2{
+            margin-bottom: 4px;
+            font-size: 27px;
+          }
+          h6{
+            font-size: 15px;
+          }
+        }
+      }
+    }
   }
 }
