@@ -1,17 +1,27 @@
 import React, { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 import client from "../client";
 
 const ContentList = (prop) => {
   const [entry, setEntry] = useState([]);
-  // const [toggleNews, setToggleNews] = useState(false);
-  // const ToggleNews = () => {
-  //   setToggleNews(!toggleNews);
-  // };
-  // const [activeIndex, setActiveIndex] = useState(null);
   const [toggleNews, setToggleNews] = useState(false);
-  const toggleNewsHandler = () => setToggleNews(prevState => !prevState);
-  const { monthAndYear, type, title, activeLink, onLinkClick } = prop;
+  // const toggleNewsHandler = () => setToggleNews((prevState) => !prevState);
+  const { monthAndYear, type, title, activeLink, onLinkClick,setActiveLink } = prop;
+  const { slug } = useParams();
+
+  const toggleNewsHandler = (slug) => {
+    if (slug === activeLink || activeLink === null) {
+      setToggleNews((prevState) => !prevState);
+      localStorage.setItem("toggleNews", !toggleNews);
+      if (activeLink === slug) {
+        setActiveLink(null);
+        localStorage.removeItem("activeLink");
+      } else {
+        setActiveLink(slug);
+        localStorage.setItem("activeLink", slug);
+      }
+    }
+  };
 
   useEffect(() => {
     const fetchPage = async () => {
@@ -31,15 +41,25 @@ const ContentList = (prop) => {
       }
     };
     fetchPage();
+  }, [monthAndYear, type]);
+
+  useEffect(() => {
+    const savedToggle = localStorage.getItem("toggleNews");
+    if (savedToggle) {
+      setToggleNews(JSON.parse(savedToggle));
+    }
   }, []);
 
-  // const toggleActive = (index) => {
-  //   setActiveIndex(index === activeIndex ? null : index);
-  // };
+  useEffect(() => {
+    if (activeLink === slug) {
+      setToggleNews(true);
+      localStorage.setItem("toggleNews", true);
+    }
+  }, [activeLink, slug]);
 
   return (
     <div>
-      <div onClick={toggleNewsHandler} className="news-field">
+      <div onClick={() => toggleNewsHandler(slug)} className="news-field">
         {title}
       </div>
       <ul className="news-drop_drown-menu">
@@ -50,17 +70,17 @@ const ContentList = (prop) => {
             <React.Fragment key={item.sys.id}>
               {toggleNews && (
                 <li>
-                <NavLink
-                  to={`/content/${slug}`}
-                  className={isActive ? "activeLink" : ""}
-                  onClick={() => {
-                    onLinkClick(slug);
-                    toggleNewsHandler();
-                  }}
-                >
-                  {title}
-                </NavLink>
-              </li>
+                  <NavLink
+                    to={`/content/${slug}`}
+                    className={isActive ? "activeLink" : ""}
+                    onClick={() => {
+                      onLinkClick(slug);
+                      setToggleNews(false);
+                    }}
+                  >
+                    {title}
+                  </NavLink>
+                </li>
               )}
             </React.Fragment>
           );
