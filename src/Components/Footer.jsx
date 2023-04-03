@@ -21,7 +21,7 @@ const Footer = () => {
                                         President’s Note
                                     </Link>
                                     </li>
-                                    <li><Link to="/Saata-bot">
+                                    <li><Link to="basicpage/saata-bot">
                                         Saata Bot
                                     </Link>
                                     </li>
@@ -29,7 +29,7 @@ const Footer = () => {
                                 <ul>
                                     <li><Link to="/basicpage/about-ta">About TA</Link></li>
                                     <li><Link to="/Contact">Contact Us</Link></li>
-                                    <li><Link to="/">Eric Berne</Link></li>
+                                    <li><Link to="basicpage/eric-berne">Eric Berne</Link></li>
                                 </ul>
                                 <ul>
                                     <li><Link to="/basicpage/history-and-origin-of-saata">History and Origin of SAATA</Link></li>

@@ -12,14 +12,15 @@ const Article = () => {
         const Title = fields.title;
         const image = fields.articleImage.fields.file.url;
         const description = fields.description;
-        const Time = fields.time;
+        const time = new Date(fields.time);
+        const formattedDate = time.toLocaleDateString();
+        const formattedTime = time.toLocaleTimeString();
         const Link = fields.link;
-        const updateInfo = {id, Title, image, description, Time, Link };
+        const updateInfo = {id, Title, image, description, formattedDate, formattedTime, Link };
         return updateInfo;
       });
       setInfo(cleaninfo);
     }, []);
-  
     const getInfo = useCallback(async () => {
       try {
         const response = await client.getEntries({ content_type: "article" });
@@ -54,7 +55,7 @@ const Article = () => {
                                             <h2>{item.Title}</h2>
                                             <p className="artical-des">{item.description}</p>
                                             <div className="artical-date-folder">
-                                                <p className="artical-date">{item.Time}</p>
+                                                <p className="artical-date">{item.formattedDate}</p>
                                                 <NavLink to={item.Link}>Read More</NavLink>
                                             </div>
                                         </div>
