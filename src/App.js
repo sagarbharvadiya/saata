@@ -12,23 +12,18 @@ import Articles from "./Pages/ArticleDetail";
 import BasicPage from './Pages/BasicPage'
 import NewsLetter from "./Pages/NewsLetter";
 import ContentReference from './Pages/ContentReference';
-import ContentList from './Components/ContentList';
 import NewsLetterList from './Pages/NewsLetterList';
 import NewsletterTeam from './Pages/NewsletterTeam';
 
 function App() {
   const location = useLocation();
   const activeSlug = location.pathname.split('/').pop(); // Get the last part of the URL path
-
-  
-
   useEffect(() => {
     document.body.classList.add(`page-${activeSlug}`); // Add the class to the body tag
     return () => {
       document.body.classList.remove(`page-${activeSlug}`); // Remove the class from the body tag when the component unmounts
     };
   }, [activeSlug]);
-
   return (
     <>
       <TopHeader activeSlug={activeSlug}/>

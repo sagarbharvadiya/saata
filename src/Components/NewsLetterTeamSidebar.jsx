@@ -24,6 +24,7 @@ const NewsLetterTeamSidebar = () => {
 
     return (
         <>
+        
             {
                 entry.map((item) => {
                     const { slug, title } = item.fields;
