@@ -17,12 +17,12 @@ const Footer = () => {
                             <div className='footer_menu'>
                                 <ul>
                                     <li><Link to='/basicpage/about-us'>About SAATA</Link></li>
-                                    <li><Link to="/President’s-note">
+                                    <li><Link to="/basicpage/presidents-note">
                                         President’s Note
                                     </Link>
                                     </li>
                                     <li><Link to="/Saata-bot">
-                                    Saata Bot
+                                        Saata Bot
                                     </Link>
                                     </li>
                                 </ul>
@@ -33,7 +33,7 @@ const Footer = () => {
                                 </ul>
                                 <ul>
                                     <li><Link to="/basicpage/history-and-origin-of-saata">History and Origin of SAATA</Link></li>
-                                    <li><Link to="/Mission">Mission and Vision</Link></li>
+                                    <li><Link to="/basicpage/mission-and-vision">Mission and Vision</Link></li>
                                 </ul>
                             </div>
                         </div>
