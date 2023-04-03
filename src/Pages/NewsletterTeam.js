@@ -3,17 +3,19 @@ import { useParams } from "react-router-dom";
 import client from "../client";
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import { BLOCKS } from '@contentful/rich-text-types';
+import NewsLetterTeamSidebar from "../Components/NewsLetterTeamSidebar";
 
 function NewsletterTeam() {
     const { slug } = useParams();
     const [entry, setEntry] = useState([]);
+    const [currentSlug, setCurrentSlug] = useState(slug);
 
     useEffect(() => {
         const fetchPage = async () => {
             try {
                 const response = await client.getEntries({
                     content_type: "newsletterTeam",
-                    "fields.slug": slug
+                    "fields.slug": currentSlug
                 });
 
                 console.log(response)
@@ -25,14 +27,18 @@ function NewsletterTeam() {
             }
         };
         fetchPage();
+    }, [currentSlug]);
+
+    useEffect(() => {
+        setCurrentSlug(slug);
     }, [slug]);
-    // console.log(entry)
+
     return (
         <>
+        <NewsLetterTeamSidebar/>
             {
-
                 entry.map((item) => {
-                    const { designation, fullName, title, richTextEditor } = item.fields;
+                    const { designation, fullName, richTextEditor } = item.fields;
                     const image = item.fields.image.fields.file.url;
                     const id = item.sys.id
                     console.log(id)
@@ -58,7 +64,6 @@ function NewsletterTeam() {
                     )
                 })
             }
-
         </>
     );
 }
