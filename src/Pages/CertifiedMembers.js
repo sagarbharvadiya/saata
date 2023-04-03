@@ -34,7 +34,7 @@ function CertifiedMembers() {
           <div className="Certified-Members-folder">
             {
               entry.map((item) => {
-                const { qualification, name, } = item.fields;
+                const { qualification, name, title } = item.fields;
                 const id = item.sys.id
                 console.log(id)
                 const richTextContent = documentToReactComponents(qualification, {
@@ -74,6 +74,7 @@ function CertifiedMembers() {
                         {richTextContent}
                       </div>
                       <div>
+                        {title}
                         {richTextName}
                       </div>
                     </div>    
