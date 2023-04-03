@@ -3,102 +3,102 @@
   // background-color: $primary-color;
   color: #fff;
 }
-.page-membership-details, 
-.page-ta-101-program-details, 
-.page-exam-dates, 
-.page-saata-calendar-2021-2022, 
-.page-download-forms, 
-.page-download-documents, 
-.page-directory, 
-.page-membership-renewal, 
-.page-call-for-nominations, 
-.page-guidelines-for-content-contributors, 
-.page-newsletter-advertisement-policy, 
-.page-journals, 
-.page-awards, 
-.page-service-award, 
-.page-about-us, 
-.page-about-ta, 
-.page-history-and-origin-of-saata, 
-.page-presidents-note, 
-.page-mission-and-vision, 
-.page-eric-berne{
-  .about_us{
+.page-membership-details,
+.page-ta-101-program-details,
+.page-exam-dates,
+.page-saata-calendar-2021-2022,
+.page-download-forms,
+.page-download-documents,
+.page-directory,
+.page-membership-renewal,
+.page-call-for-nominations,
+.page-guidelines-for-content-contributors,
+.page-newsletter-advertisement-policy,
+.page-journals,
+.page-awards,
+.page-service-award,
+.page-about-us,
+.page-about-ta,
+.page-history-and-origin-of-saata,
+.page-presidents-note,
+.page-mission-and-vision,
+.page-eric-berne {
+  .about_us {
     max-width: 1258px;
     margin: 0px auto;
-      .about_us_wrapper {
-          h2{
-            text-align: left;
-            width: 100%;
-            font-size: 30px;
-            color: #a37bb6;
-            margin-left: 20px;
-            margin-top: 20px;
+    .about_us_wrapper {
+      h2 {
+        text-align: left;
+        width: 100%;
+        font-size: 30px;
+        color: #a37bb6;
+        margin-left: 20px;
+        margin-top: 20px;
+      }
+    }
+    .about_us_content {
+      p {
+        font-size: 15px;
+        padding-bottom: 12px;
+        margin-top: 0px !important;
+      }
+      ul {
+        transform: translateX(21px);
+      }
+      table {
+        border: 1px solid;
+        width: 100%;
+        border-collapse: collapse;
+        tr {
+          th {
+            border-bottom: 1px solid black;
+            background-color: #a37bb6;
+            color: white;
+            p {
+              padding: 20px 18px;
+              font-size: 15px;
+              margin-top: 0px !important;
+            }
           }
         }
-        .about_us_content{ 
-          p{
+        tr:nth-child(3),
+        tr:nth-child(5) {
+          background-color: #a37bb64d;
+        }
+        tr {
+          td {
+            padding: 20px 0px;
             font-size: 15px;
-            padding-bottom: 12px;
-            margin-top: 0px !important;
-          }
-          ul{
-            transform: translateX(21px);
-          }
-          table{
-            border: 1px solid;
-            width: 100%;
-            border-collapse: collapse;
-              tr {
-                th{
-                  border-bottom: 1px solid black;
-                  background-color: #a37bb6;
-                  color: white;
-                  p{
-                    padding: 20px 18px;
-                    font-size: 15px;
-                    margin-top: 0px !important;
-                  }
-                }
+            border-bottom: 1px solid black;
+            p {
+              padding: 0px 18px;
+              a {
+                text-decoration: none;
               }
-              tr:nth-child(3), 
-              tr:nth-child(5){
-                background-color: #a37bb64d;
-              }
-              tr{
-                td{
-                  padding: 20px 0px;
-                  font-size: 15px;
-                  border-bottom: 1px solid black;
-                    p{
-                      padding: 0px 18px;
-                        a{
-                          text-decoration: none;
-                        }
-                    }
-                }
-              }
+            }
           }
+        }
+      }
     }
   }
-  .about_us::before{
+  .about_us::before {
     background: none;
   }
 }
-.page-ta-101-program-details{
-  .about_us_content{
-    table{
-      margin: 60px 0px 30px 0px;  
-      tr{
-        th{
-          p{
+.page-ta-101-program-details {
+  .about_us_content {
+    table {
+      margin: 60px 0px 30px 0px;
+      tr {
+        th {
+          p {
             text-align: center;
           }
         }
       }
-      tr{
-        td{
-          p{
+      tr {
+        td {
+          p {
             text-align: center;
           }
         }
@@ -108,10 +108,10 @@
 }
 .newsletter-description {
   margin-left: 24px;
-  ul{
+  ul {
     margin-left: 24px;
   }
-  b{
+  b {
     display: block;
   }
 }
@@ -121,134 +121,134 @@ $color_2: white;
 $background-color_1: rgb(232, 76, 61);
 
 * {
-	margin: 0px;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
 }
 .news-letter-subtitle {
-	display: flex;
-	justify-content: space-between;
-	margin: auto;
-	gap: 19px;
-	img {
-		max-width: 351px;
-	}
-	p {
-		line-height: 36px;
-		font-size: 15px;
-	}
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  gap: 19px;
+  img {
+    max-width: 351px;
+  }
+  p {
+    line-height: 36px;
+    font-size: 15px;
+  }
 }
 .news-main {
-	max-width: 1276px;
-	margin: 0px auto;
-	padding: 0px 12px;
-	h1 {
-		border: 1px solid;
-		text-align: center;
-		padding: 10px 0px;
-		background-color: $background-color_1;
-		color: $color_2;
-		font-size: 29px;
-		margin-bottom: 20px;
-	}
+  max-width: 1276px;
+  margin: 0px auto;
+  padding: 0px 12px;
+  h1 {
+    border: 1px solid;
+    text-align: center;
+    padding: 10px 0px;
+    background-color: $background-color_1;
+    color: $color_2;
+    font-size: 29px;
+    margin-bottom: 20px;
+  }
 }
 .newsletter {
-	max-width: 1276px;
-	margin: 0px auto;
-	padding: 0px 12px;
-	a {
-		display: flex;
-		justify-content: flex-end;
-		padding: 30px 0px;
-		font-size: 20px;
-		color: $color_1;
-		text-decoration: none;
-	}
+  max-width: 1276px;
+  margin: 0px auto;
+  padding: 0px 12px;
+  a {
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px 0px;
+    font-size: 20px;
+    color: $color_1;
+    text-decoration: none;
+  }
 }
 .newsletter-description {
-	p {
-		margin-bottom: 15px;
-		line-height: 26px;
-		font-size: 15px;
-		&:nth-child(8) {
-			display: flex;
-			flex-direction: column;
-		}
-	}
+  p {
+    margin-bottom: 15px;
+    line-height: 26px;
+    font-size: 15px;
+    &:nth-child(8) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 }
 .newsletter_banner_img {
-	img {
-		width: 100%;
-		margin-bottom: 10px;
-	}
+  img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }
 .news-letter-container {
-	display: flex;
-	width: 100%;
-	gap: 27px;
+  display: flex;
+  width: 100%;
+  gap: 27px;
 }
 .news-letter-folder1 {
-	width: 77%;
+  width: 77%;
 }
 .news-letter-folder2 {
-	width: 23%;
+  width: 23%;
 }
 .news-field {
-	list-style: none;
-	padding: 17px;
-	text-align: center;
-	margin: 25px 0px;
-	background-color: $background-color_1;
-	color: $color_2;
+  list-style: none;
+  padding: 17px;
+  text-align: center;
+  margin: 25px 0px;
+  background-color: $background-color_1;
+  color: $color_2;
 }
 .news-drop_drown-menu {
-	padding-left: 24px;
-	li {
-		margin-bottom: 10px;
-	}
+  padding-left: 24px;
+  li {
+    margin-bottom: 10px;
+  }
 }
 .news-latter-right-field-folder {
-	ul {
-		div {
-			&:nth-child(2) {
-				.news-field {
-					background: #438b8b;
-				}
-			}
-			&:nth-child(3) {
-				.news-field {
-					background: #da9a31;
-				}
-			}
-			&:nth-child(4) {
-				.news-field {
-					background: #996ada;
-				}
-			}
-			&:nth-child(5) {
-				.news-field {
-					background: #9cc255;
-				}
-			}
-		}
-	}
+  ul {
+    div {
+      &:nth-child(2) {
+        .news-field {
+          background: #438b8b;
+        }
+      }
+      &:nth-child(3) {
+        .news-field {
+          background: #da9a31;
+        }
+      }
+      &:nth-child(4) {
+        .news-field {
+          background: #996ada;
+        }
+      }
+      &:nth-child(5) {
+        .news-field {
+          background: #9cc255;
+        }
+      }
+    }
+  }
 }
-.page-exam-dates, 
-.page-download-documents, 
-.page-directory, 
-.page-membership-renewal, 
-.page-call-for-nominations, 
-.page-guidelines-for-content-contributors, 
-.page-newsletter-advertisement-policy, 
-.page-journals, 
-.page-awards, 
-.page-service-award, 
-.page-about-us, 
-.page-about-ta, 
-.page-history-and-origin-of-saata, 
-.page-presidents-note, 
-.page-mission-and-vision, 
-.page-eric-berne{
+.page-exam-dates,
+.page-download-documents,
+.page-directory,
+.page-membership-renewal,
+.page-call-for-nominations,
+.page-guidelines-for-content-contributors,
+.page-newsletter-advertisement-policy,
+.page-journals,
+.page-awards,
+.page-service-award,
+.page-about-us,
+.page-about-ta,
+.page-history-and-origin-of-saata,
+.page-presidents-note,
+.page-mission-and-vision,
+.page-eric-berne {
   .about_us.about_ta {
     padding: 18px 20px;
     background-color: #f9f9f93d;
@@ -256,90 +256,90 @@ $background-color_1: rgb(232, 76, 61);
     margin-bottom: 37px;
   }
 }
-.page-from-the-editorial-desk, 
-.page-news-from-the-research-and-publications-team, 
-.page-operations-team, 
-.page-dev-team-updates, 
-.page-miscellaneous-news, 
-.page-saata-conference-updates, 
-.page-professional-standards-division-psd, 
-.page-where-theres-a-will-theres-a-way, 
-.page-unmute-please, 
-.page-cartoon-quip, 
-.page-from-the-presidents-desk, 
-.page-poem-the-collector-of-stamps, 
-.page-book-review, 
-.page-crossword{
-  .news-latter-right-field-folder{
-    .news-drop_drown-menu{
-      li{
-        a{
+.page-from-the-editorial-desk,
+.page-news-from-the-research-and-publications-team,
+.page-operations-team,
+.page-dev-team-updates,
+.page-miscellaneous-news,
+.page-saata-conference-updates,
+.page-professional-standards-division-psd,
+.page-where-theres-a-will-theres-a-way,
+.page-unmute-please,
+.page-cartoon-quip,
+.page-from-the-presidents-desk,
+.page-poem-the-collector-of-stamps,
+.page-book-review,
+.page-crossword {
+  .news-latter-right-field-folder {
+    .news-drop_drown-menu {
+      li {
+        a {
           color: #a37bb6;
         }
       }
     }
-    img{
+    img {
       width: 100%;
     }
   }
 }
-.page-download-forms{
-  .about_us.about_ta{
-    .about_us_content{
+.page-download-forms {
+  .about_us.about_ta {
+    .about_us_content {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 20px;
-        h3{
-          width: 289px;
-          padding: 88px 26px;
-          line-height: 30px;
-          color: #757575;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          font-size: 15px;
-          box-shadow: 0px 4px 13px #e5e5e5;
-          transition: 0.1s ease-in;
-          background-color: #f9f9f921;
-            a{
-              color: #a37bb6;
-              text-decoration: none;
-            }
-          &:hover{
-            background-color: #a37bb6;
+      h3 {
+        width: 289px;
+        padding: 88px 26px;
+        line-height: 30px;
+        color: #757575;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 15px;
+        box-shadow: 0px 4px 13px #e5e5e5;
+        transition: 0.1s ease-in;
+        background-color: #f9f9f921;
+        a {
+          color: #a37bb6;
+          text-decoration: none;
+        }
+        &:hover {
+          background-color: #a37bb6;
+          color: white;
+          a {
             color: white;
-            a{
-              color: white;
-              text-decoration: revert;
-            }
+            text-decoration: revert;
           }
         }
+      }
     }
   }
 }
-.page-download-documents{
+.page-download-documents {
   .about_us.about_ta {
-    .about_us_content{
-      h3{
+    .about_us_content {
+      h3 {
         font-size: 17px;
         font-weight: 600;
-        a{
+        a {
           color: #a37bb6;
           font-weight: 400;
         }
       }
-      p{
-        a{
+      p {
+        a {
           color: #a37bb6;
         }
       }
     }
   }
 }
-.page-directory, 
-.page-call-for-nominations{
-  .aboutus_parent{
+.page-directory,
+.page-call-for-nominations {
+  .aboutus_parent {
     .about_us_img {
       max-width: 100%;
       width: 100%;
@@ -348,54 +348,54 @@ $background-color_1: rgb(232, 76, 61);
     }
   }
 }
-.page-membership-renewal{
-  .about_us_content{
-    h2{
+.page-membership-renewal {
+  .about_us_content {
+    h2 {
       font-size: 22px;
       margin-bottom: 7px;
     }
-    p{
-      a{
+    p {
+      a {
         color: #a37bb6;
       }
     }
   }
 }
-.page-call-for-nominations{
-  .about_us.about_ta{
-    .about_us_content{
-      p:nth-child(16) a{
+.page-call-for-nominations {
+  .about_us.about_ta {
+    .about_us_content {
+      p:nth-child(16) a {
         color: #a37bb6;
       }
     }
   }
 }
-.page-journals{
-  .about_us.about_ta{
-    .about_us_content{
-      p{
+.page-journals {
+  .about_us.about_ta {
+    .about_us_content {
+      p {
         line-height: 24px;
-        a{
+        a {
           color: #a37bb6;
         }
       }
-      h3{
+      h3 {
         margin-bottom: 17px;
       }
     }
   }
 }
-.page-awards, 
-.page-service-award{
-  .about_us.about_ta{
-    .about_us_content{
-      h3{
+.page-awards,
+.page-service-award {
+  .about_us.about_ta {
+    .about_us_content {
+      h3 {
         margin-bottom: 14px;
       }
-      p{
+      p {
         line-height: 23px;
       }
-      img{
+      img {
         width: 428px;
         margin-bottom: 20px;
         margin-right: 20px;
@@ -403,108 +403,84 @@ $background-color_1: rgb(232, 76, 61);
     }
   }
 }
-.page-CertifiedMembers{
-  .Certified-Members-folder{
-    div{
+.page-CertifiedMembers {
+  .Certified-Members-folder {
+    div {
       position: relative;
       width: 352px;
       padding-bottom: 15px;
       border-radius: 15px;
       box-shadow: 0px 4px 7px #dbdbdb;
-        .certified-members-image-folder{
-          display: flex;
-          flex-direction: column-reverse;
-          border: none;
-          width: 100%;
-          box-shadow: none;
-          h2{
-            font-size: 20px;
-            margin: 14px 0px 0px 16px;
+      .certified-members-image-folder {
+        display: flex;
+        flex-direction: column-reverse;
+        border: none;
+        width: 100%;
+        box-shadow: none;
+        h2 {
+          font-size: 20px;
+          margin: 14px 0px 0px 16px;
+        }
+        p {
+          display: none;
+        }
+      }
+      div:nth-child(1) {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        right: 0%;
+        bottom: 0%;
+        width: 100%;
+        height: 100%;
+        background-color: #a37bb6;
+        color: white;
+        z-index: 1;
+        transition: all 0.2s ease-in;
+        opacity: 0;
+        padding: 24px 19px;
+        ul {
+          li {
+            list-style: none;
+            margin-bottom: 10px;
+            line-height: 22px;
           }
-          p{
-            display: none;
-          }
         }
-        div:nth-child(1){
-          position: absolute;
-          top: 0%;
-          left: 0%;
-          right: 0%;
-          bottom: 0%;
-          width: 100%;
-          height: 100%;
-          background-color: #a37bb6;
-          color: white;
-          z-index: 1;
-          transition: all 0.2s ease-in;
-          opacity: 0;
-          padding: 24px 19px;
-            ul{
-              li{
-                list-style: none;
-                margin-bottom: 10px;
-                line-height: 22px;
-              }
-            }
-        }
-        .certified-members-image-folder img {
-          width: 100%;
-          height: 368px;
-          border-radius: 15px;
-        }
-        &:hover div:nth-child(1){
-          opacity: 1;
-        }
+      }
+      .certified-members-image-folder img {
+        width: 100%;
+        height: 368px;
+        border-radius: 15px;
+      }
+      &:hover div:nth-child(1) {
+        opacity: 1;
+      }
     }
   }
 }
-.page-about-us, 
-.page-about-ta, 
-.page-history-and-origin-of-saata, 
-.page-presidents-note, 
-.page-mission-and-vision, 
-.page-eric-berne{
-  .aboutus_parent{
-    .about_us_content{
+.page-about-us,
+.page-about-ta,
+.page-history-and-origin-of-saata,
+.page-presidents-note,
+.page-mission-and-vision,
+.page-eric-berne {
+  .aboutus_parent {
+    .about_us_content {
       margin: 0px auto 50px auto;
       line-height: 26px;
     }
   }
 }
-// .page-gregarious-hugger{
-//   .news-letter-team{
-//     // max-width: 1258px;
-//     margin: 0px auto 0px auto;
-//     padding: 18px 37px;
-//     background-color: #f9f9f93d;
-//     box-shadow: 0px 4px 17px #e5e5e5;
-//     margin-bottom: 37px;
-//     .new-letter-team-d-flex{
-//       margin-top: 29px;
-//       img{
-//         width: 150px;
-//       }
-//       .nes-letter-team-wrapper h6{
-//         font-size: 16px;
-//         font-weight: 400;
-//       }
-//     }
-//     .description{
-//       line-height: 26px;
-//       margin: 20px 0px 31px 0px;
-//     }
-//   }
-// }
-.page-about-ta, 
-.page-history-and-origin-of-saata{
+.page-about-ta,
+.page-history-and-origin-of-saata {
   .about_us_img {
     max-width: 100%;
     width: 100%;
     margin-bottom: 15px;
   }
 }
-.page-gregarious-hugger{
-  .news-letter-team-wrapper{
+.page-infectious-workaholic {
+  .news-letter-team-wrapper {
     display: flex;
     max-width: 1258px;
     margin: 0px auto;
@@ -514,44 +490,44 @@ $background-color_1: rgb(232, 76, 61);
     margin-bottom: 37px;
     gap: 25px;
     padding-top: 40px;
-    .newsletterTeam-folder{
+    .newsletterTeam-folder {
       width: 20%;
-      ul{
+      ul {
         display: flex;
         flex-direction: column;
         box-shadow: 0px 4px 8px #e1e1e1;
-        li{
+        li {
           list-style: none;
           padding: 39px 18px;
           border-bottom: 1px solid #dfdfdf;
-          a{
+          a {
             text-decoration: none;
             color: #a37bb6;
           }
-          &:hover{
+          &:hover {
             border-left: 6px solid #a37bb6;
             transition: all 0.1s ease-in;
-              a{
-                margin-left: 20px;
-                transition: all 0.1s ease-in;
-              }
+            a {
+              margin-left: 20px;
+              transition: all 0.1s ease-in;
+            }
           }
         }
       }
     }
-    .news-letter-team{
+    .news-letter-team {
       width: 80%;
-      .new-letter-team-d-flex{
+      .new-letter-team-d-flex {
         display: flex;
         align-items: center;
         gap: 20px;
         margin-bottom: 30px;
-        .nes-letter-team-wrapper{
-          h2{
+        .nes-letter-team-wrapper {
+          h2 {
             margin-bottom: 4px;
             font-size: 27px;
           }
-          h6{
+          h6 {
             font-size: 15px;
           }
         }
