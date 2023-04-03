@@ -73,12 +73,11 @@ function CertifiedMembers() {
                       <div>
                         {richTextContent}
                       </div>
-                      <div>
+                      <div className="certified-members-image-folder">
                         {title}
                         {richTextName}
                       </div>
-                    </div>    
-                   
+                   </div>           
                   </React.Fragment>
                 )
               })
