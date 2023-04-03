@@ -29,6 +29,7 @@ function NewsletterTeam() {
     // console.log(entry)
     return (
         <>
+            
             {
 
                 entry.map((item) => {

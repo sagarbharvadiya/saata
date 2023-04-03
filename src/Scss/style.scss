@@ -16,7 +16,10 @@
 .page-newsletter-advertisement-policy, 
 .page-journals, 
 .page-awards, 
-.page-service-award{
+.page-service-award, 
+.page-about-us, 
+.page-about-ta, 
+.page-history-and-origin-of-saata{
   .about_us{
     max-width: 1258px;
     margin: 0px auto;
@@ -236,7 +239,10 @@ $background-color_1: rgb(232, 76, 61);
 .page-newsletter-advertisement-policy, 
 .page-journals, 
 .page-awards, 
-.page-service-award{
+.page-service-award, 
+.page-about-us, 
+.page-about-ta, 
+.page-history-and-origin-of-saata{
   .about_us.about_ta {
     padding: 18px 20px;
     background-color: #f9f9f93d;
@@ -410,11 +416,7 @@ $background-color_1: rgb(232, 76, 61);
             margin: 14px 0px 0px 16px;
           }
           p{
-            margin: 15px 0px 0px 15px;
-            font-size: 16px;
-          }
-          p:nth-child(2){
-            display: none !important;
+            display: none;
           }
         }
         div:nth-child(1){
@@ -453,15 +455,42 @@ $background-color_1: rgb(232, 76, 61);
 .page-about-us, 
 .page-about-ta, 
 .page-history-and-origin-of-saata{
-  .about_us_wrapper h2 {
-    width: 234px;
-    padding-bottom: 9px;
-  } 
   .aboutus_parent{
     .about_us_content{
-      max-width: 1258px;
       margin: 0px auto 50px auto;
       line-height: 26px;
     }
+  }
+}
+.page-gregarious-hugger{
+  .news-letter-team{
+    max-width: 1258px;
+    margin: 0px auto 0px auto;
+    padding: 18px 37px;
+    background-color: #f9f9f93d;
+    box-shadow: 0px 4px 17px #e5e5e5;
+    margin-bottom: 37px;
+    .new-letter-team-d-flex{
+      margin-top: 29px;
+      img{
+        width: 150px;
+      }
+      .nes-letter-team-wrapper h6{
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+    .description{
+      line-height: 26px;
+      margin: 20px 0px 31px 0px;
+    }
+  }
+}
+.page-about-ta, 
+.page-history-and-origin-of-saata{
+  .about_us_img {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 15px;
   }
 }
