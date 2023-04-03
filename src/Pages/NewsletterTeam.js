@@ -35,35 +35,37 @@ function NewsletterTeam() {
 
     return (
         <>
-        <NewsLetterTeamSidebar/>
-            {
-                entry.map((item) => {
-                    const { designation, fullName, richTextEditor } = item.fields;
-                    const image = item.fields.image.fields.file.url;
-                    const id = item.sys.id
-                    console.log(id)
-                    const richTextContent = documentToReactComponents(richTextEditor);
-                    return (
-                        <React.Fragment key={id}>
-                            <div className="news-letter-team">
-                                <div className="new-letter-team-d-flex">
-                                    <img src={image} alt={fullName}></img>
-                                    <div className="nes-letter-team-wrapper">
-                                        <h2>{fullName}</h2>
-                                        <h6>{designation}</h6>
+        <div className="news-letter-team-wrapper">
+            <NewsLetterTeamSidebar/>
+                {
+                    entry.map((item) => {
+                        const { designation, fullName, richTextEditor } = item.fields;
+                        const image = item.fields.image.fields.file.url;
+                        const id = item.sys.id
+                        console.log(id)
+                        const richTextContent = documentToReactComponents(richTextEditor);
+                        return (
+                            <React.Fragment key={id}>
+                                <div className="news-letter-team">
+                                    <div className="new-letter-team-d-flex">
+                                        <img src={image} alt={fullName}></img>
+                                        <div className="nes-letter-team-wrapper">
+                                            <h2>{fullName}</h2>
+                                            <h6>{designation}</h6>
+                                        </div>
+                                    </div>
+                                    <div className="description">
+                                        {richTextContent}
+                                    </div>
+                                    <div>
                                     </div>
                                 </div>
-                                <div className="description">
-                                    {richTextContent}
-                                </div>
-                                <div>
-                                </div>
-                            </div>
 
-                        </React.Fragment>
-                    )
-                })
-            }
+                            </React.Fragment>
+                        )
+                    })
+                }
+        </div>
         </>
     );
 }
