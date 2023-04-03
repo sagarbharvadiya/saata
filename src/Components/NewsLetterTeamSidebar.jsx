@@ -21,7 +21,6 @@ const NewsLetterTeamSidebar = () => {
         };
         fetchPage();
     }, []);
-
     return (
         <>
             <div className="newsletterTeam-folder">
