@@ -74,7 +74,7 @@ function CertifiedMembers() {
                         {richTextContent}
                       </div>
                       <div className="certified-members-image-folder">
-                        {title}
+                        <h2>{title}</h2>
                         {richTextName}
                       </div>
                    </div>           
