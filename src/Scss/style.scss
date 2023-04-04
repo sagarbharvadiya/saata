@@ -22,7 +22,14 @@
 .page-history-and-origin-of-saata,
 .page-presidents-note,
 .page-mission-and-vision,
-.page-eric-berne {
+.page-eric-berne, 
+.page-saata-bot, 
+.page-enthusiastic-explorer, 
+.page-exuberant-organiser, 
+.page-story-teller, 
+.page-truth-seeker, 
+.page-ace-conceptualist, 
+.page-gregarious-hugger{
   .about_us {
     max-width: 1258px;
     margin: 0px auto;
@@ -46,7 +53,7 @@
         transform: translateX(21px);
       }
       table {
-        border: 1px solid;
+        border: 1px solid #cdcdcd;
         width: 100%;
         border-collapse: collapse;
         tr {
@@ -61,15 +68,14 @@
             }
           }
         }
-        tr:nth-child(3),
-        tr:nth-child(5) {
+        tr:nth-child(odd){
           background-color: #a37bb64d;
         }
         tr {
           td {
             padding: 20px 0px;
             font-size: 15px;
-            border-bottom: 1px solid black;
+            border-bottom: 1px solid #cdcdcd;
             p {
               padding: 0px 18px;
               a {
@@ -248,7 +254,14 @@ $background-color_1: rgb(232, 76, 61);
 .page-history-and-origin-of-saata,
 .page-presidents-note,
 .page-mission-and-vision,
-.page-eric-berne {
+.page-eric-berne, 
+.page-saata-bot, 
+.page-enthusiastic-explorer, 
+.page-exuberant-organiser, 
+.page-story-teller, 
+.page-truth-seeker, 
+.page-ace-conceptualist, 
+.page-gregarious-hugger{
   .about_us.about_ta {
     padding: 18px 20px;
     background-color: #f9f9f93d;
@@ -269,7 +282,7 @@ $background-color_1: rgb(232, 76, 61);
 .page-from-the-presidents-desk,
 .page-poem-the-collector-of-stamps,
 .page-book-review,
-.page-crossword {
+.page-crossword{
   .news-latter-right-field-folder {
     .news-drop_drown-menu {
       li {
@@ -463,7 +476,8 @@ $background-color_1: rgb(232, 76, 61);
 .page-history-and-origin-of-saata,
 .page-presidents-note,
 .page-mission-and-vision,
-.page-eric-berne {
+.page-eric-berne, 
+.page-saata-bot{
   .aboutus_parent {
     .about_us_content {
       margin: 0px auto 50px auto;
@@ -472,14 +486,21 @@ $background-color_1: rgb(232, 76, 61);
   }
 }
 .page-about-ta,
-.page-history-and-origin-of-saata {
+.page-history-and-origin-of-saata, 
+.page-saata-bot{
   .about_us_img {
     max-width: 100%;
     width: 100%;
     margin-bottom: 15px;
   }
 }
-.page-infectious-workaholic {
+.page-infectious-workaholic, 
+.page-enthusiastic-explorer, 
+.page-exuberant-organiser, 
+.page-story-teller, 
+.page-truth-seeker, 
+.page-ace-conceptualist, 
+.page-gregarious-hugger{
   .news-letter-team-wrapper {
     display: flex;
     max-width: 1258px;
@@ -503,6 +524,7 @@ $background-color_1: rgb(232, 76, 61);
           a {
             text-decoration: none;
             color: #a37bb6;
+            font-weight: 400;
           }
           &:hover {
             border-left: 6px solid #a37bb6;
@@ -531,6 +553,32 @@ $background-color_1: rgb(232, 76, 61);
             font-size: 15px;
           }
         }
+      }
+    }
+  }
+}
+.news-letter-team{
+  .description{
+    p{
+      margin-bottom: 12px;
+      line-height: 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+      b{
+        color: #a37bb6;
+      }
+    }
+  }
+}
+.page-saata-bot{
+  .about_us.about_ta{
+    .about_us_content{
+      table{
+        margin-bottom: 30px;
+      }
+      &:last-child{
+        margin-bottom: 0px;
       }
     }
   }
