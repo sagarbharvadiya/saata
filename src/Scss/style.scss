@@ -629,4 +629,8 @@ $background-color_1: rgb(232, 76, 61);
       }
     }
   }
+
+li.menu-item.active {
+  display: block;
+  background: red;
 }

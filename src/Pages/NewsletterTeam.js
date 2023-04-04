@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import client from "../client";
-import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
-import { BLOCKS } from '@contentful/rich-text-types';
 import NewsLetterTeamSidebar from "../Components/NewsLetterTeamSidebar";
-
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 function NewsletterTeam() {
     const { slug } = useParams();
     const [entry, setEntry] = useState([]);
@@ -43,7 +41,7 @@ function NewsletterTeam() {
                         const image = item.fields.image.fields.file.url;
                         const id = item.sys.id
                         console.log(id)
-                        const richTextContent = documentToReactComponents(richTextEditor);
+                    
                         return (
                             <React.Fragment key={id}>
                                 <div className="news-letter-team">
@@ -55,7 +53,7 @@ function NewsletterTeam() {
                                         </div>
                                     </div>
                                     <div className="description">
-                                        {richTextContent}
+                                    {documentToReactComponents(richTextEditor)}
                                     </div>
                                     <div>
                                     </div>
