@@ -31,7 +31,7 @@ const NewsLetterList = () => {
     }
   }
   return (
-    <div>
+    <div className="news-latter-cpnews-section">
       <h2>Newsletters</h2>
       <ul>
         {entries.map((entry) => (
