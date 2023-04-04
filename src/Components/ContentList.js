@@ -6,8 +6,9 @@ const ContentList = (prop) => {
   const [entry, setEntry] = useState([]);
   const [toggleNews, setToggleNews] = useState(false);
   // const toggleNewsHandler = () => setToggleNews((prevState) => !prevState);
-  const { monthAndYear, type, title, activeLink, onLinkClick,setActiveLink } = prop;
+  const { monthAndYear, type, title, activeLink,  setActiveLink } = prop;
   const { slug } = useParams();
+  const currentSlug = slug;
 
   const toggleNewsHandler = (slug) => {
     if (slug === activeLink || activeLink === null) {
@@ -31,8 +32,7 @@ const ContentList = (prop) => {
           "fields.monthAndYear": monthAndYear,
           "fields.type": type,
         });
-        // console.log(response.items);
-        // console.log(prop.monthAndYear);
+
         if (response.items.length) {
           setEntry(response.items.reverse());
         }
@@ -43,19 +43,7 @@ const ContentList = (prop) => {
     fetchPage();
   }, [monthAndYear, type]);
 
-  useEffect(() => {
-    const savedToggle = localStorage.getItem("toggleNews");
-    if (savedToggle) {
-      setToggleNews(JSON.parse(savedToggle));
-    }
-  }, []);
 
-  useEffect(() => {
-    if (activeLink === slug) {
-      setToggleNews(true);
-      localStorage.setItem("toggleNews", true);
-    }
-  }, [activeLink, slug]);
 
   return (
     <div>
@@ -65,26 +53,18 @@ const ContentList = (prop) => {
       <ul className="news-drop_drown-menu">
         {entry.map((item, index) => {
           const { title, slug } = item.fields;
-          const isActive = activeLink === slug;
+          const isActive = currentSlug === slug; 
           return (
             <React.Fragment key={item.sys.id}>
               {toggleNews && (
-                <li>
-                  <NavLink
-                    to={`/content/${slug}`}
-                    className={isActive ? "activeLink" : ""}
-                    onClick={() => {
-                      onLinkClick(slug);
-                      setToggleNews(false);
-                    }}
-                  >
-                    {title}
-                  </NavLink>
+                <li className={isActive ? "menu-item active" : "menu-item"}>
+                  <NavLink to={`/content/${slug}`}>{title}</NavLink>
                 </li>
               )}
             </React.Fragment>
           );
         })}
+
       </ul>
     </div>
   );
