@@ -25,18 +25,21 @@ const NewsLetterTeamSidebar = () => {
         <>
             <div className="newsletterTeam-folder">
                 <ul>
-                {
-                    entry.map((item) => {
-                        const { slug, title } = item.fields;
-                        return (
-                            <React.Fragment key={slug}>
+                    <li>
+                        <NavLink to={`/basicPage/editors-collage`}>Meet the Newsletter Team </NavLink>
+                    </li>
+                    {
+                        entry.map((item) => {
+                            const { slug, title } = item.fields;
+                            return (
+                                <React.Fragment key={slug}>
                                     <li>
                                         <NavLink to={`/newsletterTeam/${slug}`}>{title}</NavLink>
                                     </li>
-                            </React.Fragment>
-                        )
-                    })
-                }
+                                </React.Fragment>
+                            )
+                        })
+                    }
                 </ul>
             </div>
         </>
