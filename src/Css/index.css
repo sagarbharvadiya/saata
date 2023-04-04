@@ -303,8 +303,8 @@ code {
 .banner-slider-folder .slick-prev:before {
   font-size: 40px !important;
   line-height: 1;
-  opacity: 0.75;
-  color: #262626 !important;
+  opacity: 1;
+  color: #ffffff !important;
 }
 
 .banner-slider-folder .slick-next {
@@ -314,8 +314,8 @@ code {
 .banner-slider-folder .slick-next:before {
   font-size: 40px !important;
   line-height: 1;
-  opacity: 0.75;
-  color: #262626 !important;
+  opacity: 1;
+  color: #ffffff !important;
 }
 
 .gallery-slider-folder .slick-prev:before {
@@ -1950,7 +1950,9 @@ code {
   .page-guidelines-for-content-contributors .about_us.about_ta, 
   .page-newsletter-advertisement-policy .about_us.about_ta, 
   .page-journals .about_us.about_ta, 
-  .page-saata-calendar-2021-2022 .about_us.about_ta{
+  .page-saata-calendar-2021-2022 .about_us.about_ta, 
+  .page-awards .about_us.about_ta, 
+  .page-service-award .about_us.about_ta{
     padding: 18px 0px;
     max-width: 318px;
   }
@@ -2036,5 +2038,79 @@ code {
   .page-service-award .about_us.about_ta {
     padding: 18px 0px;
     font-size: 25px !important;
+  }
+  .page-awards .about_us.about_ta .about_us_content img, 
+  .page-service-award .about_us.about_ta .about_us_content img {
+    width: 100% !important;
+  }
+  .page-exam-dates .about_us.about_ta, 
+  .page-download-documents .about_us.about_ta, 
+  .page-directory .about_us.about_ta, 
+  .page-membership-renewal .about_us.about_ta, 
+  .page-call-for-nominations .about_us.about_ta, 
+  .page-guidelines-for-content-contributors .about_us.about_ta, 
+  .page-newsletter-advertisement-policy .about_us.about_ta, 
+  .page-journals .about_us.about_ta, 
+  .page-awards .about_us.about_ta, 
+  .page-service-award .about_us.about_ta, 
+  .page-about-us .about_us.about_ta, 
+  .page-about-ta .about_us.about_ta, 
+  .page-history-and-origin-of-saata .about_us.about_ta, 
+  .page-presidents-note .about_us.about_ta, 
+  .page-mission-and-vision .about_us.about_ta, 
+  .page-eric-berne .about_us.about_ta, 
+  .page-saata-bot .about_us.about_ta, 
+  .page-enthusiastic-explorer .about_us.about_ta, 
+  .page-exuberant-organiser .about_us.about_ta, 
+  .page-story-teller .about_us.about_ta, 
+  .page-truth-seeker .about_us.about_ta, 
+  .page-ace-conceptualist .about_us.about_ta, 
+  .page-gregarious-hugger .about_us.about_ta {
+    padding: 18px 0px !important;
+  }
+  .page-guidelines-for-content-contributors .about_us.about_ta .about_us_content ul{
+    transform: translateX(0px);
+  }
+  .page-guidelines-for-content-contributors .about_us.about_ta .about_us_content ul li{
+    list-style: none;
+  }
+  .page-membership-details .about_us .about_us_wrapper h2, 
+  .page-ta-101-program-details .about_us .about_us_wrapper h2, 
+  .page-exam-dates .about_us .about_us_wrapper h2, 
+  .page-saata-calendar-2021-2022 .about_us .about_us_wrapper h2, 
+  .page-download-forms .about_us .about_us_wrapper h2, 
+  .page-download-documents .about_us .about_us_wrapper h2, 
+  .page-directory .about_us .about_us_wrapper h2, 
+  .page-membership-renewal .about_us .about_us_wrapper h2, 
+  .page-call-for-nominations .about_us .about_us_wrapper h2, 
+  .page-guidelines-for-content-contributors .about_us .about_us_wrapper h2, 
+  .page-newsletter-advertisement-policy .about_us .about_us_wrapper h2, 
+  .page-journals .about_us .about_us_wrapper h2, 
+  .page-awards .about_us .about_us_wrapper h2, 
+  .page-service-award .about_us .about_us_wrapper h2, 
+  .page-about-us .about_us .about_us_wrapper h2, 
+  .page-about-ta .about_us .about_us_wrapper h2, 
+  .page-history-and-origin-of-saata .about_us .about_us_wrapper h2, 
+  .page-presidents-note .about_us .about_us_wrapper h2, 
+  .page-mission-and-vision .about_us .about_us_wrapper h2, 
+  .page-eric-berne .about_us .about_us_wrapper h2, 
+  .page-saata-bot .about_us .about_us_wrapper h2, 
+  .page-enthusiastic-explorer .about_us .about_us_wrapper h2, 
+  .page-exuberant-organiser .about_us .about_us_wrapper h2, 
+  .page-story-teller .about_us .about_us_wrapper h2, 
+  .page-truth-seeker .about_us .about_us_wrapper h2, 
+  .page-ace-conceptualist .about_us .about_us_wrapper h2, 
+  .page-gregarious-hugger .about_us .about_us_wrapper h2 {
+    font-size: 25px;
+  }
+  .page-cpnews .news-latter-cpnews-section{
+    max-width: 318px !important;
+  }
+  .page-cpnews .news-latter-cpnews-section ul {
+    display: flex;
+    justify-content: center;
+  }
+  .page-cpnews .news-latter-cpnews-section h2 {
+    margin-left: 0px;
   }
 }
