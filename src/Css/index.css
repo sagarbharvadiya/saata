@@ -1487,6 +1487,62 @@ code {
   .contact_form textarea {
     width: 461px;
   }
+  .page-membership-details .about_us, 
+  .page-ta-101-program-details .about_us, 
+  .page-exam-dates .about_us, 
+  .page-saata-calendar-2021-2022 .about_us, 
+  .page-download-forms .about_us, 
+  .page-download-documents .about_us, 
+  .page-directory .about_us, 
+  .page-membership-renewal .about_us, 
+  .page-call-for-nominations .about_us, 
+  .page-guidelines-for-content-contributors .about_us, 
+  .page-newsletter-advertisement-policy .about_us, 
+  .page-journals .about_us, .page-awards .about_us, 
+  .page-service-award .about_us, 
+  .page-about-us .about_us, 
+  .page-about-ta .about_us, 
+  .page-history-and-origin-of-saata .about_us, 
+  .page-presidents-note .about_us, 
+  .page-mission-and-vision .about_us, 
+  .page-eric-berne .about_us, 
+  .page-saata-bot .about_us, 
+  .page-enthusiastic-explorer .about_us, 
+  .page-exuberant-organiser .about_us, 
+  .page-story-teller .about_us, 
+  .page-truth-seeker .about_us, 
+  .page-ace-conceptualist .about_us, 
+  .page-gregarious-hugger .about_us, 
+  .page-team-that-was .about_us, .page-membership-details .about_us, 
+  .page-ta-101-program-details .about_us, 
+  .page-exam-dates .about_us, 
+  .page-saata-calendar-2021-2022 .about_us, 
+  .page-download-forms .about_us, 
+  .page-download-documents .about_us, 
+  .page-directory .about_us, 
+  .page-membership-renewal .about_us, 
+  .page-call-for-nominations .about_us, 
+  .page-guidelines-for-content-contributors .about_us, 
+  .page-newsletter-advertisement-policy .about_us, 
+  .page-journals .about_us, 
+  .page-awards .about_us, 
+  .page-service-award .about_us, 
+  .page-about-us .about_us, 
+  .page-about-ta .about_us, 
+  .page-history-and-origin-of-saata .about_us, 
+  .page-presidents-note .about_us, 
+  .page-mission-and-vision .about_us, 
+  .page-eric-berne .about_us, 
+  .page-saata-bot .about_us, 
+  .page-enthusiastic-explorer .about_us, 
+  .page-exuberant-organiser .about_us, 
+  .page-story-teller .about_us, 
+  .page-truth-seeker .about_us, 
+  .page-ace-conceptualist .about_us, 
+  .page-gregarious-hugger .about_us, 
+  .page-team-that-was .about_us{
+    max-width: 784px !important;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -1680,6 +1736,97 @@ code {
 
   .Articles-date {
     font-size: 13px;
+  }
+  .page-membership-details .about_us, 
+  .page-ta-101-program-details .about_us, 
+  .page-exam-dates .about_us, 
+  .page-saata-calendar-2021-2022 .about_us, 
+  .page-download-forms .about_us, 
+  .page-download-documents .about_us, 
+  .page-directory .about_us, 
+  .page-membership-renewal .about_us, 
+  .page-call-for-nominations .about_us, 
+  .page-guidelines-for-content-contributors .about_us, 
+  .page-newsletter-advertisement-policy .about_us, 
+  .page-journals .about_us, .page-awards .about_us, 
+  .page-service-award .about_us, 
+  .page-about-us .about_us, 
+  .page-about-ta .about_us, 
+  .page-history-and-origin-of-saata .about_us, 
+  .page-presidents-note .about_us, 
+  .page-mission-and-vision .about_us, 
+  .page-eric-berne .about_us, 
+  .page-saata-bot .about_us, 
+  .page-enthusiastic-explorer .about_us, 
+  .page-exuberant-organiser .about_us, 
+  .page-story-teller .about_us, 
+  .page-truth-seeker .about_us, 
+  .page-ace-conceptualist .about_us, 
+  .page-gregarious-hugger .about_us, 
+  .page-team-that-was .about_us, .page-membership-details .about_us, 
+  .page-ta-101-program-details .about_us, 
+  .page-exam-dates .about_us, 
+  .page-saata-calendar-2021-2022 .about_us, 
+  .page-download-forms .about_us, 
+  .page-download-documents .about_us, 
+  .page-directory .about_us, 
+  .page-membership-renewal .about_us, 
+  .page-call-for-nominations .about_us, 
+  .page-guidelines-for-content-contributors .about_us, 
+  .page-newsletter-advertisement-policy .about_us, 
+  .page-journals .about_us, 
+  .page-awards .about_us, 
+  .page-service-award .about_us, 
+  .page-about-us .about_us, 
+  .page-about-ta .about_us, 
+  .page-history-and-origin-of-saata .about_us, 
+  .page-presidents-note .about_us, 
+  .page-mission-and-vision .about_us, 
+  .page-eric-berne .about_us, 
+  .page-saata-bot .about_us, 
+  .page-enthusiastic-explorer .about_us, 
+  .page-exuberant-organiser .about_us, 
+  .page-story-teller .about_us, 
+  .page-truth-seeker .about_us, 
+  .page-ace-conceptualist .about_us, 
+  .page-gregarious-hugger .about_us, 
+  .page-team-that-was .about_us{
+    max-width: 740px !important;
+  }
+  .page-membership-details .about_us .about_us_wrapper h2, 
+  .page-ta-101-program-details .about_us .about_us_wrapper h2, 
+  .page-exam-dates .about_us .about_us_wrapper h2, 
+  .page-saata-calendar-2021-2022 .about_us .about_us_wrapper h2, 
+  .page-download-forms .about_us .about_us_wrapper h2, 
+  .page-download-documents .about_us .about_us_wrapper h2, 
+  .page-directory .about_us .about_us_wrapper h2, 
+  .page-membership-renewal .about_us .about_us_wrapper h2, 
+  .page-call-for-nominations .about_us .about_us_wrapper h2, 
+  .page-guidelines-for-content-contributors .about_us .about_us_wrapper h2, 
+  .page-newsletter-advertisement-policy .about_us .about_us_wrapper h2,
+  .page-journals .about_us .about_us_wrapper h2, 
+  .page-awards .about_us .about_us_wrapper h2, 
+  .page-service-award .about_us .about_us_wrapper h2, 
+  .page-about-us .about_us .about_us_wrapper h2, 
+  .page-about-ta .about_us .about_us_wrapper h2, 
+  .page-history-and-origin-of-saata .about_us .about_us_wrapper h2, 
+  .page-presidents-note .about_us .about_us_wrapper h2, 
+  .page-mission-and-vision .about_us .about_us_wrapper h2, 
+  .page-eric-berne .about_us .about_us_wrapper h2, 
+  .page-saata-bot .about_us .about_us_wrapper h2, 
+  .page-enthusiastic-explorer .about_us .about_us_wrapper h2, 
+  .page-exuberant-organiser .about_us .about_us_wrapper h2, 
+  .page-story-teller .about_us .about_us_wrapper h2, 
+  .page-truth-seeker .about_us .about_us_wrapper h2, 
+  .page-ace-conceptualist .about_us .about_us_wrapper h2, 
+  .page-gregarious-hugger .about_us .about_us_wrapper h2, 
+  .page-team-that-was .about_us .about_us_wrapper h2 {
+    font-size: 34px;
+  }
+  .page-awards .about_us.about_ta .about_us_content img, 
+  .page-service-award .about_us.about_ta .about_us_content img, 
+  .page-eric-berne .about_us.about_ta .about_us_content img{
+    width: 341px !important;
   }
 }
 
@@ -1952,9 +2099,19 @@ code {
   .page-journals .about_us.about_ta, 
   .page-saata-calendar-2021-2022 .about_us.about_ta, 
   .page-awards .about_us.about_ta, 
-  .page-service-award .about_us.about_ta{
+  .page-service-award .about_us.about_ta, 
+  .page-about-us .about_us.about_ta, 
+  .page-about-ta .about_us.about_ta, 
+  .page-history-and-origin-of-saata .about_us.about_ta, 
+  .page-presidents-note .about_us.about_ta, 
+  .page-mission-and-vision .about_us.about_ta, 
+  .page-eric-berne .about_us.about_ta, 
+  .page-membership-details .about_us.about_ta, 
+  .page-ta-101-program-details .about_us.about_ta, 
+  .page-saata-calendar-2021-2022 .about_us.about_ta, 
+  .page-saata-bot .about_us.about_ta{
     padding: 18px 0px;
-    max-width: 318px;
+    max-width: 318px !important;
   }
   .page-exam-dates .about_us.about_ta {
     padding: 18px 0px;
@@ -2022,7 +2179,7 @@ code {
   .page-newsletter-advertisement-policy .about_us, 
   .page-journals .about_us, 
   .page-awards .about_us, 
-  .page-service-award .about_us {
+  .page-service-award .about_us{
     max-width: 342px;
     margin: 0px auto;
   }
@@ -2040,7 +2197,9 @@ code {
     font-size: 25px !important;
   }
   .page-awards .about_us.about_ta .about_us_content img, 
-  .page-service-award .about_us.about_ta .about_us_content img {
+  .page-service-award .about_us.about_ta .about_us_content img, 
+  .page-eric-berne .about_us.about_ta .about_us_content img, 
+  .page-crossword .newsletter-description img {
     width: 100% !important;
   }
   .page-exam-dates .about_us.about_ta, 
@@ -2068,10 +2227,18 @@ code {
   .page-gregarious-hugger .about_us.about_ta {
     padding: 18px 0px !important;
   }
-  .page-guidelines-for-content-contributors .about_us.about_ta .about_us_content ul{
+  .page-guidelines-for-content-contributors .about_us.about_ta .about_us_content ul, 
+  .page-about-us .about_us.about_ta .about_us_content ul, 
+  .page-mission-and-vision .about_us.about_ta .about_us_content ul, 
+  .page-membership-details .about_us.about_ta .about_us_content ul, 
+  .page-ta-101-program-details .about_us.about_ta .about_us_content ul{
     transform: translateX(0px);
   }
-  .page-guidelines-for-content-contributors .about_us.about_ta .about_us_content ul li{
+  .page-guidelines-for-content-contributors .about_us.about_ta .about_us_content ul li, 
+  .page-about-us .about_us.about_ta .about_us_content ul li, 
+  .page-mission-and-vision .about_us.about_ta .about_us_content ul li ,
+  .page-membership-details .about_us.about_ta .about_us_content ul li, 
+  .page-ta-101-program-details .about_us.about_ta .about_us_content ul li{
     list-style: none;
   }
   .page-membership-details .about_us .about_us_wrapper h2, 
@@ -2100,8 +2267,9 @@ code {
   .page-story-teller .about_us .about_us_wrapper h2, 
   .page-truth-seeker .about_us .about_us_wrapper h2, 
   .page-ace-conceptualist .about_us .about_us_wrapper h2, 
-  .page-gregarious-hugger .about_us .about_us_wrapper h2 {
-    font-size: 25px;
+  .page-gregarious-hugger .about_us .about_us_wrapper h2, 
+  .page-history-and-origin-of-saata .about_us .about_us_wrapper h2{
+    font-size: 25px !important;
   }
   .page-cpnews .news-latter-cpnews-section{
     max-width: 318px !important;
@@ -2113,4 +2281,31 @@ code {
   .page-cpnews .news-latter-cpnews-section h2 {
     margin-left: 0px;
   }
+  .news-letter-team-wrapper{
+    display: flex;
+    flex-direction: column;
+  }
+  .newsletterTeam-folder{
+    width: 100%;
+  }
+  .news-letter-team{
+    width: 100%;
+  }
+  .newsletterTeam-folder ul{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .newsletterTeam-folder ul li{
+    width: 163px;
+  }
+  .newsletterTeam-folder ul li a{
+    font-size: 12px;
+  }
+  .page-membership-details .about_us_content table, 
+  .page-ta-101-program-details .about_us_content table, 
+  .page-saata-calendar-2021-2022 .about_us_content table, 
+  .page-saata-bot .about_us_content table{
+    display: block;
+    overflow-y: scroll;
+  }  
 }
