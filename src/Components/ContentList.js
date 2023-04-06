@@ -2,10 +2,10 @@ import React, { useEffect, useState } from "react";
 import { NavLink, useParams } from "react-router-dom";
 import client from "../client";
 
-const ContentList = (prop) => {
+const ContentList = (props) => {
   const [entry, setEntry] = useState([]);
   const [toggleNews, setToggleNews] = useState(false);
-  const { monthAndYear, type, title } = prop;
+  const { monthAndYear, type, title } = props;
   const { slug } = useParams();
   const currentSlug = slug;
 
@@ -31,7 +31,7 @@ const ContentList = (prop) => {
   return (
     <div>
       <div
-        onClick={() => setToggleNews(slug)}
+        onClick={() => setToggleNews(!toggleNews)}
         className="news-field"
       >
         {title}

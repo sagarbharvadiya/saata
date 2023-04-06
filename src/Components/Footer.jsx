@@ -9,7 +9,9 @@ const Footer = () => {
                     <div className='get_d_fex'>
                         <div className='right'>
                             <div className='footer_logo'>
-                                <img src="../images/itaa2.png" alt="logo" />
+                                <a href='https://www.itaaworld.org/' target='_blank' rel='noreferrer'>
+                                    <img src="../images/itaa2.png" alt="logo" />
+                                </a>
                             </div>
                         </div>
 
