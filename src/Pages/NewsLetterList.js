@@ -9,7 +9,7 @@ const NewsLetterList = () => {
     const fetchEntries = async () => {
       try {
         const response = await client.getEntries({
-          content_type: "news", // specify the content type you want to fetch
+          content_type: "newslettter", // specify the content type you want to fetch
         });
         // console.log(response);
         if (response.items.length) {
@@ -25,9 +25,9 @@ const NewsLetterList = () => {
 
   function handleEntryField(entry) {
     if (entry.fields.pdf && entry.fields.pdf.fields.file.url !== null) {
-      window.open(entry.fields.pdf.fields.file.url, "_blank");
+      window.open(entry.fields.pdf.fields.file.url, "");
     } else {
-      window.open(`/content/${entry.fields.slug}`, "_blank");
+      window.open(`/content/${entry.fields.slug}`, "");
     }
   }
   return (
