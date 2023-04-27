@@ -109,7 +109,18 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+.login_btn{
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  background: #a37bb6;
+  cursor: pointer;
+}
+.login_btn a{
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+}
 .news-letter-subtitle {
   display: flex;
   justify-content: space-between;
@@ -240,7 +251,8 @@ code {
 }
 
 .logo img {
-  max-width: 339px;
+  max-width: 100%;
+  width: 250px;
 }
 
 .menu {
@@ -1194,8 +1206,8 @@ code {
 .Newsletter-folder {
   padding-left: 0px;
   position: absolute;
-  top: 23px;
-  width: 228px;
+  top: 35px;
+  width:170px;
   z-index: 2;
   background-color: white;
   display: none;
