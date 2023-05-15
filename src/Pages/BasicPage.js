@@ -38,7 +38,6 @@ const BasicPage = () => {
                         renderNode: {
                           [INLINES.ASSET_HYPERLINK]: (node) => (
                             <a href={`https://`+ node.data.target.fields.file.url} target="_blank" rel="noopener noreferrer">{node.data.target.fields.title}</a>
-                          
                             ),
                             [BLOCKS.EMBEDDED_ASSET]: (node) => (
                               <img

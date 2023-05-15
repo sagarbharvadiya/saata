@@ -14,7 +14,7 @@ const MembershipRegistration = () => {
         <Helmet>
           <script type="text/javascript" src='https://js.zohostatic.com/books/zfwidgets/assets/js/zf-widget.js'></script>
           <script type="text/javascript" src="https://saata.org/pricing-table.js"></script>
-          {/* <script type="text/javascript" src="../pricingTable.js"></script> */}
+          <script type="text/javascript" src="../pricingTable.js"></script>
         </Helmet>
       </div>
     </>
