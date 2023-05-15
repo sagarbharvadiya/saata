@@ -440,6 +440,11 @@ code {
 
 .board-of-members-image img {
   width: 100%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 .board-of-members-section {
@@ -1375,7 +1380,42 @@ code {
   background-color: #c2c2c2;
   font-weight: bold;
 }
+/* new css for allLinks page  */
+.news-latter-cpnews-section {
+  background-color: hsla(0,0%,98%,.239);
+  box-shadow: 0 4px 17px #e5e5e5;
+  margin: 0 auto 37px;
+  max-width: 1258px;
+  padding: 18px 20px;
+}
+.news-latter-cpnews-section h2 {
+  color: #a37bb6;
+  font-size: 30px;
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 100%;
+}
+.news-latter-cpnews-section>div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 26px;
+  margin: 30px 0;
+}
+.news-latter-cpnews-section>div p {
+  box-shadow: 0 4px 13px #e5e5e5;
+  list-style: none;
+  padding: 40px 0;
+  text-align: center;
+  width: 280px;
+  margin: auto;
+}
 
+.news-latter-cpnews-section>div p a {
+  color: #a37bb6;
+  text-decoration: none;
+  font-weight: bold;
+}
+/* end  */
 @media only screen and (max-width: 1024px) {
   .banner-slider-image img {
     width: 100%;
@@ -1558,6 +1598,9 @@ code {
 }
 
 @media only screen and (max-width: 768px) {
+  .news-latter-cpnews-section>div{
+    justify-content: center;
+  }
   .Top-header-section {
     position: fixed;
     top: 0%;

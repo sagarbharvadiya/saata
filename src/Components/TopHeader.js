@@ -37,7 +37,7 @@ const TopHeader = () => {
                 <NavLink to="/basicpage/directory">Directory</NavLink>
                 <ul className="directory-folder">
                   <li><NavLink to="/CertifiedMembers">Certified Members</NavLink></li>
-                  <li><NavLink to="">Members</NavLink></li>
+                  {/* <li><NavLink to="">Members</NavLink></li> */}
                 </ul>
               </li>
               <li className="Programs">
@@ -59,9 +59,9 @@ const TopHeader = () => {
                 <NavLink to="/Gallery">Gallery</NavLink>
               </li>
               <li className="Newsletter">
-                <NavLink to='/newsletter/from-the-editorial-desk'>Newsletter</NavLink>
+              <NavLink to='/newsletterlist/'>Newsletter</NavLink>
                 <ul className="Newsletter-folder">
-                  <li><NavLink to='/newsletterlist/cpnews'>Current and Previous Issues</NavLink></li>
+                  <li><NavLink to='/newsletterlist/'>Current and Previous Issues</NavLink></li>
                   {/* <li><NavLink to="">Newsletter Team</NavLink></li>
                   <li><NavLink to="">Guidelines</NavLink></li>
                   <li><NavLink to="">Advertisement Policy</NavLink></li>
@@ -115,7 +115,7 @@ const TopHeader = () => {
               <NavLink to="/basicpage/directory">Directory</NavLink>
               <ul className="directory-folder">
                 <li><NavLink to="/CertifiedMembers">Certified Members</NavLink></li>
-                <li><NavLink to="">Members</NavLink></li>
+                {/* <li><NavLink to="">Members</NavLink></li> */}
               </ul>
             </li>
             <li className="Programs">
@@ -137,9 +137,9 @@ const TopHeader = () => {
               <NavLink to="/Gallery">Gallery</NavLink>
             </li>
             <li className="Newsletter">
-              <NavLink to='/newsletter/from-the-editorial-desk'>Newsletter</NavLink>
+              <NavLink to='/newsletterlist/'>Newsletter</NavLink>
               <ul className="Newsletter-folder">
-                <li><NavLink to='/newsletterlist/cpnews'>Current and Previous Issues</NavLink></li>
+                <li><NavLink to='/newsletterlist/'>Current and Previous Issues</NavLink></li>
                 {/* <li><NavLink to="/newsletterTeam/infectious-workaholic">Newsletter Team</NavLink></li>
                 <li><NavLink to="/basicpage/guidelines-for-content-contributors">Guidelines</NavLink></li>
                 <li><NavLink to="/basicpage/newsletter-advertisement-policy">Advertisement Policy</NavLink></li>
