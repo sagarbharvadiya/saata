@@ -59,7 +59,7 @@ const TopHeader = () => {
                 <NavLink to="/Gallery">Gallery</NavLink>
               </li>
               <li className="Newsletter">
-                <NavLink to='/newsletter/from-the-editorial-desk'>Newsletter</NavLink>
+              <NavLink to='/newsletterlist/'>Newsletter</NavLink>
                 <ul className="Newsletter-folder">
                   <li><NavLink to='/newsletterlist/'>Current and Previous Issues</NavLink></li>
                   {/* <li><NavLink to="">Newsletter Team</NavLink></li>
@@ -137,7 +137,7 @@ const TopHeader = () => {
               <NavLink to="/Gallery">Gallery</NavLink>
             </li>
             <li className="Newsletter">
-              <NavLink to='/newsletter/from-the-editorial-desk'>Newsletter</NavLink>
+              <NavLink to='/newsletterlist/'>Newsletter</NavLink>
               <ul className="Newsletter-folder">
                 <li><NavLink to='/newsletterlist/'>Current and Previous Issues</NavLink></li>
                 {/* <li><NavLink to="/newsletterTeam/infectious-workaholic">Newsletter Team</NavLink></li>
