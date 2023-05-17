@@ -9,7 +9,7 @@ function BoardOfMembers() {
     arrows: true,
     infinite: true,
     speed: 2000,
-    autoplay: true,
+    autoplay:true,
     slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [
@@ -99,8 +99,10 @@ function BoardOfMembers() {
                     <div className="board-of-members-image">
                       <img src={item.image} alt={item.image} />
                     </div>
+                    <div className="des"> 
                     <h2>{item.name}</h2>
                     <p>{item.occupation}</p>
+                    </div>
                   </div>
                 );
               })}

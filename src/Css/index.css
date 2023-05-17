@@ -449,8 +449,8 @@ code {
 
 .board-of-members-section {
   background: url('../Images/12232.jpg') no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-position: bottom;
+  background-size: inherit;
   background-attachment: fixed;
 }
 
@@ -473,9 +473,11 @@ code {
   text-align: center;
   font-size: 35px;
   margin: 0px 0px 41px 0px;
-  color: #fff f;
+  color: #fff;
 }
-
+.Board-of-Members-title::before{
+  background-color: #fff;
+}
 .contact {
   align-items: center;
   justify-content: center;
@@ -1413,7 +1415,11 @@ code {
 .news-latter-cpnews-section>div p a {
   color: #a37bb6;
   text-decoration: none;
-  font-weight: bold;
+  /* font-weight: bold; */
+}
+.news-latter-cpnews-section>div p a b{
+  font-size: 28px;
+    display: block;
 }
 /* end  */
 @media only screen and (max-width: 1024px) {
