@@ -1421,6 +1421,9 @@ code {
   font-size: 28px;
     display: block;
 }
+body.page-ta-101-program-details td {
+    border-right: 1px solid #cdcdcd;
+}
 /* end  */
 @media only screen and (max-width: 1024px) {
   .banner-slider-image img {
