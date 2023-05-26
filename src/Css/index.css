@@ -285,6 +285,7 @@ code {
 .menu-folder {
   display: flex;
   align-items: center;
+  gap: 20px;
 }
 
 .menu-folder li {
@@ -293,10 +294,10 @@ code {
 
 .menu-folder li a {
   text-decoration: none;
-  margin: 0px 10px;
+  /* margin: 0px 10px; */
   font-size: 16px;
   color: #757575;
-  padding: 10px 0px;
+  /* padding: 10px 0px; */
 }
 
 .Top-header-section {
@@ -1028,7 +1029,7 @@ code {
 .Membership-folder {
   padding-left: 0px;
   position: absolute;
-  top: 21px;
+  top: 24px;
   width: 189px;
   z-index: 2;
   background-color: white;
@@ -1105,7 +1106,7 @@ code {
 .Certifications-folder {
   padding-left: 0px;
   position: absolute;
-  top: 21px;
+  top: 23px;
   width: 189px;
   z-index: 2;
   background-color: white;
@@ -1130,7 +1131,7 @@ code {
 .directory-folder {
   padding-left: 0px;
   position: absolute;
-  top: 21px;
+  top: 23px;
   width: 189px;
   z-index: 2;
   background-color: white;
@@ -1155,7 +1156,7 @@ code {
 .Programs-folder {
   padding-left: 0px;
   position: absolute;
-  top: 21px;
+  top: 23px;
   width: 189px;
   z-index: 2;
   background-color: white;
@@ -1213,12 +1214,12 @@ code {
 .Newsletter-folder {
   padding-left: 0px;
   position: absolute;
-  top: 30px;
+  top: 23px;
   width:170px;
   z-index: 2;
   background-color: white;
   display: none;
-  transition: all 0.3s ease-in;
+  /* transition: all 0.3s ease-in; */
 }
 
 .Newsletter-folder li {
@@ -1424,6 +1425,61 @@ code {
 body.page-ta-101-program-details td {
     border-right: 1px solid #cdcdcd;
 }
+
+/* top header menu css */
+ul .menu_item:hover>a{
+  color: #a37bb6!important;
+border-bottom: 1px solid;
+}
+.menu-folder {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.menu_item {
+  position: relative;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.menu_item > a {
+  color: #333;
+  text-decoration: none;
+}
+
+.menu_item:hover > a {
+  color: #996ada;
+}
+
+.menu_item ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100px;
+}
+
+.menu_item:hover ul {
+  display: block;
+}
+
+.menu_item ul li {
+  padding: 10px;
+}
+
+.menu_item ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.menu_item ul li a:hover {
+  color: #fff;
+}
+
 /* end  */
 @media only screen and (max-width: 1024px) {
   .banner-slider-image img {

@@ -11,7 +11,7 @@ function BoardOfMembers() {
     speed: 2000,
     autoplay:true,
     slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToScroll: 3,
     responsive: [
       {
         breakpoint: 1024,
