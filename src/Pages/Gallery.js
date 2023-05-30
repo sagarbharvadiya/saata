@@ -228,30 +228,13 @@ function Gallery() {
               South Asian Association of Transactional Analysts Conference
               September 2016
             </h2>
-            <div className="gallery-South-Asian-Association-folder">
-              <Slider {...southsettings}>
-                <div>
-                  <div className="gallery-South-Asian-Association-image">
-                    <img src={south_asian_image1} alt={south_asian_image1} />
-                  </div>
-                </div>
-                <div>
-                  <div className="gallery-South-Asian-Association-image">
-                    <img src={south_asian_image2} alt={south_asian_image2} />
-                  </div>
-                </div>
-                <div>
-                  <div className="gallery-South-Asian-Association-image">
-                    <img src={south_asian_image3} alt={south_asian_image3} />
-                  </div>
-                </div>
-                <div>
-                  <div className="gallery-South-Asian-Association-image">
-                    <img src={south_asian_image4} alt={south_asian_image4} />
-                  </div>
-                </div>
+            <Slider {...itaasettings}>
+                  {slides.map((url, index) => (
+                      <div className="ITAA-The-Dance-of-Culture-image" key={index}>
+                        <img src={url} alt={`Slide ${index}`} />
+                      </div>
+                  ))}
               </Slider>
-            </div>
           </div>
         </div>
       </div>
