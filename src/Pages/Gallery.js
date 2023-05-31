@@ -1,14 +1,6 @@
 import React, { useCallback, useEffect, useState } from "react";
 import Slider from "react-slick";
-import client  from "../client";
-// import itta_image1 from "../Images/itta-image1.png";
-// import itta_image2 from "../Images/itta-image1.png";
-// import itta_image3 from "../Images/itta-image1.png";
-// import itta_image4 from "../Images/itta-image1.png";
-import south_asian_image1 from "../Images/itta-image1.png";
-import south_asian_image2 from "../Images/itta-image1.png";
-import south_asian_image3 from "../Images/itta-image1.png";
-import south_asian_image4 from "../Images/itta-image1.png";
+import client from "../client";
 
 function Gallery() {
   const settings = {
@@ -101,58 +93,12 @@ function Gallery() {
     ],
   };
 
-  const southsettings = {
-    dots: false,
-    arrows: false,
-    centerMode: true,
-    centerPadding: "2px",
-    infinite: true,
-    speed: 500,
-    autoplay: false,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: false,
-        },
-      },
-      {
-        breakpoint: 820,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          initialSlide: 1,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          initialSlide: 1,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
-
   const [slides, setSlides] = useState([]);
 
   const cleanUpGalleryApi = useCallback((rawdata) => {
     const cleanfields = rawdata.map((item) => {
-      const { sys, fields } = item;
-      const { id } = sys;
+      const { fields } = item;
+      
       const galleryImages = fields.galleryImages;
       const images = galleryImages.map((image) => {
         const imageurl = image.fields.file.url;
@@ -182,65 +128,62 @@ function Gallery() {
   }, [getGallery]);
 
   return (
-    <>
-      <div className="gallery-section">
-        <div className="gallery-wrapper">
-          <div className="gallery-slider-folder">
-            <Slider {...settings}>
-              <div>
-                <div className="gallery-slider-image">
-                  <iframe
-                    src="https://www.youtube.com/embed/UfDkwAJ6rrU"
-                    title="SAATA  - MLL 2023  -  Panel Discussion -  Professional Identity"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen={true}
-                    id="fitvid997884"
-                  ></iframe>
-                </div>
+    <div className="gallery-section">
+      <div className="gallery-wrapper">
+        <div className="gallery-slider-folder">
+          <Slider {...settings}>
+            <div>
+              <div className="gallery-slider-image">
+                <iframe
+                  src="https://www.youtube.com/embed/UfDkwAJ6rrU"
+                  title="SAATA - MLL 2023 - Panel Discussion - Professional Identity"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen={true}
+                  id="fitvid997884"
+                ></iframe>
               </div>
-              <div>
-                <div className="gallery-slider-image">
-                  <iframe
-                    src="https://www.youtube.com/embed/YFqCDHXOMsY"
-                    title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen={true}
-                    id="fitvid997884"
-                  ></iframe>
-                </div>
+            </div>
+            <div>
+              <div className="gallery-slider-image">
+                <iframe
+                  src="https://www.youtube.com/embed/YFqCDHXOMsY"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen={true}
+                  id="fitvid997884"
+                ></iframe>
               </div>
+            </div>
+          </Slider>
+        </div>
+        <div className="ITAA-The-Dance-of-Culture-container">
+          <h2>ITAA - SAATA Conference 2018 - The Dance of Culture</h2>
+          <div className="ITAA-The-Dance-of-Culture-folder">
+            <Slider {...itaasettings}>
+              {slides.map((url, index) => (
+                <div className="ITAA-The-Dance-of-Culture-image" key={index}>
+                  <img src={url} alt={`Slide ${index}`} />
+                </div>
+              ))}
             </Slider>
           </div>
-          <div className="ITAA-The-Dance-of-Culture-container">
-            <h2>ITAA - SAATA Conference 2018 - The Dance of Culture</h2>
-            <div className="ITAA-The-Dance-of-Culture-folder">
-              <Slider {...itaasettings}>
-                  {slides.map((url, index) => (
-                      <div className="ITAA-The-Dance-of-Culture-image" key={index}>
-                        <img src={url} alt={`Slide ${index}`} />
-                      </div>
-                  ))}
-              </Slider>
-            </div>
-          </div>
-          <div className="gallery-South-Asian-Association-container">
-            <h2>
-              South Asian Association of Transactional Analysts Conference
-              September 2016
-            </h2>
-            <Slider {...itaasettings}>
-                  {slides.map((url, index) => (
-                      <div className="ITAA-The-Dance-of-Culture-image" key={index}>
-                        <img src={url} alt={`Slide ${index}`} />
-                      </div>
-                  ))}
-              </Slider>
-          </div>
+        </div>
+        <div className="gallery-South-Asian-Association-container">
+          <h2>
+            South Asian Association of Transactional Analysts Conference
+            September 2016
+          </h2>
+          <Slider {...itaasettings}>
+            {slides.map((url, index) => (
+              <div className="ITAA-The-Dance-of-Culture-image" key={index}>
+                <img src={url} alt={`Slide ${index}`} />
+              </div>
+            ))}
+          </Slider>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
 export default Gallery;
-

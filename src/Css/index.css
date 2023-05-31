@@ -2542,7 +2542,7 @@ ul .menu_item:hover>a {
   width: 100px;
 }
 .menu_item ul li a{
-  padding: 10px 4px;
+  padding: 10px 0px;
 }
 @media (max-width: 768px) {
   .Top-Header-wrapper-folder {
@@ -2602,6 +2602,9 @@ ul .menu_item:hover>a {
   }
   .menu_item ul{
     width: 100%;
+  }
+  .ITAA-The-Dance-of-Culture-image{
+    display: block !important;
   }
 }
 .login_btn a{
