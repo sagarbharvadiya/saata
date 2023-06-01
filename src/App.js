@@ -31,9 +31,6 @@ function App() {
       <Routes>
         <Route exact path='/' element={<Home />} />
         <Route exact path='basicpage/:slug' element={<BasicPage />}></Route>
-        {/* <Route exact path='/newsletter/:slug' element={<NewsLetter />}></Route>
-        <Route exact path='/content/:slug' element={<ContentReference />}></Route>
-        <Route exact path='/newsletterlist/:slug' element={<NewsLetterList />}></Route> */}
         <Route exact path='/newsletterlist/' element={<CurrentandPreviousIssues />}></Route>
         <Route exact path='/newsletterTeam/:slug' element={<NewsletterTeam />}></Route>
         <Route exact path='/gallery' element={<Gallery />} />

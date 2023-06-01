@@ -86,7 +86,7 @@ function BoardOfMembers() {
       <div className="board-of-members-section info-container">
         <div className="board-of-members-wrapper">
           <h2 className="Board-of-Members-title info-title">
-            Board of Members
+          Current Board of Trustees
           </h2>
           <div className="board-of-members-folder">
             <Slider {...settings}>
