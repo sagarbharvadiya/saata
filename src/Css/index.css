@@ -1489,7 +1489,9 @@ ul .menu_item:hover>a {
 .menu_item ul li a:hover {
   color: #fff;
 }
-
+.Top-Header-wrapper-folder .social_icon a i{
+  color: #a37bb6 !important;
+}
 /* end  */
 @media only screen and (max-width: 1024px) {
   .banner-slider-image img {
@@ -2630,6 +2632,18 @@ ul .menu_item:hover>a {
   }
   .ITAA-The-Dance-of-Culture-image{
     display: block !important;
+  }
+ .Top-Header-wrapper-folder .social_icon{
+    position: fixed;
+    top: 50%;
+    right: 0;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 99;
+  }
+  .Top-Header-wrapper-folder .social_icon a{
+    width: 30px;
+    height: 30px;
   }
 }
 .login_btn a{
