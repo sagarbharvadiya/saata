@@ -897,10 +897,11 @@ code {
 }
 
 .about_us {
-  position: relative;
+ width: 1258px;
+ margin: auto;
 }
 
-.about_us::before {
+/* .about_us::before {
   position: absolute;
   background: #3870b5;
   content: '';
@@ -912,7 +913,7 @@ code {
   height: 250px;
   text-align: center;
   z-index: -1;
-}
+} */
 
 .aboutus_parent {
   margin: 0px 20px;
@@ -923,13 +924,12 @@ code {
 }
 
 .about_us_wrapper h2 {
-  width: 150px;
-  position: relative;
-  margin: auto;
-  color: #fff;
-  margin-top: 50px;
-  font-weight: 800;
-  text-align: center;
+  text-align: left;
+  width: 100%;
+  font-size: 30px;
+  color: #a37bb6;
+  margin-left: 20px;
+  margin-top: 20px;
 }
 
 .about_us_wrapper h2::before {
@@ -1981,9 +1981,12 @@ ul .menu_item:hover>a {
 
 .page-saata-calendar-2023 th p,
 .page-saata-calendar-2023 td p {
-  text-align: center;
+  text-align: left;
+}.page-saata-calendar-2023 th,
+.page-saata-calendar-2023 td,
+.page-saata-calendar-2023 tr{
+  border: 1px solid #333 !important;
 }
-
 @media only screen and (max-width: 767px) {
   .banner-slider-image img {
     width: 100%;
@@ -2722,14 +2725,14 @@ ul .menu_item:hover>a {
 }
 
 .contact_form input.submit-btn {
-  padding: 14px 40px ;
+  padding: 14px 40px;
   text-align: center;
-  background: white ;
-  cursor: pointer ;
+  background: white;
+  cursor: pointer;
   width: 100%;
   border: none;
   outline: none;
   font-size: 19px;
-  color: #a37bb6 ;
+  color: #a37bb6;
   border-radius: 15px;
 }
