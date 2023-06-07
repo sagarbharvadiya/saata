@@ -28,7 +28,7 @@ const TopHeader = () => {
             target="_blank"
             rel="noreferrer">
             {""}
-            <i class="fa-brands fa-instagram"></i>
+            <i className="fa-brands fa-instagram"></i>
           </a>
           <a
             href="https://twitter.com/saataorg"
@@ -57,12 +57,12 @@ const TopHeader = () => {
             <NavLink to="/">Certifications</NavLink>
             <ul className="Certifications-folder">
               <li>
-                <NavLink to="/basicpage/examination-documents" onClick={toggleMenu}>
+                <NavLink to="/page/examination-documents" onClick={toggleMenu}>
                   Examination Documents
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/basicpage/examination-forms" onClick={toggleMenu}>
+                <NavLink to="/page/examination-forms" onClick={toggleMenu}>
                   Examination forms
                 </NavLink>
               </li>
@@ -72,7 +72,7 @@ const TopHeader = () => {
             <NavLink to="/">Membership</NavLink>
             <ul className="Membership-folder">
               <li>
-                <NavLink to="/basicpage/membership-details" onClick={toggleMenu}>
+                <NavLink to="/page/membership-details" onClick={toggleMenu}>
                   Membership Details
                 </NavLink>
               </li>
@@ -82,14 +82,14 @@ const TopHeader = () => {
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/basicpage/membership-renewal" onClick={toggleMenu}>
+                <NavLink to="/page/membership-renewal" onClick={toggleMenu}>
                   Renewal / Login
                 </NavLink>
               </li>
             </ul>
           </li>
           <li className="directory menu_item">
-            <NavLink to="/basicpage/directory">Directory</NavLink>
+            <NavLink to="/page/directory">Directory</NavLink>
             <ul className="directory-folder" onClick={toggleMenu}>
               <li>
                 <NavLink to="/CertifiedMembers">Certified Members</NavLink>
@@ -100,13 +100,28 @@ const TopHeader = () => {
             <NavLink to="/">Events</NavLink>
             <ul className="Programs-folder">
               <li>
-                <NavLink to="/basicpage/saata-calendar-2021-2022" onClick={toggleMenu}>
+                <NavLink to="/page/saata-calendar-2023" onClick={toggleMenu}>
                   SAATA Calendar 2023
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/basicpage/ta-101-program-details" onClick={toggleMenu}>
+                <NavLink to="/page/ta-101-program-details" onClick={toggleMenu}>
                   TA 101 - Program Details
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/page/call-for-proposals" onClick={toggleMenu}>
+                Call for Proposals
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/page/conference-brochure" onClick={toggleMenu}>
+                Conference Brochure
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/page/saata-conference-registration" onClick={toggleMenu}>
+                Conference Registration
                 </NavLink>
               </li>
             </ul>
@@ -115,17 +130,17 @@ const TopHeader = () => {
             <NavLink to="/">Awards</NavLink>
             <ul className="Awards-folder">
               <li>
-                <NavLink to="/basicpage/awards" onClick={toggleMenu}>
+                <NavLink to="/page/awards" onClick={toggleMenu}>
                   Professional Excellence Award
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/basicpage/service-award" onClick={toggleMenu}>
+                <NavLink to="/page/service-award" onClick={toggleMenu}>
                   Service Awards
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/basicpage/call-for-nominations" onClick={toggleMenu}>
+                <NavLink to="/page/call-for-nominations" onClick={toggleMenu}>
                   Call for Nominations
                 </NavLink>
               </li>
@@ -153,24 +168,24 @@ const TopHeader = () => {
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/basicpage/guidelines-for-content-contributors" onClick={toggleMenu}>
+                    <NavLink to="/page/guidelines-for-content-contributors" onClick={toggleMenu}>
                       Guidelines
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/basicpage/newsletter-advertisement-policy" onClick={toggleMenu}>
+                    <NavLink to="/page/newsletter-advertisement-policy" onClick={toggleMenu}>
                       Advertisement Policy
                     </NavLink>
                   </li>
                   {/* <!-- <li>
-                    <NavLink to="/basicpage/team-that-was" onClick={toggleMenu}>
+                    <NavLink to="/page/team-that-was" onClick={toggleMenu}>
                       Team that Was
                     </NavLink>
                   </li> --> */}
                 </ul>
               </li>
               <li>
-                <NavLink to="/basicpage/journals" onClick={toggleMenu}>
+                <NavLink to="/page/journals" onClick={toggleMenu}>
                   SAJTA Journals
                 </NavLink>
               </li>

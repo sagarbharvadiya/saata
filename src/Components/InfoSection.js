@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
-import  client  from "../client";
+import client from "../client";
+
 // import AboutUs from "./AboutUs";
 
 const InfoSection = () => {
@@ -12,8 +13,10 @@ const InfoSection = () => {
       const { id } = sys;
       const infoTitle = fields.title;
       const link = fields.link;
+      const linkLabel = fields.linkLabel;
       const infoDesc = fields.description;
-      const updatedInfo = { id, infoTitle, infoDesc, link };
+
+      const updatedInfo = { id, infoTitle, infoDesc, link, linkLabel };
       return updatedInfo;
     });
     setInfo(cleaninfo);
@@ -21,7 +24,7 @@ const InfoSection = () => {
 
   const getInfo = useCallback(async () => {
     try {
-      const response = await client.getEntries({ content_type: "infoSection" });
+      const response = await client.getEntries({ content_type: "infoSection", order: "fields.order" });
       const responseData = response.items;
       // console.log(response)
       if (responseData) {
@@ -44,12 +47,14 @@ const InfoSection = () => {
   return (
     <div className="main-container">
       {info.map((item, index) => {
+       
+
         return (
           <div className="info-container" key={index}>
             <div className="info-body">
               <h2 className="info-title">{item.infoTitle}</h2>
               <p className="info-desc">{item.infoDesc}</p>
-             <Link to={item.link}> <button className="read-more">Read More</button></Link>
+              <Link to={item.link}> <button className="read-more">{item.linkLabel}</button></Link>
             </div>
           </div>
         );
