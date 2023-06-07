@@ -49,11 +49,11 @@ const Footer = () => {
                   </li>
                 </ul>
                 <ul>
-                  <li>
+                  {/* <li>
                     <Link to="/basicpage/presidents-note">
                       President’s Note
                     </Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link to='/basicpage/governance'>Governance</Link>
                   </li>

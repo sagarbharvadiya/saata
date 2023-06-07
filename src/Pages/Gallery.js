@@ -130,32 +130,6 @@ function Gallery() {
   return (
     <div className="gallery-section">
       <div className="gallery-wrapper">
-        <div className="gallery-slider-folder">
-          <Slider {...settings}>
-            <div>
-              <div className="gallery-slider-image">
-                <iframe
-                  src="https://www.youtube.com/embed/UfDkwAJ6rrU"
-                  title="SAATA - MLL 2023 - Panel Discussion - Professional Identity"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen={true}
-                  id="fitvid997884"
-                ></iframe>
-              </div>
-            </div>
-            <div>
-              <div className="gallery-slider-image">
-                <iframe
-                  src="https://www.youtube.com/embed/YFqCDHXOMsY"
-                  title="YouTube video player"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen={true}
-                  id="fitvid997884"
-                ></iframe>
-              </div>
-            </div>
-          </Slider>
-        </div>
         <div className="ITAA-The-Dance-of-Culture-container">
           <h2>ITAA - SAATA Conference 2018 - The Dance of Culture</h2>
           <div className="ITAA-The-Dance-of-Culture-folder">

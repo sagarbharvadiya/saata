@@ -38,7 +38,7 @@ const Banner = () => {
     dots: false,
     arrows: true,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     autoplay: true,
     slidesToShow: 1,
     slidesToScroll: 1,

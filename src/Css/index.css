@@ -280,6 +280,7 @@ code {
   align-items: center;
   padding: 30px 20px;
 }
+
 .Top-Header-wrapper-folder .social_icon a {
   padding: 0px;
   margin-bottom: 0px;
@@ -1097,9 +1098,11 @@ code {
 .Programs:hover .Programs-folder {
   display: block;
 }
-.menu_item ul{
+
+.menu_item ul {
   width: 100%;
 }
+
 .Awards {
   position: relative;
 }
@@ -1474,6 +1477,7 @@ ul .menu_item:hover>a {
 .menu_item:hover>a {
   color: #996ada;
 }
+
 .menu_item:hover ul {
   display: block;
 }
@@ -1490,9 +1494,11 @@ ul .menu_item:hover>a {
 .menu_item ul li a:hover {
   color: #fff;
 }
-.Top-Header-wrapper-folder .social_icon a i{
+
+.Top-Header-wrapper-folder .social_icon a i {
   color: #a37bb6 !important;
 }
+
 /* end  */
 @media only screen and (max-width: 1024px) {
   .banner-slider-image img {
@@ -1623,7 +1629,7 @@ ul .menu_item:hover>a {
   .page-membership-details .about_us,
   .page-ta-101-program-details .about_us,
   .page-exam-dates .about_us,
-  .page-saata-calendar-2021-2022 .about_us,
+  .page-saata-calendar-2023 .about_us,
   .page-examination-forms .about_us,
   .page-examination-documents .about_us,
   .page-directory .about_us,
@@ -1651,7 +1657,7 @@ ul .menu_item:hover>a {
   .page-membership-details .about_us,
   .page-ta-101-program-details .about_us,
   .page-exam-dates .about_us,
-  .page-saata-calendar-2021-2022 .about_us,
+  .page-saata-calendar-2023 .about_us,
   .page-examination-forms .about_us,
   .page-examination-documents .about_us,
   .page-directory .about_us,
@@ -1880,7 +1886,7 @@ ul .menu_item:hover>a {
   .page-membership-details .about_us,
   .page-ta-101-program-details .about_us,
   .page-exam-dates .about_us,
-  .page-saata-calendar-2021-2022 .about_us,
+  .page-saata-calendar-2023 .about_us,
   .page-examination-forms .about_us,
   .page-examination-documents .about_us,
   .page-directory .about_us,
@@ -1908,7 +1914,7 @@ ul .menu_item:hover>a {
   .page-membership-details .about_us,
   .page-ta-101-program-details .about_us,
   .page-exam-dates .about_us,
-  .page-saata-calendar-2021-2022 .about_us,
+  .page-saata-calendar-2023 .about_us,
   .page-examination-forms .about_us,
   .page-examination-documents .about_us,
   .page-directory .about_us,
@@ -1939,7 +1945,7 @@ ul .menu_item:hover>a {
   .page-membership-details .about_us .about_us_wrapper h2,
   .page-ta-101-program-details .about_us .about_us_wrapper h2,
   .page-exam-dates .about_us .about_us_wrapper h2,
-  .page-saata-calendar-2021-2022 .about_us .about_us_wrapper h2,
+  .page-saata-calendar-2023 .about_us .about_us_wrapper h2,
   .page-examination-forms .about_us .about_us_wrapper h2,
   .page-examination-documents .about_us .about_us_wrapper h2,
   .page-directory .about_us .about_us_wrapper h2,
@@ -1972,6 +1978,11 @@ ul .menu_item:hover>a {
   .page-eric-berne .about_us.about_ta .about_us_content img {
     width: 341px !important;
   }
+}
+
+.page-saata-calendar-2023 th p,
+.page-saata-calendar-2023 td p {
+  text-align: center;
 }
 
 @media only screen and (max-width: 767px) {
@@ -2242,7 +2253,7 @@ ul .menu_item:hover>a {
   .page-guidelines-for-content-contributors .about_us.about_ta,
   .page-newsletter-advertisement-policy .about_us.about_ta,
   .page-journals .about_us.about_ta,
-  .page-saata-calendar-2021-2022 .about_us.about_ta,
+  .page-saata-calendar-2023 .about_us.about_ta,
   .page-awards .about_us.about_ta,
   .page-service-award .about_us.about_ta,
   .page-about-us .about_us.about_ta,
@@ -2253,7 +2264,7 @@ ul .menu_item:hover>a {
   .page-eric-berne .about_us.about_ta,
   .page-membership-details .about_us.about_ta,
   .page-ta-101-program-details .about_us.about_ta,
-  .page-saata-calendar-2021-2022 .about_us.about_ta,
+  .page-saata-calendar-2023 .about_us.about_ta,
   .page-saata-bot .about_us.about_ta {
     padding: 18px 0px;
     max-width: 318px !important;
@@ -2328,7 +2339,7 @@ ul .menu_item:hover>a {
   .page-membership-details .about_us,
   .page-ta-101-program-details .about_us,
   .page-exam-dates .about_us,
-  .page-saata-calendar-2021-2022 .about_us,
+  .page-saata-calendar-2023 .about_us,
   .page-examination-forms .about_us,
   .page-examination-documents .about_us,
   .page-directory .about_us,
@@ -2409,7 +2420,7 @@ ul .menu_item:hover>a {
   .page-membership-details .about_us .about_us_wrapper h2,
   .page-ta-101-program-details .about_us .about_us_wrapper h2,
   .page-exam-dates .about_us .about_us_wrapper h2,
-  .page-saata-calendar-2021-2022 .about_us .about_us_wrapper h2,
+  .page-saata-calendar-2023 .about_us .about_us_wrapper h2,
   .page-examination-forms .about_us .about_us_wrapper h2,
   .page-examination-documents .about_us .about_us_wrapper h2,
   .page-directory .about_us .about_us_wrapper h2,
@@ -2478,7 +2489,7 @@ ul .menu_item:hover>a {
 
   .page-membership-details .about_us_content table,
   .page-ta-101-program-details .about_us_content table,
-  .page-saata-calendar-2021-2022 .about_us_content table,
+  .page-saata-calendar-2023 .about_us_content table,
   .page-saata-bot .about_us_content table {
     display: block;
     overflow-y: scroll;
@@ -2511,14 +2522,14 @@ ul .menu_item:hover>a {
   position: relative;
 }
 
-.menu-item > a {
+.menu-item>a {
   display: block;
   padding: 10px 20px;
   text-decoration: none;
   color: #000;
 }
 
-.menu-item:hover > a {
+.menu-item:hover>a {
   background-color: #f0f0f0;
 }
 
@@ -2546,31 +2557,38 @@ ul .menu_item:hover>a {
   text-decoration: none;
   color: #000;
 }
-.menu_item ul{
+
+.menu_item ul {
   width: 150px;
 }
-.menu_item ul li a{
+
+.menu_item ul li a {
   padding: 10px 0px;
 }
-.page-governance .about_us::before{
+
+.page-governance .about_us::before {
   background: none;
 }
-.page-governance .about_us_wrapper h2{
-  color: #000;;
+
+.page-governance .about_us_wrapper h2 {
+  color: #000;
+  ;
 }
-.page-governance p{
+
+.page-governance p {
   display: flex;
 }
-.page-governance p a{
+
+.page-governance p a {
   padding: 9px 0px !important;
-    width: 383px !important;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    background: #ab79b4;
-    text-decoration: none;
-    color: #fff;
+  width: 383px !important;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  background: #ab79b4;
+  text-decoration: none;
+  color: #fff;
 }
 
 @media (max-width: 768px) {
@@ -2590,8 +2608,9 @@ ul .menu_item:hover>a {
     top: 6%;
 
   }
+
   .logo img,
-  .logo{
+  .logo {
     padding: 0;
   }
 
@@ -2629,13 +2648,16 @@ ul .menu_item:hover>a {
     width: 100%;
     border-bottom: 1px solid #ccc;
   }
-  .menu_item ul{
+
+  .menu_item ul {
     width: 100%;
   }
-  .ITAA-The-Dance-of-Culture-image{
+
+  .ITAA-The-Dance-of-Culture-image {
     display: block !important;
   }
- .Top-Header-wrapper-folder .social_icon{
+
+  .Top-Header-wrapper-folder .social_icon {
     position: fixed;
     top: 50%;
     right: 0;
@@ -2643,11 +2665,59 @@ ul .menu_item:hover>a {
     gap: 12px;
     z-index: 99;
   }
-  .Top-Header-wrapper-folder .social_icon a{
+
+  .Top-Header-wrapper-folder .social_icon a {
     width: 30px;
     height: 30px;
   }
 }
-.login_btn a{
-  color:#fff !important;
+
+.login_btn a {
+  color: #fff !important;
+}
+
+.video .info-container {
+  text-align: center;
+  padding: 55px 0px !important;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Submenu styles */
+.News_hover {
+  position: relative;
+}
+
+.Newsletter:hover .hover {
+  display: none;
+}
+
+.hover {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* .hover li {
+  display: block;
+} */
+
+.hover li a {
+  display: block;
+  padding: 5px 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.News_hover:hover .hover {
+  display: block;
+  left: 100%;
+  top: 0;
 }

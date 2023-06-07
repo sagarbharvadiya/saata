@@ -16,37 +16,37 @@ const TopHeader = () => {
           <Link to='/'><img src={logo} alt="Logo" /></Link>
         </div>
         <div className="social_icon">
-            <a
-              href="https://www.facebook.com/saataworld"
-              target="_blank"
-              rel="noreferrer"
-            >
-              {" "}
-              <i className="fa-brands fa-facebook"></i>
-            </a>
-            <a href="https://www.instagram.com/saata_org/?igshid=MzRlODBiNWFlZA%3D%3D"
+          <a
+            href="https://www.facebook.com/saataworld"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {" "}
+            <i className="fa-brands fa-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/saata_org/?igshid=MzRlODBiNWFlZA%3D%3D"
             target="_blank"
             rel="noreferrer">
-              {""}
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a
-              href="https://twitter.com/saataorg"
-              target="_blank"
-              rel="noreferrer"
-            >
-              {" "}
-              <i className="fa-brands fa-twitter"></i>
-            </a>
-            <a
-              href="https://www.youtube.com/channel/UCGTMW3BmOElfJNNoUH2x9JA/videos"
-              target="_blank"
-              rel="noreferrer"
-            >
-              {" "}
-              <i className="fa-brands fa-youtube"></i>
-            </a>
-          </div>
+            {""}
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            href="https://twitter.com/saataorg"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {" "}
+            <i className="fa-brands fa-twitter"></i>
+          </a>
+          <a
+            href="https://www.youtube.com/channel/UCGTMW3BmOElfJNNoUH2x9JA/videos"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {" "}
+            <i className="fa-brands fa-youtube"></i>
+          </a>
+        </div>
         <button className="menu-toggle" onClick={toggleMenu}>
           <div className="menu-toggle-bar"></div>
           <div className="menu-toggle-bar"></div>
@@ -162,11 +162,11 @@ const TopHeader = () => {
                       Advertisement Policy
                     </NavLink>
                   </li>
-                  {/* <li>
+                  {/* <!-- <li>
                     <NavLink to="/basicpage/team-that-was" onClick={toggleMenu}>
                       Team that Was
                     </NavLink>
-                  </li> */}
+                  </li> --> */}
                 </ul>
               </li>
               <li>
@@ -182,6 +182,11 @@ const TopHeader = () => {
               <li>
                 <NavLink to="/Articles" onClick={toggleMenu}>
                   Articles
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/video" onClick={toggleMenu}>
+                  Videos
                 </NavLink>
               </li>
             </ul>
