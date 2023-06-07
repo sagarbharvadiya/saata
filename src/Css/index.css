@@ -504,7 +504,7 @@ code {
 
 .contact_form {
   background: #a37bb6;
-  width: 421px;
+  width: 500px;
   height: auto;
   padding: 19px 20px 39px 20px;
   border-radius: 15px;
@@ -549,7 +549,7 @@ code {
 .contact_form textarea {
   margin: 13px 0px;
   font-size: 18px;
-  width: 379px;
+  width: 100%;
   border-radius: 15px;
   border: 1px solid #757575;
   color: #757575;
@@ -558,6 +558,16 @@ code {
 
 .map {
   margin-top: 3px;
+}
+
+.input-icons {
+  position: absolute;
+  top: 44%;
+  right: 6%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #a37bb6;
+  display: flex;
 }
 
 .map iframe {
@@ -572,18 +582,7 @@ code {
   margin: 0px auto;
 }
 
-.submit_btn button {
-  padding: 14px 40px;
-  text-align: center;
-  background: white;
-  cursor: pointer;
-  width: 100%;
-  border: none;
-  outline: none;
-  font-size: 19px;
-  color: #a37bb6;
-  border-radius: 15px;
-}
+
 
 .footer {
   background-color: #a37bb6;
@@ -2720,4 +2719,17 @@ ul .menu_item:hover>a {
   display: block;
   left: 100%;
   top: 0;
+}
+
+.contact_form input.submit-btn {
+  padding: 14px 40px ;
+  text-align: center;
+  background: white ;
+  cursor: pointer ;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 19px;
+  color: #a37bb6 ;
+  border-radius: 15px;
 }
