@@ -68,7 +68,7 @@ const TopHeader = () => {
               </li>
             </ul>
           </li>
-          <li className="Membership menu_item">
+          <li className="Membership menu_item Newsletter">
             <NavLink to="/">Membership</NavLink>
             <ul className="Membership-folder">
               <li>
@@ -86,13 +86,13 @@ const TopHeader = () => {
                   Renewal / Login
                 </NavLink>
               </li>
-            </ul>
-          </li>
-          <li className="directory menu_item">
-            <NavLink to="/page/directory">Directory</NavLink>
-            <ul className="directory-folder" onClick={toggleMenu}>
-              <li>
-                <NavLink to="/CertifiedMembers">Certified Members</NavLink>
+              <li className="directory menu_item Newsletter">
+                <NavLink to="/page/directory">Directory</NavLink>
+                <ul className="directory-folder hover" onClick={toggleMenu}>
+                  <li>
+                    <NavLink to="/CertifiedMembers">Certified Members</NavLink>
+                  </li>
+                </ul>
               </li>
             </ul>
           </li>
@@ -111,17 +111,17 @@ const TopHeader = () => {
               </li>
               <li>
                 <NavLink to="/page/call-for-proposals" onClick={toggleMenu}>
-                Call for Proposals
+                  Call for Proposals
                 </NavLink>
               </li>
               <li>
                 <NavLink to="/page/conference-brochure" onClick={toggleMenu}>
-                Conference Brochure
+                  Conference Brochure
                 </NavLink>
               </li>
               <li>
                 <NavLink to="/page/saata-conference-registration" onClick={toggleMenu}>
-                Conference Registration
+                  Conference Registration
                 </NavLink>
               </li>
             </ul>

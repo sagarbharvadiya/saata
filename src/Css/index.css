@@ -1451,7 +1451,7 @@ body.page-ta-101-program-details td {
 
 /* top header menu css */
 ul .menu_item:hover>a {
-  color: #a37bb6 !important;
+  /* color: #a37bb6 !important; */
   border-bottom: 1px solid;
 }
 
@@ -1473,9 +1473,9 @@ ul .menu_item:hover>a {
   text-decoration: none;
 }
 
-.menu_item:hover>a {
+/* .menu_item:hover>a {
   color: #996ada;
-}
+} */
 
 .menu_item:hover ul {
   display: block;
@@ -1491,7 +1491,7 @@ ul .menu_item:hover>a {
 }
 
 .menu_item ul li a:hover {
-  color: #fff;
+  color: #fff !important;
 }
 
 .Top-Header-wrapper-folder .social_icon a i {
@@ -2718,12 +2718,12 @@ ul .menu_item:hover>a {
   text-decoration: none;
 }
 
-.News_hover:hover .hover {
+.News_hover:hover .hover,
+.directory:hover .hover {
   display: block;
   left: 100%;
   top: 0;
 }
-
 .contact_form input.submit-btn {
   padding: 14px 40px;
   text-align: center;
