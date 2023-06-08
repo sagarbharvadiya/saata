@@ -52,12 +52,11 @@ const Contact = () => {
          process.env.EMAILJS_SERVICEID,
          process.env.EMAILJS_TEMPLATEID,
           form.current,
-         process.env.EMAILJS_PUBLICKEY,
+         "SwlA8d9ZfDUsg9zTg",
         )
         .then(
           (result) => {
             notify();
-            console.log(result.text);
             setName("");
             setEmail("");
             setMessage("");
