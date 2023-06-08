@@ -49,8 +49,8 @@ const Contact = () => {
     if (isValidEmail) {
       emailjs
         .sendForm(
-         process.env.EMAILJS_SERVICEID,
-         process.env.EMAILJS_TEMPLATEID,
+         "service_chq5sx7",
+         "template_hk9bylt",
           form.current,
          "SwlA8d9ZfDUsg9zTg",
         )
