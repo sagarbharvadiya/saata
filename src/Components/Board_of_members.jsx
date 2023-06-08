@@ -9,9 +9,9 @@ function BoardOfMembers() {
     arrows: true,
     infinite: true,
     speed: 2000,
-    autoplay: true,
+    autoplay:true,
     slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToScroll: 3,
     responsive: [
       {
         breakpoint: 1024,
@@ -86,7 +86,7 @@ function BoardOfMembers() {
       <div className="board-of-members-section info-container">
         <div className="board-of-members-wrapper">
           <h2 className="Board-of-Members-title info-title">
-            Board of Members
+          Current Board of Trustees
           </h2>
           <div className="board-of-members-folder">
             <Slider {...settings}>
@@ -99,8 +99,10 @@ function BoardOfMembers() {
                     <div className="board-of-members-image">
                       <img src={item.image} alt={item.image} />
                     </div>
+                    <div className="des"> 
                     <h2>{item.name}</h2>
                     <p>{item.occupation}</p>
+                    </div>
                   </div>
                 );
               })}

@@ -30,11 +30,8 @@ const ContentList = (props) => {
 
   return (
     <div>
-      <div
-        onClick={() => setToggleNews(!toggleNews)}
-        className="news-field"
-      >
-        {title}
+      <div onClick={() => setToggleNews(!toggleNews)} className="news-field">
+          {title}
       </div>
       <ul className={toggleNews ? "news-drop_drown-menu open" : "news-drop_drown-menu"}>
         {entry.map((item, index) => {
@@ -42,8 +39,12 @@ const ContentList = (props) => {
           const isActive = currentSlug === slug;
           return (
             <React.Fragment key={item.sys.id}>
-             {toggleNews && (
-                 <li className={isActive ? "menu-item active" : "menu-item"}><NavLink to={`/content/${slug}`}>{title}</NavLink></li>
+              {toggleNews && (
+                <li className={isActive ? "menu-item active" : "menu-item"}>
+                  <NavLink to={`/content/${slug}`} activeClassName="active">
+                    {title}
+                  </NavLink>
+                </li>
               )}
             </React.Fragment>
           );
@@ -51,6 +52,7 @@ const ContentList = (props) => {
       </ul>
     </div>
   );
+
 };
 
 export default ContentList;

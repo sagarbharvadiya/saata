@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
 import Slider from "react-slick";
-import  client from "../client";
+import client from "../client";
 
 const Banner = () => {
   const [slides, setSlides] = useState([]);
@@ -18,8 +18,8 @@ const Banner = () => {
 
   const getBanners = useCallback(async () => {
     try {
-      const response = await client.getEntries({ content_type: "banner" });
-      const responseData = response.items.reverse();
+      const response = await client.getEntries({ content_type: "banner", order:"fields.order"  });
+      const responseData = response.items;
       if (responseData) {
         cleanUpBannerApi(responseData);
       } else {
@@ -38,8 +38,8 @@ const Banner = () => {
     dots: false,
     arrows: true,
     infinite: true,
-    speed: 500,
-    autoplay: true,
+    speed: 1000,
+    autoplay: false,
     slidesToShow: 1,
     slidesToScroll: 1,
     responsive: [
@@ -87,7 +87,7 @@ const Banner = () => {
                 return (
                   <div key={index}>
                     <div className="banner-slider-image">
-                      <img src={slide.bannerurl} alt="banner"/>
+                      <img src={slide.bannerurl} alt="banner" />
                     </div>
                   </div>
                 );

@@ -40,8 +40,7 @@ function NewsletterTeam() {
                         const { designation, fullName, richTextEditor } = item.fields;
                         const image = item.fields.image.fields.file.url;
                         const id = item.sys.id
-                        console.log(id)
-                    
+                        console.log(id) 
                         return (
                             <React.Fragment key={id}>
                                 <div className="news-letter-team">
@@ -58,7 +57,6 @@ function NewsletterTeam() {
                                     <div>
                                     </div>
                                 </div>
-
                             </React.Fragment>
                         )
                     })
