@@ -23,39 +23,39 @@ const Footer = () => {
               <div className="footer_menu">
                 <ul>
                   <li>
-                    <Link to="/basicpage/about-us">About SAATA</Link>
+                    <Link to="/page/about-us">About SAATA</Link>
                   </li>
                   <li>
-                    <Link to="/basicpage/history-and-origin-of-saata">
+                    <Link to="/page/history-and-origin-of-saata">
                       History and Origin of SAATA
                     </Link>
                   </li>
                   <li>
-                    <Link to="/basicpage/mission-and-vision">
+                    <Link to="/page/mission-and-vision">
                       Mission and Vision
                     </Link>
                   </li>
                 </ul>
                 <ul>
                   <li>
-                    <Link to="/basicpage/about-ta">About TA</Link>
+                    <Link to="/page/about-ta">About TA</Link>
                   </li>
                   <li>
-                    <Link to="basicpage/eric-berne">Eric Berne</Link>
+                    <Link to="page/eric-berne">Eric Berne</Link>
                   </li>
 
                   <li>
-                    <Link to="basicpage/saata-bot">Saata Bot</Link>
+                    <Link to="page/saata-bot">Saata Bot</Link>
                   </li>
                 </ul>
                 <ul>
                   {/* <li>
-                    <Link to="/basicpage/presidents-note">
+                    <Link to="/page/presidents-note">
                       President’s Note
                     </Link>
                   </li> */}
                   <li>
-                    <Link to='/basicpage/governance'>Governance</Link>
+                    <Link to='/page/governance'>Governance</Link>
                   </li>
                   <li>
                     <Link to="/#contact">Contact Us</Link>
