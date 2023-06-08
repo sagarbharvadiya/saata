@@ -49,15 +49,14 @@ const Contact = () => {
     if (isValidEmail) {
       emailjs
         .sendForm(
-          "service_9spedfi",
-          "template_juxtdiw",
+         process.env.EMAILJS_SERVICEID,
+         process.env.EMAILJS_TEMPLATEID,
           form.current,
-          "JEUgk1jZnrZLqJz5k"
+         "SwlA8d9ZfDUsg9zTg",
         )
         .then(
           (result) => {
             notify();
-            console.log(result.text);
             setName("");
             setEmail("");
             setMessage("");
@@ -68,7 +67,7 @@ const Contact = () => {
         );
     } else {
       //   toast.error("Please enter a correct email value");
-      console.log("Email is invalide");
+      console.log("Email is invalid.");
     }
   };
   return (
@@ -123,7 +122,7 @@ const Contact = () => {
               rows="10"
               cols="30"
               className="inner-Massege"
-              placeholder="Your Massege..."
+              placeholder="Your Message..."
               name="message"
               required
               value={message}
