@@ -123,7 +123,7 @@ const Contact = () => {
               rows="10"
               cols="30"
               className="inner-Massege"
-              placeholder="Your Massege..."
+              placeholder="Your Message..."
               name="message"
               required
               value={message}
