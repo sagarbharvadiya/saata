@@ -13,6 +13,7 @@ function CertifiedMembers() {
       try {
         const response = await client.getEntries({
           content_type: "certifiedMembers",
+          order:"fields.title"
           // "fields.slug": slug,
         });
 

@@ -2,6 +2,12 @@
   color: #fff;
 }
 
+h2.main_title {
+  font-size: 39px;
+  color: #a37bb6;
+  text-align: center;
+}
+
 .page-membership-details .about_us,
 .page-ta-101-program-details .about_us {
   max-width: 1258px;
@@ -356,38 +362,30 @@ code {
 
 .info-container {
   text-align: center;
-  padding: 55px 0px !important;
+  padding: 30px 0px !important;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.info-container:nth-child(2) {
+.info-container:nth-child(odd) {
   background-color: #a37bb6;
   color: white;
 }
 
-.info-container:nth-child(2) .read-more {
+.info-container:nth-child(odd) .read-more {
   background: #fffdfd;
   color: #a37bb6;
 }
 
-.info-container:nth-child(2) .info-title {
+.info-container:nth-child(odd) .info-title {
   color: #fff;
 }
 
-.info-container:nth-child(2) .info-title::before {
-  background: #fffdfd;
-}
 
-.info-container:nth-child(2) .info-desc {
+.info-container:nth-child(odd) .info-desc {
   color: white;
-}
-
-.info-container .read-more:nth-child(2) {
-  background-color: white !important;
-  color: #a37bb6 !important;
 }
 
 .info-title {
@@ -897,8 +895,8 @@ code {
 }
 
 .about_us {
- width: 1258px;
- margin: auto;
+  width: 1258px;
+  margin: auto;
 }
 
 /* .about_us::before {
@@ -932,7 +930,7 @@ code {
   margin-top: 20px;
 }
 
-.about_us_wrapper h2::before {
+/* .about_us_wrapper h2::before {
   position: absolute;
   content: '';
   bottom: -4px;
@@ -940,7 +938,7 @@ code {
   width: 100%;
   height: 2px;
   background: #fff;
-}
+} */
 
 .about_us_img {
   max-width: 800px;
@@ -1498,6 +1496,48 @@ ul .menu_item:hover>a {
   color: #a37bb6 !important;
 }
 
+.page-saata-conference-registration table {
+  border-collapse: collapse;
+  overflow-x: auto;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.page-saata-conference-registration th {
+  background-color: rgba(163, 123, 182, 0.302);
+}
+
+.page-saata-conference-registration th {
+  border: 1px solid;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.page-saata-conference-registration th,
+.page-saata-conference-registration td {
+  padding: 15px 8px;
+  font-size: 16px;
+  border: 1px solid;
+}
+
+.page-saata-conference-registration tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.page-saata-conference-registration table a {
+  background: #a37bb6;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 8px;
+}
+
+.page-saata-conference-registration th p,
+.page-saata-conference-registration tr p {
+  text-align: left;
+}
+
 /* end  */
 @media only screen and (max-width: 1024px) {
   .banner-slider-image img {
@@ -1982,11 +2022,14 @@ ul .menu_item:hover>a {
 .page-saata-calendar-2023 th p,
 .page-saata-calendar-2023 td p {
   text-align: left;
-}.page-saata-calendar-2023 th,
+}
+
+.page-saata-calendar-2023 th,
 .page-saata-calendar-2023 td,
-.page-saata-calendar-2023 tr{
+.page-saata-calendar-2023 tr {
   border: 1px solid #333 !important;
 }
+
 @media only screen and (max-width: 767px) {
   .banner-slider-image img {
     width: 100%;
@@ -2724,6 +2767,7 @@ ul .menu_item:hover>a {
   left: 100%;
   top: 0;
 }
+
 .contact_form input.submit-btn {
   padding: 14px 40px;
   text-align: center;
@@ -2735,4 +2779,27 @@ ul .menu_item:hover>a {
   font-size: 19px;
   color: #a37bb6;
   border-radius: 15px;
+}
+
+.page-call-for-proposals p a {
+  padding: 10px;
+  text-align: center;
+  background: #a37bb6;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 19px;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.info-desc p a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+}
+.info-desc p a:hover{
+border-bottom:  1px solid;
 }
