@@ -68,7 +68,7 @@ const Contact = () => {
         );
     } else {
       //   toast.error("Please enter a correct email value");
-      console.log("Email is invalide");
+      console.log("Email is invalid.");
     }
   };
   return (
