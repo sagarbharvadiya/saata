@@ -49,10 +49,10 @@ const Contact = () => {
     if (isValidEmail) {
       emailjs
         .sendForm(
-          "service_9spedfi",
-          "template_juxtdiw",
+         process.env.EMAILJS_SERVICEID,
+         process.env.EMAILJS_TEMPLATEID,
           form.current,
-          "JEUgk1jZnrZLqJz5k"
+         process.env.EMAILJS_PUBLICKEY,
         )
         .then(
           (result) => {
