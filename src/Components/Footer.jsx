@@ -45,7 +45,7 @@ const Footer = () => {
                   </li>
 
                   <li>
-                    <Link to="page/saata-bot">Saata Bot</Link>
+                    <Link to="page/saata-bot">SAATA BOT</Link>
                   </li>
                 </ul>
                 <ul>

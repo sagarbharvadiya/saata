@@ -53,6 +53,7 @@ const TopHeader = () => {
           <div className="menu-toggle-bar"></div>
         </button>
         <ul className={`menu-folder ${menuOpen ? 'menu-open' : ''}`}>
+          <li className="menu_item"><NavLink to='/'>Home</NavLink></li>
           <li className="Certifications menu_item">
             <NavLink to="/">Certifications</NavLink>
             <ul className="Certifications-folder">
@@ -114,7 +115,7 @@ const TopHeader = () => {
                   Call for Proposals
                 </NavLink>
               </li>
-              <li>
+              {/* <li>
                 <NavLink to="/page/conference-brochure" onClick={toggleMenu}>
                   Conference Brochure
                 </NavLink>
@@ -123,7 +124,7 @@ const TopHeader = () => {
                 <NavLink to="/page/saata-conference-registration" onClick={toggleMenu}>
                   Conference Registration
                 </NavLink>
-              </li>
+              </li> */}
             </ul>
           </li>
           <li className="Awards menu_item">
