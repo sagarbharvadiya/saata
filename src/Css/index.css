@@ -6,8 +6,11 @@ h2.main_title {
   font-size: 39px;
   color: #a37bb6;
   text-align: center;
+  margin-top: 20px;
 }
-
+.about_us .about_us_content table tr td p{
+  text-align: left !important;
+}
 .page-membership-details .about_us,
 .page-ta-101-program-details .about_us {
   max-width: 1258px;
@@ -2072,7 +2075,7 @@ ul .menu_item:hover>a {
   }
 
   .board-of-members-blog-box-section h2 {
-    margin: 25px 0px -11px 0px;
+    margin: 25px 0px 0 0px;
   }
 
   .contact_form {
