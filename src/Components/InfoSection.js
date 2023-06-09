@@ -59,44 +59,50 @@ const InfoSection = () => {
     <div className="main-container">
       <h2 className="main_title">7th Biennial SAATA Conference, Bangalore 23-24 September, 2023.</h2>
       {info.map((item, index) => {
-        const richTextContent = documentToReactComponents(item.infoDesc, {
-          renderNode: {
-            ...renderNode,
-            [INLINES.ASSET_HYPERLINK]: (node) => (
-              <a href={`https://` + node.data.target.fields.file.url} target="_blank" rel="noopener noreferrer">{node.data.target.fields.title}</a>
-            ),
-            [BLOCKS.EMBEDDED_ASSET]: (node) => {
-              const { title, description, file } = node.data.target.fields;
-              const url = file.url;
-              const isPDF = file.contentType === 'application/pdf';
-
-              if (isPDF) {
-                return (
-                  <div>
-                    <iframe src={url} title={title} style={{ width: '100%', height: '100vh' }}></iframe>
-                    <p>{description}</p>
-                  </div>
-                );
-              }
-
-              return null;
-            },
-          },
-        });
-
+  const richTextContent = documentToReactComponents(item.infoDesc, {
+    renderNode: {
+      ...renderNode,
+      [INLINES.ASSET_HYPERLINK]: (node) => {
+        const url = `https://${node.data.target.fields.file.url}`;
         return (
-          <div className="info-container" key={index}>
-            <div className="info-body">
-              <h2 className="info-title">{item.infoTitle}</h2>
-              {/* Use ReactHtmlParser to parse the HTML content */}
-              <p className="info-desc">{richTextContent}</p>
-              <Link to={item.link}>
-                <button className="read-more">{item.linkLabel}</button>
-              </Link>
-            </div>
-          </div>
+          <a href={url} target="_blank" rel="noopener noreferrer">
+            {node.data.target.fields.title}
+          </a>
         );
-      })}
+      },
+      [BLOCKS.EMBEDDED_ASSET]: (node) => {
+        const { title, description, file } = node.data.target.fields;
+        const url = file.url;
+        const isPDF = file.contentType === 'application/pdf';
+
+        if (isPDF) {
+          return (
+            <div>
+              <iframe src={url} title={title} style={{ width: '100%', height: '100vh' }}></iframe>
+            {description}
+            </div>
+          );
+        }
+
+        return null;
+      },
+    },
+  });
+
+  const linkProps = item.link.endsWith('.pdf') ? { target: '_blank' } : {};
+
+  return (
+    <div className="info-container" key={index}>
+      <div className="info-body">
+        <h2 className="info-title">{item.infoTitle}</h2>
+        <p className="info-desc">{richTextContent}</p>
+        <Link to={item.link} {...linkProps}>
+          <button className="read-more">{item.linkLabel}</button>
+        </Link>
+      </div>
+    </div>
+  );
+})}
     </div>
   );
 };
