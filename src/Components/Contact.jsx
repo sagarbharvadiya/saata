@@ -77,8 +77,8 @@ const Contact = () => {
           <form ref={form} className="contact_form" onSubmit={sendEmail}>
             <h2>Contact Us</h2>
             <p>
-              Rationally encounter consequences that are extremely painful or
-              again is there anyone.
+              Thank you for writing to us. 
+              You will receive a reply within 3 working days.
             </p>
             <div className="input_wrapper">
               <div className="input_field">
