@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
+// import { useParams } from "react-router-dom";
 import client from "../client";
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import { BLOCKS, INLINES } from '@contentful/rich-text-types';
 
-function CertifiedMembers() {
+function SatjaTeam() {
   const [entry, setEntry] = useState([]);
 
   useEffect(() => {
@@ -17,8 +18,8 @@ function CertifiedMembers() {
         console.log(response);
         if (response.items.length) {
           // Filter the items where fields.label is "CertifiedMembers"
-          const certifiedMembers = response.items.filter(item => item.fields.lable === "CertifiedMembers");
-          setEntry(certifiedMembers);
+          const SAJTATeam = response.items.filter(item => item.fields.lable === "SAJTATeam");
+          setEntry(SAJTATeam);
         }
       } catch (error) {
         console.error(error);
@@ -31,7 +32,7 @@ function CertifiedMembers() {
     <>
       <div className="Certified-Members-section">
         <div className="Certified-Members-wrapper">
-          <h2 className="Certified-Members-text">Certified Members</h2>
+          <h2 className="Certified-Members-text">SAJTA Team </h2>
           <div className="Certified-Members-folder">
             {entry.map((item) => {
               const { qualification, name, title } = item.fields;
@@ -89,4 +90,4 @@ function CertifiedMembers() {
   );
 }
 
-export default CertifiedMembers;
+export default SatjaTeam;

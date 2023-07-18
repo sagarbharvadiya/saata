@@ -14,16 +14,19 @@ const Contact = () => {
   const [isNameFocused, setIsNameFocused] = useState(false);
   const [isEmailFocused, setIsEmailFocused] = useState(false);
   const notify = () => {
-    toast.success("Thank you for contacting saata. We will respond to your message within 3 working days.😊", {
-      position: "top-right",
-      autoClose: 1000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: "dark",
-    });
+    toast.success(
+      "Thank you for contacting saata. We will respond to your message within 3 working days.😊",
+      {
+        position: "top-right",
+        autoClose: 1000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+      }
+    );
   };
 
   function handleEmailChange(event) {
@@ -49,10 +52,10 @@ const Contact = () => {
     if (isValidEmail) {
       emailjs
         .sendForm(
-         "service_chq5sx7",
-         "template_hk9bylt",
+          "service_chq5sx7",
+          "template_hk9bylt",
           form.current,
-         "SwlA8d9ZfDUsg9zTg",
+          "SwlA8d9ZfDUsg9zTg"
         )
         .then(
           (result) => {
@@ -77,8 +80,8 @@ const Contact = () => {
           <form ref={form} className="contact_form" onSubmit={sendEmail}>
             <h2>Contact Us</h2>
             <p>
-              Thank you for writing to us. 
-              You will receive a reply within 3 working days.
+              Thank you for writing to us. You will receive a reply within 3
+              working days.
             </p>
             <div className="input_wrapper">
               <div className="input_field">
@@ -127,8 +130,8 @@ const Contact = () => {
               required
               value={message}
               onChange={MessageInputChange}
-            ></textarea>          
-                <input type="submit" className="submit-btn" value="Send" />
+            ></textarea>
+            <input type="submit" className="submit-btn" value="Send" />
             <ToastContainer
               position="top-right"
               autoClose={5000}
