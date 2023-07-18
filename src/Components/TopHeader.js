@@ -197,7 +197,7 @@ const TopHeader = () => {
                   </li>
                   <li>
                     <NavLink to="/page/sajta-submission-guidelines" onClick={toggleMenu}>
-                      Satja Guidelines
+                    SAJTA Guidelines
                     </NavLink>
                   </li>
                 </ul>
