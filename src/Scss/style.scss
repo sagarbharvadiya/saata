@@ -345,9 +345,11 @@ $background-color_1: rgb(232, 76, 61);
     }
   }
 }
-.page-SAJTATeam .Certified-Members-text{
+
+.page-SAJTATeam .Certified-Members-text {
   max-width: 260px;
 }
+
 .page-examination-forms {
   .about_us.about_ta {
     .about_us_content {
@@ -482,6 +484,22 @@ $background-color_1: rgb(232, 76, 61);
         width        : 428px;
         margin-bottom: 20px;
         margin-right : 20px;
+      }
+    }
+  }
+}
+
+#SAJTA_team {
+  p {
+    text-align: justify;
+  }
+
+  .Certified-Members-folder {
+    div {
+      div:nth-child(1) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
     }
   }

@@ -30,7 +30,7 @@ function SatjaTeam() {
 
   return (
     <>
-      <div className="Certified-Members-section">
+      <div className="Certified-Members-section" id="SAJTA_team">
         <div className="Certified-Members-wrapper">
           <h2 className="Certified-Members-text">SAJTA Team </h2>
           <div className="Certified-Members-folder">
