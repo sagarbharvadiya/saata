@@ -10,9 +10,10 @@ const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [isValidEmail, setIsValidEmail] = useState(false);
   const [isNameFocused, setIsNameFocused] = useState(false);
   const [isEmailFocused, setIsEmailFocused] = useState(false);
+  const [isSent, setIsSent] = useState(false);
+  const [error, setError] = useState("");
   const notify = () => {
     toast.success(
       "Thank you for contacting saata. We will respond to your message within 3 working days.😊",
@@ -29,55 +30,48 @@ const Contact = () => {
     );
   };
 
-  function handleEmailChange(event) {
-    const inputEmail = event.target.value;
-    setEmail(inputEmail);
-
-    const emailRegex = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/;
-    setIsValidEmail(emailRegex.test(inputEmail));
-  }
-
-  function NameinputChange(e) {
-    const inputText = e.target.value;
-    setName(inputText);
-  }
-
-  function MessageInputChange(e) {
-    const inputText = e.target.value;
-    setMessage(inputText);
-  }
-  const form = useRef();
-  const sendEmail = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    if (isValidEmail) {
-      emailjs
-        .sendForm(
-          "service_chq5sx7",
-          "template_hk9bylt",
-          form.current,
-          "SwlA8d9ZfDUsg9zTg"
-        )
-        .then(
-          (result) => {
-            notify();
-            setName("");
-            setEmail("");
-            setMessage("");
-          },
-          (error) => {
-            console.log(error.text);
-          }
-        );
-    } else {
-      //   toast.error("Please enter a correct email value");
-      console.log("Email is invalid.");
+
+    if (!name || !email || !message) {
+      setError("Please fill in all fields.");
+      return;
     }
+
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      message: message,
+    };
+
+    emailjs
+      .send(
+        process.env.REACT_APP_EMAILJS_SERVICEID,
+        process.env.REACT_APP_EMAILJS_TEMPLATEID,
+        templateParams,
+        process.env.REACT_APP_EMAILJS_PUBLICKEY
+      )
+      .then(
+        (response) => {
+          notify();
+          setIsSent(true);
+          setName("");
+          setEmail("");
+          setMessage("");
+          setError("");
+          console.log("Email sent:", response);
+        },
+        (error) => {
+          console.error("Failed to send the email:", error);
+          setError("Oops! Something went wrong. Please try again later.");
+        }
+      );
   };
   return (
     <>
       <section className="contact" id="contact">
         <div className="contact_wrapper">
-          <form ref={form} className="contact_form" onSubmit={sendEmail}>
+          <form className="contact_form" onSubmit={handleSubmit}>
             <h2>Contact Us</h2>
             <p>
               Thank you for writing to us. You will receive a reply within 3
@@ -92,7 +86,7 @@ const Contact = () => {
                   name="user_name"
                   required
                   value={name}
-                  onChange={NameinputChange}
+                  onChange={(e) => setName(e.target.value)}
                   onFocus={() => setIsNameFocused(true)}
                   onBlur={() => setIsNameFocused(false)}
                 />
@@ -110,7 +104,7 @@ const Contact = () => {
                   name="user_email"
                   required
                   value={email}
-                  onChange={handleEmailChange}
+                  onChange={(e) => setEmail(e.target.value)}
                   onFocus={() => setIsEmailFocused(true)}
                   onBlur={() => setIsEmailFocused(false)}
                 />
@@ -129,7 +123,7 @@ const Contact = () => {
               name="message"
               required
               value={message}
-              onChange={MessageInputChange}
+              onChange={(e) => setMessage(e.target.value)}
             ></textarea>
             <input type="submit" className="submit-btn" value="Send" />
             <ToastContainer
