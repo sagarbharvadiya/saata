@@ -1984,7 +1984,8 @@ ul .menu_item:hover>a {
   .page-truth-seeker .about_us,
   .page-ace-conceptualist .about_us,
   .page-gregarious-hugger .about_us,
-  .page-team-that-was .about_us {
+  .page-team-that-was .about_us,
+  .page-saata-conferences .about_us.about_ta {
     max-width: 740px !important;
   }
 
@@ -2319,7 +2320,8 @@ ul .menu_item:hover>a {
   .page-membership-details .about_us.about_ta,
   .page-ta-101-program-details .about_us.about_ta,
   .page-saata-calendar-2023 .about_us.about_ta,
-  .page-saata-bot .about_us.about_ta {
+  .page-saata-bot .about_us.about_ta,
+  .page-saata-conference .about_us.about_ta {
     padding: 18px 0px;
     max-width: 318px !important;
   }
