@@ -8,9 +8,11 @@ h2.main_title {
   text-align: center;
   margin-top: 20px;
 }
-.about_us .about_us_content table tr td p{
+
+.about_us .about_us_content table tr td p {
   text-align: left !important;
 }
+
 .page-membership-details .about_us,
 .page-ta-101-program-details .about_us {
   max-width: 1258px;
@@ -1541,6 +1543,38 @@ ul .menu_item:hover>a {
   text-align: left;
 }
 
+.page-saata-conference table {
+  border-collapse: collapse;
+  margin-top: 50px;
+  overflow-x: auto;
+  width: 100%;
+}
+
+.page-saata-conference table td,
+.page-saata-conference table th {
+  border: 1px solid #000 !important;
+  font-size: 16px;
+  padding: 15px 8px;
+}
+
+.page-saata-conference table th p {
+  color: #000;
+}
+
+.page-saata-conference table th {
+  font-size: 19px;
+  font-weight: 700;
+  background-color: rgba(163, 123, 182, .302) !important;
+
+}
+.page-saata-conference table a {
+  background: #a37bb6;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 15px;
+  padding: 10px;
+  text-decoration: none;
+}
 /* end  */
 @media only screen and (max-width: 1024px) {
   .banner-slider-image img {
@@ -1678,8 +1712,7 @@ ul .menu_item:hover>a {
   .page-membership-renewal .about_us,
   .page-call-for-nominations .about_us,
   .page-guidelines-for-content-contributors .about_us,
-  .page-sajta-submission-guidelines .about_us
-  .page-newsletter-advertisement-policy .about_us,
+  .page-sajta-submission-guidelines .about_us .page-newsletter-advertisement-policy .about_us,
   .page-journals .about_us,
   .page-awards .about_us,
   .page-service-award .about_us,
@@ -2552,7 +2585,8 @@ ul .menu_item:hover>a {
   .page-membership-details .about_us_content table,
   .page-ta-101-program-details .about_us_content table,
   .page-saata-calendar-2023 .about_us_content table,
-  .page-saata-bot .about_us_content table {
+  .page-saata-bot .about_us_content table,
+  table {
     display: block;
     overflow-y: scroll;
   }
@@ -2817,6 +2851,7 @@ ul .menu_item:hover>a {
   font-weight: bold;
   color: #fff;
 }
-.info-desc p a:hover{
-border-bottom:  1px solid;
+
+.info-desc p a:hover {
+  border-bottom: 1px solid;
 }
