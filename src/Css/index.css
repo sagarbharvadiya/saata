@@ -1567,6 +1567,7 @@ ul .menu_item:hover>a {
   background-color: rgba(163, 123, 182, .302) !important;
 
 }
+
 .page-saata-conference table a {
   background: #a37bb6;
   border-radius: 8px;
@@ -1575,6 +1576,7 @@ ul .menu_item:hover>a {
   padding: 10px;
   text-decoration: none;
 }
+
 /* end  */
 @media only screen and (max-width: 1024px) {
   .banner-slider-image img {
@@ -2854,4 +2856,10 @@ ul .menu_item:hover>a {
 
 .info-desc p a:hover {
   border-bottom: 1px solid;
+}
+
+.page-saata-conference .about_us_img,
+.about_us_img img {
+  width: 100%;
+  max-width: 100%;
 }
