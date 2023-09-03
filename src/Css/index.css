@@ -2863,3 +2863,16 @@ ul .menu_item:hover>a {
   width: 100%;
   max-width: 100%;
 }
+
+.custom-rich-text-image img {
+  width: 100%;
+}
+
+.custom-rich-text-pdf,
+.custom-rich-text-image {
+  margin: 30px 0;
+}
+
+.page-saata-conference table {
+  margin: 10px 0;
+}
