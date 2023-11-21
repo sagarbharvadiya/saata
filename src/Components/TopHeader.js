@@ -88,12 +88,8 @@ const TopHeader = () => {
                 </NavLink>
               </li>
               <li className="directory menu_item Newsletter">
-                <NavLink to="/page/directory">Directory</NavLink>
-                <ul className="directory-folder hover" onClick={toggleMenu}>
-                  <li>
-                    <NavLink to="/CertifiedMembers">Certified Members</NavLink>
-                  </li>
-                </ul>
+                <NavLink to="/CertifiedMembers">Directory</NavLink>
+               
               </li>
             </ul>
           </li>
