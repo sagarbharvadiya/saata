@@ -48,18 +48,27 @@ const BasicPage = () => {
           const imageUrl = (item?.fields?.image?.fields?.file?.url) ? item?.fields?.image?.fields?.file?.url : '';
           const richTextContent = documentToReactComponents(description, {
             renderNode: {
-              ...renderNode,
+              ...renderNode, 
               [INLINES.ASSET_HYPERLINK]: (node) => (
-                <a href={`https://`+ node.data.target.fields.file.url} target="_blank" rel="noopener noreferrer">{node.data.target.fields.title}</a>
-                ),
+                <a href={`https://` + node.data.target.fields.file.url} target="_blank" rel="noopener noreferrer">{node.data.target.fields.title}</a>
+              ),
               [BLOCKS.EMBEDDED_ASSET]: (node) => {
                 const { title, description, file } = node.data.target.fields;
                 const url = file.url;
                 const isPDF = file.contentType === 'application/pdf';
-
+                if(file.details?.image){
+                  const { title, description, file } = node.data.target.fields;
+                const imageUrl = file.url;
+                const altText = description || title || "Image";
+                return (
+                  <div className="custom-rich-text-image">
+                    <img src={imageUrl} alt={altText} />
+                  </div>
+                );
+                }
                 if (isPDF) {
                   return (
-                    <div>
+                    <div className="custom-rich-text-pdf">
                       <iframe src={url} title={title} style={{ width: '100%', height: '100vh' }}></iframe>
                       <p>{description}</p>
                     </div>

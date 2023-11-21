@@ -88,12 +88,8 @@ const TopHeader = () => {
                 </NavLink>
               </li>
               <li className="directory menu_item Newsletter">
-                <NavLink to="/page/directory">Directory</NavLink>
-                <ul className="directory-folder hover" onClick={toggleMenu}>
-                  <li>
-                    <NavLink to="/CertifiedMembers">Certified Members</NavLink>
-                  </li>
-                </ul>
+                <NavLink to="/CertifiedMembers">Directory</NavLink>
+               
               </li>
             </ul>
           </li>
@@ -111,10 +107,20 @@ const TopHeader = () => {
                 </NavLink>
               </li>
               <li>
+                <NavLink to="/page/mll-2024" onClick={toggleMenu}>
+                  MLL 2024
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/page/saata-conference" onClick={toggleMenu}>
+                SAATA Conference
+                </NavLink>
+              </li>
+              {/* <li>
                 <NavLink to="/page/call-for-proposals" onClick={toggleMenu}>
                   Call for Proposals
                 </NavLink>
-              </li>
+              </li> */}
               {/* <li>
                 <NavLink to="/page/conference-brochure" onClick={toggleMenu}>
                   Conference Brochure
@@ -185,11 +191,24 @@ const TopHeader = () => {
                   </li> --> */}
                 </ul>
               </li>
-              <li>
+              <li className="News_hover">
                 <NavLink to="/page/journals" onClick={toggleMenu}>
                   SAJTA Journals
                 </NavLink>
+                <ul className="hover">
+                  <li>
+                    <NavLink to="/SAJTATeam" onClick={toggleMenu}>
+                      SAJTA Team
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/page/sajta-submission-guidelines" onClick={toggleMenu}>
+                    SAJTA Guidelines
+                    </NavLink>
+                  </li>
+                </ul>
               </li>
+
             </ul>
           </li>
           <li className="Newsletter menu_item">

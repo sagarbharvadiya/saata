@@ -13,6 +13,7 @@ import BasicPage from './Pages/BasicPage'
 import NewsletterTeam from './Pages/NewsletterTeam';
 import CurrentandPreviousIssues from './Components/CurrentandPreviousIssues';
 import Videos from './Components/Videos';
+import SatjaTeam from './Pages/SatjaTeam';
 function App() {
   const location = useLocation();
   const activeSlug = location.pathname.split('/').pop(); // Get the last part of the URL path
@@ -33,6 +34,7 @@ function App() {
         <Route exact path='/gallery' element={<Gallery />} />
         <Route exact path='/membershipregistration' element={<MembershipRegistration />} />
         <Route exact path='/Certifiedmembers' element={<CertifiedMembers />} />
+        <Route exact path='/SAJTATeam' element={<SatjaTeam />} />
         <Route exact path='/articles' element={<Article />} />
         <Route exact path='/video' element={<Videos />} />
         <Route exact path='/article' element={<Articles />} />
