@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Route, Routes } from 'react-router-dom'
 import Footer from "./Components/Footer";
@@ -14,23 +14,27 @@ import NewsletterTeam from './Pages/NewsletterTeam';
 import CurrentandPreviousIssues from './Components/CurrentandPreviousIssues';
 import Videos from './Components/Videos';
 import SatjaTeam from './Pages/SatjaTeam';
+
 function App() {
   const location = useLocation();
   const activeSlug = location.pathname.split('/').pop(); // Get the last part of the URL path
+
+
   useEffect(() => {
     document.body.classList.add(`page-${activeSlug}`); // Add the class to the body tag
     return () => {
       document.body.classList.remove(`page-${activeSlug}`); // Remove the class from the body tag when the component unmounts
     };
   }, [activeSlug]);
+
   return (
     <>
       <TopHeader activeSlug={activeSlug} />
       <Routes>
         <Route exact path='/' element={<Home />} />
-        <Route exact path='page/:slug' element={<BasicPage />}></Route>
-        <Route exact path='/newsletterlist/' element={<CurrentandPreviousIssues />}></Route>
-        <Route exact path='/newsletterTeam/:slug' element={<NewsletterTeam />}></Route>
+        <Route exact path='page/:slug' element={<BasicPage />} />
+        <Route exact path='/newsletterlist/' element={<CurrentandPreviousIssues />} />
+        <Route exact path='/newsletterTeam/:slug' element={<NewsletterTeam />} />
         <Route exact path='/gallery' element={<Gallery />} />
         <Route exact path='/membershipregistration' element={<MembershipRegistration />} />
         <Route exact path='/Certifiedmembers' element={<CertifiedMembers />} />
