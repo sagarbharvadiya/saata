@@ -14,7 +14,7 @@ import NewsletterTeam from './Pages/NewsletterTeam';
 import CurrentandPreviousIssues from './Components/CurrentandPreviousIssues';
 import Videos from './Components/Videos';
 import SatjaTeam from './Pages/SatjaTeam';
-
+import Faq from './Components/Faq';
 function App() {
   const location = useLocation();
   const activeSlug = location.pathname.split('/').pop(); // Get the last part of the URL path
@@ -42,6 +42,7 @@ function App() {
         <Route exact path='/articles' element={<Article />} />
         <Route exact path='/video' element={<Videos />} />
         <Route exact path='/article' element={<Articles />} />
+        <Route exact path='/faq' element={<Faq />} />
       </Routes>
       <Footer />
     </>
