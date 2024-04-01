@@ -1577,6 +1577,62 @@ ul .menu_item:hover>a {
   text-decoration: none;
 }
 
+.container {
+  width: 90%;
+  margin: 20px auto;
+}
+
+.collapsible {
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.button {
+  width: 100%;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+.Content {
+  padding: 10px;
+}
+
+.Content > div {
+  margin-top: 10px;
+}
+
+.Content img {
+  max-width: 100%;
+  height: auto;
+}
+
+.collapsible .button {
+  background-color: #a37bb6;;
+  border: none;
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 20px;
+  margin: auto;
+  padding: 12px;
+
+}
+.collapsible .title {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.collapsible .button span {
+  font-size: 25px;
+  margin-left: 35px;
+}
+.Content {
+  transition: max-height .3s ease;
+}
 /* end  */
 @media only screen and (max-width: 1024px) {
   .banner-slider-image img {
@@ -2690,6 +2746,9 @@ ul .menu_item:hover>a {
 }
 
 @media (max-width: 768px) {
+  .collapsible .button{
+    font-size: 15px;
+  }
   .Top-Header-wrapper-folder {
     flex-direction: column;
     align-items: flex-start;
