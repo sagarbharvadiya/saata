@@ -2923,9 +2923,9 @@ ul .menu_item:hover>a {
   max-width: 100%;
 }
 
-.custom-rich-text-image img {
+/* .custom-rich-text-image img {
   width: 100%;
-}
+} */
 
 .custom-rich-text-pdf,
 .custom-rich-text-image {
