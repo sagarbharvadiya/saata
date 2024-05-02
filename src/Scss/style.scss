@@ -309,8 +309,8 @@ $background-color_1: rgb(232, 76, 61);
 .page-gregarious-hugger,
 .page-team-that-was,
 .page-editors-collage,
-.page-governance ,
-.page-saata-conference{
+.page-governance,
+.page-saata-conference {
   .about_us.about_ta {
     padding         : 18px 20px;
     background-color: #f9f9f93d;
@@ -499,9 +499,9 @@ $background-color_1: rgb(232, 76, 61);
   .Certified-Members-folder {
     div {
       div:nth-child(1) {
-        display: flex;
+        display        : flex;
         justify-content: center;
-        align-items: center;
+        align-items    : center;
       }
     }
   }
@@ -779,6 +779,45 @@ $background-color_1: rgb(232, 76, 61);
   margin-bottom   : 37px;
   max-width       : 1258px;
   margin          : 0px auto 50px auto;
+}
+
+#tw-target-text {
+  a {
+    border-radius  : 8px;
+    border         : none;
+    background     : #a37bb6;
+    cursor         : pointer;
+    padding        : 8px 10px;
+    text-decoration: none;
+    margin         : 0 10px;
+    color          : #fff;
+  }
+
+}
+
+.page-membership-renewal {
+  .aboutus_parent {
+    p {
+      padding: 10px 0;
+    }
+
+    a {
+      border-radius  : 8px;
+      border         : none;
+      background     : #a37bb6;
+      cursor         : pointer;
+      padding        : 8px 10px;
+      text-decoration: none;
+      margin         : 10px 0;
+      color          : #fff !important;
+    }
+  }
+}
+
+#Faq {
+  text-align: center;
+  font-size : 30px;
+  margin-top: 20px;
 }
 
 .page-cartoon-quip {
