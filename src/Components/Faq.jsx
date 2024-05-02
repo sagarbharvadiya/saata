@@ -59,60 +59,62 @@ const Faq = () => {
   };
 
   return (
-    <div className="container">
-      {entries.map((item) => {
-        const { title, description, number } = item.fields;
-        const id = item.sys.id;
-        const imageUrl = item?.fields?.image?.fields?.file?.url
-          ? item?.fields?.image?.fields?.file?.url
-          : "";
-        const richTextContent = documentToReactComponents(description, {
-          renderNode: {
-            ...renderNode,
-            [INLINES.ASSET_HYPERLINK]: (node) => (
-              <a
-                href={`https://` + node.data.target.fields.file.url}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {node.data.target.fields.title}
-              </a>
-            ),
-            [BLOCKS.EMBEDDED_ASSET]: (node) => {
-              const { file } = node.data.target.fields;
-              if (file.details?.image) {
-                const { title, description, file, number } =
-                  node.data.target.fields;
-                const imageUrl = file.url;
-                const altText = description || title || "Image";
-                return (
-                  <div className="custom-rich-text-image">
-                    <img src={imageUrl} alt={altText} />
-                  </div>
-                );
-              }
-              return null;
+    <div>
+      <div className="container">
+        {entries.map((item) => {
+          const { title, description, number } = item.fields;
+          const id = item.sys.id;
+          const imageUrl = item?.fields?.image?.fields?.file?.url
+            ? item?.fields?.image?.fields?.file?.url
+            : "";
+          const richTextContent = documentToReactComponents(description, {
+            renderNode: {
+              ...renderNode,
+              [INLINES.ASSET_HYPERLINK]: (node) => (
+                <a
+                  href={`https://` + node.data.target.fields.file.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {node.data.target.fields.title}
+                </a>
+              ),
+              [BLOCKS.EMBEDDED_ASSET]: (node) => {
+                const { file } = node.data.target.fields;
+                if (file.details?.image) {
+                  const { title, description, file, number } =
+                    node.data.target.fields;
+                  const imageUrl = file.url;
+                  const altText = description || title || "Image";
+                  return (
+                    <div className="custom-rich-text-image">
+                      <img src={imageUrl} alt={altText} />
+                    </div>
+                  );
+                }
+                return null;
+              },
             },
-          },
-        });
-        return (
-          <div key={id} className="collapsible">
-            <button className="button" onClick={() => handleToggle(id)}>
-              <div className="title">
-                <h3>
-                  {number}.{title}
-                </h3>
-                <span>{item.isExpanded ? "-" : "+"}</span>
-              </div>
-            </button>
-            {item.isExpanded && (
-              <div className="Content">
-                <div>{richTextContent}</div>
-              </div>
-            )}
-          </div>
-        );
-      })}
+          });
+          return (
+            <div key={id} className="collapsible">
+              <button className="button" onClick={() => handleToggle(id)}>
+                <div className="title">
+                  <h3>
+                    {number}.{title}
+                  </h3>
+                  <span>{item.isExpanded ? "-" : "+"}</span>
+                </div>
+              </button>
+              {item.isExpanded && (
+                <div className="Content">
+                  <div>{richTextContent}</div>
+                </div>
+              )}
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };

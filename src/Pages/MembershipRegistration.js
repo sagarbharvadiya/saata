@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-
+import { Link } from "react-router-dom";
 
 const MembershipRegistration = () => {
   return (
@@ -8,7 +8,9 @@ const MembershipRegistration = () => {
 
       <div className="membership-ragistaion">
         <h4 className="text-align-center" data-placeholder="Translation" dir="ltr" id="tw-target-text">
-          If you are already an existing SAATA Member, <a href="https://subscriptions.zoho.in/portal/saata1/login">Click here to login</a>
+          If you are already an existing SAATA Member, 
+          <a href="https://subscriptions.zoho.in/portal/saata1/login">Click here to login</a>
+          <Link to="/page/membership-details#Faq">FAQ</Link> 
         </h4>
         <div id="zf-widget-root-id"></div>
         <Helmet>
@@ -16,7 +18,7 @@ const MembershipRegistration = () => {
           {/* <script type="text/javascript" src="https://saata.org/pricing-table.js"></script> */}
           {/* <script type="text/javascript" src="../../pricing-Table.js"></script> */}
           <script type="text/javascript" defer>
-            
+
             {`
             var pricingTableComponentOptions = { 
               id: 'zf-widget-root-id',

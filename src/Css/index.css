@@ -2648,6 +2648,11 @@ ul .menu_item:hover>a {
     display: block;
     overflow-y: scroll;
   }
+  #tw-target-text a{
+    display: block;
+    margin: 10px !important;
+    text-align: center;
+  }
 }
 
 
