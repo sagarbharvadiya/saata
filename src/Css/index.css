@@ -1763,7 +1763,7 @@ ul .menu_item:hover>a {
   .page-membership-details .about_us,
   .page-ta-101-program-details .about_us,
   .page-exam-dates .about_us,
-  .page-saata-calendar-2023 .about_us,
+  .page-saata-calendar-2024 .about_us,
   .page-examination-forms .about_us,
   .page-examination-documents .about_us,
   .page-directory .about_us,
@@ -1791,7 +1791,7 @@ ul .menu_item:hover>a {
   .page-membership-details .about_us,
   .page-ta-101-program-details .about_us,
   .page-exam-dates .about_us,
-  .page-saata-calendar-2023 .about_us,
+  .page-saata-calendar-2024 .about_us,
   .page-examination-forms .about_us,
   .page-examination-documents .about_us,
   .page-directory .about_us,
@@ -2021,7 +2021,7 @@ ul .menu_item:hover>a {
   .page-membership-details .about_us,
   .page-ta-101-program-details .about_us,
   .page-exam-dates .about_us,
-  .page-saata-calendar-2023 .about_us,
+  .page-saata-calendar-2024 .about_us,
   .page-examination-forms .about_us,
   .page-examination-documents .about_us,
   .page-directory .about_us,
@@ -2050,7 +2050,7 @@ ul .menu_item:hover>a {
   .page-membership-details .about_us,
   .page-ta-101-program-details .about_us,
   .page-exam-dates .about_us,
-  .page-saata-calendar-2023 .about_us,
+  .page-saata-calendar-2024 .about_us,
   .page-examination-forms .about_us,
   .page-examination-documents .about_us,
   .page-directory .about_us,
@@ -2083,7 +2083,7 @@ ul .menu_item:hover>a {
   .page-membership-details .about_us .about_us_wrapper h2,
   .page-ta-101-program-details .about_us .about_us_wrapper h2,
   .page-exam-dates .about_us .about_us_wrapper h2,
-  .page-saata-calendar-2023 .about_us .about_us_wrapper h2,
+  .page-saata-calendar-2024 .about_us .about_us_wrapper h2,
   .page-examination-forms .about_us .about_us_wrapper h2,
   .page-examination-documents .about_us .about_us_wrapper h2,
   .page-directory .about_us .about_us_wrapper h2,
@@ -2119,14 +2119,14 @@ ul .menu_item:hover>a {
   }
 }
 
-.page-saata-calendar-2023 th p,
-.page-saata-calendar-2023 td p {
+.page-saata-calendar-2024 th p,
+.page-saata-calendar-2024 td p {
   text-align: left;
 }
 
-.page-saata-calendar-2023 th,
-.page-saata-calendar-2023 td,
-.page-saata-calendar-2023 tr {
+.page-saata-calendar-2024 th,
+.page-saata-calendar-2024 td,
+.page-saata-calendar-2024 tr {
   border: 1px solid #333 !important;
 }
 
@@ -2399,7 +2399,7 @@ ul .menu_item:hover>a {
   .page-sajta-submission-guidelines .about_us.about_ta,
   .page-newsletter-advertisement-policy .about_us.about_ta,
   .page-journals .about_us.about_ta,
-  .page-saata-calendar-2023 .about_us.about_ta,
+  .page-saata-calendar-2024 .about_us.about_ta,
   .page-awards .about_us.about_ta,
   .page-service-award .about_us.about_ta,
   .page-about-us .about_us.about_ta,
@@ -2410,7 +2410,7 @@ ul .menu_item:hover>a {
   .page-eric-berne .about_us.about_ta,
   .page-membership-details .about_us.about_ta,
   .page-ta-101-program-details .about_us.about_ta,
-  .page-saata-calendar-2023 .about_us.about_ta,
+  .page-saata-calendar-2024 .about_us.about_ta,
   .page-saata-bot .about_us.about_ta,
   .page-saata-conference .about_us.about_ta {
     padding: 18px 0px;
@@ -2486,7 +2486,7 @@ ul .menu_item:hover>a {
   .page-membership-details .about_us,
   .page-ta-101-program-details .about_us,
   .page-exam-dates .about_us,
-  .page-saata-calendar-2023 .about_us,
+  .page-saata-calendar-2024 .about_us,
   .page-examination-forms .about_us,
   .page-examination-documents .about_us,
   .page-directory .about_us,
@@ -2572,7 +2572,7 @@ ul .menu_item:hover>a {
   .page-membership-details .about_us .about_us_wrapper h2,
   .page-ta-101-program-details .about_us .about_us_wrapper h2,
   .page-exam-dates .about_us .about_us_wrapper h2,
-  .page-saata-calendar-2023 .about_us .about_us_wrapper h2,
+  .page-saata-calendar-2024 .about_us .about_us_wrapper h2,
   .page-examination-forms .about_us .about_us_wrapper h2,
   .page-examination-documents .about_us .about_us_wrapper h2,
   .page-directory .about_us .about_us_wrapper h2,
@@ -2642,7 +2642,7 @@ ul .menu_item:hover>a {
 
   .page-membership-details .about_us_content table,
   .page-ta-101-program-details .about_us_content table,
-  .page-saata-calendar-2023 .about_us_content table,
+  .page-saata-calendar-2024 .about_us_content table,
   .page-saata-bot .about_us_content table,
   table {
     display: block;
