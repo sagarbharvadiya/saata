@@ -97,8 +97,8 @@ const TopHeader = () => {
             <NavLink to="/">Events</NavLink>
             <ul className="Programs-folder">
               <li>
-                <NavLink to="/page/saata-calendar-2024" onClick={toggleMenu}>
-                  SAATA Calendar 2024
+                <NavLink to="/page/saata-calendar" onClick={toggleMenu}>
+                Saata Calendar
                 </NavLink>
               </li>
               <li>
