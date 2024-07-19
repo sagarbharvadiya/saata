@@ -38,24 +38,24 @@
 .page-saata-conference {
   .about_us {
     max-width: 1258px;
-    margin   : 0px auto;
+    margin: 0px auto;
 
     .about_us_wrapper {
       h2 {
-        text-align : left;
-        width      : 100%;
-        font-size  : 30px;
-        color      : #a37bb6;
+        text-align: left;
+        width: 100%;
+        font-size: 30px;
+        color: #a37bb6;
         margin-left: 20px;
-        margin-top : 20px;
+        margin-top: 20px;
       }
     }
 
     .about_us_content {
       p {
-        font-size     : 15px;
+        font-size: 15px;
         padding-bottom: 12px;
-        margin-top    : 0px !important;
+        margin-top: 0px !important;
       }
 
       ul {
@@ -63,19 +63,19 @@
       }
 
       table {
-        border         : 1px solid #cdcdcd;
-        width          : 100%;
+        border: 1px solid #cdcdcd;
+        width: 100%;
         border-collapse: collapse;
 
         tr {
           th {
-            border-bottom   : 1px solid black;
+            border-bottom: 1px solid black;
             background-color: #a37bb6;
-            color           : white;
+            color: white;
 
             p {
-              padding   : 20px 18px;
-              font-size : 15px;
+              padding: 20px 18px;
+              font-size: 15px;
               margin-top: 0px !important;
             }
           }
@@ -87,8 +87,8 @@
 
         tr {
           td {
-            padding      : 20px 0px;
-            font-size    : 15px;
+            padding: 20px 0px;
+            font-size: 15px;
             border-bottom: 1px solid #cdcdcd;
 
             p {
@@ -145,21 +145,21 @@
   }
 }
 
-$color_1           : black;
-$color_2           : white;
+$color_1: black;
+$color_2: white;
 $background-color_1: rgb(232, 76, 61);
 
 * {
-  margin    : 0px;
-  padding   : 0;
+  margin: 0px;
+  padding: 0;
   box-sizing: border-box;
 }
 
 .news-letter-subtitle {
-  display        : flex;
+  display: flex;
   justify-content: space-between;
-  margin         : auto;
-  gap            : 19px;
+  margin: auto;
+  gap: 19px;
 
   img {
     max-width: 351px;
@@ -167,37 +167,37 @@ $background-color_1: rgb(232, 76, 61);
 
   p {
     line-height: 36px;
-    font-size  : 15px;
+    font-size: 15px;
   }
 }
 
 .news-main {
   max-width: 1276px;
-  margin   : 0px auto;
-  padding  : 0px 12px;
+  margin: 0px auto;
+  padding: 0px 12px;
 
   h1 {
-    border          : 1px solid;
-    text-align      : center;
-    padding         : 10px 0px;
+    border: 1px solid;
+    text-align: center;
+    padding: 10px 0px;
     background-color: $background-color_1;
-    color           : $color_2;
-    font-size       : 29px;
-    margin-bottom   : 20px;
+    color: $color_2;
+    font-size: 29px;
+    margin-bottom: 20px;
   }
 }
 
 .newsletter {
   max-width: 1276px;
-  margin   : 0px auto;
-  padding  : 0px 12px;
+  margin: 0px auto;
+  padding: 0px 12px;
 
   a {
-    display        : flex;
+    display: flex;
     justify-content: flex-end;
-    padding        : 30px 0px;
-    font-size      : 20px;
-    color          : $color_1;
+    padding: 30px 0px;
+    font-size: 20px;
+    color: $color_1;
     text-decoration: none;
   }
 }
@@ -205,11 +205,11 @@ $background-color_1: rgb(232, 76, 61);
 .newsletter-description {
   p {
     margin-bottom: 15px;
-    line-height  : 26px;
-    font-size    : 15px;
+    line-height: 26px;
+    font-size: 15px;
 
     &:nth-child(8) {
-      display       : flex;
+      display: flex;
       flex-direction: column;
     }
   }
@@ -217,15 +217,15 @@ $background-color_1: rgb(232, 76, 61);
 
 .newsletter_banner_img {
   img {
-    width        : 100%;
+    width: 100%;
     margin-bottom: 10px;
   }
 }
 
 .news-letter-container {
   display: flex;
-  width  : 100%;
-  gap    : 27px;
+  width: 100%;
+  gap: 27px;
 }
 
 .news-letter-folder1 {
@@ -237,12 +237,12 @@ $background-color_1: rgb(232, 76, 61);
 }
 
 .news-field {
-  list-style      : none;
-  padding         : 17px;
-  text-align      : center;
-  margin          : 25px 0px;
+  list-style: none;
+  padding: 17px;
+  text-align: center;
+  margin: 25px 0px;
   background-color: $background-color_1;
-  color           : $color_2;
+  color: $color_2;
 }
 
 .news-drop_drown-menu {
@@ -312,10 +312,10 @@ $background-color_1: rgb(232, 76, 61);
 .page-governance,
 .page-saata-conference {
   .about_us.about_ta {
-    padding         : 18px 20px;
+    padding: 18px 20px;
     background-color: #f9f9f93d;
-    box-shadow      : 0px 4px 17px #e5e5e5;
-    margin-bottom   : 37px;
+    box-shadow: 0px 4px 17px #e5e5e5;
+    margin-bottom: 37px;
   }
 }
 
@@ -355,35 +355,35 @@ $background-color_1: rgb(232, 76, 61);
 .page-examination-forms {
   .about_us.about_ta {
     .about_us_content {
-      display        : flex;
-      flex-wrap      : wrap;
+      display: flex;
+      flex-wrap: wrap;
       justify-content: center;
-      gap            : 20px;
+      gap: 20px;
 
       h3 {
-        width           : 289px;
-        padding         : 88px 26px;
-        line-height     : 30px;
-        color           : #757575;
-        display         : flex;
-        flex-direction  : column;
-        justify-content : center;
-        font-size       : 15px;
-        box-shadow      : 0px 4px 13px #e5e5e5;
-        transition      : 0.1s ease-in;
+        width: 289px;
+        padding: 88px 26px;
+        line-height: 30px;
+        color: #757575;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 15px;
+        box-shadow: 0px 4px 13px #e5e5e5;
+        transition: 0.1s ease-in;
         background-color: #f9f9f921;
 
         a {
-          color          : #a37bb6;
+          color: #a37bb6;
           text-decoration: none;
         }
 
         &:hover {
           background-color: #a37bb6;
-          color           : white;
+          color: white;
 
           a {
-            color          : white;
+            color: white;
             text-decoration: revert;
           }
         }
@@ -396,11 +396,11 @@ $background-color_1: rgb(232, 76, 61);
   .about_us.about_ta {
     .about_us_content {
       h3 {
-        font-size  : 17px;
+        font-size: 17px;
         font-weight: 600;
 
         a {
-          color      : #a37bb6;
+          color: #a37bb6;
           font-weight: 400;
         }
       }
@@ -418,9 +418,9 @@ $background-color_1: rgb(232, 76, 61);
 .page-call-for-nominations {
   .aboutus_parent {
     .about_us_img {
-      max-width    : 100%;
-      width        : 100%;
-      margin       : auto;
+      max-width: 100%;
+      width: 100%;
+      margin: auto;
       margin-bottom: 16px;
     }
   }
@@ -429,7 +429,7 @@ $background-color_1: rgb(232, 76, 61);
 .page-membership-renewal {
   .about_us_content {
     h2 {
-      font-size    : 22px;
+      font-size: 22px;
       margin-bottom: 7px;
     }
 
@@ -483,9 +483,9 @@ $background-color_1: rgb(232, 76, 61);
       }
 
       img {
-        width        : 428px;
+        width: 428px;
         margin-bottom: 20px;
-        margin-right : 20px;
+        margin-right: 20px;
       }
     }
   }
@@ -499,9 +499,9 @@ $background-color_1: rgb(232, 76, 61);
   .Certified-Members-folder {
     div {
       div:nth-child(1) {
-        display        : flex;
+        display: flex;
         justify-content: center;
-        align-items    : center;
+        align-items: center;
       }
     }
   }
@@ -511,22 +511,22 @@ $background-color_1: rgb(232, 76, 61);
 .page-SAJTATeam {
   .Certified-Members-folder {
     div {
-      position      : relative;
-      width         : 352px;
+      position: relative;
+      width: 352px;
       padding-bottom: 15px;
-      border-radius : 15px;
-      box-shadow    : 0px 4px 7px #dbdbdb;
+      border-radius: 15px;
+      box-shadow: 0px 4px 7px #dbdbdb;
 
       .certified-members-image-folder {
-        display       : flex;
+        display: flex;
         flex-direction: column-reverse;
-        border        : none;
-        width         : 100%;
-        box-shadow    : none;
+        border: none;
+        width: 100%;
+        box-shadow: none;
 
         h2 {
           font-size: 20px;
-          margin   : 14px 0px 0px 16px;
+          margin: 14px 0px 0px 16px;
         }
 
         p {
@@ -535,32 +535,32 @@ $background-color_1: rgb(232, 76, 61);
       }
 
       div:nth-child(1) {
-        position        : absolute;
-        top             : 0%;
-        left            : 0%;
-        right           : 0%;
-        bottom          : 0%;
-        width           : 100%;
-        height          : 100%;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        right: 0%;
+        bottom: 0%;
+        width: 100%;
+        height: 100%;
         background-color: #a37bb6;
-        color           : white;
-        z-index         : 1;
-        transition      : all 0.2s ease-in;
-        opacity         : 0;
-        padding         : 24px 19px;
+        color: white;
+        z-index: 1;
+        transition: all 0.2s ease-in;
+        opacity: 0;
+        padding: 24px 19px;
 
         ul {
           li {
-            list-style   : none;
+            list-style: none;
             margin-bottom: 10px;
-            line-height  : 22px;
+            line-height: 22px;
           }
         }
       }
 
       .certified-members-image-folder img {
-        width        : 100%;
-        height       : 368px;
+        width: 100%;
+        height: 368px;
         border-radius: 15px;
       }
 
@@ -581,7 +581,7 @@ $background-color_1: rgb(232, 76, 61);
 .page-team-that-was {
   .aboutus_parent {
     .about_us_content {
-      margin     : 0px auto 50px auto;
+      margin: 0px auto 50px auto;
       line-height: 26px;
     }
   }
@@ -591,8 +591,8 @@ $background-color_1: rgb(232, 76, 61);
 .page-history-and-origin-of-saata,
 .page-saata-bot {
   .about_us_img {
-    max-width    : 100%;
-    width        : 100%;
+    max-width: 100%;
+    width: 100%;
     margin-bottom: 15px;
   }
 }
@@ -605,45 +605,55 @@ $background-color_1: rgb(232, 76, 61);
 .page-ace-conceptualist,
 .page-gregarious-hugger {
   .news-letter-team-wrapper {
-    display         : flex;
-    max-width       : 1258px;
-    margin          : 0px auto;
-    padding         : 18px 20px;
+    display: flex;
+    max-width: 1258px;
+    margin: 0px auto;
+    padding: 18px 20px;
     background-color: #f9f9f93d;
-    box-shadow      : 0px 4px 17px #e5e5e5;
-    margin-bottom   : 37px;
-    gap             : 25px;
-    padding-top     : 40px;
+    box-shadow: 0px 4px 17px #e5e5e5;
+    margin-bottom: 37px;
+    gap: 25px;
+    padding-top: 40px;
 
     .newsletterTeam-folder {
       width: 20%;
 
       ul {
-        display       : flex;
+        display: flex;
         flex-direction: column;
-        box-shadow    : 0px 4px 8px #e1e1e1;
+        box-shadow: 0px 4px 8px #e1e1e1;
 
         li {
-          list-style   : none;
-          padding      : 39px 18px;
+          list-style: none;
+          padding: 39px 18px;
           border-bottom: 1px solid #dfdfdf;
 
           a {
             text-decoration: none;
-            color          : #a37bb6;
-            font-weight    : 400;
-            display        : flex;
-            flex-direction : column;
+            color: #a37bb6;
+            font-weight: 400;
+            display: flex;
+            flex-direction: column;
           }
 
           &:hover {
             border-left: 6px solid #a37bb6;
-            transition : all 0.1s ease-in;
+            transition: all 0.1s ease-in;
 
             a {
               margin-left: 20px;
-              transition : all 0.1s ease-in;
+              transition: all 0.1s ease-in;
             }
+          }
+        }
+      }
+    }
+
+    .page-CertifiedMembers {
+      .Certified-Members-folder {
+        div .certified-members-image-folder {
+          img {
+            object-fit: cover;
           }
         }
       }
@@ -653,15 +663,15 @@ $background-color_1: rgb(232, 76, 61);
       width: 80%;
 
       .new-letter-team-d-flex {
-        display      : flex;
-        align-items  : center;
-        gap          : 20px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
         margin-bottom: 30px;
 
         .nes-letter-team-wrapper {
           h2 {
             margin-bottom: 4px;
-            font-size    : 27px;
+            font-size: 27px;
           }
 
           h6 {
@@ -676,11 +686,11 @@ $background-color_1: rgb(232, 76, 61);
 .news-letter-team {
   .description {
     p {
-      margin-bottom : 12px;
-      line-height   : 28px;
-      display       : flex;
+      margin-bottom: 12px;
+      line-height: 28px;
+      display: flex;
       flex-direction: column;
-      gap           : 9px;
+      gap: 9px;
 
       b {
         color: #a37bb6;
@@ -705,42 +715,42 @@ $background-color_1: rgb(232, 76, 61);
 
 .page-cpnews {
   .news-latter-cpnews-section {
-    max-width       : 1258px;
-    padding         : 18px 20px;
+    max-width: 1258px;
+    padding: 18px 20px;
     background-color: #f9f9f93d;
-    box-shadow      : 0px 4px 17px #e5e5e5;
-    margin          : 0px auto;
-    margin-bottom   : 37px;
+    box-shadow: 0px 4px 17px #e5e5e5;
+    margin: 0px auto;
+    margin-bottom: 37px;
 
     h2 {
-      width      : 100%;
-      font-size  : 30px;
-      color      : #a37bb6;
+      width: 100%;
+      font-size: 30px;
+      color: #a37bb6;
       margin-left: 20px;
-      margin-top : 20px;
+      margin-top: 20px;
     }
 
     ul {
-      display  : flex;
+      display: flex;
       flex-wrap: wrap;
-      gap      : 26px;
-      margin   : 30px 0px 30px 0px;
+      gap: 26px;
+      margin: 30px 0px 30px 0px;
 
       li {
         list-style: none;
-        width     : 222px;
-        padding   : 40px 0px;
+        width: 222px;
+        padding: 40px 0px;
         text-align: center;
         box-shadow: 0px 4px 13px #e5e5e5;
 
         a {
           text-decoration: none;
-          color          : #a37bb6;
+          color: #a37bb6;
         }
 
         &:hover {
           background-color: #a37bb6;
-          transition      : all 0.1s ease-in;
+          transition: all 0.1s ease-in;
 
           a {
             color: white;
@@ -751,7 +761,7 @@ $background-color_1: rgb(232, 76, 61);
   }
 
   li.menu-item.active {
-    display   : block;
+    display: block;
     background: red;
   }
 }
@@ -773,26 +783,25 @@ $background-color_1: rgb(232, 76, 61);
 }
 
 #tw-target-text {
-  padding         : 30px 20px;
+  padding: 30px 20px;
   background-color: #f9f9f93d;
-  box-shadow      : 0px 4px 17px #e5e5e5;
-  margin-bottom   : 37px;
-  max-width       : 1258px;
-  margin          : 0px auto 50px auto;
+  box-shadow: 0px 4px 17px #e5e5e5;
+  margin-bottom: 37px;
+  max-width: 1258px;
+  margin: 0px auto 50px auto;
 }
 
 #tw-target-text {
   a {
-    border-radius  : 8px;
-    border         : none;
-    background     : #a37bb6;
-    cursor         : pointer;
-    padding        : 8px 10px;
+    border-radius: 8px;
+    border: none;
+    background: #a37bb6;
+    cursor: pointer;
+    padding: 8px 10px;
     text-decoration: none;
-    margin         : 0 10px;
-    color          : #fff;
+    margin: 0 10px;
+    color: #fff;
   }
-
 }
 
 .page-membership-renewal {
@@ -802,21 +811,21 @@ $background-color_1: rgb(232, 76, 61);
     }
 
     a {
-      border-radius  : 8px;
-      border         : none;
-      background     : #a37bb6;
-      cursor         : pointer;
-      padding        : 8px 10px;
+      border-radius: 8px;
+      border: none;
+      background: #a37bb6;
+      cursor: pointer;
+      padding: 8px 10px;
       text-decoration: none;
-      margin         : 10px 0;
-      color          : #fff !important;
+      margin: 10px 0;
+      color: #fff !important;
     }
   }
 }
 
 #Faq {
   text-align: center;
-  font-size : 30px;
+  font-size: 30px;
   margin-top: 20px;
 }
 
@@ -825,7 +834,7 @@ $background-color_1: rgb(232, 76, 61);
     margin-left: 0px;
 
     img {
-      width     : 100%;
+      width: 100%;
       margin-top: 24px;
     }
   }
@@ -842,12 +851,12 @@ $background-color_1: rgb(232, 76, 61);
 .page-editors-collage {
   .about_us.about_ta {
     .about_us_img {
-      margin   : initial;
+      margin: initial;
       max-width: 100%;
-      width    : 100%;
+      width: 100%;
 
       img {
-        width    : 100%;
+        width: 100%;
         max-width: 100%;
       }
     }
