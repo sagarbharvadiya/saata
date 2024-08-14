@@ -248,13 +248,16 @@ h2.main_title {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
 
 .Top-Header-wrapper {
@@ -388,7 +391,6 @@ code {
   color: #fff;
 }
 
-
 .info-container:nth-child(odd) .info-desc {
   color: white;
 }
@@ -462,7 +464,7 @@ code {
 }
 
 .board-of-members-section {
-  background: url('../Images/12232.jpg') no-repeat;
+  background: url("../Images/12232.jpg") no-repeat;
   background-position: bottom;
   background-size: inherit;
   background-attachment: fixed;
@@ -585,8 +587,6 @@ code {
   margin: 0px auto;
 }
 
-
-
 .footer {
   background-color: #a37bb6;
 }
@@ -656,15 +656,15 @@ code {
   margin-bottom: 10px;
 }
 
-.social_icon a>.fa-facebook {
+.social_icon a > .fa-facebook {
   color: #1d41ff;
 }
 
-.social_icon a>.fa-twitter {
+.social_icon a > .fa-twitter {
   color: #0085ff;
 }
 
-.social_icon a>.fa-youtube {
+.social_icon a > .fa-youtube {
   color: #f00;
 }
 
@@ -731,7 +731,9 @@ code {
   width: 300px;
 }
 
-.ITAA-The-Dance-of-Culture-folder .slick-slide.slick-active.slick-center.slick-current .ITAA-The-Dance-of-Culture-image {
+.ITAA-The-Dance-of-Culture-folder
+  .slick-slide.slick-active.slick-center.slick-current
+  .ITAA-The-Dance-of-Culture-image {
   max-width: 391px;
 }
 
@@ -749,7 +751,9 @@ code {
   width: 300px;
 }
 
-.gallery-South-Asian-Association-folder .slick-slide.slick-active.slick-center.slick-current .gallery-South-Asian-Association-image {
+.gallery-South-Asian-Association-folder
+  .slick-slide.slick-active.slick-center.slick-current
+  .gallery-South-Asian-Association-image {
   max-width: 391px;
 }
 
@@ -1407,7 +1411,7 @@ code {
 
 /* new css for allLinks page  */
 .news-latter-cpnews-section {
-  background-color: hsla(0, 0%, 98%, .239);
+  background-color: hsla(0, 0%, 98%, 0.239);
   box-shadow: 0 4px 17px #e5e5e5;
   margin: 0 auto 37px;
   max-width: 1258px;
@@ -1422,14 +1426,14 @@ code {
   width: 100%;
 }
 
-.news-latter-cpnews-section>div {
+.news-latter-cpnews-section > div {
   display: flex;
   flex-wrap: wrap;
   gap: 26px;
   margin: 30px 0;
 }
 
-.news-latter-cpnews-section>div p {
+.news-latter-cpnews-section > div p {
   box-shadow: 0 4px 13px #e5e5e5;
   list-style: none;
   padding: 40px 0;
@@ -1438,13 +1442,13 @@ code {
   margin: auto;
 }
 
-.news-latter-cpnews-section>div p a {
+.news-latter-cpnews-section > div p a {
   color: #a37bb6;
   text-decoration: none;
   /* font-weight: bold; */
 }
 
-.news-latter-cpnews-section>div p a b {
+.news-latter-cpnews-section > div p a b {
   font-weight: 300;
 }
 
@@ -1453,7 +1457,7 @@ body.page-ta-101-program-details td {
 }
 
 /* top header menu css */
-ul .menu_item:hover>a {
+ul .menu_item:hover > a {
   /* color: #a37bb6 !important; */
   border-bottom: 1px solid;
 }
@@ -1471,7 +1475,7 @@ ul .menu_item:hover>a {
   cursor: pointer;
 }
 
-.menu_item>a {
+.menu_item > a {
   color: #333;
   text-decoration: none;
 }
@@ -1564,8 +1568,7 @@ ul .menu_item:hover>a {
 .page-saata-conference table th {
   font-size: 19px;
   font-weight: 700;
-  background-color: rgba(163, 123, 182, .302) !important;
-
+  background-color: rgba(163, 123, 182, 0.302) !important;
 }
 
 .page-saata-conference table a {
@@ -1611,7 +1614,7 @@ ul .menu_item:hover>a {
 }
 
 .collapsible .button {
-  background-color: #a37bb6;;
+  background-color: #a37bb6;
   border: none;
   border-radius: 3px;
   box-sizing: border-box;
@@ -1619,7 +1622,6 @@ ul .menu_item:hover>a {
   font-size: 20px;
   margin: auto;
   padding: 12px;
-
 }
 .collapsible .title {
   align-items: center;
@@ -1631,7 +1633,7 @@ ul .menu_item:hover>a {
   margin-left: 35px;
 }
 .Content {
-  transition: max-height .3s ease;
+  transition: max-height 0.3s ease;
 }
 /* end  */
 @media only screen and (max-width: 1024px) {
@@ -1770,7 +1772,10 @@ ul .menu_item:hover>a {
   .page-membership-renewal .about_us,
   .page-call-for-nominations .about_us,
   .page-guidelines-for-content-contributors .about_us,
-  .page-sajta-submission-guidelines .about_us .page-newsletter-advertisement-policy .about_us,
+  .page-sajta-submission-guidelines
+    .about_us
+    .page-newsletter-advertisement-policy
+    .about_us,
   .page-journals .about_us,
   .page-awards .about_us,
   .page-service-award .about_us,
@@ -1822,7 +1827,7 @@ ul .menu_item:hover>a {
 }
 
 @media only screen and (max-width: 768px) {
-  .news-latter-cpnews-section>div {
+  .news-latter-cpnews-section > div {
     justify-content: center;
   }
 
@@ -2293,20 +2298,24 @@ ul .menu_item:hover>a {
   }
 
   .ITAA-The-Dance-of-Culture-folder {
-    max-width: 347PX;
+    max-width: 347px;
     margin: 0px auto;
   }
 
-  .ITAA-The-Dance-of-Culture-folder .slick-slide.slick-active.slick-center.slick-current .ITAA-The-Dance-of-Culture-image {
+  .ITAA-The-Dance-of-Culture-folder
+    .slick-slide.slick-active.slick-center.slick-current
+    .ITAA-The-Dance-of-Culture-image {
     max-width: 305px;
   }
 
   .gallery-South-Asian-Association-folder {
-    max-width: 347PX;
+    max-width: 347px;
     margin: 0px auto;
   }
 
-  .gallery-South-Asian-Association-folder .slick-slide.slick-active.slick-center.slick-current .gallery-South-Asian-Association-image {
+  .gallery-South-Asian-Association-folder
+    .slick-slide.slick-active.slick-center.slick-current
+    .gallery-South-Asian-Association-image {
     max-width: 305px;
   }
 
@@ -2551,7 +2560,10 @@ ul .menu_item:hover>a {
     padding: 18px 0px !important;
   }
 
-  .page-guidelines-for-content-contributors .about_us.about_ta .about_us_content ul,
+  .page-guidelines-for-content-contributors
+    .about_us.about_ta
+    .about_us_content
+    ul,
   .page-sajta-submission-guidelines .about_us.about_ta .about_us_content ul,
   .page-about-us .about_us.about_ta .about_us_content ul,
   .page-mission-and-vision .about_us.about_ta .about_us_content ul,
@@ -2560,7 +2572,11 @@ ul .menu_item:hover>a {
     transform: translateX(0px);
   }
 
-  .page-guidelines-for-content-contributors .about_us.about_ta .about_us_content ul li,
+  .page-guidelines-for-content-contributors
+    .about_us.about_ta
+    .about_us_content
+    ul
+    li,
   .page-sajta-submission-guidelines .about_us.about_ta .about_us_content ul li,
   .page-about-us .about_us.about_ta .about_us_content ul li,
   .page-mission-and-vision .about_us.about_ta .about_us_content ul li,
@@ -2648,13 +2664,12 @@ ul .menu_item:hover>a {
     display: block;
     overflow-y: scroll;
   }
-  #tw-target-text a{
+  #tw-target-text a {
     display: block;
     margin: 10px !important;
     text-align: center;
   }
 }
-
 
 .Top-Header-wrapper-folder {
   display: flex;
@@ -2681,14 +2696,14 @@ ul .menu_item:hover>a {
   position: relative;
 }
 
-.menu-item>a {
+.menu-item > a {
   display: block;
   padding: 10px 20px;
   text-decoration: none;
   color: #000;
 }
 
-.menu-item:hover>a {
+.menu-item:hover > a {
   background-color: #f0f0f0;
 }
 
@@ -2731,7 +2746,6 @@ ul .menu_item:hover>a {
 
 .page-governance .about_us_wrapper h2 {
   color: #000;
-  ;
 }
 
 .page-governance p {
@@ -2749,9 +2763,17 @@ ul .menu_item:hover>a {
   text-decoration: none;
   color: #fff;
 }
-
+.page-memorial-endowment-lecture .about_us_img {
+  max-width: 100%;
+  width: 100%;
+}
+.page-memorial-endowment-lecture .about_us_img h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
 @media (max-width: 768px) {
-  .collapsible .button{
+  .collapsible .button {
     font-size: 15px;
   }
   .Top-Header-wrapper-folder {
@@ -2768,7 +2790,6 @@ ul .menu_item:hover>a {
     position: absolute;
     right: 0;
     top: 6%;
-
   }
 
   .logo img,
@@ -2798,7 +2819,6 @@ ul .menu_item:hover>a {
 
   .menu-open {
     display: block;
-
   }
 
   .menu-folder ul {
