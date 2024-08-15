@@ -1635,20 +1635,20 @@ ul .menu_item:hover > a {
 .Content {
   transition: max-height 0.3s ease;
 }
-.page-p-k-saru-memorlal .about_us_content p,
-.page-p-k-saru-memorlal .about_us_wrapper h2,
-.page-p-k-saru-memorlal .about_us_wrapper{
+.page-p-k-saru-memorial .about_us_content p,
+.page-p-k-saru-memorial .about_us_wrapper h2,
+.page-p-k-saru-memorial .about_us_wrapper{
   text-align: center;
 }
-.page-p-k-saru-memorlal .about_us_content p{
+.page-p-k-saru-memorial .about_us_content p{
     padding: 6px 0;
 }
-.page-p-k-saru-memorlal .about_us_content h5{
+.page-p-k-saru-memorial .about_us_content h5{
 /*   color: #faf010; */
       padding: 12px 0;
     font-size: 25px;
 }
-.page-p-k-saru-memorlal .about_us_content h6{
+.page-p-k-saru-memorial .about_us_content h6{
 /*       color: #faf010; */
       padding: 12px 0;
     margin: 5px 0;
@@ -1844,11 +1844,11 @@ ul .menu_item:hover > a {
     max-width: 784px !important;
   }
 }
-.page-p-k-saru-memorlal .aboutus_parent,
-.page-p-k-saru-memorlal .about_us_content{
+.page-p-k-saru-memorial .aboutus_parent,
+.page-p-k-saru-memorial .about_us_content{
   text-align: center;
 }
-.page-p-k-saru-memorlal .about_us_content p a{
+.page-p-k-saru-memorial .about_us_content p a{
   background: #A37BB6;
   border: none;
   border-radius: 8px;
@@ -1858,13 +1858,13 @@ ul .menu_item:hover > a {
   text-decoration: none;
 }
 @media only screen and (max-width: 768px) {
- .page-p-k-saru-memorlal .about_us{
+ .page-p-k-saru-memorial .about_us{
         width: 100%;
   }
- .page-p-k-saru-memorlal .about_us_wrapper h2{
+ .page-p-k-saru-memorial .about_us_wrapper h2{
         margin-left: 0;
   }
-  .page-p-k-saru-memorlal iframe{
+  .page-p-k-saru-memorial iframe{
     max-width: 100%;
   }
   .news-latter-cpnews-section > div {
@@ -2803,11 +2803,11 @@ ul .menu_item:hover > a {
   text-decoration: none;
   color: #fff;
 }
-.page-p-k-saru-memorlal .about_us_img {
+.page-p-k-saru-memorial .about_us_img {
   max-width: 100%;
   width: 100%;
 }
-.page-p-k-saru-memorlal .about_us_img h3 {
+.page-p-k-saru-memorial .about_us_img h3 {
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 30px;
