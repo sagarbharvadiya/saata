@@ -1844,13 +1844,28 @@ ul .menu_item:hover > a {
     max-width: 784px !important;
   }
 }
-
+.page-memorial-endowment-lecture .aboutus_parent,
+.page-memorial-endowment-lecture .about_us_content{
+  text-align: center;
+}
+.page-memorial-endowment-lecture .about_us_content p a{
+  background: #A37BB6;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+}
 @media only screen and (max-width: 768px) {
- .page-memorial-endowment-lecture .about_us_wrapper h2{
+ .page-memorial-endowment-lecture .about_us{
         width: 100%;
   }
- page-memorial-endowment-lecture .about_us_wrapper h2{
+ .page-memorial-endowment-lecture .about_us_wrapper h2{
         margin-left: 0;
+  }
+  .page-memorial-endowment-lecture iframe{
+    max-width: 100%;
   }
   .news-latter-cpnews-section > div {
     justify-content: center;
