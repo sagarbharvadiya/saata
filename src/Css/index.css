@@ -1635,15 +1635,22 @@ ul .menu_item:hover > a {
 .Content {
   transition: max-height 0.3s ease;
 }
-/* .page-memorial-endowment-lecture .about_us_content p{
+.page-memorial-endowment-lecture .about_us_content p,
+.page-memorial-endowment-lecture .about_us_wrapper h2,
+.page-memorial-endowment-lecture .about_us_wrapper{
   text-align: center;
-} */
+}
+.page-memorial-endowment-lecture .about_us_content p{
+    padding: 6px 0;
+}
 .page-memorial-endowment-lecture .about_us_content h5{
 /*   color: #faf010; */
+      padding: 12px 0;
     font-size: 25px;
 }
 .page-memorial-endowment-lecture .about_us_content h6{
 /*       color: #faf010; */
+      padding: 12px 0;
     margin: 5px 0;
     font-size: 20px;
 }
@@ -1839,6 +1846,12 @@ ul .menu_item:hover > a {
 }
 
 @media only screen and (max-width: 768px) {
+ .page-memorial-endowment-lecture .about_us_wrapper h2{
+        width: 100%;
+  }
+ page-memorial-endowment-lecture .about_us_wrapper h2{
+        margin-left: 0;
+  }
   .news-latter-cpnews-section > div {
     justify-content: center;
   }
