@@ -1635,6 +1635,18 @@ ul .menu_item:hover > a {
 .Content {
   transition: max-height 0.3s ease;
 }
+/* .page-memorial-endowment-lecture .about_us_content p{
+  text-align: center;
+} */
+.page-memorial-endowment-lecture .about_us_content h5{
+/*   color: #faf010; */
+    font-size: 25px;
+}
+.page-memorial-endowment-lecture .about_us_content h6{
+/*       color: #faf010; */
+    margin: 5px 0;
+    font-size: 20px;
+}
 /* end  */
 @media only screen and (max-width: 1024px) {
   .banner-slider-image img {
