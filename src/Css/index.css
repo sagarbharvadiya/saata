@@ -1637,22 +1637,22 @@ ul .menu_item:hover > a {
 }
 .page-memorial-endowment-lecture .about_us_content p,
 .page-memorial-endowment-lecture .about_us_wrapper h2,
-.page-memorial-endowment-lecture .about_us_wrapper{
+.page-memorial-endowment-lecture .about_us_wrapper {
   text-align: center;
 }
-.page-memorial-endowment-lecture .about_us_content p{
-    padding: 6px 0;
+.page-memorial-endowment-lecture .about_us_content p {
+  padding: 6px 0;
 }
-.page-memorial-endowment-lecture .about_us_content h5{
-/*   color: #faf010; */
-      padding: 12px 0;
-    font-size: 25px;
+.page-memorial-endowment-lecture .about_us_content h5 {
+  /*   color: #faf010; */
+  padding: 12px 0;
+  font-size: 25px;
 }
-.page-memorial-endowment-lecture .about_us_content h6{
-/*       color: #faf010; */
-      padding: 12px 0;
-    margin: 5px 0;
-    font-size: 20px;
+.page-memorial-endowment-lecture .about_us_content h6 {
+  /*       color: #faf010; */
+  padding: 12px 0;
+  margin: 5px 0;
+  font-size: 20px;
 }
 /* end  */
 @media only screen and (max-width: 1024px) {
@@ -1845,11 +1845,11 @@ ul .menu_item:hover > a {
   }
 }
 .page-memorial-endowment-lecture .aboutus_parent,
-.page-memorial-endowment-lecture .about_us_content{
+.page-memorial-endowment-lecture .about_us_content {
   text-align: center;
 }
-.page-memorial-endowment-lecture .about_us_content p a{
-  background: #A37BB6;
+.page-memorial-endowment-lecture .about_us_content p a {
+  background: #a37bb6;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -1858,13 +1858,13 @@ ul .menu_item:hover > a {
   text-decoration: none;
 }
 @media only screen and (max-width: 768px) {
- .page-memorial-endowment-lecture .about_us{
-        width: 100%;
+  .page-memorial-endowment-lecture .about_us {
+    width: 100%;
   }
- .page-memorial-endowment-lecture .about_us_wrapper h2{
-        margin-left: 0;
+  .page-memorial-endowment-lecture .about_us_wrapper h2 {
+    margin-left: 0;
   }
-  .page-memorial-endowment-lecture iframe{
+  .page-memorial-endowment-lecture iframe {
     max-width: 100%;
   }
   .news-latter-cpnews-section > div {
@@ -2811,6 +2811,10 @@ ul .menu_item:hover > a {
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 30px;
+}
+.page-memorial-endowment-lecture .about_us_content i {
+  color: red;
+  font-style: normal;
 }
 @media (max-width: 768px) {
   .collapsible .button {
