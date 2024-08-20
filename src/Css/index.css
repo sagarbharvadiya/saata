@@ -2812,6 +2812,10 @@ ul .menu_item:hover > a {
   font-weight: 500;
   margin-bottom: 30px;
 }
+.page-memorial-endowment-lecture .about_us_content i {
+  color: red;
+  font-style: normal;
+}
 @media (max-width: 768px) {
   .collapsible .button {
     font-size: 15px;
