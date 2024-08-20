@@ -10,7 +10,8 @@ const Banner = () => {
       const { sys, fields } = item;
       const { id } = sys;
       const bannerurl = fields.bannerImg.fields.file.url;
-      const updatedfields = { id, bannerurl };
+      const link = fields.link ? fields.link : null;
+      const updatedfields = { id, bannerurl, link };
       return updatedfields;
     });
     setSlides(cleanfields);
@@ -77,6 +78,7 @@ const Banner = () => {
       },
     ],
   };
+
   return (
     <>
       <div className="banner-section">
@@ -87,7 +89,13 @@ const Banner = () => {
                 return (
                   <div key={index}>
                     <div className="banner-slider-image">
-                      <img src={slide.bannerurl} alt="banner" />
+                      {slide.link ? (
+                        <a href={slide.link}>
+                          <img src={slide.bannerurl} alt="banner" />
+                        </a>
+                      ) : (
+                        <img src={slide.bannerurl} alt="banner" />
+                      )}
                     </div>
                   </div>
                 );

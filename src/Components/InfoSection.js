@@ -57,8 +57,8 @@ const InfoSection = () => {
   };
   return (
     <div className="main-container">
-      <h2 className="main_title">Multi Level Learning, Chennai 6th-7th January, 2024</h2>
-      {/* <h2 className="main_title">7th Biennial SAATA Conference, Bangalore 23-24 September, 2023.</h2> */}
+      <h2 className="main_title"></h2>
+      {/* <h2 className="main_title">Multi Level Learning, Chennai 6th-7th January, 2024.</h2> */}
       {info.map((item, index) => {
   const richTextContent = documentToReactComponents(item.infoDesc, {
     renderNode: {
