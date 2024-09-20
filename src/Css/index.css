@@ -1663,6 +1663,13 @@ ul .menu_item:hover > a {
   margin: 5px 0;
   font-size: 20px;
 }
+.page-p-k-saru-memorial-endowment-fund .about_us_content h4{
+  font-weight: 400;
+}
+.page-p-k-saru-memorial-endowment-fund .about_us_content h4 a{
+  background: #fffdfd;
+  color: #a37bb6;
+}
 /* end  */
 @media only screen and (max-width: 1024px) {
   .banner-slider-image img {
