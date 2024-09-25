@@ -3034,3 +3034,12 @@ ul .menu_item:hover > a {
 .page-saata-conference table {
   margin: 10px 0;
 }
+.single-video{
+  background-color: #a37bb6;
+    color: white;
+    padding: 20px;
+}
+.single-video iframe{
+ display: flex;
+ margin: auto;
+}
