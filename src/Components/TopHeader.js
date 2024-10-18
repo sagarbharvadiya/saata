@@ -215,7 +215,7 @@ const TopHeader = () => {
             <NavLink to="/">Resources</NavLink>
             <ul className="Newsletter-folder">
               <li>
-                <NavLink to="/Articles" onClick={toggleMenu}>
+                <NavLink to="/" onClick={toggleMenu}>
                   Articles
                 </NavLink>
               </li>

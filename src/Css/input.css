@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.table td, .table th {
+    overflow-wrap: break-word; /* Allow wrapping of long text */
+    white-space: normal; /* Ensure text wraps normally */
+  }
+  
+  .table {
+    table-layout: fixed; /* Fixes the table layout */
+  }
+  
+  

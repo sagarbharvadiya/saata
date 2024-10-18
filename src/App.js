@@ -7,18 +7,20 @@ import Gallery from "./Pages/Gallery";
 import Home from "./Pages/Home";
 import MembershipRegistration from "./Pages/MembershipRegistration";
 import CertifiedMembers from "./Pages/CertifiedMembers";
-import Article from "./Pages/Article";
-import Articles from "./Pages/ArticleDetail";
+// import Article from "./Pages/Article";
+// import Articles from "./Pages/ArticleDetail";
 import BasicPage from './Pages/BasicPage'
 import NewsletterTeam from './Pages/NewsletterTeam';
 import CurrentandPreviousIssues from './Components/CurrentandPreviousIssues';
 import Videos from './Components/Videos';
 import SatjaTeam from './Pages/SatjaTeam';
 import Faq from './Components/Faq';
+import ExcelDisplay from './Components/ExcelDisplay';
+import "./Css/input.css"
 function App() {
   const location = useLocation();
   const activeSlug = location.pathname.split('/').pop(); // Get the last part of the URL path
-
+  const fileName = 'SAJTAMaster.xlsx'; // Specify your Excel file here
 
   useEffect(() => {
     document.body.classList.add(`page-${activeSlug}`); // Add the class to the body tag
@@ -39,11 +41,14 @@ function App() {
         <Route exact path='/membershipregistration' element={<MembershipRegistration />} />
         <Route exact path='/Certifiedmembers' element={<CertifiedMembers />} />
         <Route exact path='/SAJTATeam' element={<SatjaTeam />} />
-        <Route exact path='/articles' element={<Article />} />
+        {/* <Route exact path='/articles' element={<Article />} /> */}
         <Route exact path='/video' element={<Videos />} />
-        <Route exact path='/article' element={<Articles />} />
+        <Route exact path='/article' element={<ExcelDisplay />} fileName={fileName} />
+        {/* <Route exact path='/article' element={<Articles />} /> */}
+        <Route exact path='/faq' element={<Faq />} />
         <Route exact path='/faq' element={<Faq />} />
       </Routes>
+
       <Footer />
     </>
   );
