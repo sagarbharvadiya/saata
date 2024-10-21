@@ -8,6 +8,7 @@ const ExcelDisplay = () => {
   const [filteredArticles, setFilteredArticles] = useState([]);
   const [headers, setHeaders] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
+  const [searchTriggered, setSearchTriggered] = useState(false);
   const [loading, setLoading] = useState(false);
 
   const client = createClient({
@@ -57,17 +58,28 @@ const ExcelDisplay = () => {
     setSearchTerm(e.target.value);
   };
 
+  const filterArticles = () => {
+    const filtered = articles.filter(article =>
+      Object.values(article).some(cell =>
+        typeof cell === 'string' && cell.toLowerCase().includes(searchTerm.toLowerCase())
+      )
+    );
+    setFilteredArticles(filtered);
+  };
+
+  useEffect(() => {
+    if (!searchTriggered) {
+      filterArticles();
+    }
+  }, [searchTerm]);
+
   const handleSearch = () => {
     setLoading(true);
+    setSearchTriggered(true);
     setTimeout(() => {
-      const filtered = articles.filter(article =>
-        Object.values(article).some(cell =>
-          typeof cell === 'string' && cell.toLowerCase().includes(searchTerm.toLowerCase())
-        )
-      );
-
-      setFilteredArticles(filtered);
+      filterArticles();
       setLoading(false);
+      setSearchTriggered(false);
     }, 500);
   };
 
@@ -90,11 +102,10 @@ const ExcelDisplay = () => {
     }
   };
 
-  const displayData = searchTerm ? filteredArticles : articles;
+  const displayData = searchTerm || searchTriggered ? filteredArticles : articles;
 
   return (
     <div className="container my-5">
-      {/* <h2 className="text-center mb-4">Imported Articles</h2> */}
       <div className="input-group mb-3">
         <input
           type="text"
@@ -109,59 +120,56 @@ const ExcelDisplay = () => {
       </div>
       {loading && <div className="text-center">Loading...</div>}
       {!loading && displayData.length > 0 ? (
-        <div className="table-responsive">
-          <table className="table table-bordered w-100" style={{ tableLayout: 'fixed' }}>
-            <thead className="thead-light">
-              <tr>
-                {headers.map((header, index) => (
-                  <th key={index}>{header}</th>
-                ))}
-              </tr>
-            </thead>
-            <tbody>
-              {displayData.map((item, index) => (
-                <tr key={index}>
+        <div className="row">
+          {displayData.map((item, index) => (
+            <div className="col-12 col-md-6 col-lg-4 mb-4" key={index}>
+              <div className="card h-100">
+                <div className="card-body">
                   {headers.map((header) => {
                     const cellData = item[header];
-                    if (header === 'articleFile' && cellData) {
+                    
+                    if (header === 'articleFile' && cellData && cellData.fields && cellData.fields.file && cellData.fields.file.url) {
                       return (
-                        <td key={header}>
-                          {cellData.fields.file.url ? (
-                            <a href={cellData.fields.file.url} target="_blank" rel="noopener noreferrer">
-                              View File
-                            </a>
-                          ) : (
-                            'No file available'
-                          )}
-                        </td>
+                        <div key={header} className="mb-2">
+                          <strong>Access these Articles Here: </strong>
+                          <a href={cellData.fields.file.url} target="_blank" rel="noopener noreferrer">
+                            View File
+                          </a>
+                        </div>
                       );
                     }
 
                     if (typeof cellData === 'string' && isValidUrl(cellData)) {
                       return (
-                        <td key={header}>
-                          <a 
-                            href={cellData} 
-                            target="_blank" 
-                            rel="noopener noreferrer" 
-                            className="text-primary" 
-                            title={cellData} 
+                        <div key={header} className="mb-2">
+                          <a
+                            href={cellData}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-primary"
+                            title={cellData}
                           >
                             {shortenUrl(cellData)}
                           </a>
-                        </td>
+                        </div>
                       );
                     }
+
                     return (
-                      <td key={header}>
-                        {cellData ? cellData.toString() : ''}
-                      </td>
+                      <div key={header} className="mb-2">
+                        {cellData ? (
+                          <>
+                            <strong>{header}: </strong>
+                            {cellData.toString()}
+                          </>
+                        ) : null}
+                      </div>
                     );
                   })}
-                </tr>
-              ))}
-            </tbody>
-          </table>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       ) : !loading && displayData.length === 0 ? (
         <p className="text-center">No matching articles found.</p>

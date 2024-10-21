@@ -3043,3 +3043,7 @@ ul .menu_item:hover > a {
  display: flex;
  margin: auto;
 }
+.input-group .btn {
+  background: #a37bb6;
+  border: none;
+}
