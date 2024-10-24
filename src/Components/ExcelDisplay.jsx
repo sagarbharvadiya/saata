@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { createClient } from 'contentful';
 import * as XLSX from 'xlsx';
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer'; // Import the renderer
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const ExcelDisplay = () => {
@@ -10,6 +11,7 @@ const ExcelDisplay = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [searchTriggered, setSearchTriggered] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [description, setDescription] = useState(null); // State for description
 
   const client = createClient({
     space: 'p2utm544n4sq',
@@ -21,7 +23,7 @@ const ExcelDisplay = () => {
       try {
         const response = await client.getEntries({
           content_type: 'article',
-          select: 'fields.articleFile',
+          select: 'fields.articleFile,fields.description',
         });
 
         if (response.items.length > 0) {
@@ -45,6 +47,9 @@ const ExcelDisplay = () => {
           if (filteredData.length > 0) {
             setHeaders(Object.keys(filteredData[0]));
           }
+
+          // Set the description from the first article
+          setDescription(response.items[0].fields.description);
         }
       } catch (error) {
         console.error('Error fetching the Excel file:', error);
@@ -104,19 +109,47 @@ const ExcelDisplay = () => {
 
   const displayData = searchTerm || searchTriggered ? filteredArticles : articles;
 
+  // Custom render options for the rich text
+  const options = {
+    renderNode: {
+      'embedded-asset-block': (node) => {
+        // Handle embedded assets if needed
+        return null;
+      },
+      'hyperlink': (node) => {
+        const { uri } = node.data;
+        return (
+          <a href={uri} target="_blank" rel="noopener noreferrer" className="text-primary">
+            {node.content[0].value}
+          </a>
+        );
+      },
+      'asset-hyperlink': (node) => {
+        const assetTitle = 'SAJTA Volume 8, Number 1: July, 2022'; // Custom text for asset link
+        const assetUrl = node.data.target.fields.file.url; // URL for the asset
+
+        return (
+          <a href={assetUrl} target="_blank" rel="noopener noreferrer" className="text-primary">
+            {assetTitle}
+          </a>
+        );
+      }
+    }
+  };
+
   return (
     <div className="container excel-display my-5">
       <div className="about_us_wrapper">
         <h2>SAJTA – South Asian Journal of Transactional Analysis</h2>
-        </div>
-        <div className="about_us_content">
+      </div>
+      <div className="about_us_content">
           <p>The SAJTA journal (formerly known as “SAATA Journal) is a peer-reviewed e-journal focusing on Transactional Analysis &nbsp;theory, principles and application in the four fields of psychotherapy, counselling, education and organizational development. The intention is to invite Transactional Analysis trainers and trainees to articulate their learnings, applications and innovations in Transactional Analysis theory and practice in our region. This e-journal is published starting August 2015.</p>
           </div>
-      
+
       <div className="input-group mb-3">
         <input
           type="text"
-          placeholder="Search by Author,Publication,etc..."
+          placeholder="Search by Author, Publication, etc..."
           value={searchTerm}
           onChange={handleSearchInput}
           className="form-control"
@@ -134,7 +167,7 @@ const ExcelDisplay = () => {
                 <div className="card-body">
                   {headers.map((header) => {
                     const cellData = item[header];
-                    
+
                     if (header === 'articleFile' && cellData && cellData.fields && cellData.fields.file && cellData.fields.file.url) {
                       return (
                         <div key={header} className="mb-2">
@@ -181,6 +214,9 @@ const ExcelDisplay = () => {
       ) : !loading && displayData.length === 0 ? (
         <p className="text-center">No matching articles found.</p>
       ) : null}
+         <div className="about_us_content">
+        {description && documentToReactComponents(description, options)} {/* Render the description */}
+      </div>
     </div>
   );
 };
