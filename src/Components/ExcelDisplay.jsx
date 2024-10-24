@@ -105,11 +105,18 @@ const ExcelDisplay = () => {
   const displayData = searchTerm || searchTriggered ? filteredArticles : articles;
 
   return (
-    <div className="container my-5">
+    <div className="container excel-display my-5">
+      <div className="about_us_wrapper">
+        <h2>SAJTA – South Asian Journal of Transactional Analysis</h2>
+        </div>
+        <div className="about_us_content">
+          <p>The SAJTA journal (formerly known as “SAATA Journal) is a peer-reviewed e-journal focusing on Transactional Analysis &nbsp;theory, principles and application in the four fields of psychotherapy, counselling, education and organizational development. The intention is to invite Transactional Analysis trainers and trainees to articulate their learnings, applications and innovations in Transactional Analysis theory and practice in our region. This e-journal is published starting August 2015.</p>
+          </div>
+      
       <div className="input-group mb-3">
         <input
           type="text"
-          placeholder="Search articles..."
+          placeholder="Search by Author,Publication,etc..."
           value={searchTerm}
           onChange={handleSearchInput}
           className="form-control"
