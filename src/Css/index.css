@@ -3046,4 +3046,17 @@ ul .menu_item:hover > a {
 .input-group .btn {
   background: #a37bb6;
   border: none;
+  z-index: 0 !important;
+}
+.excel-display .about_us_content p {
+  margin-bottom: 30px;
+}
+.excel-display .about_us_wrapper h2 {
+  margin-left: 0px;
+}
+.excel-display{
+  padding: 18px 30px !important;
+  background-color: rgba(249, 249, 249, 0.2392156863);
+ box-shadow: 0px 4px 17px #e5e5e5;
+ max-width: 1258px !important;
 }
