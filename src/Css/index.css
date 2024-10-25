@@ -3060,3 +3060,12 @@ ul .menu_item:hover > a {
  box-shadow: 0px 4px 17px #e5e5e5;
  max-width: 1258px !important;
 }
+.excel-display .about_us_content p a {
+  color: #a37bb6 !important;
+}
+
+@media (max-width: 768px) {
+  .excel-display {
+    max-width: 380px !important;
+}
+}

@@ -196,6 +196,11 @@ const TopHeader = () => {
                   SAJTA Journals
                 </NavLink>
                 <ul className="hover">
+                <li>
+                    <NavLink to="/sajta-journals" onClick={toggleMenu}>
+                    Current and Previous Issues
+                    </NavLink>
+                  </li>
                   <li>
                     <NavLink to="/SAJTATeam" onClick={toggleMenu}>
                       SAJTA Team
@@ -206,6 +211,7 @@ const TopHeader = () => {
                     SAJTA Guidelines
                     </NavLink>
                   </li>
+                  
                 </ul>
               </li>
 

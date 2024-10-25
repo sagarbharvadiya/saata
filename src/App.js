@@ -43,7 +43,7 @@ function App() {
         <Route exact path='/SAJTATeam' element={<SatjaTeam />} />
         {/* <Route exact path='/articles' element={<Article />} /> */}
         <Route exact path='/video' element={<Videos />} />
-        <Route exact path='/article' element={<ExcelDisplay />} fileName={fileName} />
+        <Route exact path='/sajta-journals' element={<ExcelDisplay />} fileName={fileName} />
         {/* <Route exact path='/article' element={<Articles />} /> */}
         <Route exact path='/faq' element={<Faq />} />
         <Route exact path='/faq' element={<Faq />} />
