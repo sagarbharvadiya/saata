@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { createClient } from 'contentful';
 import * as XLSX from 'xlsx';
-import { documentToReactComponents } from '@contentful/rich-text-react-renderer'; // Import the renderer
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const ExcelDisplay = () => {
@@ -11,7 +11,7 @@ const ExcelDisplay = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [searchTriggered, setSearchTriggered] = useState(false);
   const [loading, setLoading] = useState(false);
-  const [description, setDescription] = useState(null); // State for description
+  const [description, setDescription] = useState(null);
 
   const client = createClient({
     space: 'p2utm544n4sq',
@@ -48,7 +48,6 @@ const ExcelDisplay = () => {
             setHeaders(Object.keys(filteredData[0]));
           }
 
-          // Set the description from the first article
           setDescription(response.items[0].fields.description);
         }
       } catch (error) {
@@ -73,7 +72,7 @@ const ExcelDisplay = () => {
   };
 
   useEffect(() => {
-    if (!searchTriggered) {
+    if (searchTerm) {
       filterArticles();
     }
   }, [searchTerm]);
@@ -107,15 +106,11 @@ const ExcelDisplay = () => {
     }
   };
 
-  const displayData = searchTerm || searchTriggered ? filteredArticles : articles;
+  const displayData = searchTerm ? filteredArticles : [];
 
-  // Custom render options for the rich text
   const options = {
     renderNode: {
-      'embedded-asset-block': (node) => {
-        // Handle embedded assets if needed
-        return null;
-      },
+      'embedded-asset-block': (node) => null,
       'hyperlink': (node) => {
         const { uri } = node.data;
         return (
@@ -125,8 +120,8 @@ const ExcelDisplay = () => {
         );
       },
       'asset-hyperlink': (node) => {
-        const assetTitle = 'SAJTA Volume 8, Number 1: July, 2022'; // Custom text for asset link
-        const assetUrl = node.data.target.fields.file.url; // URL for the asset
+        const assetTitle = 'SAJTA Volume 8, Number 1: July, 2022';
+        const assetUrl = node.data.target.fields.file.url;
 
         return (
           <a href={assetUrl} target="_blank" rel="noopener noreferrer" className="text-primary">
@@ -144,7 +139,7 @@ const ExcelDisplay = () => {
       </div>
       <div className="about_us_content">
           <p>The SAJTA journal (formerly known as “SAATA Journal) is a peer-reviewed e-journal focusing on Transactional Analysis &nbsp;theory, principles and application in the four fields of psychotherapy, counselling, education and organizational development. The intention is to invite Transactional Analysis trainers and trainees to articulate their learnings, applications and innovations in Transactional Analysis theory and practice in our region. This e-journal is published starting August 2015.</p>
-          </div>
+      </div>
 
       <div className="input-group mb-3">
         <input
@@ -211,11 +206,11 @@ const ExcelDisplay = () => {
             </div>
           ))}
         </div>
-      ) : !loading && displayData.length === 0 ? (
-        <p className="text-center">No matching articles found.</p>
-      ) : null}
-         <div className="about_us_content">
-        {description && documentToReactComponents(description, options)} {/* Render the description */}
+      ) :!loading && searchTerm && displayData.length === 0 && (
+  <p className="text-center">No matching articles found.</p>
+)}
+      <div className="about_us_content">
+        {description && documentToReactComponents(description, options)}
       </div>
     </div>
   );
