@@ -12,7 +12,7 @@ const ExcelDisplay = () => {
   const [searchTriggered, setSearchTriggered] = useState(false);
   const [loading, setLoading] = useState(false);
   const [description, setDescription] = useState(null);
-
+  const [additionalInfo, setAdditionalInfo] = useState(null); // New state for additional info
   const client = createClient({
     space: 'p2utm544n4sq',
     accessToken: 'cQTkJfWn15RinC2scjPL89MreIbwQY31ODrPqDlc3RM',
@@ -23,7 +23,7 @@ const ExcelDisplay = () => {
       try {
         const response = await client.getEntries({
           content_type: 'article',
-          select: 'fields.articleFile,fields.description',
+          select: 'fields.articleFile,fields.description,fields.linkWithDis',
         });
 
         if (response.items.length > 0) {
@@ -42,7 +42,7 @@ const ExcelDisplay = () => {
           const filteredData = jsonData.filter(item =>
             Object.values(item).some(value => value !== null && value !== '')
           );
-
+          setAdditionalInfo(response.items[0].fields.linkWithDis); // Set additional info
           setArticles(filteredData);
           if (filteredData.length > 0) {
             setHeaders(Object.keys(filteredData[0]));
@@ -138,13 +138,18 @@ const ExcelDisplay = () => {
         <h2>SAJTA – South Asian Journal of Transactional Analysis</h2>
       </div>
       <div className="about_us_content">
-          <p>The SAJTA journal (formerly known as “SAATA Journal) is a peer-reviewed e-journal focusing on Transactional Analysis &nbsp;theory, principles and application in the four fields of psychotherapy, counselling, education and organizational development. The intention is to invite Transactional Analysis trainers and trainees to articulate their learnings, applications and innovations in Transactional Analysis theory and practice in our region. This e-journal is published starting August 2015.</p>
+      <div className="about_us_content">
+        {additionalInfo && documentToReactComponents(additionalInfo, options)} {/* New rendering */}
+        <br />
+    
+      </div>
+          {/* <p>The SAJTA journal (formerly known as “SAATA Journal) is a peer-reviewed e-journal focusing on Transactional Analysis &nbsp;theory, principles and application in the four fields of psychotherapy, counselling, education and organizational development. The intention is to invite Transactional Analysis trainers and trainees to articulate their learnings, applications and innovations in Transactional Analysis theory and practice in our region. This e-journal is published starting August 2015.</p> */}
       </div>
 
       <div className="input-group mb-3">
         <input
           type="text"
-          placeholder="Search by Author, Publication, etc..."
+          placeholder="Search by author, keywords, field of specialisation, context etc"
           value={searchTerm}
           onChange={handleSearchInput}
           className="form-control"
@@ -209,6 +214,7 @@ const ExcelDisplay = () => {
       ) :!loading && searchTerm && displayData.length === 0 && (
   <p className="text-center">No matching articles found.</p>
 )}
+<br />
       <div className="about_us_content">
         {description && documentToReactComponents(description, options)}
       </div>
