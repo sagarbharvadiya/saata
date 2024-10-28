@@ -107,7 +107,6 @@ const ExcelDisplay = () => {
   };
 
   const displayData = searchTerm ? filteredArticles : [];
-
   const options = {
     renderNode: {
       'embedded-asset-block': (node) => {
@@ -122,9 +121,9 @@ const ExcelDisplay = () => {
         );
       },
       'asset-hyperlink': (node) => {
-        const assetTitle = node.data.target.fields.title;
+        const assetTitle = node.content[0].value;
         const assetUrl = node.data.target.fields.file.url;
-
+        
         return (
           <a href={assetUrl} target="_blank" rel="noopener noreferrer" className="text-primary">
             {assetTitle}
@@ -133,6 +132,7 @@ const ExcelDisplay = () => {
       }
     }
   };
+
 
   return (
     <div className="container excel-display my-5">
