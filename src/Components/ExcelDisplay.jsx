@@ -12,7 +12,7 @@ const ExcelDisplay = () => {
   const [searchTriggered, setSearchTriggered] = useState(false);
   const [loading, setLoading] = useState(false);
   const [description, setDescription] = useState(null);
-  const [additionalInfo, setAdditionalInfo] = useState(null); // New state for additional info
+  const [additionalInfo, setAdditionalInfo] = useState(null);
   const client = createClient({
     space: 'p2utm544n4sq',
     accessToken: 'cQTkJfWn15RinC2scjPL89MreIbwQY31ODrPqDlc3RM',
@@ -42,7 +42,7 @@ const ExcelDisplay = () => {
           const filteredData = jsonData.filter(item =>
             Object.values(item).some(value => value !== null && value !== '')
           );
-          setAdditionalInfo(response.items[0].fields.linkWithDis); // Set additional info
+          setAdditionalInfo(response.items[0].fields.linkWithDis);
           setArticles(filteredData);
           if (filteredData.length > 0) {
             setHeaders(Object.keys(filteredData[0]));
@@ -110,7 +110,9 @@ const ExcelDisplay = () => {
 
   const options = {
     renderNode: {
-      'embedded-asset-block': (node) => null,
+      'embedded-asset-block': (node) => {
+        return null;
+      },
       'hyperlink': (node) => {
         const { uri } = node.data;
         return (
@@ -120,7 +122,7 @@ const ExcelDisplay = () => {
         );
       },
       'asset-hyperlink': (node) => {
-        const assetTitle = 'SAJTA Volume 8, Number 1: July, 2022';
+        const assetTitle = node.data.target.fields.title;
         const assetUrl = node.data.target.fields.file.url;
 
         return (
@@ -138,12 +140,8 @@ const ExcelDisplay = () => {
         <h2>SAJTA – South Asian Journal of Transactional Analysis</h2>
       </div>
       <div className="about_us_content">
-      <div className="about_us_content">
-        {additionalInfo && documentToReactComponents(additionalInfo, options)} {/* New rendering */}
+        {additionalInfo && documentToReactComponents(additionalInfo, options)}
         <br />
-    
-      </div>
-          {/* <p>The SAJTA journal (formerly known as “SAATA Journal) is a peer-reviewed e-journal focusing on Transactional Analysis &nbsp;theory, principles and application in the four fields of psychotherapy, counselling, education and organizational development. The intention is to invite Transactional Analysis trainers and trainees to articulate their learnings, applications and innovations in Transactional Analysis theory and practice in our region. This e-journal is published starting August 2015.</p> */}
       </div>
 
       <div className="input-group mb-3">
@@ -211,12 +209,12 @@ const ExcelDisplay = () => {
             </div>
           ))}
         </div>
-      ) :!loading && searchTerm && displayData.length === 0 && (
-  <p className="text-center">No matching articles found.</p>
-)}
-<br />
+      ) : !loading && searchTerm && displayData.length === 0 && (
+        <p className="text-center">No matching articles found.</p>
+      )}
+      <br />
       <div className="about_us_content">
-        {description && documentToReactComponents(description, options)}
+        {description && documentToReactComponents(description, options)} {/* Ensure this is rendering correctly */}
       </div>
     </div>
   );
