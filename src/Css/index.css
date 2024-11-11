@@ -1877,6 +1877,10 @@ ul .menu_item:hover > a {
   color: white;
   text-decoration: none;
 }
+.about_us_content table td:last-child a{
+  color: #0085ff;
+  text-decoration: underline !important;
+}
 @media only screen and (max-width: 768px) {
  .page-memorial-endowment-lecture .about_us,
 .page-p-k-saru-memorial-endowment-fund .about_us {
