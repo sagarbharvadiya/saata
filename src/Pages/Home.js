@@ -9,7 +9,7 @@ function Home(){
     return(
         <>
             <Banner></Banner>
-            <Video></Video>
+            {/* <Video></Video> */}
             <InfoSection></InfoSection>
             <BoardOfMembers></BoardOfMembers>
             <Contact></Contact>
