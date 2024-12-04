@@ -3021,6 +3021,7 @@ ul .menu_item:hover > a {
 }
 
 .page-saata-conference .about_us_img,
+.page-saata-conference-2025 .about_us_img,
 .about_us_img img {
   width: 100%;
   max-width: 100%;
@@ -3066,6 +3067,16 @@ ul .menu_item:hover > a {
 }
 .excel-display .about_us_content p a {
   color: #a37bb6 !important;
+}
+.page-saata-conference-2025 .about_us .about_us_wrapper h2 {
+  margin-bottom: 35px;
+}
+.page-saata-conference-2025 .about_us_img {
+  margin-bottom: 40px;
+}
+.page-saata-conference-2025 .about_us .about_us_content p a{
+  color: #a37bb6 !important;
+  font-weight: 500;
 }
 
 @media (max-width: 768px) {
