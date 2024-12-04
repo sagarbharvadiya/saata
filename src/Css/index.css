@@ -2490,7 +2490,8 @@ ul .menu_item:hover > a {
   .page-ta-101-program-details .about_us.about_ta,
   .page-saata-calendar .about_us.about_ta,
   .page-saata-bot .about_us.about_ta,
-  .page-saata-conference .about_us.about_ta {
+  .page-saata-conference .about_us.about_ta,
+  .page-saata-conference-2025 .about_us.about_ta {
     padding: 18px 0px;
     max-width: 318px !important;
   }
@@ -2682,10 +2683,12 @@ ul .menu_item:hover > a {
   .page-truth-seeker .about_us .about_us_wrapper h2,
   .page-ace-conceptualist .about_us .about_us_wrapper h2,
   .page-gregarious-hugger .about_us .about_us_wrapper h2,
-  .page-history-and-origin-of-saata .about_us .about_us_wrapper h2 {
+  .page-history-and-origin-of-saata .about_us .about_us_wrapper h2  {
     font-size: 25px !important;
   }
-
+  .page-saata-conference-2025 .about_us .about_us_wrapper h2  {
+    font-size: 27px !important;
+  }
   .page-cpnews .news-latter-cpnews-section {
     max-width: 318px !important;
   }
