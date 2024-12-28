@@ -1484,9 +1484,9 @@ ul .menu_item:hover > a {
   color: #996ada;
 } */
 
-.menu_item:hover ul {
+/* .menu_item:hover ul {
   display: block;
-}
+} */
 
 .menu_item ul li {
   padding: 0px 16px;
@@ -3080,6 +3080,68 @@ ul .menu_item:hover > a {
 .page-saata-conference-2025 .about_us .about_us_content p a{
   color: #a37bb6 !important;
   font-weight: 500;
+}
+.address-line {
+  font-size:18px;
+  margin-bottom: 5px;
+  color: rgb(111, 111, 111);
+  font-weight: 600;
+}
+.address-line span {
+  font-weight: normal;
+}
+.map {
+  margin-top: 3px;
+  padding: 19px 20px 39px 20px;
+  border-radius: 15px;
+  
+}
+.address-title p {
+  margin-bottom: 10px;
+}
+.address-title p::before{
+  content: "\f041";
+  font-size: 24px;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: FontAwesome;
+  margin-right: 6px;
+  margin-top: 7px;
+}
+
+.address-container {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.contact_wrapper {
+  display: block;
+}
+.input_wrapper {
+  gap: 0px;
+  justify-content: space-between;
+}
+.contact_form .input_field {
+  margin: inherit;
+}
+.contact_form input {
+  width: 450px;
+}
+.contact_form {
+  width: 1000px;
+  margin: auto;
+}
+.contact_form input.submit-btn {
+  width: 300px;
+}
+
+.page-saata-conference .about_us_content ul{
+  list-style: inherit;
+}
+.page-saata-conference .about_us_content a {
+  color: #0d6efd !important;
+  font-weight: 700;
 }
 
 @media (max-width: 768px) {
