@@ -72,8 +72,8 @@ const Contact = () => {
 
       <section className="contact" id="contact">
         <div className="contact_wrapper">
-        <div className="map">
-            {/* <iframe
+        {/* <div className="map">
+            <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.5183433954835!2d77.0082269142886!3d10.99968215804207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8576277c3f175%3A0x149ab1a4e986e87b!2sKrishna%20Colony%20Main%20Rd%2C%20Krishna%20Colony%2C%20Coimbatore%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1677652885046!5m2!1sen!2sin"
               width="800"
               height="545"
@@ -81,9 +81,9 @@ const Contact = () => {
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               title="map"
-            ></iframe> */}
+            ></iframe>
             
-          </div>
+          </div> */}
           <form className="contact_form" onSubmit={handleSubmit}>
           
             <h2>Contact Us</h2>
@@ -92,7 +92,7 @@ const Contact = () => {
       <p></p>
       </div>
     <div class="address-line">
-     <p>L-505, Purva Belmont,Trichy Road, Singanallur, <br />Coimbatore - 641005,Tamil Nadu, India <br /> </p> 
+     <p>L-505, Purva Belmont,Trichy Road, Singanallur,Coimbatore - 641005,Tamil Nadu, India <br /> </p> 
     </div>
   </div>
             <p>
