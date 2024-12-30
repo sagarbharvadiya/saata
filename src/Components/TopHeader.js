@@ -112,7 +112,7 @@ const TopHeader = () => {
                 </NavLink>
               </li>
               <li className="News_hover">
-              <NavLink to="/">Past Event</NavLink>
+              <NavLink to="/">Past Events</NavLink>
                 <ul className="hover">
                 <li>
                 <NavLink to="/page/mll-2024" onClick={toggleMenu}>

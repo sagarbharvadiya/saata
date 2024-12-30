@@ -3090,6 +3090,9 @@ ul .menu_item:hover > a {
 .address-line span {
   font-weight: normal;
 }
+.address-line p {
+ margin-bottom: 10px;
+}
 .map {
   margin-top: 3px;
   padding: 19px 20px 39px 20px;
@@ -3097,7 +3100,7 @@ ul .menu_item:hover > a {
   
 }
 .address-title p {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 .address-title p::before{
   content: "\f041";
@@ -3106,13 +3109,14 @@ ul .menu_item:hover > a {
   vertical-align: middle;
   font-family: FontAwesome;
   margin-right: 6px;
-  margin-top: 7px;
 }
 
 .address-container {
   display: flex;
-  gap: 12px;
+  gap: 10px;
   margin-top: 20px;
+  align-items: flex-end;
+  margin-bottom: 10px;
 }
 
 .contact_wrapper {
