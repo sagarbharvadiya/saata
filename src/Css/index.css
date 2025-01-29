@@ -461,6 +461,7 @@ code {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+  height: 250px;
 }
 
 .board-of-members-section {
