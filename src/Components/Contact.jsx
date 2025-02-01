@@ -10,75 +10,94 @@ const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [isValidEmail, setIsValidEmail] = useState(false);
   const [isNameFocused, setIsNameFocused] = useState(false);
   const [isEmailFocused, setIsEmailFocused] = useState(false);
+  const [isSent, setIsSent] = useState(false);
+  const [error, setError] = useState("");
   const notify = () => {
-    toast.success("Thank you for contacting saata. We will respond to your message within 3 working days.😊", {
-      position: "top-right",
-      autoClose: 1000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: "dark",
-    });
+    toast.success(
+      "Thank you for contacting saata. We will respond to your message within 3 working days.😊",
+      {
+        position: "top-right",
+        autoClose: 1000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+      }
+    );
   };
 
-  function handleEmailChange(event) {
-    const inputEmail = event.target.value;
-    setEmail(inputEmail);
-
-    const emailRegex = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/;
-    setIsValidEmail(emailRegex.test(inputEmail));
-  }
-
-  function NameinputChange(e) {
-    const inputText = e.target.value;
-    setName(inputText);
-  }
-
-  function MessageInputChange(e) {
-    const inputText = e.target.value;
-    setMessage(inputText);
-  }
-  const form = useRef();
-  const sendEmail = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    if (isValidEmail) {
-      emailjs
-        .sendForm(
-         "service_chq5sx7",
-         "template_hk9bylt",
-          form.current,
-         "SwlA8d9ZfDUsg9zTg",
-        )
-        .then(
-          (result) => {
-            notify();
-            setName("");
-            setEmail("");
-            setMessage("");
-          },
-          (error) => {
-            console.log(error.text);
-          }
-        );
-    } else {
-      //   toast.error("Please enter a correct email value");
-      console.log("Email is invalid.");
+
+    if (!name || !email || !message) {
+      setError("Please fill in all fields.");
+      return;
     }
+
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      message: message,
+    };
+
+    emailjs
+      .send(
+        process.env.REACT_APP_EMAILJS_SERVICEID,
+        process.env.REACT_APP_EMAILJS_TEMPLATEID,
+        templateParams,
+        process.env.REACT_APP_EMAILJS_PUBLICKEY
+      )
+      .then(
+        (response) => {
+          notify();
+          setIsSent(true);
+          setName("");
+          setEmail("");
+          setMessage("");
+          setError("");
+          console.log("Email sent:", response);
+        },
+        (error) => {
+          console.error("Failed to send the email:", error);
+          setError("Oops! Something went wrong. Please try again later.");
+        }
+      );
   };
   return (
     <>
+
       <section className="contact" id="contact">
         <div className="contact_wrapper">
-          <form ref={form} className="contact_form" onSubmit={sendEmail}>
+        {/* <div className="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.5183433954835!2d77.0082269142886!3d10.99968215804207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8576277c3f175%3A0x149ab1a4e986e87b!2sKrishna%20Colony%20Main%20Rd%2C%20Krishna%20Colony%2C%20Coimbatore%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1677652885046!5m2!1sen!2sin"
+              width="800"
+              height="545"
+              allowFullScreen={true}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="map"
+            ></iframe>
+            
+          </div> */}
+          <form className="contact_form" onSubmit={handleSubmit}>
+          
             <h2>Contact Us</h2>
+            <div class="address-container">
+    <div class="address-title">
+      <p></p>
+      </div>
+    <div class="address-line">
+     <p>L-505, Purva Belmont,Trichy Road, Singanallur,Coimbatore - 641005,Tamil Nadu, India <br /> </p> 
+    </div>
+  </div>
             <p>
-              Thank you for writing to us. 
-              You will receive a reply within 3 working days.
+              Thank you for writing to us. You will receive a reply within 3
+              working days.
             </p>
             <div className="input_wrapper">
               <div className="input_field">
@@ -89,7 +108,7 @@ const Contact = () => {
                   name="user_name"
                   required
                   value={name}
-                  onChange={NameinputChange}
+                  onChange={(e) => setName(e.target.value)}
                   onFocus={() => setIsNameFocused(true)}
                   onBlur={() => setIsNameFocused(false)}
                 />
@@ -107,7 +126,7 @@ const Contact = () => {
                   name="user_email"
                   required
                   value={email}
-                  onChange={handleEmailChange}
+                  onChange={(e) => setEmail(e.target.value)}
                   onFocus={() => setIsEmailFocused(true)}
                   onBlur={() => setIsEmailFocused(false)}
                 />
@@ -126,9 +145,9 @@ const Contact = () => {
               name="message"
               required
               value={message}
-              onChange={MessageInputChange}
-            ></textarea>          
-                <input type="submit" className="submit-btn" value="Send" />
+              onChange={(e) => setMessage(e.target.value)}
+            ></textarea>
+            <input type="submit" className="submit-btn" value="Send" />
             <ToastContainer
               position="top-right"
               autoClose={5000}
@@ -142,17 +161,7 @@ const Contact = () => {
               theme="dark"
             />
           </form>
-          <div className="map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.5183433954835!2d77.0082269142886!3d10.99968215804207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8576277c3f175%3A0x149ab1a4e986e87b!2sKrishna%20Colony%20Main%20Rd%2C%20Krishna%20Colony%2C%20Coimbatore%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1677652885046!5m2!1sen!2sin"
-              width="800"
-              height="545"
-              allowFullScreen={true}
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="map"
-            ></iframe>
-          </div>
+        
         </div>
       </section>
     </>

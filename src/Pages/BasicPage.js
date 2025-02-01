@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import client from "../client";
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import { BLOCKS, INLINES } from '@contentful/rich-text-types';
+import Faq from '../Components/Faq'; // Import the Faq component
 
 const BasicPage = () => {
   const { slug } = useParams();
@@ -14,7 +15,9 @@ const BasicPage = () => {
         const response = await client.getEntries({
           content_type: "basicPage",
           "fields.slug": slug,
+          include: 2, // Include linked entries
         });
+        // console.log(response)
         if (response.items.length) {
           setEntry(response.items);
         }
@@ -50,16 +53,25 @@ const BasicPage = () => {
             renderNode: {
               ...renderNode,
               [INLINES.ASSET_HYPERLINK]: (node) => (
-                <a href={`https://`+ node.data.target.fields.file.url} target="_blank" rel="noopener noreferrer">{node.data.target.fields.title}</a>
-                ),
+                <a href={`https://` + node.data.target.fields.file.url} target="_blank" rel="noopener noreferrer">{node.data.target.fields.title}</a>
+              ),
               [BLOCKS.EMBEDDED_ASSET]: (node) => {
                 const { title, description, file } = node.data.target.fields;
                 const url = file.url;
                 const isPDF = file.contentType === 'application/pdf';
-
+                if (file.details?.image) {
+                  const { title, description, file } = node.data.target.fields;
+                  const imageUrl = file.url;
+                  const altText = description || title || "Image";
+                  return (
+                    <div className="custom-rich-text-image">
+                      <img src={imageUrl} alt={altText} />
+                    </div>
+                  );
+                }
                 if (isPDF) {
                   return (
-                    <div>
+                    <div className="custom-rich-text-pdf">
                       <iframe src={url} title={title} style={{ width: '100%', height: '100vh' }}></iframe>
                       <p>{description}</p>
                     </div>
@@ -70,6 +82,10 @@ const BasicPage = () => {
               },
             },
           });
+
+          // Check if the "faq" reference is present in the "faq" field
+          const faqReferences = item.fields.faq || [];
+          const hasFaqReference = faqReferences.length > 0;
 
           return (
             <React.Fragment key={id}>
@@ -85,6 +101,12 @@ const BasicPage = () => {
                   <div className="about_us_content">
                     {richTextContent}
                   </div>
+                  {hasFaqReference && (
+                    <div id="Faq"> {/* Add id to scroll to */}
+                      <h3 className=" text-center">FAQ</h3>
+                      <Faq />
+                    </div>
+                  )}
                 </div>
               </div>
             </React.Fragment>

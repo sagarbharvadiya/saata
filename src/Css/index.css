@@ -8,9 +8,11 @@ h2.main_title {
   text-align: center;
   margin-top: 20px;
 }
-.about_us .about_us_content table tr td p{
+
+.about_us .about_us_content table tr td p {
   text-align: left !important;
 }
+
 .page-membership-details .about_us,
 .page-ta-101-program-details .about_us {
   max-width: 1258px;
@@ -246,13 +248,16 @@ h2.main_title {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
 
 .Top-Header-wrapper {
@@ -386,7 +391,6 @@ code {
   color: #fff;
 }
 
-
 .info-container:nth-child(odd) .info-desc {
   color: white;
 }
@@ -457,10 +461,11 @@ code {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+  height: 250px;
 }
 
 .board-of-members-section {
-  background: url('../Images/12232.jpg') no-repeat;
+  background: url("../Images/12232.jpg") no-repeat;
   background-position: bottom;
   background-size: inherit;
   background-attachment: fixed;
@@ -583,8 +588,6 @@ code {
   margin: 0px auto;
 }
 
-
-
 .footer {
   background-color: #a37bb6;
 }
@@ -654,15 +657,15 @@ code {
   margin-bottom: 10px;
 }
 
-.social_icon a>.fa-facebook {
+.social_icon a > .fa-facebook {
   color: #1d41ff;
 }
 
-.social_icon a>.fa-twitter {
+.social_icon a > .fa-twitter {
   color: #0085ff;
 }
 
-.social_icon a>.fa-youtube {
+.social_icon a > .fa-youtube {
   color: #f00;
 }
 
@@ -729,7 +732,9 @@ code {
   width: 300px;
 }
 
-.ITAA-The-Dance-of-Culture-folder .slick-slide.slick-active.slick-center.slick-current .ITAA-The-Dance-of-Culture-image {
+.ITAA-The-Dance-of-Culture-folder
+  .slick-slide.slick-active.slick-center.slick-current
+  .ITAA-The-Dance-of-Culture-image {
   max-width: 391px;
 }
 
@@ -747,7 +752,9 @@ code {
   width: 300px;
 }
 
-.gallery-South-Asian-Association-folder .slick-slide.slick-active.slick-center.slick-current .gallery-South-Asian-Association-image {
+.gallery-South-Asian-Association-folder
+  .slick-slide.slick-active.slick-center.slick-current
+  .gallery-South-Asian-Association-image {
   max-width: 391px;
 }
 
@@ -1405,7 +1412,7 @@ code {
 
 /* new css for allLinks page  */
 .news-latter-cpnews-section {
-  background-color: hsla(0, 0%, 98%, .239);
+  background-color: hsla(0, 0%, 98%, 0.239);
   box-shadow: 0 4px 17px #e5e5e5;
   margin: 0 auto 37px;
   max-width: 1258px;
@@ -1420,14 +1427,14 @@ code {
   width: 100%;
 }
 
-.news-latter-cpnews-section>div {
+.news-latter-cpnews-section > div {
   display: flex;
   flex-wrap: wrap;
   gap: 26px;
   margin: 30px 0;
 }
 
-.news-latter-cpnews-section>div p {
+.news-latter-cpnews-section > div p {
   box-shadow: 0 4px 13px #e5e5e5;
   list-style: none;
   padding: 40px 0;
@@ -1436,13 +1443,13 @@ code {
   margin: auto;
 }
 
-.news-latter-cpnews-section>div p a {
+.news-latter-cpnews-section > div p a {
   color: #a37bb6;
   text-decoration: none;
   /* font-weight: bold; */
 }
 
-.news-latter-cpnews-section>div p a b {
+.news-latter-cpnews-section > div p a b {
   font-weight: 300;
 }
 
@@ -1451,7 +1458,7 @@ body.page-ta-101-program-details td {
 }
 
 /* top header menu css */
-ul .menu_item:hover>a {
+ul .menu_item:hover > a {
   /* color: #a37bb6 !important; */
   border-bottom: 1px solid;
 }
@@ -1469,7 +1476,7 @@ ul .menu_item:hover>a {
   cursor: pointer;
 }
 
-.menu_item>a {
+.menu_item > a {
   color: #333;
   text-decoration: none;
 }
@@ -1478,9 +1485,9 @@ ul .menu_item:hover>a {
   color: #996ada;
 } */
 
-.menu_item:hover ul {
+/* .menu_item:hover ul {
   display: block;
-}
+} */
 
 .menu_item ul li {
   padding: 0px 16px;
@@ -1541,6 +1548,129 @@ ul .menu_item:hover>a {
   text-align: left;
 }
 
+.page-saata-conference table {
+  border-collapse: collapse;
+  margin-top: 50px;
+  overflow-x: auto;
+  width: 100%;
+}
+
+.page-saata-conference table td,
+.page-saata-conference table th {
+  border: 1px solid #000 !important;
+  font-size: 16px;
+  padding: 15px 8px;
+}
+
+.page-saata-conference table th p {
+  color: #000;
+}
+
+.page-saata-conference table th {
+  font-size: 19px;
+  font-weight: 700;
+  background-color: rgba(163, 123, 182, 0.302) !important;
+}
+
+.page-saata-conference table a {
+  background: #a37bb6;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 15px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.container {
+  width: 90%;
+  margin: 20px auto;
+}
+
+.collapsible {
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.button {
+  width: 100%;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+.Content {
+  padding: 10px;
+}
+
+.Content > div {
+  margin-top: 10px;
+}
+
+.Content img {
+  max-width: 100%;
+  height: auto;
+}
+
+.collapsible .button {
+  background-color: #a37bb6;
+  border: none;
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 20px;
+  margin: auto;
+  padding: 12px;
+}
+.collapsible .title {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.collapsible .button span {
+  font-size: 25px;
+  margin-left: 35px;
+}
+.Content {
+  transition: max-height 0.3s ease;
+}
+.page-memorial-endowment-lecture .about_us_content p,
+.page-p-k-saru-memorial-endowment-fund .about_us_content p,
+.page-memorial-endowment-lecture .about_us_wrapper h2,
+.page-p-k-saru-memorial-endowment-fund .about_us_wrapper h2,
+.page-memorial-endowment-lecture .about_us_wrapper,
+.page-p-k-saru-memorial-endowment-fund .about_us_wrapper {
+  text-align: center;
+}
+
+.page-memorial-endowment-lecture .about_us_content p,
+.page-p-k-saru-memorial-endowment-fund .about_us_content p {
+  padding: 6px 0;
+}
+
+.page-memorial-endowment-lecture .about_us_content h5,
+.page-p-k-saru-memorial-endowment-fund .about_us_content h5 {
+  /*   color: #faf010; */
+  padding: 12px 0;
+  font-size: 25px;
+}
+
+.page-memorial-endowment-lecture .about_us_content h6,
+.page-p-k-saru-memorial-endowment-fund .about_us_content h6 {
+  /*       color: #faf010; */
+  padding: 12px 0;
+  margin: 5px 0;
+  font-size: 20px;
+}
+.page-p-k-saru-memorial-endowment-fund .about_us_content h4{
+  font-weight: 400;
+}
+.page-p-k-saru-memorial-endowment-fund .about_us_content h4 a{
+  background: #fffdfd;
+  color: #a37bb6;
+}
 /* end  */
 @media only screen and (max-width: 1024px) {
   .banner-slider-image img {
@@ -1671,14 +1801,17 @@ ul .menu_item:hover>a {
   .page-membership-details .about_us,
   .page-ta-101-program-details .about_us,
   .page-exam-dates .about_us,
-  .page-saata-calendar-2023 .about_us,
+  .page-saata-calendar .about_us,
   .page-examination-forms .about_us,
   .page-examination-documents .about_us,
   .page-directory .about_us,
   .page-membership-renewal .about_us,
   .page-call-for-nominations .about_us,
   .page-guidelines-for-content-contributors .about_us,
-  .page-newsletter-advertisement-policy .about_us,
+  .page-sajta-submission-guidelines
+    .about_us
+    .page-newsletter-advertisement-policy
+    .about_us,
   .page-journals .about_us,
   .page-awards .about_us,
   .page-service-award .about_us,
@@ -1699,13 +1832,14 @@ ul .menu_item:hover>a {
   .page-membership-details .about_us,
   .page-ta-101-program-details .about_us,
   .page-exam-dates .about_us,
-  .page-saata-calendar-2023 .about_us,
+  .page-saata-calendar .about_us,
   .page-examination-forms .about_us,
   .page-examination-documents .about_us,
   .page-directory .about_us,
   .page-membership-renewal .about_us,
   .page-call-for-nominations .about_us,
   .page-guidelines-for-content-contributors .about_us,
+  .page-sajta-submission-guidelines .about_us,
   .page-newsletter-advertisement-policy .about_us,
   .page-journals .about_us,
   .page-awards .about_us,
@@ -1727,9 +1861,43 @@ ul .menu_item:hover>a {
     max-width: 784px !important;
   }
 }
+.page-memorial-endowment-lecture .aboutus_parent,
+.page-p-k-saru-memorial-endowment-fund .aboutus_parent,
+.page-memorial-endowment-lecture .about_us_content,
+.page-p-k-saru-memorial-endowment-fund .about_us_content {
+  text-align: center;
+}
 
+.page-memorial-endowment-lecture .about_us_content p a,
+.page-p-k-saru-memorial-endowment-fund .about_us_content p a {
+  background: #a37bb6;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+}
+.about_us_content table td:last-child a{
+  color: #0085ff;
+  text-decoration: underline !important;
+}
 @media only screen and (max-width: 768px) {
-  .news-latter-cpnews-section>div {
+ .page-memorial-endowment-lecture .about_us,
+.page-p-k-saru-memorial-endowment-fund .about_us {
+  width: 100%;
+}
+
+.page-memorial-endowment-lecture .about_us_wrapper h2,
+.page-p-k-saru-memorial-endowment-fund .about_us_wrapper h2 {
+  margin-left: 0;
+}
+
+.page-memorial-endowment-lecture iframe,
+.page-p-k-saru-memorial-endowment-fund iframe {
+  max-width: 100%;
+}
+  .news-latter-cpnews-section > div {
     justify-content: center;
   }
 
@@ -1928,13 +2096,14 @@ ul .menu_item:hover>a {
   .page-membership-details .about_us,
   .page-ta-101-program-details .about_us,
   .page-exam-dates .about_us,
-  .page-saata-calendar-2023 .about_us,
+  .page-saata-calendar .about_us,
   .page-examination-forms .about_us,
   .page-examination-documents .about_us,
   .page-directory .about_us,
   .page-membership-renewal .about_us,
   .page-call-for-nominations .about_us,
   .page-guidelines-for-content-contributors .about_us,
+  .page-sajta-submission-guidelines .about_us,
   .page-newsletter-advertisement-policy .about_us,
   .page-journals .about_us,
   .page-awards .about_us,
@@ -1956,13 +2125,14 @@ ul .menu_item:hover>a {
   .page-membership-details .about_us,
   .page-ta-101-program-details .about_us,
   .page-exam-dates .about_us,
-  .page-saata-calendar-2023 .about_us,
+  .page-saata-calendar .about_us,
   .page-examination-forms .about_us,
   .page-examination-documents .about_us,
   .page-directory .about_us,
   .page-membership-renewal .about_us,
   .page-call-for-nominations .about_us,
   .page-guidelines-for-content-contributors .about_us,
+  .page-sajta-submission-guidelines .about_us,
   .page-newsletter-advertisement-policy .about_us,
   .page-journals .about_us,
   .page-awards .about_us,
@@ -1980,20 +2150,22 @@ ul .menu_item:hover>a {
   .page-truth-seeker .about_us,
   .page-ace-conceptualist .about_us,
   .page-gregarious-hugger .about_us,
-  .page-team-that-was .about_us {
+  .page-team-that-was .about_us,
+  .page-saata-conferences .about_us.about_ta {
     max-width: 740px !important;
   }
 
   .page-membership-details .about_us .about_us_wrapper h2,
   .page-ta-101-program-details .about_us .about_us_wrapper h2,
   .page-exam-dates .about_us .about_us_wrapper h2,
-  .page-saata-calendar-2023 .about_us .about_us_wrapper h2,
+  .page-saata-calendar .about_us .about_us_wrapper h2,
   .page-examination-forms .about_us .about_us_wrapper h2,
   .page-examination-documents .about_us .about_us_wrapper h2,
   .page-directory .about_us .about_us_wrapper h2,
   .page-membership-renewal .about_us .about_us_wrapper h2,
   .page-call-for-nominations .about_us .about_us_wrapper h2,
   .page-guidelines-for-content-contributors .about_us .about_us_wrapper h2,
+  .page-sajta-submission-guidelines .about_us .about_us_wrapper h2,
   .page-newsletter-advertisement-policy .about_us .about_us_wrapper h2,
   .page-journals .about_us .about_us_wrapper h2,
   .page-awards .about_us .about_us_wrapper h2,
@@ -2022,14 +2194,14 @@ ul .menu_item:hover>a {
   }
 }
 
-.page-saata-calendar-2023 th p,
-.page-saata-calendar-2023 td p {
+.page-saata-calendar th p,
+.page-saata-calendar td p {
   text-align: left;
 }
 
-.page-saata-calendar-2023 th,
-.page-saata-calendar-2023 td,
-.page-saata-calendar-2023 tr {
+.page-saata-calendar th,
+.page-saata-calendar td,
+.page-saata-calendar tr {
   border: 1px solid #333 !important;
 }
 
@@ -2196,20 +2368,24 @@ ul .menu_item:hover>a {
   }
 
   .ITAA-The-Dance-of-Culture-folder {
-    max-width: 347PX;
+    max-width: 347px;
     margin: 0px auto;
   }
 
-  .ITAA-The-Dance-of-Culture-folder .slick-slide.slick-active.slick-center.slick-current .ITAA-The-Dance-of-Culture-image {
+  .ITAA-The-Dance-of-Culture-folder
+    .slick-slide.slick-active.slick-center.slick-current
+    .ITAA-The-Dance-of-Culture-image {
     max-width: 305px;
   }
 
   .gallery-South-Asian-Association-folder {
-    max-width: 347PX;
+    max-width: 347px;
     margin: 0px auto;
   }
 
-  .gallery-South-Asian-Association-folder .slick-slide.slick-active.slick-center.slick-current .gallery-South-Asian-Association-image {
+  .gallery-South-Asian-Association-folder
+    .slick-slide.slick-active.slick-center.slick-current
+    .gallery-South-Asian-Association-image {
     max-width: 305px;
   }
 
@@ -2299,9 +2475,10 @@ ul .menu_item:hover>a {
   .page-directory .about_us.about_ta,
   .page-call-for-nominations .about_us.about_ta,
   .page-guidelines-for-content-contributors .about_us.about_ta,
+  .page-sajta-submission-guidelines .about_us.about_ta,
   .page-newsletter-advertisement-policy .about_us.about_ta,
   .page-journals .about_us.about_ta,
-  .page-saata-calendar-2023 .about_us.about_ta,
+  .page-saata-calendar .about_us.about_ta,
   .page-awards .about_us.about_ta,
   .page-service-award .about_us.about_ta,
   .page-about-us .about_us.about_ta,
@@ -2312,8 +2489,10 @@ ul .menu_item:hover>a {
   .page-eric-berne .about_us.about_ta,
   .page-membership-details .about_us.about_ta,
   .page-ta-101-program-details .about_us.about_ta,
-  .page-saata-calendar-2023 .about_us.about_ta,
-  .page-saata-bot .about_us.about_ta {
+  .page-saata-calendar .about_us.about_ta,
+  .page-saata-bot .about_us.about_ta,
+  .page-saata-conference .about_us.about_ta,
+  .page-saata-conference-2025 .about_us.about_ta {
     padding: 18px 0px;
     max-width: 318px !important;
   }
@@ -2387,13 +2566,14 @@ ul .menu_item:hover>a {
   .page-membership-details .about_us,
   .page-ta-101-program-details .about_us,
   .page-exam-dates .about_us,
-  .page-saata-calendar-2023 .about_us,
+  .page-saata-calendar .about_us,
   .page-examination-forms .about_us,
   .page-examination-documents .about_us,
   .page-directory .about_us,
   .page-membership-renewal .about_us,
   .page-call-for-nominations .about_us,
   .page-guidelines-for-content-contributors .about_us,
+  .page-sajta-submission-guidelines .about_us,
   .page-newsletter-advertisement-policy .about_us,
   .page-journals .about_us,
   .page-awards .about_us,
@@ -2408,6 +2588,7 @@ ul .menu_item:hover>a {
   .page-membership-renewal .about_us.about_ta,
   .page-call-for-nominations .about_us.about_ta,
   .page-guidelines-for-content-contributors .about_us.about_ta,
+  .page-sajta-submission-guidelines .about_us.about_ta,
   .page-newsletter-advertisement-policy .about_us.about_ta,
   .page-journals .about_us.about_ta,
   .page-awards .about_us.about_ta,
@@ -2429,6 +2610,7 @@ ul .menu_item:hover>a {
   .page-membership-renewal .about_us.about_ta,
   .page-call-for-nominations .about_us.about_ta,
   .page-guidelines-for-content-contributors .about_us.about_ta,
+  .page-sajta-submission-guidelines .about_us.about_ta,
   .page-newsletter-advertisement-policy .about_us.about_ta,
   .page-journals .about_us.about_ta,
   .page-awards .about_us.about_ta,
@@ -2449,7 +2631,11 @@ ul .menu_item:hover>a {
     padding: 18px 0px !important;
   }
 
-  .page-guidelines-for-content-contributors .about_us.about_ta .about_us_content ul,
+  .page-guidelines-for-content-contributors
+    .about_us.about_ta
+    .about_us_content
+    ul,
+  .page-sajta-submission-guidelines .about_us.about_ta .about_us_content ul,
   .page-about-us .about_us.about_ta .about_us_content ul,
   .page-mission-and-vision .about_us.about_ta .about_us_content ul,
   .page-membership-details .about_us.about_ta .about_us_content ul,
@@ -2457,7 +2643,12 @@ ul .menu_item:hover>a {
     transform: translateX(0px);
   }
 
-  .page-guidelines-for-content-contributors .about_us.about_ta .about_us_content ul li,
+  .page-guidelines-for-content-contributors
+    .about_us.about_ta
+    .about_us_content
+    ul
+    li,
+  .page-sajta-submission-guidelines .about_us.about_ta .about_us_content ul li,
   .page-about-us .about_us.about_ta .about_us_content ul li,
   .page-mission-and-vision .about_us.about_ta .about_us_content ul li,
   .page-membership-details .about_us.about_ta .about_us_content ul li,
@@ -2468,13 +2659,14 @@ ul .menu_item:hover>a {
   .page-membership-details .about_us .about_us_wrapper h2,
   .page-ta-101-program-details .about_us .about_us_wrapper h2,
   .page-exam-dates .about_us .about_us_wrapper h2,
-  .page-saata-calendar-2023 .about_us .about_us_wrapper h2,
+  .page-saata-calendar .about_us .about_us_wrapper h2,
   .page-examination-forms .about_us .about_us_wrapper h2,
   .page-examination-documents .about_us .about_us_wrapper h2,
   .page-directory .about_us .about_us_wrapper h2,
   .page-membership-renewal .about_us .about_us_wrapper h2,
   .page-call-for-nominations .about_us .about_us_wrapper h2,
   .page-guidelines-for-content-contributors .about_us .about_us_wrapper h2,
+  .page-sajta-submission-guidelines .about_us .about_us_wrapper h2,
   .page-newsletter-advertisement-policy .about_us .about_us_wrapper h2,
   .page-journals .about_us .about_us_wrapper h2,
   .page-awards .about_us .about_us_wrapper h2,
@@ -2492,10 +2684,12 @@ ul .menu_item:hover>a {
   .page-truth-seeker .about_us .about_us_wrapper h2,
   .page-ace-conceptualist .about_us .about_us_wrapper h2,
   .page-gregarious-hugger .about_us .about_us_wrapper h2,
-  .page-history-and-origin-of-saata .about_us .about_us_wrapper h2 {
+  .page-history-and-origin-of-saata .about_us .about_us_wrapper h2  {
     font-size: 25px !important;
   }
-
+  .page-saata-conference-2025 .about_us .about_us_wrapper h2  {
+    font-size: 27px !important;
+  }
   .page-cpnews .news-latter-cpnews-section {
     max-width: 318px !important;
   }
@@ -2537,13 +2731,18 @@ ul .menu_item:hover>a {
 
   .page-membership-details .about_us_content table,
   .page-ta-101-program-details .about_us_content table,
-  .page-saata-calendar-2023 .about_us_content table,
-  .page-saata-bot .about_us_content table {
+  .page-saata-calendar .about_us_content table,
+  .page-saata-bot .about_us_content table,
+  table {
     display: block;
     overflow-y: scroll;
   }
+  #tw-target-text a {
+    display: block;
+    margin: 10px !important;
+    text-align: center;
+  }
 }
-
 
 .Top-Header-wrapper-folder {
   display: flex;
@@ -2570,14 +2769,14 @@ ul .menu_item:hover>a {
   position: relative;
 }
 
-.menu-item>a {
+.menu-item > a {
   display: block;
   padding: 10px 20px;
   text-decoration: none;
   color: #000;
 }
 
-.menu-item:hover>a {
+.menu-item:hover > a {
   background-color: #f0f0f0;
 }
 
@@ -2620,7 +2819,6 @@ ul .menu_item:hover>a {
 
 .page-governance .about_us_wrapper h2 {
   color: #000;
-  ;
 }
 
 .page-governance p {
@@ -2638,8 +2836,28 @@ ul .menu_item:hover>a {
   text-decoration: none;
   color: #fff;
 }
+.page-memorial-endowment-lecture .about_us_img,
+.page-p-k-saru-memorial-endowment-fund .about_us_img {
+  max-width: 100%;
+  width: 100%;
+}
 
+.page-memorial-endowment-lecture .about_us_img h3,
+.page-p-k-saru-memorial-endowment-fund .about_us_img h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.page-memorial-endowment-lecture .about_us_content i,
+.page-p-k-saru-memorial-endowment-fund .about_us_content i {
+  color: red;
+  font-style: normal;
+}
 @media (max-width: 768px) {
+  .collapsible .button {
+    font-size: 15px;
+  }
   .Top-Header-wrapper-folder {
     flex-direction: column;
     align-items: flex-start;
@@ -2654,7 +2872,6 @@ ul .menu_item:hover>a {
     position: absolute;
     right: 0;
     top: 6%;
-
   }
 
   .logo img,
@@ -2684,7 +2901,6 @@ ul .menu_item:hover>a {
 
   .menu-open {
     display: block;
-
   }
 
   .menu-folder ul {
@@ -2803,6 +3019,138 @@ ul .menu_item:hover>a {
   font-weight: bold;
   color: #fff;
 }
-.info-desc p a:hover{
-border-bottom:  1px solid;
+
+.info-desc p a:hover {
+  border-bottom: 1px solid;
+}
+
+.page-saata-conference .about_us_img,
+.page-saata-conference-2025 .about_us_img,
+.about_us_img img {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* .custom-rich-text-image img {
+  width: 100%;
+} */
+
+.custom-rich-text-pdf,
+.custom-rich-text-image {
+  margin: 30px 0;
+}
+
+.page-saata-conference table {
+  margin: 10px 0;
+}
+.single-video{
+  background-color: #a37bb6;
+    color: white;
+    padding: 20px;
+}
+.single-video iframe{
+ display: flex;
+ margin: auto;
+}
+.input-group .btn {
+  background: #a37bb6;
+  border: none;
+  z-index: 0 !important;
+}
+.excel-display .about_us_content p {
+  margin-bottom: 30px;
+}
+.excel-display .about_us_wrapper h2 {
+  margin-left: 0px;
+}
+.excel-display{
+  padding: 18px 30px !important;
+  background-color: rgba(249, 249, 249, 0.2392156863);
+ box-shadow: 0px 4px 17px #e5e5e5;
+ max-width: 1258px !important;
+}
+.excel-display .about_us_content p a {
+  color: #a37bb6 !important;
+}
+.page-saata-conference-2025 .about_us .about_us_wrapper h2 {
+  margin-bottom: 35px;
+}
+.page-saata-conference-2025 .about_us_img {
+  margin-bottom: 40px;
+}
+.page-saata-conference-2025 .about_us .about_us_content p a{
+  color: #a37bb6 !important;
+  font-weight: 500;
+}
+.address-line {
+  font-size:18px;
+  margin-bottom: 5px;
+  color: rgb(111, 111, 111);
+  font-weight: 600;
+}
+.address-line span {
+  font-weight: normal;
+}
+.address-line p {
+ margin-bottom: 10px;
+}
+.map {
+  margin-top: 3px;
+  padding: 19px 20px 39px 20px;
+  border-radius: 15px;
+  
+}
+.address-title p {
+  margin-bottom: 12px;
+}
+.address-title p::before{
+  content: "\f041";
+  font-size: 24px;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: FontAwesome;
+  margin-right: 6px;
+}
+
+.address-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+
+.contact_wrapper {
+  display: block;
+}
+.input_wrapper {
+  gap: 0px;
+  justify-content: space-between;
+}
+.contact_form .input_field {
+  margin: inherit;
+}
+.contact_form input {
+  width: 450px;
+}
+.contact_form {
+  width: 1000px;
+  margin: auto;
+}
+.contact_form input.submit-btn {
+  width: 300px;
+}
+
+.page-saata-conference .about_us_content ul{
+  list-style: inherit;
+}
+.page-saata-conference .about_us_content a {
+  color: #0d6efd !important;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .excel-display {
+    max-width: 380px !important;
+}
 }

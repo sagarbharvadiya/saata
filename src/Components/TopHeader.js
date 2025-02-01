@@ -88,12 +88,8 @@ const TopHeader = () => {
                 </NavLink>
               </li>
               <li className="directory menu_item Newsletter">
-                <NavLink to="/page/directory">Directory</NavLink>
-                <ul className="directory-folder hover" onClick={toggleMenu}>
-                  <li>
-                    <NavLink to="/CertifiedMembers">Certified Members</NavLink>
-                  </li>
-                </ul>
+                <NavLink to="/CertifiedMembers">Directory</NavLink>
+               
               </li>
             </ul>
           </li>
@@ -101,8 +97,8 @@ const TopHeader = () => {
             <NavLink to="/">Events</NavLink>
             <ul className="Programs-folder">
               <li>
-                <NavLink to="/page/saata-calendar-2023" onClick={toggleMenu}>
-                  SAATA Calendar 2023
+                <NavLink to="/page/saata-calendar" onClick={toggleMenu}>
+                Saata Calendar
                 </NavLink>
               </li>
               <li>
@@ -111,10 +107,31 @@ const TopHeader = () => {
                 </NavLink>
               </li>
               <li>
+                <NavLink to="/page/mll-2025" onClick={toggleMenu}>
+                  MLL 2025
+                </NavLink>
+              </li>
+              <li className="News_hover">
+              <NavLink to="/">Past Events</NavLink>
+                <ul className="hover">
+                <li>
+                <NavLink to="/page/mll-2024" onClick={toggleMenu}>
+                  MLL 2024
+                </NavLink>
+              </li>
+                  
+                </ul>
+              </li>
+              <li>
+                <NavLink to="/page/saata-conference" onClick={toggleMenu}>
+                SAATA Conference
+                </NavLink>
+              </li>
+              {/* <li>
                 <NavLink to="/page/call-for-proposals" onClick={toggleMenu}>
                   Call for Proposals
                 </NavLink>
-              </li>
+              </li> */}
               {/* <li>
                 <NavLink to="/page/conference-brochure" onClick={toggleMenu}>
                   Conference Brochure
@@ -185,18 +202,37 @@ const TopHeader = () => {
                   </li> --> */}
                 </ul>
               </li>
-              <li>
+              <li className="News_hover">
                 <NavLink to="/page/journals" onClick={toggleMenu}>
                   SAJTA Journals
                 </NavLink>
+                <ul className="hover">
+                <li>
+                    <NavLink to="/sajta-journals" onClick={toggleMenu}>
+                    Current and Previous Issues
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/SAJTATeam" onClick={toggleMenu}>
+                      SAJTA Team
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/page/sajta-submission-guidelines" onClick={toggleMenu}>
+                    SAJTA Guidelines
+                    </NavLink>
+                  </li>
+                  
+                </ul>
               </li>
+
             </ul>
           </li>
           <li className="Newsletter menu_item">
             <NavLink to="/">Resources</NavLink>
             <ul className="Newsletter-folder">
               <li>
-                <NavLink to="/Articles" onClick={toggleMenu}>
+                <NavLink to="/" onClick={toggleMenu}>
                   Articles
                 </NavLink>
               </li>
